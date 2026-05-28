@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="noir">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Designs of Desire — Premium visual identity & custom websites for content creators.">
+  <meta property="og:title" content="Designs of Desire">
+  <meta property="og:description" content="High-end exclusive design. Built for creators who want more.">
+  <meta property="og:image" content="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg">
+  <link rel="icon" type="image/jpeg" href="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg">
+  <title>Designs of Desire - High-End Exclusive Design</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    /* Specific styles for Home Page */
+    .stats-bar {
+      padding: 60px 0;
+      border-bottom: 1px solid var(--border-color);
+      background: var(--card-bg);
+    }
+    .stats-grid {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .stat-item {
+      text-align: center;
+    }
+    .stat-number {
+      font-size: 3rem;
+      font-family: var(--font-display);
+      color: var(--accent-color-1);
+    }
+    .stat-label {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+    
+    .dual-cards-section {
+      padding: 100px 0;
+    }
+    .dual-cards-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .service-card {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 40px;
+    }
+    .service-icon {
+      font-size: 3rem;
+      color: var(--accent-color-1);
+      margin-bottom: 20px;
+    }
+
+    .reviews-section {
+      padding: 100px 0;
+      background: var(--bg-color);
+    }
+    
+    /* Reviews Carousel */
+    .reviews-carousel-wrapper {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .reviews-track {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+    .reviews-track::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera */
+    }
+    .review-item {
+      min-width: 100%;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+      box-sizing: border-box;
+    }
+    .review-quotemark {
+      font-family: var(--font-display);
+      font-size: 5rem;
+      line-height: 0.6;
+      color: var(--accent-color-1);
+      opacity: 0.35;
+      margin-bottom: 20px;
+      height: 40px;
+      overflow: hidden;
+    }
+    .review-text {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-style: italic;
+      line-height: 1.75;
+      margin-bottom: 28px;
+      opacity: 0.9;
+    }
+    .review-footer {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      border-top: 1px solid var(--border-color);
+      padding-top: 20px;
+    }
+    .review-avatar {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: rgba(201,168,76,0.12);
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-accent);
+      font-size: 0.6rem;
+      color: var(--accent-color-1);
+      letter-spacing: 1px;
+      flex-shrink: 0;
+    }
+    .review-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+    .review-platform-badge {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent-color-1);
+      margin-top: 2px;
+      opacity: 0.8;
+    }
+    .review-stars { color: var(--accent-color-1); font-size: 0.8rem; letter-spacing: 2px; }
+    .reviews-dots {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 40px;
+    }
+    .reviews-dots button {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      border: 1px solid var(--accent-color-1);
+      background: transparent;
+      cursor: pointer;
+      transition: var(--transition-fast);
+      padding: 0;
+    }
+    .reviews-dots button.active {
+      background: var(--accent-color-1);
+      transform: scale(1.3);
+    }
+
+    .about-strip {
+      padding: 100px 0;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 60px;
+    }
+    .about-text {
+      font-size: clamp(1.2rem, 2vw, 1.6rem);
+      font-family: var(--font-display);
+      font-style: italic;
+      font-weight: 300;
+      line-height: 1.85;
+      opacity: 0.9;
+    }
+    .about-img {
+      width: 150px;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: block;
+      opacity: 0.8;
+      border: 1px solid var(--border-color);
+    }
+    [data-theme="noir"] .about-img { background: #000; }
+    [data-theme="marble"] .about-img { background: #000; }
+
+    .bottom-cta {
+      padding: 100px 0;
+      text-align: center;
+    }
+    .bottom-cta h2 {
+      font-size: 3rem;
+      margin-bottom: 40px;
+      color: var(--button-text);
+    }
+
+    @media (max-width: 768px) {
+      .dual-cards-grid, .about-grid {
+        grid-template-columns: 1fr;
+      }
+      .review-quote {
+        font-size: 1.2rem;
+      }
+      .about-grid {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav-container">
+      <a href="index.html">
+        <img src="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg" alt="Logo" class="nav-logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="visual-design.html" data-i18n="nav_visual">Visual Design</a></li>
+        <li><a href="websites.html" data-i18n="nav_websites">Websites</a></li>
+        <li><a href="recent-work.html" data-i18n="nav_work">Recent Work</a></li>
+        <li><a href="premades.html" data-i18n="nav_premades">Premades</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-dropdown" id="lang-dropdown">
+          <button class="lang-current" id="lang-current-btn">🇬🇧 EN ▾</button>
+          <div class="lang-options" id="lang-options">
+            <button data-lang="en">🇬🇧 EN</button>
+            <button data-lang="fr">🇫🇷 FR</button>
+            <button data-lang="de">🇩🇪 DE</button>
+            <button data-lang="es">🇪🇸 ES</button>
+          </div>
+        </div>
+        <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle theme">
+          <span class="theme-icon">◐</span>
+        </button>
+        <div class="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <button class="mobile-close">×</button>
+    <a href="index.html" data-i18n="nav_home">Home</a>
+    <a href="visual-design.html" data-i18n="nav_visual">Visual Design</a>
+    <a href="websites.html" data-i18n="nav_websites">Websites</a>
+    <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
+    <a href="premades.html" data-i18n="nav_premades">Premades</a>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="container reveal">
+      <div class="hero-logo-container">
+        <img src="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg" alt="Designs of Desire" class="hero-logo">
+      </div>
+      <span class="hero-eyebrow">Designs of Desire · Exclusive Studio</span>
+      <h1 data-i18n="hero_title">Your Brand.<br><em>Elevated.</em></h1>
+      <p data-i18n="hero_sub">Premium visual identity & custom websites for creators who refuse to blend in.</p>
+      <div class="hero-btns">
+        <a href="visual-design.html" class="btn btn-primary" data-i18n="btn_explore">Explore Visual Design</a>
+        <a href="websites.html" class="btn btn-outline" data-i18n="btn_get_website">Get My Website</a>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span>Scroll</span></div>
+  </header>
+
+  <!-- Daily Quote Section -->
+  <section class="daily-quote-section" style="padding: 140px 24px; position: relative; overflow: hidden; border-top: 1px solid rgba(201,168,76, 0.1); border-bottom: 1px solid rgba(201,168,76, 0.1); background: linear-gradient(180deg, transparent 0%, rgba(201,168,76,0.02) 50%, transparent 100%);">
+    <div style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); font-family: var(--font-display); font-size: 35rem; color: var(--accent-color-1); opacity: 0.03; pointer-events: none; line-height: 1; z-index: 0; font-style: italic;">"</div>
+    
+    <div class="container reveal" style="max-width: 900px; margin: 0 auto; text-align: center; position: relative; z-index: 1;">
+      <div style="font-size: 0.75rem; letter-spacing: 5px; text-transform: uppercase; color: var(--accent-color-1); font-weight: 600; margin-bottom: 30px; opacity: 0.8;">Daily Inspiration</div>
+      
+      <blockquote style="margin: 0;">
+        <p id="daily-quote-text" data-i18n="quote_1" style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-style: italic; font-weight: 300; line-height: 1.4; margin-bottom: 40px; color: var(--text-color);">
+          "Design is the silent ambassador of your brand."
+        </p>
+        <footer id="daily-quote-author" data-i18n="quote_1_author" style="font-size: 0.95rem; letter-spacing: 3px; text-transform: uppercase; color: var(--accent-color-1); font-weight: 500; display: inline-block; padding-top: 20px; border-top: 1px solid rgba(201,168,76,0.3);">
+          — Paul Rand
+        </footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Dual Service Cards -->
+  <section class="dual-cards-section container">
+    <div class="dual-cards-grid stagger-children">
+      <div class="card service-card">
+        <div class="service-icon">✧</div>
+        <h2 class="card-title" data-i18n="service_visual_title">Visual Design Studio</h2>
+        <p class="card-desc" data-i18n="service_visual_desc">Logo, banners, price lists, signatures, posters — Starting from €10</p>
+        <a href="visual-design.html" class="gold-gradient-text" data-i18n="btn_learn_more">Learn More →</a>
+      </div>
+      <div class="card service-card">
+        <div class="service-icon">✦</div>
+        <h2 class="card-title" data-i18n="service_web_title">Website Creation</h2>
+        <p class="card-desc" data-i18n="service_web_desc">Basic to fully custom with payment & subscriptions — Starting from €100</p>
+        <a href="websites.html" class="gold-gradient-text" data-i18n="btn_learn_more">Learn More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews-section">
+    <div class="container reveal">
+      <span class="section-tag" style="display:block;text-align:center;">Client Love</span>
+      <h2 class="text-center" style="font-size: 2.8rem; font-weight: 300; margin-bottom: 60px;" data-i18n="reviews_title">What Creators Say</h2>
+      <div class="reviews-carousel-wrapper">
+        <div class="reviews-track" id="reviews-track">
+          <div class="review-item card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 60px 40px; justify-content: center; min-height: 450px;">
+            <div class="review-stars" style="font-size: 1.2rem; margin-bottom: 25px; letter-spacing: 4px;">★★★★★</div>
+            <p class="review-text" style="font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.4; margin-bottom: 40px; font-style: normal;">"Other model's logos are great, but mine is the best."</p>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+              <div class="review-avatar" style="width: 50px; height: 50px; font-size: 0.9rem;">VQ</div>
+              <div>
+                <div class="review-name" style="font-size: 1.1rem; letter-spacing: 1px;">Viper Queen</div>
+                <div class="review-platform-badge" style="font-size: 0.75rem; letter-spacing: 2px;">Content Creator</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="review-item card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 60px 40px; justify-content: center; min-height: 450px;">
+            <div class="review-stars" style="font-size: 1.2rem; margin-bottom: 25px; letter-spacing: 4px;">★★★★★</div>
+            <p class="review-text" style="font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.4; margin-bottom: 40px; font-style: normal;">"This was fun. The whole experience of getting the logo and the interaction was amazing."</p>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+              <div class="review-avatar" style="width: 50px; height: 50px; font-size: 0.9rem;">SC</div>
+              <div>
+                <div class="review-name" style="font-size: 1.1rem; letter-spacing: 1px;">The Soft command</div>
+                <div class="review-platform-badge" style="font-size: 0.75rem; letter-spacing: 2px;">Content Creator</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="review-item card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 60px 40px; min-height: 450px;">
+            <div style="font-size: 4rem; color: var(--accent-color-1); margin-bottom: 30px;">✦</div>
+            <p class="review-text" style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-style: normal; margin-bottom: 40px;">Want to be the third review?</p>
+            <a href="https://www.instagram.com/designs_of_desire_official/" target="_blank" class="btn btn-primary" style="padding: 15px 40px; font-size: 0.9rem; letter-spacing: 3px;">DM ME ON INSTAGRAM</a>
+          </div>
+        </div>
+        <div class="reviews-dots" id="reviews-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Strip -->
+  <section class="about-strip">
+    <div class="container about-grid reveal">
+      <div>
+        <span class="section-tag">Our Philosophy</span>
+        <div class="about-text" data-i18n="about_text">
+          "Designs of Desire was built for creators who know their worth. Every pixel is intentional. Every design is exclusive. You're not getting a template — you're getting a visual identity that demands attention."
+        </div>
+      </div>
+      <div>
+        <img src="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg" alt="Crest" class="about-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bottom-cta gold-gradient-bg">
+    <div class="container reveal">
+      <h2 data-i18n="bottom_cta">Ready to look like the top 1%?</h2>
+      <a href="mailto:designs.of.desirex@gmail.com?subject=Booking%20Inquiry" class="btn btn-outline" style="border-color: var(--button-text); color: var(--button-text);" data-i18n="btn_book">Book Your Design</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <img src="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg" alt="Logo" class="footer-logo">
+          <div class="footer-brand-name">Designs of Desire</div>
+          <p class="footer-tagline">High-End Exclusive Design.<br>Built for Creators Who Want More.</p>
+        </div>
+        <div style="display: flex; gap: 60px; justify-content: flex-end;">
+          <div>
+            <div class="footer-brand-name" style="font-size:0.55rem; margin-bottom:16px;" data-i18n="footer_pages">Pages</div>
+            <div class="footer-links">
+              <a href="index.html" data-i18n="nav_home">Home</a>
+              <a href="visual-design.html" data-i18n="nav_visual">Visual Design</a>
+              <a href="websites.html" data-i18n="nav_websites">Websites</a>
+              <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
+              <a href="premades.html" data-i18n="nav_premades">Premades</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-brand-name" style="font-size:0.55rem; margin-bottom:16px;" data-i18n="footer_connect">Connect</div>
+            <div class="footer-links">
+              <a href="https://www.instagram.com/designs_of_desire_official/" target="_blank">Instagram</a>
+              <a href="mailto:designs.of.desirex@gmail.com">Email</a>
+            </div>
+            <div style="margin-top: 20px; opacity: 0.5; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase;" data-i18n="footer_paypal">PayPal Accepted</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom" data-i18n="footer_rights">© 2025 Designs of Desire — All Rights Reserved</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+  (function() {
+    const track = document.getElementById('reviews-track');
+    const dotsContainer = document.getElementById('reviews-dots');
+    if (!track || !dotsContainer) return;
+
+    const items = track.querySelectorAll('.review-item');
+    const total = items.length;
+    let current = 0;
+    let autoTimer;
+
+    // Create dots
+    for (let i = 0; i < total; i++) {
+      const dot = document.createElement('button');
+      if (i === 0) dot.classList.add('active');
+      dot.setAttribute('aria-label', 'Go to review ' + (i + 1));
+      dot.addEventListener('click', () => {
+        clearInterval(autoTimer);
+        items[i].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+        autoTimer = setInterval(next, 5000);
+      });
+      dotsContainer.appendChild(dot);
+    }
+
+    const updateDots = (index) => {
+      current = index;
+      dotsContainer.querySelectorAll('button').forEach((d, i) => d.classList.toggle('active', i === current));
+    };
+
+    // Update active dot on native scroll
+    track.addEventListener('scroll', () => {
+      // Calculate which item is most visible based on scrollLeft
+      const scrollPos = track.scrollLeft;
+      const itemWidth = track.offsetWidth || 1;
+      const newIndex = Math.round(scrollPos / itemWidth);
+      if (newIndex !== current && newIndex >= 0 && newIndex < total) {
+        updateDots(newIndex);
+      }
+    });
+
+    const next = () => {
+      let nextIndex = current + 1;
+      if (nextIndex >= total) nextIndex = 0;
+      items[nextIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+    };
+
+    autoTimer = setInterval(next, 5000);
+    track.addEventListener('mouseenter', () => clearInterval(autoTimer));
+    track.addEventListener('mouseleave', () => { autoTimer = setInterval(next, 5000); });
+  })();
+  </script>
+</body>
+</html>

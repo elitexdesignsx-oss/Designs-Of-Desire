@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="noir">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Designs of Desire — Premium visual identity & custom websites for content creators.">
+  <meta property="og:title" content="Premades - Designs of Desire">
+  <meta property="og:description" content="High-end exclusive design. Built for creators who want more.">
+  <meta property="og:image" content="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg">
+  <link rel="icon" type="image/jpeg" href="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg">
+  <title>Premades - Designs of Desire</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .page-header {
+      padding: 150px 0 80px;
+      text-align: center;
+      position: relative;
+    }
+    .page-header h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      margin-bottom: 20px;
+    }
+    .page-header p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .info-strip {
+      color: var(--accent-color-1);
+      font-weight: 500;
+      margin-top: 20px;
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+    }
+
+    /* How it works */
+    .steps-strip {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      padding: 40px 20px;
+      background: var(--card-bg);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      flex-wrap: wrap;
+    }
+    .step {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .step-num {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      border: 1px solid var(--accent-color-1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--accent-color-1);
+    }
+
+    /* Gallery */
+    .gallery-container {
+      padding: 80px 0 100px;
+      overflow: hidden;
+      position: relative;
+    }
+    .gallery-track {
+      display: flex;
+      gap: 30px;
+      overflow-x: auto;
+      padding: 20px;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .gallery-track::-webkit-scrollbar {
+      display: none;
+    }
+    .premade-card {
+      min-width: 320px;
+      max-width: 320px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 0;
+      padding: 20px;
+      scroll-snap-align: center;
+      position: relative;
+      transition: transform 0.3s;
+    }
+    .premade-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px var(--border-glow);
+    }
+    .premade-img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    
+    .premade-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+    }
+    .premade-type {
+      font-family: var(--font-accent);
+      font-size: 0.6rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent-color-1);
+      opacity: 0.8;
+      margin-bottom: 6px;
+    }
+    .premade-price {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--accent-color-1);
+      margin-bottom: 20px;
+    }
+    
+    .badge {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      padding: 5px 15px;
+      border-radius: 0;
+      font-family: var(--font-accent);
+      font-size: 0.55rem;
+      letter-spacing: 2px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .badge.available {
+      background: var(--accent-color-1);
+      color: var(--button-text);
+    }
+    .badge.claimed {
+      background: #555;
+      color: #fff;
+    }
+
+    /* Controls */
+    .gallery-controls {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .gallery-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      color: var(--text-color);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      transition: var(--transition);
+    }
+    .gallery-btn:hover {
+      border-color: var(--accent-color-1);
+      color: var(--accent-color-1);
+    }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(5px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: var(--transition);
+    }
+    .modal-overlay.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+    
+    .modal-content {
+      background: var(--bg-color);
+      border: 1px solid var(--accent-color-1);
+      padding: 56px 48px;
+      max-width: 480px;
+      width: 92%;
+      position: relative;
+      text-align: center;
+      transform: translateY(24px) scale(0.97);
+      transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s ease;
+      box-shadow: 0 0 60px rgba(201,168,76,0.12), 0 20px 60px rgba(0,0,0,0.5);
+    }
+    .modal-overlay.active .modal-content {
+      transform: translateY(0) scale(1);
+    }
+    
+    .modal-close {
+      position: absolute;
+      top: 15px; right: 20px;
+      background: none; border: none;
+      color: var(--text-color);
+      font-size: 2rem; cursor: pointer;
+    }
+
+    .upload-section {
+      padding: 100px 0;
+      text-align: center;
+      background: rgba(201, 168, 76, 0.03);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav-container">
+      <a href="index.html">
+        <img src="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg" alt="Logo" class="nav-logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="visual-design.html" data-i18n="nav_visual">Visual Design</a></li>
+        <li><a href="websites.html" data-i18n="nav_websites">Websites</a></li>
+        <li><a href="recent-work.html" data-i18n="nav_work">Recent Work</a></li>
+        <li><a href="premades.html" data-i18n="nav_premades">Premades</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-dropdown" id="lang-dropdown">
+          <button class="lang-current" id="lang-current-btn">🇬🇧 EN ▾</button>
+          <div class="lang-options" id="lang-options">
+            <button data-lang="en">🇬🇧 EN</button>
+            <button data-lang="fr">🇫🇷 FR</button>
+            <button data-lang="de">🇩🇪 DE</button>
+            <button data-lang="es">🇪🇸 ES</button>
+          </div>
+        </div>
+        <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle theme">
+          <span class="theme-icon">◐</span>
+        </button>
+        <div class="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <button class="mobile-close">×</button>
+    <a href="index.html" data-i18n="nav_home">Home</a>
+    <a href="visual-design.html" data-i18n="nav_visual">Visual Design</a>
+    <a href="websites.html" data-i18n="nav_websites">Websites</a>
+    <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
+    <a href="premades.html" data-i18n="nav_premades">Premades</a>
+  </div>
+
+  <header class="page-header container reveal">
+    <span class="section-tag" data-i18n="pre_tag">Swipe & Claim</span>
+    <h1 data-i18n="pre_title">Premade Designs</h1>
+    <p style="margin-bottom: 5px;" data-i18n="pre_sub1">Ready to Personalise.</p>
+    <p style="opacity: 0.7; font-size: 1rem;" data-i18n="pre_sub2">Love a design? Claim it — and I'll customise it just for you.</p>
+    <div style="display:inline-block; margin-top:20px; background:rgba(201,168,76,0.1); border:1px solid var(--accent-color-1); padding: 10px 20px; font-size: 0.85rem; color:var(--accent-color-1);" data-i18n="pre_info">
+      Each premade is exclusive — once claimed, it's yours alone.
+    </div>
+  </header>
+
+  <section class="steps-strip stagger-children">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div><strong data-i18n="pre_s1_t">Browse</strong><br><small data-i18n="pre_s1_d">Swipe available designs</small></div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div><strong data-i18n="pre_s2_t">Claim</strong><br><small data-i18n="pre_s2_d">Tap "I Want This"</small></div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div><strong data-i18n="pre_s3_t">Personalise</strong><br><small data-i18n="pre_s3_d">Customised with your details</small></div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery-container reveal">
+    <div class="gallery-track" id="gallery-track">
+      
+      <!-- Premades Items -->
+      <div class="premade-card">
+        <div class="badge available" data-i18n="pre_avail">Available</div>
+        <img src="Images/Premades/10.png" alt="Premade" class="premade-img">
+        <div class="premade-type">Logo</div>
+        <h3 class="premade-title">Premade #10</h3>
+        <button class="btn btn-outline claim-btn" style="width: 100%;" data-name="Premade #10" data-price="€25" data-type="Logo" data-i18n="pre_btn">I Want This</button>
+      </div>
+
+      <div class="premade-card">
+        <div class="badge available" data-i18n="pre_avail">Available</div>
+        <img src="Images/Premades/11.png" alt="Premade" class="premade-img">
+        <div class="premade-type">Logo</div>
+        <h3 class="premade-title">Premade #11</h3>
+        <button class="btn btn-outline claim-btn" style="width: 100%;" data-name="Premade #11" data-price="€25" data-type="Logo" data-i18n="pre_btn">I Want This</button>
+      </div>
+
+      <div class="premade-card">
+        <div class="badge available" data-i18n="pre_avail">Available</div>
+        <img src="Images/Premades/12.png" alt="Premade" class="premade-img">
+        <div class="premade-type">Logo</div>
+        <h3 class="premade-title">Premade #12</h3>
+        <button class="btn btn-outline claim-btn" style="width: 100%;" data-name="Premade #12" data-price="€25" data-type="Logo" data-i18n="pre_btn">I Want This</button>
+      </div>
+
+      <div class="premade-card">
+        <div class="badge claimed" data-i18n="pre_claim">Claimed</div>
+        <img src="Images/Premades/2.png" alt="Premade" class="premade-img" style="filter: grayscale(100%);">
+        <div class="premade-type">Price List</div>
+        <h3 class="premade-title">Premade #2</h3>
+        <button class="btn btn-outline" style="width: 100%; opacity: 0.5; cursor: not-allowed;" disabled data-i18n="pre_claim">Claimed</button>
+      </div>
+
+      <div class="premade-card">
+        <div class="badge available" data-i18n="pre_avail">Available</div>
+        <img src="Images/Premades/3.png" alt="Premade" class="premade-img">
+        <div class="premade-type">Banner</div>
+        <h3 class="premade-title">Premade #3</h3>
+        <button class="btn btn-outline claim-btn" style="width: 100%;" data-name="Premade #3" data-price="€20" data-type="Banner" data-i18n="pre_btn">I Want This</button>
+      </div>
+
+      <div class="premade-card">
+        <div class="badge available" data-i18n="pre_avail">Available</div>
+        <img src="Images/Premades/4.png" alt="Premade" class="premade-img">
+        <div class="premade-type">Bundle</div>
+        <h3 class="premade-title">Premade #4</h3>
+        <button class="btn btn-outline claim-btn" style="width: 100%;" data-name="Premade #4" data-price="€45" data-type="Bundle" data-i18n="pre_btn">I Want This</button>
+      </div>
+
+      <div class="premade-card">
+        <div class="badge available" data-i18n="pre_avail">Available</div>
+        <img src="Images/Premades/5.png" alt="Premade" class="premade-img">
+        <div class="premade-type">Logo</div>
+        <h3 class="premade-title">Premade #5</h3>
+        <button class="btn btn-outline claim-btn" style="width: 100%;" data-name="Premade #5" data-price="€25" data-type="Logo" data-i18n="pre_btn">I Want This</button>
+      </div>
+
+      <div class="premade-card">
+        <div class="badge available" data-i18n="pre_avail">Available</div>
+        <img src="Images/Premades/7.png" alt="Premade" class="premade-img">
+        <div class="premade-type">Logo</div>
+        <h3 class="premade-title">Premade #7</h3>
+        <button class="btn btn-outline claim-btn" style="width: 100%;" data-name="Premade #7" data-price="€25" data-type="Logo" data-i18n="pre_btn">I Want This</button>
+      </div>
+
+      <div class="premade-card">
+        <div class="badge available" data-i18n="pre_avail">Available</div>
+        <img src="Images/Premades/8.png" alt="Premade" class="premade-img">
+        <div class="premade-type">Logo</div>
+        <h3 class="premade-title">Premade #8</h3>
+        <button class="btn btn-outline claim-btn" style="width: 100%;" data-name="Premade #8" data-price="€25" data-type="Logo" data-i18n="pre_btn">I Want This</button>
+      </div>
+
+      <div class="premade-card">
+        <div class="badge available" data-i18n="pre_avail">Available</div>
+        <img src="Images/Premades/9.png" alt="Premade" class="premade-img">
+        <div class="premade-type">Logo</div>
+        <h3 class="premade-title">Premade #9</h3>
+        <button class="btn btn-outline claim-btn" style="width: 100%;" data-name="Premade #9" data-price="€25" data-type="Logo" data-i18n="pre_btn">I Want This</button>
+      </div>
+
+    </div>
+
+    <!-- Desktop Controls -->
+    <div class="gallery-controls">
+      <button class="gallery-btn" id="prev-btn">←</button>
+      <button class="gallery-btn" id="next-btn">→</button>
+    </div>
+  </section>
+
+  <!-- Upload Your Own Taste -->
+  <section class="upload-section reveal">
+    <div class="container">
+      <h2 style="font-size: 2rem; margin-bottom: 20px;" data-i18n="pre_upload_t">Upload Your Own Taste</h2>
+      <p style="opacity: 0.8; margin-bottom: 40px;" data-i18n="pre_upload_d">Not sure which style you like? Upload an inspiration image and I'll match your vibe.</p>
+      <a href="mailto:designs.of.desirex@gmail.com?subject=Inspiration%20Upload" class="btn btn-outline" data-i18n="pre_upload_btn">Email Inspiration Image</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <img src="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg" alt="Logo" class="footer-logo">
+          <div class="footer-brand-name">Designs of Desire</div>
+          <p class="footer-tagline">High-End Exclusive Design.<br>Built for Creators Who Want More.</p>
+        </div>
+        <div style="display: flex; gap: 60px; justify-content: flex-end;">
+          <div>
+            <div class="footer-brand-name" style="font-size:0.55rem; margin-bottom:16px;" data-i18n="footer_pages">Pages</div>
+            <div class="footer-links">
+              <a href="index.html" data-i18n="nav_home">Home</a>
+              <a href="visual-design.html" data-i18n="nav_visual">Visual Design</a>
+              <a href="websites.html" data-i18n="nav_websites">Websites</a>
+              <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
+              <a href="premades.html" data-i18n="nav_premades">Premades</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-brand-name" style="font-size:0.55rem; margin-bottom:16px;" data-i18n="footer_connect">Connect</div>
+            <div class="footer-links">
+              <a href="https://www.instagram.com/designs_of_desire_official/" target="_blank">Instagram</a>
+              <a href="mailto:designs.of.desirex@gmail.com">Email</a>
+            </div>
+            <div style="margin-top: 20px; opacity: 0.5; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase;" data-i18n="footer_paypal">PayPal Accepted</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom" data-i18n="footer_rights">© 2025 Designs of Desire — All Rights Reserved</div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="claim-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="close-modal">&times;</button>
+      <h2 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 10px;">You're interested in</h2>
+      <h3 id="modal-title" style="color: var(--accent-color-1); font-size: 1.8rem; margin-bottom: 20px;">Premade Name</h3>
+      <p style="opacity: 0.8; margin-bottom: 10px;">Type: <strong id="modal-type">Logo</strong></p>
+      <p style="opacity: 0.8; margin-bottom: 30px;">Includes customisation with your name, colors, and specific details.</p>
+      
+      <div style="display: flex; flex-direction: column; gap: 15px;">
+        <a href="#" id="modal-email-btn" class="btn btn-primary">Send to Designer →</a>
+        <a href="https://www.instagram.com/designs_of_desire_official/" class="btn btn-outline" target="_blank">Message on Instagram →</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const track = document.getElementById('gallery-track');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+
+      if (track && prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+          track.scrollBy({ left: -350, behavior: 'smooth' });
+        });
+        nextBtn.addEventListener('click', () => {
+          track.scrollBy({ left: 350, behavior: 'smooth' });
+        });
+      }
+
+      // Modal Logic
+      const claimBtns = document.querySelectorAll('.claim-btn');
+      const modal = document.getElementById('claim-modal');
+      const closeModal = document.getElementById('close-modal');
+      const modalTitle = document.getElementById('modal-title');
+      const modalType = document.getElementById('modal-type');
+      const emailBtn = document.getElementById('modal-email-btn');
+
+      // Remove existing listeners by cloning
+      const newEmailBtn = emailBtn.cloneNode(true);
+      emailBtn.parentNode.replaceChild(newEmailBtn, emailBtn);
+
+      claimBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const name = btn.getAttribute('data-name');
+          const type = btn.getAttribute('data-type');
+          
+          modalTitle.innerText = name;
+          modalType.innerText = type;
+          
+          const subjectText = `Premade Claim: ${name}`;
+          const bodyText = `Hi! I'm interested in claiming the ${name} premade.\nMy name is: \nMy platform is: \nHere's what I'd like customised: `;
+          
+          const subject = encodeURIComponent(subjectText);
+          const body = encodeURIComponent(bodyText);
+          
+          newEmailBtn.href = `mailto:designs.of.desirex@gmail.com?subject=${subject}&body=${body}`;
+          
+          newEmailBtn.onclick = () => {
+            const fullText = `To: designs.of.desirex@gmail.com\nSubject: ${subjectText}\n\n${bodyText}`;
+            navigator.clipboard.writeText(fullText).then(() => {
+              // We copy it to clipboard silently. If their mail client doesn't open, they can just paste it.
+              // Optional: show a small alert
+              alert("Email template copied to your clipboard just in case your mail app doesn't open automatically!");
+            }).catch(err => console.log('Clipboard copy failed', err));
+          };
+          
+          modal.classList.add('active');
+        });
+      });
+
+      closeModal.addEventListener('click', () => {
+        modal.classList.remove('active');
+      });
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.remove('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
