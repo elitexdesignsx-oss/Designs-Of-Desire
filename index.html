@@ -67,26 +67,24 @@
     
     /* Reviews Carousel */
     .reviews-carousel-wrapper {
+      overflow: hidden;
       position: relative;
       max-width: 900px;
       margin: 0 auto;
     }
     .reviews-track {
       display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      scroll-behavior: smooth;
-      -ms-overflow-style: none; /* IE and Edge */
-      scrollbar-width: none; /* Firefox */
-    }
-    .reviews-track::-webkit-scrollbar {
-      display: none; /* Chrome, Safari, Opera */
+      transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+      will-change: transform;
     }
     .review-item {
       min-width: 100%;
       flex-shrink: 0;
-      scroll-snap-align: start;
+      padding: 0 10px;
       box-sizing: border-box;
+    }
+    @media (max-width: 768px) {
+      .review-item { min-width: 100%; }
     }
     .review-quotemark {
       font-family: var(--font-display);
@@ -322,7 +320,7 @@
         <div class="reviews-track" id="reviews-track">
           <div class="review-item card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 60px 40px; justify-content: center; min-height: 450px;">
             <div class="review-stars" style="font-size: 1.2rem; margin-bottom: 25px; letter-spacing: 4px;">★★★★★</div>
-            <p class="review-text" style="font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.4; margin-bottom: 40px; font-style: normal;">"Other model's logos are great, but mine is the best."</p>
+            <p class="review-text" style="font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.4; margin-bottom: 40px;">"Other model's logos are great, but mine is the best."</p>
             <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
               <div class="review-avatar" style="width: 50px; height: 50px; font-size: 0.9rem;">VQ</div>
               <div>
@@ -334,7 +332,7 @@
           
           <div class="review-item card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 60px 40px; justify-content: center; min-height: 450px;">
             <div class="review-stars" style="font-size: 1.2rem; margin-bottom: 25px; letter-spacing: 4px;">★★★★★</div>
-            <p class="review-text" style="font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.4; margin-bottom: 40px; font-style: normal;">"This was fun. The whole experience of getting the logo and the interaction was amazing."</p>
+            <p class="review-text" style="font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.4; margin-bottom: 40px;">"This was fun. The whole experience of getting the logo and the interaction was amazing."</p>
             <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
               <div class="review-avatar" style="width: 50px; height: 50px; font-size: 0.9rem;">SC</div>
               <div>
@@ -422,6 +420,7 @@
     if (!track || !dotsContainer) return;
 
     const items = track.querySelectorAll('.review-item');
+    const visibleCount = 1;
     const total = items.length;
     let current = 0;
     let autoTimer;
@@ -431,35 +430,31 @@
       const dot = document.createElement('button');
       if (i === 0) dot.classList.add('active');
       dot.setAttribute('aria-label', 'Go to review ' + (i + 1));
-      dot.addEventListener('click', () => {
-        clearInterval(autoTimer);
-        items[i].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-        autoTimer = setInterval(next, 5000);
-      });
+      dot.addEventListener('click', () => goTo(i));
       dotsContainer.appendChild(dot);
     }
 
-    const updateDots = (index) => {
+    const goTo = (index) => {
       current = index;
+      const itemWidth = items[0].offsetWidth;
+      track.style.transform = `translateX(-${current * itemWidth}px)`;
       dotsContainer.querySelectorAll('button').forEach((d, i) => d.classList.toggle('active', i === current));
+      clearInterval(autoTimer);
+      autoTimer = setInterval(next, 5000);
     };
-
-    // Update active dot on native scroll
-    track.addEventListener('scroll', () => {
-      // Calculate which item is most visible based on scrollLeft
-      const scrollPos = track.scrollLeft;
-      const itemWidth = track.offsetWidth || 1;
-      const newIndex = Math.round(scrollPos / itemWidth);
-      if (newIndex !== current && newIndex >= 0 && newIndex < total) {
-        updateDots(newIndex);
-      }
-    });
 
     const next = () => {
-      let nextIndex = current + 1;
-      if (nextIndex >= total) nextIndex = 0;
-      items[nextIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+      const maxIndex = total - visibleCount;
+      goTo(current >= maxIndex ? 0 : current + 1);
     };
+
+    // Touch/swipe support
+    let startX = 0;
+    track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', e => {
+      const diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) diff > 0 ? next() : goTo(Math.max(0, current - 1));
+    });
 
     autoTimer = setInterval(next, 5000);
     track.addEventListener('mouseenter', () => clearInterval(autoTimer));
