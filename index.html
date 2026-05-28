@@ -86,33 +86,44 @@
     @media (max-width: 768px) {
       .review-item { min-width: 100%; }
     }
-    .review-quotemark {
-      font-family: var(--font-display);
-      font-size: 5rem;
-      line-height: 0.6;
-      color: var(--accent-color-1);
-      opacity: 0.35;
-      margin-bottom: 20px;
-      height: 40px;
-      overflow: hidden;
+    .premium-review-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      padding: 60px 40px;
+      min-height: 450px;
+      width: 100%;
+      box-sizing: border-box;
     }
-    .review-text {
+    .premium-review-text {
       font-family: var(--font-display);
-      font-size: 1.2rem;
+      font-size: clamp(1.6rem, 4vw, 2.5rem);
+      line-height: 1.4;
+      margin-bottom: 40px;
       font-style: italic;
-      line-height: 1.75;
-      margin-bottom: 28px;
       opacity: 0.9;
     }
-    .review-footer {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      border-top: 1px solid var(--border-color);
-      padding-top: 20px;
+    .premium-review-text-cta {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 40px;
+      opacity: 1;
     }
-    .review-avatar {
-      width: 40px; height: 40px;
+    .premium-review-stars {
+      color: var(--accent-color-1);
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+      letter-spacing: 4px;
+    }
+    .premium-review-cta-icon {
+      font-size: 4rem;
+      color: var(--accent-color-1);
+      margin-bottom: 30px;
+    }
+    .premium-review-avatar {
+      width: 50px; height: 50px;
       border-radius: 50%;
       background: rgba(201,168,76,0.12);
       border: 1px solid var(--border-color);
@@ -120,23 +131,44 @@
       align-items: center;
       justify-content: center;
       font-family: var(--font-accent);
-      font-size: 0.6rem;
+      font-size: 0.9rem;
       color: var(--accent-color-1);
       letter-spacing: 1px;
-      flex-shrink: 0;
     }
-    .review-name {
+    .premium-review-name {
       font-weight: 600;
-      font-size: 0.9rem;
-      letter-spacing: 0.5px;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
     }
-    .review-platform-badge {
-      font-size: 0.7rem;
+    .premium-review-badge {
+      font-size: 0.75rem;
       text-transform: uppercase;
-      letter-spacing: 1.5px;
+      letter-spacing: 2px;
       color: var(--accent-color-1);
       margin-top: 2px;
       opacity: 0.8;
+    }
+    @media (max-width: 768px) {
+      .premium-review-card {
+        padding: 40px 20px;
+        min-height: 350px;
+      }
+      .premium-review-text {
+        font-size: 1.35rem;
+        margin-bottom: 30px;
+      }
+      .premium-review-text-cta {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+      }
+      .premium-review-cta-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+      .premium-review-stars {
+        font-size: 1rem;
+        margin-bottom: 20px;
+      }
     }
     .review-stars { color: var(--accent-color-1); font-size: 0.8rem; letter-spacing: 2px; }
     .reviews-dots {
@@ -318,33 +350,33 @@
       <h2 class="text-center" style="font-size: 2.8rem; font-weight: 300; margin-bottom: 60px;" data-i18n="reviews_title">What Creators Say</h2>
       <div class="reviews-carousel-wrapper">
         <div class="reviews-track" id="reviews-track">
-          <div class="review-item card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 60px 40px; justify-content: center; min-height: 450px;">
-            <div class="review-stars" style="font-size: 1.2rem; margin-bottom: 25px; letter-spacing: 4px;">★★★★★</div>
-            <p class="review-text" style="font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.4; margin-bottom: 40px;">"Other model's logos are great, but mine is the best."</p>
+          <div class="review-item card premium-review-card">
+            <div class="premium-review-stars">★★★★★</div>
+            <p class="premium-review-text">"Other model's logos are great, but mine is the best."</p>
             <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
-              <div class="review-avatar" style="width: 50px; height: 50px; font-size: 0.9rem;">VQ</div>
+              <div class="premium-review-avatar">VQ</div>
               <div>
-                <div class="review-name" style="font-size: 1.1rem; letter-spacing: 1px;">Viper Queen</div>
-                <div class="review-platform-badge" style="font-size: 0.75rem; letter-spacing: 2px;">Content Creator</div>
+                <div class="premium-review-name">Viper Queen</div>
+                <div class="premium-review-badge">Content Creator</div>
               </div>
             </div>
           </div>
           
-          <div class="review-item card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 60px 40px; justify-content: center; min-height: 450px;">
-            <div class="review-stars" style="font-size: 1.2rem; margin-bottom: 25px; letter-spacing: 4px;">★★★★★</div>
-            <p class="review-text" style="font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.4; margin-bottom: 40px;">"This was fun. The whole experience of getting the logo and the interaction was amazing."</p>
+          <div class="review-item card premium-review-card">
+            <div class="premium-review-stars">★★★★★</div>
+            <p class="premium-review-text">"This was fun. The whole experience of getting the logo and the interaction was amazing."</p>
             <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
-              <div class="review-avatar" style="width: 50px; height: 50px; font-size: 0.9rem;">SC</div>
+              <div class="premium-review-avatar">SC</div>
               <div>
-                <div class="review-name" style="font-size: 1.1rem; letter-spacing: 1px;">The Soft command</div>
-                <div class="review-platform-badge" style="font-size: 0.75rem; letter-spacing: 2px;">Content Creator</div>
+                <div class="premium-review-name">The Soft command</div>
+                <div class="premium-review-badge">Content Creator</div>
               </div>
             </div>
           </div>
           
-          <div class="review-item card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 60px 40px; min-height: 450px;">
-            <div style="font-size: 4rem; color: var(--accent-color-1); margin-bottom: 30px;">✦</div>
-            <p class="review-text" style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-style: normal; margin-bottom: 40px;">Want to be the third review?</p>
+          <div class="review-item card premium-review-card">
+            <div class="premium-review-cta-icon">✦</div>
+            <p class="premium-review-text-cta">Want to be the third review?</p>
             <a href="https://www.instagram.com/designs_of_desire_official/" target="_blank" class="btn btn-primary" style="padding: 15px 40px; font-size: 0.9rem; letter-spacing: 3px;">DM ME ON INSTAGRAM</a>
           </div>
         </div>
@@ -436,8 +468,7 @@
 
     const goTo = (index) => {
       current = index;
-      const itemWidth = items[0].offsetWidth;
-      track.style.transform = `translateX(-${current * itemWidth}px)`;
+      track.style.transform = `translateX(-${current * (100 / total)}%)`;
       dotsContainer.querySelectorAll('button').forEach((d, i) => d.classList.toggle('active', i === current));
       clearInterval(autoTimer);
       autoTimer = setInterval(next, 5000);
