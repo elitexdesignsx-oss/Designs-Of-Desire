@@ -257,6 +257,26 @@
       aspect-ratio: 4/5;
       cursor: default;
     }
+    .portfolio-logo-frame {
+      aspect-ratio: 1/1;
+      align-self: start;
+      padding: clamp(10px, 2vw, 18px);
+      background:
+        radial-gradient(circle at 50% 38%, rgba(201, 168, 76, 0.12), transparent 46%),
+        #070707;
+      cursor: default;
+    }
+    .portfolio-logo-frame > img {
+      object-fit: contain;
+      border-radius: 4px;
+      background: transparent;
+    }
+    .portfolio-logo-frame .panorama-slide img {
+      padding: 0;
+    }
+    .portfolio-logo-frame:hover > img {
+      transform: none;
+    }
     .portfolio-panorama:hover img {
       transform: none;
     }
@@ -288,6 +308,11 @@
     [data-theme="marble"] .panorama-slide {
       background:
         radial-gradient(circle at 50% 38%, rgba(185, 135, 24, 0.15), transparent 45%),
+        #fffaf0;
+    }
+    [data-theme="marble"] .portfolio-logo-frame {
+      background:
+        radial-gradient(circle at 50% 38%, rgba(185, 135, 24, 0.15), transparent 46%),
         #fffaf0;
     }
 
@@ -432,7 +457,7 @@
           <img src="Images/Recent Work/Viper Queen Logo/Viperqueenofficialsilver-Photoroom.png" alt="Viper Queen silver logo variation">
           <div class="portfolio-overlay">Logo Variant</div>
         </div>
-        <div class="portfolio-item portfolio-panorama" aria-label="Looping Miss Blue logo showcase">
+        <div class="portfolio-item portfolio-panorama portfolio-logo-frame" aria-label="Looping Miss Blue logo showcase">
           <div class="panorama-track">
             <div class="panorama-slide">
               <img src="Images/Recent Work/Miss Blue/Miss Blue Variation 1.png" alt="Miss Blue logo variation one">
@@ -445,7 +470,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item portfolio-logo-frame">
           <img src="Images/Recent Work/Miss Chooloub Logo/Miss Chooloub Logo.png" alt="Miss Chouloub logo">
           <div class="portfolio-overlay">Logo Design</div>
         </div>
