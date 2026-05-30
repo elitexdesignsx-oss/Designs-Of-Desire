@@ -1,216 +1,203 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-  // ─── THEME TOGGLE ───────────────────────────────────────────────
-  const themeToggleBtn = document.getElementById('theme-toggle-btn');
-  const savedTheme = localStorage.getItem('dod-theme') || 'noir';
-  document.documentElement.setAttribute('data-theme', savedTheme);
-  if (themeToggleBtn) {
-    themeToggleBtn.querySelector('.theme-icon').textContent = savedTheme === 'noir' ? '◑' : '◐';
-  }
-  if (themeToggleBtn) {
-    themeToggleBtn.addEventListener('click', () => {
-      const current = document.documentElement.getAttribute('data-theme');
-      const next = current === 'noir' ? 'marble' : 'noir';
-      document.documentElement.setAttribute('data-theme', next);
-      localStorage.setItem('dod-theme', next);
-      themeToggleBtn.querySelector('.theme-icon').textContent = next === 'noir' ? '◑' : '◐';
-    });
-  }
-
-  // ─── LANGUAGE DROPDOWN ─────────────────────────────────────────
-  const langCurrentBtn = document.getElementById('lang-current-btn');
-  const langOptions = document.getElementById('lang-options');
-  const langs = ['en', 'fr', 'de', 'es'];
-  const langLabels = { en: '🇬🇧 EN', fr: '🇫🇷 FR', de: '🇩🇪 DE', es: '🇪🇸 ES' };
-  let currentLang = localStorage.getItem('dod-lang') || 'en';
-
-  const applyTranslations = (lang) => {
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      if (typeof TRANSLATIONS !== 'undefined' && TRANSLATIONS[lang] && TRANSLATIONS[lang][key]) {
-        el.innerHTML = TRANSLATIONS[lang][key];
-      }
-    });
-    if (langCurrentBtn) langCurrentBtn.textContent = langLabels[lang] + ' ▾';
-    currentLang = lang;
-  };
-
-  applyTranslations(currentLang);
-
-  if (langCurrentBtn && langOptions) {
-    langCurrentBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      langOptions.classList.toggle('open');
-    });
-    langOptions.querySelectorAll('button').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const lang = btn.getAttribute('data-lang');
-        localStorage.setItem('dod-lang', lang);
-        applyTranslations(lang);
-        langOptions.classList.remove('open');
-      });
-    });
-    document.addEventListener('click', () => langOptions.classList.remove('open'));
-  }
-
-  // ─── MOBILE MENU ───────────────────────────────────────────────
-  const hamburger = document.querySelector('.hamburger');
-  const mobileMenu = document.querySelector('.mobile-menu');
-  const mobileClose = document.querySelector('.mobile-close');
-
-  const openMenu = () => {
-    mobileMenu.classList.add('open');
-    hamburger.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  };
-  const closeMenu = () => {
-    mobileMenu.classList.remove('open');
-    hamburger.classList.remove('open');
-    document.body.style.overflow = '';
-  };
-
-  if (hamburger) hamburger.addEventListener('click', openMenu);
-  if (mobileClose) mobileClose.addEventListener('click', closeMenu);
-  if (mobileMenu) {
-    mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-  }
-
-  // ─── NAV SCROLL ────────────────────────────────────────────────
-  const nav = document.querySelector('nav');
-  let ticking = false;
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      requestAnimationFrame(() => {
-        nav.classList.toggle('scrolled', window.scrollY > 60);
-        ticking = false;
-      });
-      ticking = true;
+  // Mark the current page in every repeated navigation area.
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('a[href]').forEach(link => {
+    const linkPage = link.getAttribute('href').split('#')[0];
+    if (linkPage === currentPage) {
+      link.classList.add('active');
     }
   });
 
-  // ─── INTERSECTION OBSERVER — REVEAL + STAGGER ─────────────────
-  const revealItems = document.querySelectorAll('.reveal, .stagger-children');
-  if (revealItems.length > 0) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    revealItems.forEach(el => observer.observe(el));
+  // Theme Toggle
+  const themeToggleBtn = document.querySelector('.theme-toggle');
+  const currentTheme = localStorage.getItem('dod-theme') || 'noir';
+  document.documentElement.setAttribute('data-theme', currentTheme);
+  
+  if (themeToggleBtn) {
+    themeToggleBtn.innerHTML = currentTheme === 'noir' ? 'Light Theme' : 'Dark Theme';
+    themeToggleBtn.addEventListener('click', () => {
+      let theme = document.documentElement.getAttribute('data-theme');
+      let newTheme = theme === 'noir' ? 'marble' : 'noir';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('dod-theme', newTheme);
+      themeToggleBtn.innerHTML = newTheme === 'noir' ? 'Light Theme' : 'Dark Theme';
+    });
   }
 
-  // ─── STATS COUNTER ─────────────────────────────────────────────
+  // Language Toggle
+  const langSwitchBtn = document.querySelector('.lang-switch');
+  const currentLang = localStorage.getItem('dod-lang') || 'en';
+  const langs = ['en', 'fr', 'de', 'es'];
+  const langLabels = { en: '🇬🇧 EN', fr: '🇫🇷 FR', de: '🇩🇪 DE', es: '🇪🇸 ES' };
+  
+  const updateLanguage = (lang) => {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (TRANSLATIONS[lang] && TRANSLATIONS[lang][key]) {
+        el.innerText = TRANSLATIONS[lang][key];
+      }
+    });
+    if (langSwitchBtn) {
+      langSwitchBtn.innerHTML = langLabels[lang];
+    }
+  };
+
+  updateLanguage(currentLang);
+
+  if (langSwitchBtn) {
+    langSwitchBtn.addEventListener('click', () => {
+      let currentIndex = langs.indexOf(localStorage.getItem('dod-lang') || 'en');
+      let nextIndex = (currentIndex + 1) % langs.length;
+      let nextLang = langs[nextIndex];
+      localStorage.setItem('dod-lang', nextLang);
+      updateLanguage(nextLang);
+    });
+  }
+
+  // Scroll animations
+  const reveals = document.querySelectorAll('.reveal');
+  const revealOnScroll = () => {
+    for (let i = 0; i < reveals.length; i++) {
+      let windowHeight = window.innerHeight;
+      let elementTop = reveals[i].getBoundingClientRect().top;
+      let elementVisible = 100;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      }
+    }
+  };
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll(); // Trigger once on load
+
+  // Nav Scroll Effect
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+
+  // Mobile Menu
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    });
+  }
+  
+  // Stats counter
   const counters = document.querySelectorAll('.stat-number');
-  if (counters.length > 0) {
-    const counterObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
-          entry.target.classList.add('counted');
-          const target = +entry.target.getAttribute('data-target');
-          const suffix = entry.target.getAttribute('data-suffix') || '';
-          const duration = 1600;
-          const start = performance.now();
-          const step = (timestamp) => {
-            const elapsed = timestamp - start;
-            const progress = Math.min(elapsed / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-            const current = Math.round(eased * target);
-            entry.target.textContent = current + suffix;
-            if (progress < 1) requestAnimationFrame(step);
-            else entry.target.textContent = target + suffix;
-          };
-          requestAnimationFrame(step);
-          counterObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.5 });
-    counters.forEach(c => counterObserver.observe(c));
-  }
+  const speed = 200; 
 
-  // ─── HERO PARTICLE CANVAS ──────────────────────────────────────
-  const canvas = document.getElementById('hero-canvas');
-  if (canvas) {
-    const ctx = canvas.getContext('2d');
-    const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    const resize = () => {
-      canvas.width = canvas.offsetWidth;
-      canvas.height = canvas.offsetHeight;
-    };
-    resize();
-    window.addEventListener('resize', resize, { passive: true });
-
-    if (!isReducedMotion) {
-      const PARTICLE_COUNT = window.innerWidth < 768 ? 28 : 55;
-      const particles = Array.from({ length: PARTICLE_COUNT }, () => ({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        size: Math.random() * 1.4 + 0.4,
-        speedY: -(Math.random() * 0.4 + 0.1),
-        speedX: (Math.random() - 0.5) * 0.15,
-        opacity: Math.random() * 0.6 + 0.1,
-        opacityDir: Math.random() > 0.5 ? 0.004 : -0.004,
-      }));
-
-      let animId;
-      const animate = () => {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        particles.forEach(p => {
-          p.y += p.speedY;
-          p.x += p.speedX;
-          p.opacity += p.opacityDir;
-          if (p.opacity >= 0.7 || p.opacity <= 0.05) p.opacityDir *= -1;
-          if (p.y < -10) { p.y = canvas.height + 10; p.x = Math.random() * canvas.width; }
-          const theme = document.documentElement.getAttribute('data-theme');
-          ctx.beginPath();
-          ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-          ctx.fillStyle = theme === 'marble'
-            ? `rgba(140, 100, 20, ${p.opacity * 0.7})`
-            : `rgba(201, 168, 76, ${p.opacity})`;
-          ctx.fill();
-        });
-        animId = requestAnimationFrame(animate);
-      };
-
-      // Only animate when visible
-      const heroSection = canvas.parentElement;
-      const visibilityObserver = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-          animId = requestAnimationFrame(animate);
+  const runCounters = () => {
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText.replace(/\D/g, '');
+        const inc = target / speed;
+        
+        if(count < target) {
+          let current = Math.ceil(count + inc);
+          let text = current.toString();
+          if (counter.getAttribute('data-suffix')) text += counter.getAttribute('data-suffix');
+          counter.innerText = text;
+          setTimeout(updateCount, 20);
         } else {
-          cancelAnimationFrame(animId);
+          let text = target.toString();
+          if (counter.getAttribute('data-suffix')) text += counter.getAttribute('data-suffix');
+          counter.innerText = text;
         }
-      }, { threshold: 0 });
-      visibilityObserver.observe(heroSection);
-    }
+      };
+      
+      const rect = counter.getBoundingClientRect();
+      if(rect.top < window.innerHeight && !counter.classList.contains('counted')) {
+        counter.classList.add('counted');
+        updateCount();
+      }
+    });
+  };
+  
+  if (counters.length > 0) {
+    window.addEventListener('scroll', runCounters);
+    runCounters();
   }
 
-  // --- Daily Design Quote Logic ---
-  const quoteTextEl = document.getElementById('daily-quote-text');
-  const quoteAuthorEl = document.getElementById('daily-quote-author');
-  if (quoteTextEl && quoteAuthorEl) {
-    const quoteCount = 7;
-    // Calculate the day of the year to rotate quotes daily
-    const now = new Date();
-    const start = new Date(now.getFullYear(), 0, 0);
-    const diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
-    const oneDay = 1000 * 60 * 60 * 24;
-    const dayOfYear = Math.floor(diff / oneDay);
-    
-    // Cycle from 1 to 7
-    const quoteIndex = (dayOfYear % quoteCount) + 1;
-    
-    quoteTextEl.setAttribute('data-i18n', `quote_${quoteIndex}`);
-    quoteAuthorEl.setAttribute('data-i18n', `quote_${quoteIndex}_author`);
-    
-    // Trigger translation update if the global updateTranslations function is available
-    if (typeof updateTranslations === 'function') {
-      const currentLang = localStorage.getItem('theme-lang') || 'en';
-      updateTranslations(currentLang);
+  // Daily inspiration rotates once per local calendar day.
+  const dailyQuoteEl = document.getElementById('daily-inspiration-quote');
+  const dailyPersonEl = document.getElementById('daily-inspiration-person');
+  const dailyMetaEl = document.getElementById('daily-inspiration-meta');
+
+  if (dailyQuoteEl && dailyPersonEl) {
+    const dailyInspirations = [
+      { quote: '“Design is the silent ambassador of your brand.”', person: 'Paul Rand' },
+      { quote: '“Design is not just what it looks like and feels like. Design is how it works.”', person: 'Steve Jobs' },
+      { quote: '“Good design is as little design as possible.”', person: 'Dieter Rams' },
+      { quote: '“Less, but better.”', person: 'Dieter Rams' },
+      { quote: '“Good design makes a product understandable.”', person: 'Dieter Rams' },
+      { quote: '“Good design is honest.”', person: 'Dieter Rams' },
+      { quote: '“The details are not the details. They make the design.”', person: 'Charles Eames' },
+      { quote: '“If you can design one thing, you can design everything.”', person: 'Massimo Vignelli' },
+      { quote: '“Whatever we do, if not understood, fails to communicate and is wasted effort.”', person: 'Massimo Vignelli' },
+      { quote: '“There are three responses to a piece of design—yes, no, and WOW! Wow is the one to aim for.”', person: 'Milton Glaser' },
+      { quote: '“Design can be art. Design can be aesthetics. Design is so simple, that’s why it is so complicated.”', person: 'Paul Rand' },
+      { quote: '“Content precedes design. Design in the absence of content is not design, it’s decoration.”', person: 'Jeffrey Zeldman' },
+      { quote: '“People ignore design that ignores people.”', person: 'Frank Chimero' },
+      { quote: '“Design is intelligence made visible.”', person: 'Alina Wheeler' },
+      { quote: '“A brand is a person’s gut feeling about a product, service, or company.”', person: 'Marty Neumeier' },
+      { quote: '“Brand is not what you say it is. It’s what they say it is.”', person: 'Marty Neumeier' },
+      { quote: '“If it doesn’t sell, it isn’t creative.”', person: 'David Ogilvy' },
+      { quote: '“Make it simple. Make it memorable. Make it inviting to look at. Make it fun to read.”', person: 'Leo Burnett' },
+      { quote: '“Advertising is fundamentally persuasion and persuasion happens to be not a science, but an art.”', person: 'Bill Bernbach' },
+      { quote: '“Marketing is no longer about the stuff that you make, but about the stories you tell.”', person: 'Seth Godin' },
+      { quote: '“People do not buy goods and services. They buy relations, stories, and magic.”', person: 'Seth Godin' },
+      { quote: '“Design is really an act of communication.”', person: 'Don Norman' },
+      { quote: '“Attractive things work better.”', person: 'Don Norman' },
+      { quote: '“My goal is to put the human back into design.”', person: 'Don Norman' },
+      { quote: '“Good designers never start by trying to solve the problem given to them.”', person: 'Don Norman' },
+      { quote: '“Everything is designed. Few things are designed well.”', person: 'Brian Reed' },
+      { quote: '“Simplicity is the ultimate sophistication.”', person: 'Often attributed to Leonardo da Vinci' },
+      { quote: '“A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.”', person: 'Antoine de Saint-Exupéry' },
+      { quote: '“Art is not what you see, but what you make others see.”', person: 'Edgar Degas' },
+      { quote: '“Creativity takes courage.”', person: 'Henri Matisse' },
+      { quote: '“Learn the rules like a pro, so you can break them like an artist.”', person: 'Often attributed to Pablo Picasso' },
+      { quote: '“Art washes away from the soul the dust of everyday life.”', person: 'Often attributed to Pablo Picasso' },
+      { quote: '“Every artist was first an amateur.”', person: 'Often attributed to Ralph Waldo Emerson' },
+      { quote: '“The chief enemy of creativity is good sense.”', person: 'Often attributed to Pablo Picasso' },
+      { quote: '“Color is a power which directly influences the soul.”', person: 'Wassily Kandinsky' },
+      { quote: '“I found I could say things with color and shapes that I couldn’t say any other way.”', person: 'Georgia O’Keeffe' },
+      { quote: '“Art enables us to find ourselves and lose ourselves at the same time.”', person: 'Thomas Merton' },
+      { quote: '“The purpose of art is washing the dust of daily life off our souls.”', person: 'Often attributed to Pablo Picasso' },
+      { quote: '“Fashion fades, only style remains the same.”', person: 'Coco Chanel' },
+      { quote: '“Fashions fade, style is eternal.”', person: 'Yves Saint Laurent' },
+      { quote: '“Elegance is not about being noticed, it’s about being remembered.”', person: 'Giorgio Armani' },
+      { quote: '“Dressing well is a form of good manners.”', person: 'Tom Ford' },
+      { quote: '“Look for the woman in the dress. If there is no woman, there is no dress.”', person: 'Coco Chanel' },
+      { quote: '“Style is a way to say who you are without having to speak.”', person: 'Often attributed to Rachel Zoe' },
+      { quote: '“Luxury is in each detail.”', person: 'Often attributed to Hubert de Givenchy' },
+      { quote: '“Elegance is the only beauty that never fades.”', person: 'Audrey Hepburn' },
+      { quote: '“Beauty begins the moment you decide to be yourself.”', person: 'Coco Chanel' },
+      { quote: '“The best color in the whole world is the one that looks good on you.”', person: 'Coco Chanel' },
+      { quote: '“To create, one must first question everything.”', person: 'Eileen Gray' },
+      { quote: '“Design is the art of making things possible.”', person: 'Paula Scher' }
+    ];
+
+    const today = new Date();
+    const localMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+    const dayNumber = Math.floor(localMidnight.getTime() / 86400000);
+    const inspirationIndex = dayNumber % dailyInspirations.length;
+    const inspiration = dailyInspirations[inspirationIndex];
+
+    dailyQuoteEl.innerText = inspiration.quote;
+    dailyPersonEl.innerText = inspiration.person;
+
+    if (dailyMetaEl) {
+      dailyMetaEl.innerText = `Daily inspiration ${inspirationIndex + 1} of ${dailyInspirations.length}`;
     }
   }
-
 });

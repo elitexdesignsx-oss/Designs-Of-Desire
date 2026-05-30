@@ -3,11 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Designs of Desire — Premium visual identity & custom websites for content creators.">
-  <meta property="og:title" content="Designs of Desire">
-  <meta property="og:description" content="High-end exclusive design. Built for creators who want more.">
-  <meta property="og:image" content="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg">
-  <link rel="icon" type="image/jpeg" href="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg">
   <title>Designs of Desire - High-End Exclusive Design</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <style>
@@ -41,6 +36,45 @@
     .dual-cards-section {
       padding: 100px 0;
     }
+    .daily-inspiration-section {
+      padding: 90px 0;
+      border-bottom: 1px solid var(--border-color);
+      background: rgba(201, 168, 76, 0.025);
+    }
+    .daily-inspiration-card {
+      max-width: 900px;
+      margin: 0 auto;
+      border-left: 3px solid var(--accent-color-1);
+      padding: 44px 52px;
+      background: var(--card-bg);
+      position: relative;
+    }
+    .daily-inspiration-kicker {
+      color: var(--accent-color-1);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+    .daily-inspiration-quote {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3.6rem);
+      line-height: 1.12;
+      margin-bottom: 24px;
+    }
+    .daily-inspiration-person {
+      color: var(--accent-color-1);
+      font-size: 0.92rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .daily-inspiration-meta {
+      margin-top: 28px;
+      opacity: 0.58;
+      font-size: 0.9rem;
+    }
     .dual-cards-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -64,165 +98,32 @@
       padding: 100px 0;
       background: var(--bg-color);
     }
-    
-    /* Reviews Carousel */
-    .reviews-carousel-wrapper {
-      overflow: hidden;
-      position: relative;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .reviews-track {
-      display: flex;
-      transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-      will-change: transform;
-    }
-    .review-item {
-      min-width: 100%;
-      flex-shrink: 0;
-      padding: 0 10px;
-      box-sizing: border-box;
-    }
-    @media (max-width: 768px) {
-      .review-item { min-width: 100%; }
-    }
-    .premium-review-card {
+    .reviews-grid {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      padding: 60px 40px;
-      min-height: 450px;
-      width: 100%;
-      box-sizing: border-box;
+      gap: 30px;
+      max-width: 800px;
+      margin: 0 auto;
     }
-    .premium-review-text {
+    .review-card {
+      padding: 40px;
+      border-radius: 8px;
+    }
+    .review-quote {
       font-family: var(--font-display);
-      font-size: clamp(1.6rem, 4vw, 2.5rem);
-      line-height: 1.4;
-      margin-bottom: 40px;
+      font-size: 1.5rem;
       font-style: italic;
-      opacity: 0.9;
+      margin-bottom: 20px;
     }
-    .premium-review-text-cta {
-      font-family: var(--font-display);
-      font-size: clamp(2rem, 5vw, 3rem);
-      margin-bottom: 40px;
-      opacity: 1;
-    }
-    .premium-review-stars {
-      color: var(--accent-color-1);
-      font-size: 1.2rem;
-      margin-bottom: 25px;
-      letter-spacing: 4px;
-    }
-    .premium-review-cta-icon {
-      font-size: 4rem;
-      color: var(--accent-color-1);
-      margin-bottom: 30px;
-    }
-    .premium-review-avatar {
-      width: 50px; height: 50px;
-      border-radius: 50%;
-      background: rgba(201,168,76,0.12);
-      border: 1px solid var(--border-color);
+    .review-author {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
-      font-family: var(--font-accent);
-      font-size: 0.9rem;
-      color: var(--accent-color-1);
-      letter-spacing: 1px;
-    }
-    .premium-review-name {
-      font-weight: 600;
-      font-size: 1.1rem;
-      letter-spacing: 1px;
-    }
-    .premium-review-badge {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: var(--accent-color-1);
-      margin-top: 2px;
       opacity: 0.8;
+      font-size: 0.9rem;
     }
-    @media (max-width: 768px) {
-      .premium-review-card {
-        padding: 40px 20px;
-        min-height: 350px;
-      }
-      .premium-review-text {
-        font-size: 1.35rem;
-        margin-bottom: 30px;
-      }
-      .premium-review-text-cta {
-        font-size: 1.8rem;
-        margin-bottom: 30px;
-      }
-      .premium-review-cta-icon {
-        font-size: 3rem;
-        margin-bottom: 20px;
-      }
-      .premium-review-stars {
-        font-size: 1rem;
-        margin-bottom: 20px;
-      }
-    }
-    .review-stars { color: var(--accent-color-1); font-size: 0.8rem; letter-spacing: 2px; }
-    .review-arrow-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background: rgba(0, 0, 0, 0.4);
-      border: 1px solid var(--border-color);
-      color: var(--text-color);
-      font-size: 1.2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      z-index: 10;
-      transition: all 0.3s ease;
-      backdrop-filter: blur(5px);
-    }
-    .review-arrow-btn:hover {
-      background: var(--accent-color-1);
-      color: var(--bg-color);
-      border-color: var(--accent-color-1);
-    }
-    .left-arrow { left: 20px; }
-    .right-arrow { right: 20px; }
-    
-    .reviews-dots {
-      position: absolute;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      z-index: 10;
-    }
-    .reviews-dots button {
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: var(--text-color);
-      opacity: 0.3;
-      border: none;
-      cursor: pointer;
-      padding: 0;
-      transition: all 0.3s ease;
-    }
-    .reviews-dots button.active {
-      opacity: 1;
-      background: var(--accent-color-1);
-      width: 24px;
-      border-radius: 10px;
+    .stars {
+      color: var(--accent-color-1);
     }
 
     .about-strip {
@@ -237,12 +138,9 @@
       gap: 60px;
     }
     .about-text {
-      font-size: clamp(1.2rem, 2vw, 1.6rem);
+      font-size: 1.5rem;
       font-family: var(--font-display);
-      font-style: italic;
-      font-weight: 300;
-      line-height: 1.85;
-      opacity: 0.9;
+      line-height: 1.8;
     }
     .about-img {
       width: 150px;
@@ -250,10 +148,7 @@
       margin: 0 auto;
       display: block;
       opacity: 0.8;
-      border: 1px solid var(--border-color);
     }
-    [data-theme="noir"] .about-img { background: #000; }
-    [data-theme="marble"] .about-img { background: #000; }
 
     .bottom-cta {
       padding: 100px 0;
@@ -271,6 +166,9 @@
       }
       .review-quote {
         font-size: 1.2rem;
+      }
+      .daily-inspiration-card {
+        padding: 34px 26px;
       }
       .about-grid {
         text-align: center;
@@ -291,21 +189,12 @@
         <li><a href="visual-design.html" data-i18n="nav_visual">Visual Design</a></li>
         <li><a href="websites.html" data-i18n="nav_websites">Websites</a></li>
         <li><a href="recent-work.html" data-i18n="nav_work">Recent Work</a></li>
+        <li><a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a></li>
         <li><a href="premades.html" data-i18n="nav_premades">Premades</a></li>
       </ul>
       <div class="nav-controls">
-        <div class="lang-dropdown" id="lang-dropdown">
-          <button class="lang-current" id="lang-current-btn">🇬🇧 EN ▾</button>
-          <div class="lang-options" id="lang-options">
-            <button data-lang="en">🇬🇧 EN</button>
-            <button data-lang="fr">🇫🇷 FR</button>
-            <button data-lang="de">🇩🇪 DE</button>
-            <button data-lang="es">🇪🇸 ES</button>
-          </div>
-        </div>
-        <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle theme">
-          <span class="theme-icon">◐</span>
-        </button>
+        <button class="lang-switch">🇬🇧 EN</button>
+        <button class="theme-toggle">Light Theme</button>
         <div class="hamburger">
           <span></span><span></span><span></span>
         </div>
@@ -315,53 +204,67 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu">
-    <button class="mobile-close">×</button>
     <a href="index.html" data-i18n="nav_home">Home</a>
     <a href="visual-design.html" data-i18n="nav_visual">Visual Design</a>
     <a href="websites.html" data-i18n="nav_websites">Websites</a>
     <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
+    <a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a>
     <a href="premades.html" data-i18n="nav_premades">Premades</a>
   </div>
 
   <!-- Hero -->
   <header class="hero">
-    <canvas id="hero-canvas"></canvas>
     <div class="container reveal">
       <div class="hero-logo-container">
         <img src="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg" alt="Designs of Desire" class="hero-logo">
       </div>
-      <span class="hero-eyebrow">Designs of Desire · Exclusive Studio</span>
-      <h1 data-i18n="hero_title">Your Brand.<br><em>Elevated.</em></h1>
+      <h1 data-i18n="hero_title">Your Brand. Elevated.</h1>
       <p data-i18n="hero_sub">Premium visual identity & custom websites for creators who refuse to blend in.</p>
       <div class="hero-btns">
         <a href="visual-design.html" class="btn btn-primary" data-i18n="btn_explore">Explore Visual Design</a>
         <a href="websites.html" class="btn btn-outline" data-i18n="btn_get_website">Get My Website</a>
       </div>
     </div>
-    <div class="scroll-indicator"><span>Scroll</span></div>
+    <div class="scroll-indicator"></div>
   </header>
 
-  <!-- Daily Quote Section -->
-  <section class="daily-quote-section" style="padding: 140px 24px; position: relative; overflow: hidden; border-top: 1px solid rgba(201,168,76, 0.1); border-bottom: 1px solid rgba(201,168,76, 0.1); background: linear-gradient(180deg, transparent 0%, rgba(201,168,76,0.02) 50%, transparent 100%);">
-    <div style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); font-family: var(--font-display); font-size: 35rem; color: var(--accent-color-1); opacity: 0.03; pointer-events: none; line-height: 1; z-index: 0; font-style: italic;">"</div>
-    
-    <div class="container reveal" style="max-width: 900px; margin: 0 auto; text-align: center; position: relative; z-index: 1;">
-      <div style="font-size: 0.75rem; letter-spacing: 5px; text-transform: uppercase; color: var(--accent-color-1); font-weight: 600; margin-bottom: 30px; opacity: 0.8;">Daily Inspiration</div>
-      
-      <blockquote style="margin: 0;">
-        <p id="daily-quote-text" data-i18n="quote_1" style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-style: italic; font-weight: 300; line-height: 1.4; margin-bottom: 40px; color: var(--text-color);">
-          "Design is the silent ambassador of your brand."
-        </p>
-        <footer id="daily-quote-author" data-i18n="quote_1_author" style="font-size: 0.95rem; letter-spacing: 3px; text-transform: uppercase; color: var(--accent-color-1); font-weight: 500; display: inline-block; padding-top: 20px; border-top: 1px solid rgba(201,168,76,0.3);">
-          — Paul Rand
-        </footer>
-      </blockquote>
+  <!-- Stats -->
+  <section class="stats-bar">
+    <div class="container stats-grid reveal">
+      <div class="stat-item">
+        <div class="stat-number" data-target="50" data-suffix="+">0</div>
+        <div class="stat-label" data-i18n="stats_creators">Creators Served</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="100" data-suffix="%">0</div>
+        <div class="stat-label" data-i18n="stats_custom">Custom Designs</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="4">0</div>
+        <div class="stat-label" data-i18n="stats_platforms">Platforms Supported</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="24" data-suffix="h">0</div>
+        <div class="stat-label" data-i18n="stats_turnaround">Avg Turnaround</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Daily Inspiration -->
+  <section class="daily-inspiration-section">
+    <div class="container reveal">
+      <div class="daily-inspiration-card" id="daily-inspiration">
+        <div class="daily-inspiration-kicker">Daily Inspiration</div>
+        <blockquote class="daily-inspiration-quote" id="daily-inspiration-quote">“Design is the silent ambassador of your brand.”</blockquote>
+        <div class="daily-inspiration-person" id="daily-inspiration-person">Paul Rand</div>
+        <div class="daily-inspiration-meta" id="daily-inspiration-meta">A new thought appears here every day.</div>
+      </div>
     </div>
   </section>
 
   <!-- Dual Service Cards -->
   <section class="dual-cards-section container">
-    <div class="dual-cards-grid stagger-children">
+    <div class="dual-cards-grid reveal">
       <div class="card service-card">
         <div class="service-icon">✧</div>
         <h2 class="card-title" data-i18n="service_visual_title">Visual Design Studio</h2>
@@ -380,43 +283,44 @@
   <!-- Reviews Section -->
   <section class="reviews-section">
     <div class="container reveal">
-      <span class="section-tag" style="display:block;text-align:center;">Client Love</span>
-      <h2 class="text-center" style="font-size: 2.8rem; font-weight: 300; margin-bottom: 60px;" data-i18n="reviews_title">What Creators Say</h2>
-      <div class="reviews-carousel-wrapper">
-        <div class="reviews-track" id="reviews-track">
-          <div class="review-item card premium-review-card">
-            <div class="premium-review-stars">★★★★★</div>
-            <p class="premium-review-text">"Other model's logos are great, but mine is the best."</p>
-            <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
-              <div class="premium-review-avatar">VQ</div>
-              <div>
-                <div class="premium-review-name">Viper Queen</div>
-                <div class="premium-review-badge">Content Creator</div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="review-item card premium-review-card">
-            <div class="premium-review-stars">★★★★★</div>
-            <p class="premium-review-text">"This was fun. The whole experience of getting the logo and the interaction was amazing."</p>
-            <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
-              <div class="premium-review-avatar">SC</div>
-              <div>
-                <div class="premium-review-name">The Soft command</div>
-                <div class="premium-review-badge">Content Creator</div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="review-item card premium-review-card">
-            <div class="premium-review-cta-icon">✦</div>
-            <p class="premium-review-text-cta">Want to be the third review?</p>
-            <a href="https://www.instagram.com/designs_of_desire_official/" target="_blank" class="btn btn-primary" style="padding: 15px 40px; font-size: 0.9rem; letter-spacing: 3px;">DM ME ON INSTAGRAM</a>
+      <h2 class="text-center" style="font-size: 2.5rem; margin-bottom: 60px;">What Creators Say</h2>
+      <div class="reviews-grid">
+        <!-- // REPLACE_WITH_REAL_REVIEWS -->
+        <div class="card review-card">
+          <p class="review-quote">"She transformed my entire brand. The logo alone made my subscribers double-take. Worth every cent."</p>
+          <div class="review-author">
+            <div><strong>Sofia R.</strong> <br><small>OnlyFans Creator</small></div>
+            <div class="stars">★★★★★</div>
           </div>
         </div>
-        <button class="review-arrow-btn left-arrow" id="review-prev">&#8592;</button>
-        <button class="review-arrow-btn right-arrow" id="review-next">&#8594;</button>
-        <div class="reviews-dots" id="reviews-dots"></div>
+        <div class="card review-card">
+          <p class="review-quote">"The website she built me is absolutely elite. I stopped losing 20% to OnlyFans. Best investment I made."</p>
+          <div class="review-author">
+            <div><strong>Mia K.</strong> <br><small>Independent Creator</small></div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="card review-card">
+          <p class="review-quote">"My price list looks more professional than most big agencies. I get compliments every day."</p>
+          <div class="review-author">
+            <div><strong>Leonie V.</strong> <br><small>FeetFinder Model</small></div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="card review-card">
+          <p class="review-quote">"Fast, stunning, exactly what I described. She just GETS it."</p>
+          <div class="review-author">
+            <div><strong>Valentina S.</strong> <br><small>Patreon Creator</small></div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="card review-card">
+          <p class="review-quote">"The Rules & Boundaries poster alone filtered out 90% of time-wasters. Game changer."</p>
+          <div class="review-author">
+            <div><strong>Ariel M.</strong> <br><small>Content Creator</small></div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -424,11 +328,8 @@
   <!-- About Strip -->
   <section class="about-strip">
     <div class="container about-grid reveal">
-      <div>
-        <span class="section-tag">Our Philosophy</span>
-        <div class="about-text" data-i18n="about_text">
-          "Designs of Desire was built for creators who know their worth. Every pixel is intentional. Every design is exclusive. You're not getting a template — you're getting a visual identity that demands attention."
-        </div>
+      <div class="about-text" data-i18n="about_text">
+        "Designs of Desire was built for creators who know their worth. Every pixel is intentional. Every design is exclusive. You're not getting a template — you're getting a visual identity that demands attention."
       </div>
       <div>
         <img src="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg" alt="Crest" class="about-img">
@@ -450,86 +351,32 @@
       <div class="footer-content">
         <div>
           <img src="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg" alt="Logo" class="footer-logo">
-          <div class="footer-brand-name">Designs of Desire</div>
-          <p class="footer-tagline">High-End Exclusive Design.<br>Built for Creators Who Want More.</p>
+          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Designs of Desire</h3>
+          <p style="opacity: 0.8; max-width: 300px;">High-End Exclusive Design. Built for Creators Who Want More.</p>
         </div>
-        <div style="display: flex; gap: 60px; justify-content: flex-end;">
-          <div>
-            <div class="footer-brand-name" style="font-size:0.55rem; margin-bottom:16px;" data-i18n="footer_pages">Pages</div>
-            <div class="footer-links">
-              <a href="index.html" data-i18n="nav_home">Home</a>
-              <a href="visual-design.html" data-i18n="nav_visual">Visual Design</a>
-              <a href="websites.html" data-i18n="nav_websites">Websites</a>
-              <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
-              <a href="premades.html" data-i18n="nav_premades">Premades</a>
-            </div>
+        <div style="display: flex; gap: 60px;">
+          <div class="footer-links">
+            <a href="index.html" data-i18n="nav_home">Home</a>
+            <a href="visual-design.html" data-i18n="nav_visual">Visual Design</a>
+            <a href="websites.html" data-i18n="nav_websites">Websites</a>
+            <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
+            <a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a>
+            <a href="premades.html" data-i18n="nav_premades">Premades</a>
           </div>
-          <div>
-            <div class="footer-brand-name" style="font-size:0.55rem; margin-bottom:16px;" data-i18n="footer_connect">Connect</div>
-            <div class="footer-links">
-              <a href="https://www.instagram.com/designs_of_desire_official/" target="_blank">Instagram</a>
-              <a href="mailto:designs.of.desirex@gmail.com">Email</a>
-            </div>
-            <div style="margin-top: 20px; opacity: 0.5; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase;" data-i18n="footer_paypal">PayPal Accepted</div>
+          <div class="footer-links">
+            <a href="https://www.instagram.com/designs_of_desire_official/" target="_blank">Instagram</a>
+            <a href="mailto:designs.of.desirex@gmail.com">Email Us</a>
+            <span style="opacity: 0.8; margin-top: 20px;">Accepted: PayPal</span>
           </div>
         </div>
       </div>
-      <div class="footer-divider"></div>
-      <div class="footer-bottom" data-i18n="footer_rights">© 2025 Designs of Desire — All Rights Reserved</div>
+      <div class="footer-bottom">
+        &copy; 2025 Designs of Desire. All rights reserved.
+      </div>
     </div>
   </footer>
 
   <script src="assets/js/translations.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>
-  (function() {
-    const track = document.getElementById('reviews-track');
-    const dotsContainer = document.getElementById('reviews-dots');
-    if (!track || !dotsContainer) return;
-
-    const items = track.querySelectorAll('.review-item');
-    const visibleCount = 1;
-    const total = items.length;
-    let current = 0;
-
-    // Create dots
-    for (let i = 0; i < total; i++) {
-      const dot = document.createElement('button');
-      if (i === 0) dot.classList.add('active');
-      dot.setAttribute('aria-label', 'Go to review ' + (i + 1));
-      dot.addEventListener('click', () => goTo(i));
-      dotsContainer.appendChild(dot);
-    }
-
-    const goTo = (index) => {
-      current = index;
-      track.style.transform = `translateX(-${current * 100}%)`;
-      dotsContainer.querySelectorAll('button').forEach((d, i) => d.classList.toggle('active', i === current));
-    };
-
-    const next = () => {
-      const maxIndex = total - visibleCount;
-      goTo(current >= maxIndex ? 0 : current + 1);
-    };
-
-    const prev = () => {
-      const maxIndex = total - visibleCount;
-      goTo(current <= 0 ? maxIndex : current - 1);
-    };
-
-    const prevBtn = document.getElementById('review-prev');
-    const nextBtn = document.getElementById('review-next');
-    if (prevBtn) prevBtn.addEventListener('click', prev);
-    if (nextBtn) nextBtn.addEventListener('click', next);
-    
-    // Touch/swipe support
-    let startX = 0;
-    track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
-    track.addEventListener('touchend', e => {
-      const diff = startX - e.changedTouches[0].clientX;
-      if (Math.abs(diff) > 50) diff > 0 ? next() : prev();
-    });
-  })();
-  </script>
 </body>
 </html>

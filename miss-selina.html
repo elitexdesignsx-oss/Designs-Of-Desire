@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="noir">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miss Selina - The Soft Command | Designs of Desire</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .selina-hero {
+      min-height: 88vh;
+      display: grid;
+      align-items: center;
+      padding: 130px 0 70px;
+      border-bottom: 1px solid var(--border-color);
+      background:
+        linear-gradient(90deg, rgba(10, 10, 10, 0.96) 0%, rgba(10, 10, 10, 0.82) 45%, rgba(10, 10, 10, 0.42) 100%),
+        url('Images/Miss Selina/Logo/Logo Metallic style.png') center right / min(58vw, 720px) no-repeat;
+    }
+    [data-theme="marble"] .selina-hero {
+      background:
+        linear-gradient(90deg, rgba(253, 253, 253, 0.96) 0%, rgba(253, 253, 253, 0.84) 45%, rgba(253, 253, 253, 0.54) 100%),
+        url('Images/Miss Selina/Logo/Logo Metallic style.png') center right / min(58vw, 720px) no-repeat;
+    }
+    .hero-inner {
+      max-width: 640px;
+    }
+    .eyebrow {
+      color: var(--accent-color-1);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+    .selina-hero h1 {
+      font-size: clamp(3.4rem, 8vw, 7rem);
+      margin-bottom: 10px;
+    }
+    .handle {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3vw, 2.7rem);
+      color: var(--accent-color-1);
+      margin-bottom: 24px;
+    }
+    .hero-bio {
+      font-size: clamp(1.05rem, 2vw, 1.34rem);
+      max-width: 540px;
+      opacity: 0.88;
+      margin-bottom: 32px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .profile-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .profile-stat {
+      background: var(--card-bg);
+      padding: 26px 24px;
+    }
+    .profile-stat span {
+      display: block;
+      color: var(--accent-color-1);
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .profile-stat strong {
+      font-family: var(--font-display);
+      font-size: 1.42rem;
+      font-weight: 500;
+    }
+    .story-section {
+      padding: 100px 0;
+    }
+    .story-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 58px;
+      align-items: start;
+    }
+    .portrait-panel {
+      position: sticky;
+      top: 110px;
+      border: 1px solid var(--border-color);
+      padding: 18px;
+      background: var(--card-bg);
+    }
+    .portrait-panel img {
+      width: 100%;
+      display: block;
+    }
+    .story-copy h2 {
+      font-size: clamp(2.2rem, 4vw, 3.6rem);
+      margin-bottom: 24px;
+    }
+    .story-copy p {
+      opacity: 0.82;
+      margin-bottom: 22px;
+      font-size: 1.06rem;
+    }
+    .brief-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 36px;
+    }
+    .brief-item {
+      border: 1px solid var(--border-color);
+      padding: 24px;
+      background: rgba(201, 168, 76, 0.035);
+    }
+    .brief-item h3 {
+      color: var(--accent-color-1);
+      font-size: 1.45rem;
+      margin-bottom: 8px;
+    }
+    .brief-item p {
+      margin-bottom: 0;
+      opacity: 0.78;
+    }
+    .gallery-section {
+      padding: 100px 0;
+      background: rgba(201, 168, 76, 0.025);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .section-intro {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      align-items: end;
+      margin-bottom: 45px;
+    }
+    .section-intro h2 {
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+    }
+    .section-intro p {
+      max-width: 470px;
+      opacity: 0.76;
+    }
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .work-item {
+      border: 1px solid var(--border-color);
+      background: var(--card-bg);
+      cursor: pointer;
+      overflow: hidden;
+      text-align: left;
+      color: inherit;
+      font-family: var(--font-body);
+      padding: 0;
+    }
+    .work-item img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .work-item:hover img {
+      transform: scale(1.04);
+    }
+    .work-label {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: center;
+      padding: 18px;
+      border-top: 1px solid var(--border-color);
+    }
+    .work-label strong {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+    .work-label span {
+      color: var(--accent-color-1);
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .quote-section {
+      padding: 100px 0;
+    }
+    .quote-shell {
+      max-width: 900px;
+      margin: 0 auto;
+      border-left: 3px solid var(--accent-color-1);
+      padding: 46px 54px;
+      background: var(--card-bg);
+      position: relative;
+    }
+    .quote-mark {
+      color: var(--accent-color-1);
+      font-family: var(--font-display);
+      font-size: 5rem;
+      line-height: 0.7;
+      opacity: 0.5;
+    }
+    .quote-text {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1.1;
+      margin: 12px 0 24px;
+    }
+    .quote-context {
+      color: var(--accent-color-1);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .quote-controls {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+      margin-top: 36px;
+    }
+    .quote-arrows {
+      display: flex;
+      gap: 12px;
+    }
+    .icon-btn {
+      width: 46px;
+      height: 46px;
+      border: 1px solid var(--border-color);
+      border-radius: 50%;
+      background: transparent;
+      color: var(--text-color);
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: var(--transition);
+    }
+    .icon-btn:hover {
+      border-color: var(--accent-color-1);
+      color: var(--accent-color-1);
+    }
+    .quote-count {
+      opacity: 0.66;
+    }
+    .next-section {
+      padding: 100px 0;
+      background: var(--card-bg);
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+    }
+    .next-section h2 {
+      font-size: clamp(2.1rem, 4vw, 3.6rem);
+      margin-bottom: 18px;
+    }
+    .next-section p {
+      max-width: 620px;
+      margin: 0 auto 34px;
+      opacity: 0.78;
+    }
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 3000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: rgba(0, 0, 0, 0.86);
+      opacity: 0;
+      pointer-events: none;
+      transition: var(--transition);
+    }
+    .modal-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .modal-content {
+      width: min(92vw, 860px);
+      max-height: 86vh;
+      position: relative;
+    }
+    .modal-content img {
+      width: 100%;
+      max-height: 86vh;
+      display: block;
+      object-fit: contain;
+      border: 1px solid var(--accent-color-1);
+      background: #000;
+    }
+    .modal-close {
+      position: absolute;
+      top: -18px;
+      right: -18px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--accent-color-1);
+      background: var(--bg-color);
+      color: var(--text-color);
+      cursor: pointer;
+      font-size: 1.4rem;
+    }
+    @media (max-width: 980px) {
+      .selina-hero {
+        padding-top: 390px;
+        background:
+          linear-gradient(180deg, rgba(10, 10, 10, 0.35) 0%, rgba(10, 10, 10, 0.96) 58%),
+          url('Images/Miss Selina/Logo/Logo Metallic style.png') center top 82px / min(100vw, 560px) no-repeat;
+      }
+      [data-theme="marble"] .selina-hero {
+        background:
+          linear-gradient(180deg, rgba(253, 253, 253, 0.35) 0%, rgba(253, 253, 253, 0.96) 58%),
+          url('Images/Miss Selina/Logo/Logo Metallic style.png') center top 82px / min(100vw, 560px) no-repeat;
+      }
+      .profile-bar,
+      .story-grid,
+      .brief-list {
+        grid-template-columns: 1fr;
+      }
+      .portrait-panel {
+        position: static;
+      }
+      .section-intro {
+        display: block;
+      }
+      .section-intro p {
+        margin-top: 14px;
+      }
+      .work-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 620px) {
+      .selina-hero {
+        padding-top: 320px;
+      }
+      .profile-bar,
+      .work-grid {
+        grid-template-columns: 1fr;
+      }
+      .quote-shell {
+        padding: 34px 26px;
+      }
+      .quote-controls {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .modal-close {
+        top: 8px;
+        right: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container nav-container">
+      <a href="index.html">
+        <img src="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg" alt="Logo" class="nav-logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="visual-design.html" data-i18n="nav_visual">Visual Design</a></li>
+        <li><a href="websites.html" data-i18n="nav_websites">Websites</a></li>
+        <li><a href="recent-work.html" data-i18n="nav_work">Recent Work</a></li>
+        <li><a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a></li>
+        <li><a href="premades.html" data-i18n="nav_premades">Premades</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="lang-switch">🇬🇧 EN</button>
+        <button class="theme-toggle">Light Theme</button>
+        <div class="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="index.html" data-i18n="nav_home">Home</a>
+    <a href="visual-design.html" data-i18n="nav_visual">Visual Design</a>
+    <a href="websites.html" data-i18n="nav_websites">Websites</a>
+    <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
+    <a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a>
+    <a href="premades.html" data-i18n="nav_premades">Premades</a>
+  </div>
+
+  <header class="selina-hero">
+    <div class="container reveal">
+      <div class="hero-inner">
+        <div class="eyebrow">Loyal Client Profile</div>
+        <h1>Miss Selina</h1>
+        <div class="handle">The Soft Command</div>
+        <p class="hero-bio">Devotion isn't requested. It's evoked. Thoughtful gestures never go unnoticed. A polished creator identity designed for quiet authority, elegant boundaries, and premium presentation.</p>
+        <div class="hero-actions">
+          <a href="#recent-work" class="btn btn-primary">View Brand Work</a>
+          <a href="https://www.instagram.com/the.soft.command/" target="_blank" class="btn btn-outline">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="profile-bar reveal" aria-label="Miss Selina profile details">
+      <div class="profile-stat">
+        <span>Location</span>
+        <strong>Australia</strong>
+      </div>
+      <div class="profile-stat">
+        <span>Creator Type</span>
+        <strong>Independent Creator</strong>
+      </div>
+      <div class="profile-stat">
+        <span>Identity</span>
+        <strong>Luxury Command</strong>
+      </div>
+      <div class="profile-stat">
+        <span>Delivered</span>
+        <strong>Full Brand System</strong>
+      </div>
+    </section>
+
+    <section class="story-section container reveal">
+      <div class="story-grid">
+        <div class="portrait-panel">
+          <img src="Images/Miss Selina/Logo/Logo Metallic style.png" alt="Miss Selina metallic logo artwork">
+        </div>
+        <div class="story-copy">
+          <div class="eyebrow">Who She Is</div>
+          <h2>A creator with softness, command, and a very clear aura.</h2>
+          <p>Miss Selina needed a visual world that felt feminine without becoming fragile, dominant without becoming loud, and luxurious without becoming cold.</p>
+          <p>The direction became The Soft Command: a brand identity where every asset feels intentional, refined, and unmistakably hers.</p>
+
+          <div class="brief-list">
+            <div class="brief-item">
+              <h3>The Goal</h3>
+              <p>Create a premium identity that evokes devotion, filters unserious attention, and makes every client-facing detail feel considered.</p>
+            </div>
+            <div class="brief-item">
+              <h3>The Voice</h3>
+              <p>Elegant, direct, magnetic, appreciative, and controlled. Soft in tone, firm in presence.</p>
+            </div>
+            <div class="brief-item">
+              <h3>The System</h3>
+              <p>Logo variations, metallic styling, transparent marks, services, price list, rules, and story highlights.</p>
+            </div>
+            <div class="brief-item">
+              <h3>The Result</h3>
+              <p>A complete creator suite with matching visuals across her menu, boundaries, brand identity, and profile experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section reveal" id="recent-work">
+      <div class="container">
+        <div class="section-intro">
+          <h2>Recent Work</h2>
+          <p>Her project became more than a logo. It turned into a complete visual language across every practical touchpoint a creator needs.</p>
+        </div>
+
+        <div class="work-grid">
+          <button class="work-item" data-full="Images/Miss Selina/Logo/Logo Metallic style.png">
+            <img src="Images/Miss Selina/Logo/Logo Metallic style.png" alt="Miss Selina metallic logo">
+            <div class="work-label"><strong>Metallic Logo</strong><span>Identity</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Logo/Logo Transparent version .png">
+            <img src="Images/Miss Selina/Logo/Logo Transparent version .png" alt="Miss Selina transparent logo">
+            <div class="work-label"><strong>Transparent Mark</strong><span>Logo</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/List of services/List of services.png">
+            <img src="Images/Miss Selina/List of services/List of services.png" alt="Miss Selina services menu">
+            <div class="work-label"><strong>Services Menu</strong><span>Sales Asset</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Price list/Slide 1.png">
+            <img src="Images/Miss Selina/Price list/Slide 1.png" alt="Miss Selina price list slide one">
+            <div class="work-label"><strong>Price List I</strong><span>Pricing</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Price list/Slide 2.jpg">
+            <img src="Images/Miss Selina/Price list/Slide 2.jpg" alt="Miss Selina price list slide two">
+            <div class="work-label"><strong>Price List II</strong><span>Pricing</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Rule/General/General Rules.png">
+            <img src="Images/Miss Selina/Rule/General/General Rules.png" alt="Miss Selina general rules">
+            <div class="work-label"><strong>Rules</strong><span>Boundaries</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Story Highlight/Devotion.png">
+            <img src="Images/Miss Selina/Story Highlight/Devotion.png" alt="Miss Selina devotion story highlight">
+            <div class="work-label"><strong>Devotion</strong><span>Highlight</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Story Highlight/Rules.png">
+            <img src="Images/Miss Selina/Story Highlight/Rules.png" alt="Miss Selina rules story highlight">
+            <div class="work-label"><strong>Rules</strong><span>Highlight</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Story Highlight/At my feet.png">
+            <img src="Images/Miss Selina/Story Highlight/At my feet.png" alt="Miss Selina story highlight">
+            <div class="work-label"><strong>At My Feet</strong><span>Highlight</span></div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section container reveal" id="quotes">
+      <div class="quote-shell">
+        <div class="eyebrow">Development Notes</div>
+        <div class="quote-mark">"</div>
+        <div class="quote-text" id="quote-text">You captured my essence exactly ❤️</div>
+        <div class="quote-context">Miss Selina during the design process</div>
+        <div class="quote-controls">
+          <div class="quote-count" id="quote-count">1 / 13</div>
+          <div class="quote-arrows">
+            <button class="icon-btn" id="quote-prev" aria-label="Previous quote">←</button>
+            <button class="icon-btn" id="quote-next" aria-label="Next quote">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="next-section reveal">
+      <div class="container">
+        <h2>From one asset to a signature world.</h2>
+        <p>Selina's profile now has the structure to present her logo, rules, prices, services, highlights, and client-facing atmosphere as one complete brand.</p>
+        <div class="hero-actions" style="justify-content: center;">
+          <a href="loyal-clients.html" class="btn btn-outline">Back to Loyal Clients</a>
+          <a href="mailto:designs.of.desirex@gmail.com?subject=Full%20Brand%20System%20Inquiry" class="btn btn-primary">Build My Brand</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <img src="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg" alt="Logo" class="footer-logo">
+          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Designs of Desire</h3>
+          <p style="opacity: 0.8; max-width: 300px;">High-End Exclusive Design. Built for Creators Who Want More.</p>
+        </div>
+        <div style="display: flex; gap: 60px;">
+          <div class="footer-links">
+            <a href="index.html" data-i18n="nav_home">Home</a>
+            <a href="visual-design.html" data-i18n="nav_visual">Visual Design</a>
+            <a href="websites.html" data-i18n="nav_websites">Websites</a>
+            <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
+            <a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a>
+            <a href="premades.html" data-i18n="nav_premades">Premades</a>
+          </div>
+          <div class="footer-links">
+            <a href="https://www.instagram.com/designs_of_desire_official/" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/the.soft.command/" target="_blank">The Soft Command</a>
+            <a href="mailto:designs.of.desirex@gmail.com">Email Us</a>
+            <span style="opacity: 0.8; margin-top: 20px;">Accepted: PayPal</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 Designs of Desire. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="image-modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Close image">&times;</button>
+      <img src="" alt="" id="modal-image">
+    </div>
+  </div>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const quotes = [
+        'You captured my essence exactly ❤️',
+        'I was blown away.',
+        'It’s everything I could want.',
+        'Honestly I couldn’t have thought of everything.',
+        'It’s definitely worth it… but god it is amazing ❤️',
+        'I love everything ❤️ thank you so much.',
+        'Everything matches 😍😍😍',
+        'I absolutely love what you’ve done so far and am happy with the price.',
+        'You put so much energy into this… I know you could’ve put less and had been paid the same amount. Thank you.',
+        'You did such an amazing job.',
+        'They look SOOO good.',
+        'Love your work 😍',
+        'It’s freaken amazing by the way!'
+      ];
+
+      const quoteText = document.getElementById('quote-text');
+      const quoteCount = document.getElementById('quote-count');
+      const prevQuote = document.getElementById('quote-prev');
+      const nextQuote = document.getElementById('quote-next');
+      let quoteIndex = 0;
+      let quoteTimer;
+
+      const renderQuote = () => {
+        quoteText.innerText = quotes[quoteIndex];
+        quoteCount.innerText = `${quoteIndex + 1} / ${quotes.length}`;
+      };
+
+      const moveQuote = (direction) => {
+        quoteIndex = (quoteIndex + direction + quotes.length) % quotes.length;
+        renderQuote();
+        window.clearInterval(quoteTimer);
+        quoteTimer = window.setInterval(() => moveQuote(1), 5200);
+      };
+
+      prevQuote.addEventListener('click', () => moveQuote(-1));
+      nextQuote.addEventListener('click', () => moveQuote(1));
+      quoteTimer = window.setInterval(() => moveQuote(1), 5200);
+
+      const modal = document.getElementById('image-modal');
+      const modalImage = document.getElementById('modal-image');
+      const modalClose = document.getElementById('modal-close');
+
+      document.querySelectorAll('.work-item').forEach(item => {
+        item.addEventListener('click', () => {
+          const image = item.querySelector('img');
+          modalImage.src = item.getAttribute('data-full');
+          modalImage.alt = image.alt;
+          modal.classList.add('active');
+          modal.setAttribute('aria-hidden', 'false');
+        });
+      });
+
+      const closeModal = () => {
+        modal.classList.remove('active');
+        modal.setAttribute('aria-hidden', 'true');
+        modalImage.src = '';
+      };
+
+      modalClose.addEventListener('click', closeModal);
+      modal.addEventListener('click', event => {
+        if (event.target === modal) closeModal();
+      });
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && modal.classList.contains('active')) closeModal();
+      });
+    });
+  </script>
+</body>
+</html>

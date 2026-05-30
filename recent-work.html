@@ -3,11 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Designs of Desire — Premium visual identity & custom websites for content creators.">
-  <meta property="og:title" content="Recent Work - Designs of Desire">
-  <meta property="og:description" content="High-end exclusive design. Built for creators who want more.">
-  <meta property="og:image" content="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg">
-  <link rel="icon" type="image/jpeg" href="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg">
   <title>Recent Work - Designs of Desire</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <style>
@@ -87,26 +82,17 @@
       margin-bottom: 20px;
       color: var(--text-color);
     }
-    
     .creator-quote {
-      font-family: var(--font-display);
       font-style: italic;
-      font-size: 1.1rem;
       opacity: 0.7;
       border-top: 1px solid var(--border-color);
       padding-top: 20px;
-      position: relative;
-      padding-left: 20px;
     }
-    .creator-quote::before {
-      content: '"';
-      position: absolute;
-      left: 0;
-      top: 14px;
-      font-size: 2.5rem;
-      line-height: 0;
-      color: var(--accent-color-1);
-      opacity: 0.5;
+    .creator-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 26px;
     }
 
     /* Portfolio Grid */
@@ -159,84 +145,6 @@
       opacity: 1;
     }
 
-    /* Carousel */
-    .image-carousel {
-      position: relative;
-      overflow: hidden;
-      border-radius: 4px;
-    }
-    .carousel-track {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-      scroll-behavior: smooth;
-      width: 100%;
-    }
-    .carousel-track::-webkit-scrollbar {
-      display: none;
-    }
-    .carousel-track img {
-      width: 100%;
-      flex: 0 0 100%;
-      scroll-snap-align: center;
-      object-fit: cover;
-      display: block;
-    }
-    .carousel-nav {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      padding: 0 15px;
-      pointer-events: none;
-    }
-    .carousel-btn {
-      background: rgba(10, 10, 10, 0.5);
-      color: white;
-      border: 1px solid rgba(201, 168, 76, 0.3);
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      pointer-events: auto;
-      backdrop-filter: blur(4px);
-      transition: var(--transition);
-      font-size: 1.2rem;
-    }
-    .carousel-btn:hover {
-      background: var(--accent-color-1);
-      color: var(--button-text);
-      border-color: var(--accent-color-1);
-    }
-    .carousel-indicators {
-      position: absolute;
-      bottom: 15px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 8px;
-    }
-    .indicator {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.4);
-      cursor: pointer;
-      transition: var(--transition);
-    }
-    .indicator.active {
-      background: var(--accent-color-1);
-      width: 24px;
-      border-radius: 4px;
-    }
-
     @media (max-width: 768px) {
       .showcase-block, .showcase-block.reverse {
         grid-template-columns: 1fr;
@@ -266,21 +174,12 @@
         <li><a href="visual-design.html" data-i18n="nav_visual">Visual Design</a></li>
         <li><a href="websites.html" data-i18n="nav_websites">Websites</a></li>
         <li><a href="recent-work.html" data-i18n="nav_work">Recent Work</a></li>
+        <li><a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a></li>
         <li><a href="premades.html" data-i18n="nav_premades">Premades</a></li>
       </ul>
       <div class="nav-controls">
-        <div class="lang-dropdown" id="lang-dropdown">
-          <button class="lang-current" id="lang-current-btn">🇬🇧 EN ▾</button>
-          <div class="lang-options" id="lang-options">
-            <button data-lang="en">🇬🇧 EN</button>
-            <button data-lang="fr">🇫🇷 FR</button>
-            <button data-lang="de">🇩🇪 DE</button>
-            <button data-lang="es">🇪🇸 ES</button>
-          </div>
-        </div>
-        <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle theme">
-          <span class="theme-icon">◐</span>
-        </button>
+        <button class="lang-switch">🇬🇧 EN</button>
+        <button class="theme-toggle">Light Theme</button>
         <div class="hamburger">
           <span></span><span></span><span></span>
         </div>
@@ -290,112 +189,86 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu">
-    <button class="mobile-close">×</button>
     <a href="index.html" data-i18n="nav_home">Home</a>
     <a href="visual-design.html" data-i18n="nav_visual">Visual Design</a>
     <a href="websites.html" data-i18n="nav_websites">Websites</a>
     <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
+    <a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a>
     <a href="premades.html" data-i18n="nav_premades">Premades</a>
   </div>
 
   <header class="page-header container reveal">
-    <span class="section-tag" data-i18n="rw_tag">Portfolio</span>
-    <h1 data-i18n="rw_title">Recent Work</h1>
-    <p data-i18n="rw_sub">Real designs. Real creators. Real results.</p>
+    <h1>Recent Work</h1>
+    <p>Real designs. Real creators. Real results.</p>
   </header>
 
-  <!-- Showcases -->
-  <section class="container showcase-section stagger-children">
+  <!-- Featured Showcases -->
+  <section class="container reveal">
     
     <!-- CREATOR_1 -->
     <div class="showcase-block">
-      <div class="showcase-img-col">
-        <div class="image-carousel">
-          <div class="carousel-track">
-            <img src="Images/Recent Work/The Soft command logo/WhatsApp Image 2026-05-28 at 22.46.40 (1).jpeg" alt="The Soft command logo 1" class="showcase-img">
-            <img src="Images/Recent Work/The Soft command logo/WhatsApp Image 2026-05-28 at 22.46.40 (2).jpeg" alt="The Soft command logo 2" class="showcase-img">
-            <img src="Images/Recent Work/The Soft command logo/WhatsApp Image 2026-05-28 at 22.46.41 (1).jpeg" alt="The Soft command logo 3" class="showcase-img">
-            <img src="Images/Recent Work/The Soft command logo/WhatsApp Image 2026-05-28 at 22.46.41 (2).jpeg" alt="The Soft command logo 4" class="showcase-img">
-          </div>
-          <div class="carousel-nav">
-            <button class="carousel-btn prev">&larr;</button>
-            <button class="carousel-btn next">&rarr;</button>
-          </div>
-          <div class="carousel-indicators">
-            <span class="indicator active"></span>
-            <span class="indicator"></span>
-            <span class="indicator"></span>
-            <span class="indicator"></span>
-          </div>
-        </div>
-      </div>
+      <a class="showcase-img-col" href="miss-selina.html" aria-label="View Miss Selina loyal client profile">
+        <img src="Images/Recent Work/The Soft command logo/WhatsApp Image 2026-05-28 at 22.46.40 (1).jpeg" alt="The Soft Command logo" class="showcase-img">
+      </a>
       <div class="showcase-text-col creator-card">
         <h2 class="creator-name">The Soft Command</h2>
-        <div class="creator-platform" data-i18n="rw_indep">Independent Creator</div>
-        <p class="creator-bio" data-i18n="rw_soft_bio">A sophisticated creator looking for a minimalist, elegant aesthetic that speaks to high-net-worth clients.</p>
-        <div class="creator-deliverable" data-i18n="rw_soft_deliv">Delivered: Logo & Brand Identity</div>
-        <p class="creator-quote" data-i18n="rw_soft_quote">The branding perfectly captures the vibe I wanted. It's clean, luxurious, and commands respect.</p>
+        <div class="creator-platform">Independent Creator</div>
+        <p class="creator-bio">A sophisticated creator looking for a minimalist, elegant aesthetic that speaks to high-net-worth clients.</p>
+        <div class="creator-deliverable">Delivered: Logo & Brand Identity</div>
+        <p class="creator-quote">"You captured my essence exactly."</p>
+        <div class="creator-actions">
+          <a href="miss-selina.html" class="btn btn-outline">View Client Profile</a>
+          <a href="loyal-clients.html" class="gold-gradient-text">Loyal clients →</a>
+        </div>
       </div>
     </div>
 
     <!-- CREATOR_2 -->
     <div class="showcase-block reverse">
       <div class="showcase-img-col">
-        <div class="image-carousel">
-          <div class="carousel-track">
-            <img src="Images/Recent Work/Viper Queen Logo/WhatsApp Image 2026-05-28 at 22.46.41.jpeg" alt="Viper Queen Logo 1" class="showcase-img">
-            <img src="Images/Recent Work/Viper Queen Logo/WhatsApp Image 2026-05-28 at 22.46.45.jpeg" alt="Viper Queen Logo 2" class="showcase-img">
-          </div>
-          <div class="carousel-nav">
-            <button class="carousel-btn prev">&larr;</button>
-            <button class="carousel-btn next">&rarr;</button>
-          </div>
-          <div class="carousel-indicators">
-            <span class="indicator active"></span>
-            <span class="indicator"></span>
-          </div>
-        </div>
+        <img src="Images/Recent Work/Viper Queen Logo/WhatsApp Image 2026-05-28 at 22.46.41.jpeg" alt="Viper Queen Logo" class="showcase-img">
       </div>
       <div class="showcase-text-col creator-card">
         <h2 class="creator-name">Viper Queen</h2>
-        <div class="creator-platform" data-i18n="rw_of">OnlyFans Creator</div>
-        <p class="creator-bio" data-i18n="rw_viper_bio">An edgy, bold creator needing a strong visual identity that stands out in a crowded market.</p>
-        <div class="creator-deliverable" data-i18n="rw_viper_deliv">Delivered: Logo Design</div>
-        <p class="creator-quote" data-i18n="rw_viper_quote">Edgy but still premium. Exactly what my page needed to look professional.</p>
+        <div class="creator-platform">OnlyFans Creator</div>
+        <p class="creator-bio">An edgy, bold creator needing a strong visual identity that stands out in a crowded market.</p>
+        <div class="creator-deliverable">Delivered: Logo Design</div>
+        <p class="creator-quote">"Edgy but still premium. Exactly what my page needed to look professional."</p>
       </div>
     </div>
 
   </section>
 
-  <!-- More Work Grid -->
-  <section class="container reveal" style="padding-bottom: 100px;">
-    <div class="more-work">
-      <h2 style="font-size: 2.5rem;" data-i18n="rw_more">More Work</h2>
+  <!-- Portfolio Grid -->
+  <section class="portfolio-section">
+    <div class="container reveal">
+      <h2 class="text-center" style="font-size: 2.5rem;">More Work</h2>
       
       <div class="portfolio-grid">
         <div class="portfolio-item">
-          <div style="width:100%; height:100%; background:var(--card-bg); display:flex; align-items:center; justify-content:center; color:var(--border-color);">// PORTFOLIO_ITEM_1</div>
-          <div class="portfolio-overlay" data-i18n="rw_coming">Coming Soon</div>
+          <img src="Images/Recent Work/The Soft command logo/WhatsApp Image 2026-05-28 at 22.46.40 (2).jpeg" alt="Work 1">
+          <div class="portfolio-overlay">Brand Asset</div>
         </div>
         <div class="portfolio-item">
-          <div style="width:100%; height:100%; background:var(--card-bg); display:flex; align-items:center; justify-content:center; color:var(--border-color);">// PORTFOLIO_ITEM_2</div>
-          <div class="portfolio-overlay" data-i18n="rw_coming">Coming Soon</div>
+          <img src="Images/Recent Work/The Soft command logo/WhatsApp Image 2026-05-28 at 22.46.41 (1).jpeg" alt="Work 2">
+          <div class="portfolio-overlay">Brand Asset</div>
         </div>
         <div class="portfolio-item">
-          <div style="width:100%; height:100%; background:var(--card-bg); display:flex; align-items:center; justify-content:center; color:var(--border-color);">// PORTFOLIO_ITEM_3</div>
-          <div class="portfolio-overlay" data-i18n="rw_coming">Coming Soon</div>
+          <img src="Images/Recent Work/The Soft command logo/WhatsApp Image 2026-05-28 at 22.46.41 (2).jpeg" alt="Work 3">
+          <div class="portfolio-overlay">Brand Asset</div>
         </div>
         <div class="portfolio-item">
-          <div style="width:100%; height:100%; background:var(--card-bg); display:flex; align-items:center; justify-content:center; color:var(--border-color);">// PORTFOLIO_ITEM_4</div>
-          <div class="portfolio-overlay" data-i18n="rw_coming">Coming Soon</div>
+          <img src="Images/Recent Work/Viper Queen Logo/WhatsApp Image 2026-05-28 at 22.46.45.jpeg" alt="Work 4">
+          <div class="portfolio-overlay">Logo Variant</div>
         </div>
+        <!-- Placeholders for 2 more -->
         <div class="portfolio-item">
           <div style="width:100%; height:100%; background:var(--card-bg); display:flex; align-items:center; justify-content:center; color:var(--border-color);">// PORTFOLIO_ITEM_5</div>
-          <div class="portfolio-overlay" data-i18n="rw_coming">Coming Soon</div>
+          <div class="portfolio-overlay">Coming Soon</div>
         </div>
         <div class="portfolio-item">
           <div style="width:100%; height:100%; background:var(--card-bg); display:flex; align-items:center; justify-content:center; color:var(--border-color);">// PORTFOLIO_ITEM_6</div>
-          <div class="portfolio-overlay" data-i18n="rw_coming">Coming Soon</div>
+          <div class="portfolio-overlay">Coming Soon</div>
         </div>
       </div>
 
@@ -403,10 +276,10 @@
   </section>
 
   <!-- CTA -->
-  <section class="bottom-cta gold-gradient-bg reveal" style="padding: 100px 0; text-align: center;">
+  <section class="bottom-cta gold-gradient-bg reveal">
     <div class="container">
-      <h2 style="font-size: 2.5rem; margin-bottom: 40px; color: var(--button-text);" data-i18n="rw_featured">Want to be featured here?</h2>
-      <a href="mailto:designs.of.desirex@gmail.com" class="btn btn-outline" style="border-color: var(--button-text); color: var(--button-text);" data-i18n="btn_book">Book Your Design</a>
+      <h2 style="font-size: 2.5rem; margin-bottom: 40px; color: var(--button-text);">Want to be featured here?</h2>
+      <a href="mailto:designs.of.desirex@gmail.com?subject=Booking%20Inquiry" class="btn btn-outline" style="border-color: var(--button-text); color: var(--button-text);">Book Your Design</a>
     </div>
   </section>
 
@@ -416,83 +289,32 @@
       <div class="footer-content">
         <div>
           <img src="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg" alt="Logo" class="footer-logo">
-          <div class="footer-brand-name">Designs of Desire</div>
-          <p class="footer-tagline">High-End Exclusive Design.<br>Built for Creators Who Want More.</p>
+          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Designs of Desire</h3>
+          <p style="opacity: 0.8; max-width: 300px;">High-End Exclusive Design. Built for Creators Who Want More.</p>
         </div>
-        <div style="display: flex; gap: 60px; justify-content: flex-end;">
-          <div>
-            <div class="footer-brand-name" style="font-size:0.55rem; margin-bottom:16px;" data-i18n="footer_pages">Pages</div>
-            <div class="footer-links">
-              <a href="index.html" data-i18n="nav_home">Home</a>
-              <a href="visual-design.html" data-i18n="nav_visual">Visual Design</a>
-              <a href="websites.html" data-i18n="nav_websites">Websites</a>
-              <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
-              <a href="premades.html" data-i18n="nav_premades">Premades</a>
-            </div>
+        <div style="display: flex; gap: 60px;">
+          <div class="footer-links">
+            <a href="index.html" data-i18n="nav_home">Home</a>
+            <a href="visual-design.html" data-i18n="nav_visual">Visual Design</a>
+            <a href="websites.html" data-i18n="nav_websites">Websites</a>
+            <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
+            <a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a>
+            <a href="premades.html" data-i18n="nav_premades">Premades</a>
           </div>
-          <div>
-            <div class="footer-brand-name" style="font-size:0.55rem; margin-bottom:16px;" data-i18n="footer_connect">Connect</div>
-            <div class="footer-links">
-              <a href="https://www.instagram.com/designs_of_desire_official/" target="_blank">Instagram</a>
-              <a href="mailto:designs.of.desirex@gmail.com">Email</a>
-            </div>
-            <div style="margin-top: 20px; opacity: 0.5; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase;" data-i18n="footer_paypal">PayPal Accepted</div>
+          <div class="footer-links">
+            <a href="https://www.instagram.com/designs_of_desire_official/" target="_blank">Instagram</a>
+            <a href="mailto:designs.of.desirex@gmail.com">Email Us</a>
+            <span style="opacity: 0.8; margin-top: 20px;">Accepted: PayPal</span>
           </div>
         </div>
       </div>
-      <div class="footer-divider"></div>
-      <div class="footer-bottom" data-i18n="footer_rights">© 2025 Designs of Desire — All Rights Reserved</div>
+      <div class="footer-bottom">
+        &copy; 2025 Designs of Desire. All rights reserved.
+      </div>
     </div>
   </footer>
 
   <script src="assets/js/translations.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('.image-carousel').forEach(carousel => {
-        const track = carousel.querySelector('.carousel-track');
-        const prev = carousel.querySelector('.prev');
-        const next = carousel.querySelector('.next');
-        const indicators = carousel.querySelectorAll('.indicator');
-        const itemsCount = track.children.length;
-        
-        if(itemsCount <= 1) {
-          if(prev) prev.style.display = 'none';
-          if(next) next.style.display = 'none';
-          const indContainer = carousel.querySelector('.carousel-indicators');
-          if(indContainer) indContainer.style.display = 'none';
-          return;
-        }
-
-        const updateIndicators = () => {
-          const index = Math.round(track.scrollLeft / track.clientWidth);
-          indicators.forEach((ind, i) => {
-            ind.classList.toggle('active', i === index);
-          });
-        };
-
-        track.addEventListener('scroll', () => {
-          requestAnimationFrame(updateIndicators);
-        });
-
-        if (prev) {
-          prev.addEventListener('click', () => {
-            track.scrollBy({ left: -track.clientWidth, behavior: 'smooth' });
-          });
-        }
-        if (next) {
-          next.addEventListener('click', () => {
-            track.scrollBy({ left: track.clientWidth, behavior: 'smooth' });
-          });
-        }
-        
-        indicators.forEach((ind, i) => {
-          ind.addEventListener('click', () => {
-            track.scrollTo({ left: track.clientWidth * i, behavior: 'smooth' });
-          });
-        });
-      });
-    });
-  </script>
 </body>
 </html>

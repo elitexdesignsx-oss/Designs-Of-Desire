@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="noir">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loyal Clients - Designs of Desire</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .page-hero {
+      min-height: 86vh;
+      display: flex;
+      align-items: center;
+      padding: 140px 0 70px;
+      border-bottom: 1px solid var(--border-color);
+      background:
+        linear-gradient(90deg, rgba(10, 10, 10, 0.95), rgba(10, 10, 10, 0.76)),
+        url('Images/Miss Selina/Logo/Logo Metallic style.png') center right 12% / min(54vw, 660px) no-repeat;
+    }
+    [data-theme="marble"] .page-hero {
+      background:
+        linear-gradient(90deg, rgba(253, 253, 253, 0.95), rgba(253, 253, 253, 0.78)),
+        url('Images/Miss Selina/Logo/Logo Metallic style.png') center right 12% / min(54vw, 660px) no-repeat;
+    }
+    .hero-copy {
+      max-width: 680px;
+    }
+    .eyebrow {
+      color: var(--accent-color-1);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+    .page-hero h1 {
+      font-size: clamp(3.1rem, 8vw, 6.8rem);
+      margin-bottom: 22px;
+    }
+    .page-hero p {
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+      max-width: 590px;
+      opacity: 0.86;
+    }
+    .client-section {
+      padding: 90px 0 110px;
+    }
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 42px;
+    }
+    .section-heading h2 {
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+    }
+    .section-heading p {
+      max-width: 420px;
+      opacity: 0.76;
+    }
+    .client-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .client-tile {
+      min-height: 520px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      background: var(--card-bg);
+      transition: var(--transition);
+    }
+    .client-tile:hover {
+      border-color: var(--accent-color-1);
+      box-shadow: 0 18px 45px var(--border-glow);
+      transform: translateY(-8px);
+    }
+    .client-image {
+      min-height: 340px;
+      background: url('Images/Miss Selina/Logo/Logo Metallic style.png') center / cover no-repeat;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .client-body {
+      padding: 30px;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .client-title {
+      font-size: 2rem;
+    }
+    .client-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .client-meta span {
+      border: 1px solid var(--border-color);
+      color: var(--accent-color-1);
+      padding: 6px 12px;
+      border-radius: 50px;
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .client-desc {
+      opacity: 0.78;
+    }
+    .client-body .btn {
+      margin-top: auto;
+      width: 100%;
+    }
+    .coming-panel {
+      min-height: 520px;
+      border: 1px solid var(--border-color);
+      padding: 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: rgba(201, 168, 76, 0.035);
+    }
+    .coming-panel h3 {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+    .coming-panel p {
+      opacity: 0.76;
+      margin-bottom: 26px;
+    }
+    .loyal-cta {
+      padding: 100px 0;
+      text-align: center;
+      border-top: 1px solid var(--border-color);
+      background: var(--card-bg);
+    }
+    .loyal-cta h2 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      margin-bottom: 18px;
+    }
+    .loyal-cta p {
+      max-width: 640px;
+      margin: 0 auto 36px;
+      opacity: 0.78;
+    }
+    @media (max-width: 900px) {
+      .page-hero {
+        background:
+          linear-gradient(180deg, rgba(10, 10, 10, 0.78), rgba(10, 10, 10, 0.96)),
+          url('Images/Miss Selina/Logo/Logo Metallic style.png') center top 84px / min(100vw, 560px) no-repeat;
+        align-items: end;
+      }
+      [data-theme="marble"] .page-hero {
+        background:
+          linear-gradient(180deg, rgba(253, 253, 253, 0.76), rgba(253, 253, 253, 0.96)),
+          url('Images/Miss Selina/Logo/Logo Metallic style.png') center top 84px / min(100vw, 560px) no-repeat;
+      }
+      .section-heading {
+        display: block;
+      }
+      .section-heading p {
+        margin-top: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container nav-container">
+      <a href="index.html">
+        <img src="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg" alt="Logo" class="nav-logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="visual-design.html" data-i18n="nav_visual">Visual Design</a></li>
+        <li><a href="websites.html" data-i18n="nav_websites">Websites</a></li>
+        <li><a href="recent-work.html" data-i18n="nav_work">Recent Work</a></li>
+        <li><a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a></li>
+        <li><a href="premades.html" data-i18n="nav_premades">Premades</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="lang-switch">🇬🇧 EN</button>
+        <button class="theme-toggle">Light Theme</button>
+        <div class="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="index.html" data-i18n="nav_home">Home</a>
+    <a href="visual-design.html" data-i18n="nav_visual">Visual Design</a>
+    <a href="websites.html" data-i18n="nav_websites">Websites</a>
+    <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
+    <a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a>
+    <a href="premades.html" data-i18n="nav_premades">Premades</a>
+  </div>
+
+  <header class="page-hero">
+    <div class="container reveal">
+      <div class="hero-copy">
+        <div class="eyebrow">Client Stories</div>
+        <h1>Loyal Clients</h1>
+        <p>A dedicated archive for the creators who came back, trusted the process, and let a full visual identity unfold around them.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="client-section container reveal">
+      <div class="section-heading">
+        <h2>Featured Loyalty</h2>
+        <p>Each profile opens into a deeper brand story: who the creator is, what they wanted, what was built, and the words they shared during the process.</p>
+      </div>
+
+      <div class="client-grid">
+        <a class="client-tile" href="miss-selina.html">
+          <div class="client-image" role="img" aria-label="Miss Selina brand artwork"></div>
+          <div class="client-body">
+            <div class="client-meta">
+              <span>Australia</span>
+              <span>Independent Creator</span>
+              <span>Full Brand System</span>
+            </div>
+            <h3 class="client-title">Miss Selina</h3>
+            <p class="client-desc">The Soft Command: a refined creator identity built around elegance, control, devotion, and premium client presentation.</p>
+            <span class="btn btn-outline">Open Profile</span>
+          </div>
+        </a>
+
+        <div class="coming-panel">
+          <div class="eyebrow">Growing Archive</div>
+          <h3>More profiles can live here.</h3>
+          <p>This page is ready for every client who becomes more than a single project: full identity, repeat assets, testimonials, and a dedicated story.</p>
+          <a href="recent-work.html" class="gold-gradient-text">Browse recent work →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="loyal-cta reveal">
+      <div class="container">
+        <h2>Want your own client story?</h2>
+        <p>Start with one asset, or build the full identity: logo, price list, services, rules, highlights, banners, and a brand system that feels unmistakably yours.</p>
+        <a href="mailto:designs.of.desirex@gmail.com?subject=Loyal%20Client%20Profile%20Inquiry" class="btn btn-primary">Start the Story</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <img src="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg" alt="Logo" class="footer-logo">
+          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Designs of Desire</h3>
+          <p style="opacity: 0.8; max-width: 300px;">High-End Exclusive Design. Built for Creators Who Want More.</p>
+        </div>
+        <div style="display: flex; gap: 60px;">
+          <div class="footer-links">
+            <a href="index.html" data-i18n="nav_home">Home</a>
+            <a href="visual-design.html" data-i18n="nav_visual">Visual Design</a>
+            <a href="websites.html" data-i18n="nav_websites">Websites</a>
+            <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
+            <a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a>
+            <a href="premades.html" data-i18n="nav_premades">Premades</a>
+          </div>
+          <div class="footer-links">
+            <a href="https://www.instagram.com/designs_of_desire_official/" target="_blank">Instagram</a>
+            <a href="mailto:designs.of.desirex@gmail.com">Email Us</a>
+            <span style="opacity: 0.8; margin-top: 20px;">Accepted: PayPal</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 Designs of Desire. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
