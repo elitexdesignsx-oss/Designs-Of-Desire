@@ -8,21 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Theme Toggle
-  const themeToggleBtn = document.querySelector('.theme-toggle');
-  const currentTheme = localStorage.getItem('dod-theme') || 'noir';
-  document.documentElement.setAttribute('data-theme', currentTheme);
-  
-  if (themeToggleBtn) {
-    themeToggleBtn.innerHTML = currentTheme === 'noir' ? 'Light Theme' : 'Dark Theme';
-    themeToggleBtn.addEventListener('click', () => {
-      let theme = document.documentElement.getAttribute('data-theme');
-      let newTheme = theme === 'noir' ? 'marble' : 'noir';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('dod-theme', newTheme);
-      themeToggleBtn.innerHTML = newTheme === 'noir' ? 'Light Theme' : 'Dark Theme';
-    });
-  }
+  // The public site stays in the noir luxury theme.
+  document.documentElement.setAttribute('data-theme', 'noir');
+  localStorage.removeItem('dod-theme');
 
   // Language Toggle
   const langSwitchBtn = document.querySelector('.lang-switch');
@@ -128,6 +116,67 @@ document.addEventListener('DOMContentLoaded', () => {
     runCounters();
   }
 
+  // Homepage reviews carousel
+  const reviewSlides = document.querySelectorAll('[data-review-slide]');
+  const reviewPrev = document.getElementById('review-prev');
+  const reviewNext = document.getElementById('review-next');
+  const reviewDots = document.getElementById('review-dots');
+
+  if (reviewSlides.length > 0 && reviewDots) {
+    let reviewIndex = 0;
+    let reviewTimer;
+
+    reviewSlides.forEach((_, index) => {
+      const dot = document.createElement('button');
+      dot.className = 'review-dot';
+      dot.type = 'button';
+      dot.setAttribute('aria-label', `Show review ${index + 1}`);
+      dot.addEventListener('click', () => {
+        showReview(index);
+        restartReviewTimer();
+      });
+      reviewDots.appendChild(dot);
+    });
+
+    const dots = reviewDots.querySelectorAll('.review-dot');
+
+    const showReview = (index) => {
+      reviewIndex = (index + reviewSlides.length) % reviewSlides.length;
+      reviewSlides.forEach((slide, slideIndex) => {
+        slide.classList.toggle('active', slideIndex === reviewIndex);
+      });
+      dots.forEach((dot, dotIndex) => {
+        dot.classList.toggle('active', dotIndex === reviewIndex);
+      });
+    };
+
+    const moveReview = (direction) => {
+      showReview(reviewIndex + direction);
+    };
+
+    const restartReviewTimer = () => {
+      window.clearInterval(reviewTimer);
+      reviewTimer = window.setInterval(() => moveReview(1), 6200);
+    };
+
+    if (reviewPrev) {
+      reviewPrev.addEventListener('click', () => {
+        moveReview(-1);
+        restartReviewTimer();
+      });
+    }
+
+    if (reviewNext) {
+      reviewNext.addEventListener('click', () => {
+        moveReview(1);
+        restartReviewTimer();
+      });
+    }
+
+    showReview(0);
+    restartReviewTimer();
+  }
+
   // Daily inspiration rotates once per local calendar day.
   const dailyQuoteEl = document.getElementById('daily-inspiration-quote');
   const dailyPersonEl = document.getElementById('daily-inspiration-person');
@@ -197,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
     dailyPersonEl.innerText = inspiration.person;
 
     if (dailyMetaEl) {
-      dailyMetaEl.innerText = `Daily inspiration ${inspirationIndex + 1} of ${dailyInspirations.length}`;
+      dailyMetaEl.innerText = 'A new quote appears here every day.';
     }
   }
 });

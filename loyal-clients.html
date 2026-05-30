@@ -12,17 +12,35 @@
       align-items: center;
       padding: 140px 0 70px;
       border-bottom: 1px solid var(--border-color);
-      background:
-        linear-gradient(90deg, rgba(10, 10, 10, 0.95), rgba(10, 10, 10, 0.76)),
-        url('Images/Miss Selina/Logo/Logo Metallic style.png') center right 12% / min(54vw, 660px) no-repeat;
+      overflow: hidden;
+      position: relative;
+      background: linear-gradient(90deg, rgba(10, 10, 10, 0.98), rgba(10, 10, 10, 0.82));
     }
     [data-theme="marble"] .page-hero {
-      background:
-        linear-gradient(90deg, rgba(253, 253, 253, 0.95), rgba(253, 253, 253, 0.78)),
-        url('Images/Miss Selina/Logo/Logo Metallic style.png') center right 12% / min(54vw, 660px) no-repeat;
+      background: linear-gradient(90deg, rgba(255, 253, 247, 0.98), rgba(255, 255, 255, 0.84));
+    }
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: clamp(36px, 10vw, 150px);
+      width: min(34vw, 430px);
+      aspect-ratio: 1;
+      transform: translateY(-50%);
+      background: url('Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg') center / contain no-repeat;
+      border-radius: 50%;
+      filter: drop-shadow(0 0 34px rgba(201, 168, 76, 0.25));
+      opacity: 0.82;
+      pointer-events: none;
+    }
+    [data-theme="marble"] .page-hero::after {
+      opacity: 0.94;
+      filter: drop-shadow(0 18px 36px rgba(185, 135, 24, 0.2));
     }
     .hero-copy {
       max-width: 680px;
+      position: relative;
+      z-index: 1;
     }
     .eyebrow {
       color: var(--accent-color-1);
@@ -79,8 +97,15 @@
     }
     .client-image {
       min-height: 340px;
-      background: url('Images/Miss Selina/Logo/Logo Metallic style.png') center / cover no-repeat;
+      background:
+        radial-gradient(circle at 50% 42%, rgba(201, 168, 76, 0.13), transparent 46%),
+        #090909 url('Images/Miss Selina/Logo/other variations/Logo Transparent Variation 1.png') center / contain no-repeat;
       border-bottom: 1px solid var(--border-color);
+    }
+    [data-theme="marble"] .client-image {
+      background:
+        radial-gradient(circle at 50% 42%, rgba(185, 135, 24, 0.16), transparent 46%),
+        #fffaf0 url('Images/Miss Selina/Logo/other variations/Logo Transparent Variation 1.png') center / contain no-repeat;
     }
     .client-body {
       padding: 30px;
@@ -148,15 +173,19 @@
     }
     @media (max-width: 900px) {
       .page-hero {
-        background:
-          linear-gradient(180deg, rgba(10, 10, 10, 0.78), rgba(10, 10, 10, 0.96)),
-          url('Images/Miss Selina/Logo/Logo Metallic style.png') center top 84px / min(100vw, 560px) no-repeat;
+        background: linear-gradient(180deg, rgba(10, 10, 10, 0.86), rgba(10, 10, 10, 0.98));
         align-items: end;
       }
       [data-theme="marble"] .page-hero {
-        background:
-          linear-gradient(180deg, rgba(253, 253, 253, 0.76), rgba(253, 253, 253, 0.96)),
-          url('Images/Miss Selina/Logo/Logo Metallic style.png') center top 84px / min(100vw, 560px) no-repeat;
+        background: linear-gradient(180deg, rgba(255, 253, 247, 0.86), rgba(255, 255, 255, 0.98));
+      }
+      .page-hero::after {
+        top: 96px;
+        left: 50%;
+        right: auto;
+        width: min(60vw, 300px);
+        transform: translateX(-50%);
+        opacity: 0.72;
       }
       .section-heading {
         display: block;
@@ -184,7 +213,6 @@
       </ul>
       <div class="nav-controls">
         <button class="lang-switch">🇬🇧 EN</button>
-        <button class="theme-toggle">Light Theme</button>
         <div class="hamburger">
           <span></span><span></span><span></span>
         </div>
@@ -269,7 +297,7 @@
             <a href="premades.html" data-i18n="nav_premades">Premades</a>
           </div>
           <div class="footer-links">
-            <a href="https://www.instagram.com/designs_of_desire_official/" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/designs_of_desire_official_/" target="_blank">Instagram</a>
             <a href="mailto:designs.of.desirex@gmail.com">Email Us</a>
             <span style="opacity: 0.8; margin-top: 20px;">Accepted: PayPal</span>
           </div>

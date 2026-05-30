@@ -7,32 +7,6 @@
   <link rel="stylesheet" href="assets/css/styles.css">
   <style>
     /* Specific styles for Home Page */
-    .stats-bar {
-      padding: 60px 0;
-      border-bottom: 1px solid var(--border-color);
-      background: var(--card-bg);
-    }
-    .stats-grid {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-    .stat-item {
-      text-align: center;
-    }
-    .stat-number {
-      font-size: 3rem;
-      font-family: var(--font-display);
-      color: var(--accent-color-1);
-    }
-    .stat-label {
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 0.8rem;
-      opacity: 0.8;
-    }
-    
     .dual-cards-section {
       padding: 100px 0;
     }
@@ -95,114 +69,151 @@
     }
 
     .reviews-section {
-      padding: 100px 0;
-      background: var(--bg-color);
+      padding: 110px 0;
+      background:
+        radial-gradient(circle at 18% 20%, rgba(201, 168, 76, 0.08), transparent 30%),
+        var(--bg-color);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
     }
-    .reviews-grid {
+    .reviews-intro {
       display: flex;
-      flex-direction: column;
-      gap: 30px;
-      max-width: 800px;
+      justify-content: space-between;
+      align-items: end;
+      gap: 40px;
+      margin-bottom: 46px;
+    }
+    .reviews-kicker {
+      color: var(--accent-color-1);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+    .reviews-intro h2 {
+      font-size: clamp(2.4rem, 5vw, 4.4rem);
+    }
+    .reviews-intro p {
+      max-width: 420px;
+      opacity: 0.76;
+    }
+    .review-carousel {
+      max-width: 980px;
       margin: 0 auto;
     }
-    .review-card {
-      padding: 40px;
-      border-radius: 8px;
+    .review-viewport {
+      position: relative;
+      min-height: 420px;
+      border: 1px solid var(--border-color);
+      background:
+        linear-gradient(135deg, rgba(201, 168, 76, 0.08), transparent 34%),
+        var(--card-bg);
+      overflow: hidden;
+    }
+    .review-viewport::before {
+      content: '';
+      position: absolute;
+      inset: 18px;
+      border: 1px solid rgba(201, 168, 76, 0.16);
+      pointer-events: none;
+    }
+    .review-slide {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      align-content: center;
+      gap: 28px;
+      padding: clamp(34px, 7vw, 78px);
+      opacity: 0;
+      transform: translateX(24px);
+      transition: opacity 0.45s ease, transform 0.45s ease;
+      pointer-events: none;
+    }
+    .review-slide.active {
+      opacity: 1;
+      transform: translateX(0);
+      pointer-events: auto;
     }
     .review-quote {
       font-family: var(--font-display);
-      font-size: 1.5rem;
-      font-style: italic;
-      margin-bottom: 20px;
+      font-size: clamp(2.2rem, 5vw, 4.5rem);
+      line-height: 1.08;
+      max-width: 820px;
     }
     .review-author {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      opacity: 0.8;
-      font-size: 0.9rem;
+      gap: 20px;
+      border-top: 1px solid var(--border-color);
+      padding-top: 22px;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
-<<<<<<< HEAD
     .stars {
       color: var(--accent-color-1);
-=======
-    @media (max-width: 768px) {
-      .premium-review-card {
-        padding: 40px 20px;
-        min-height: 350px;
-      }
-      .premium-review-text {
-        font-size: 1.35rem;
-        margin-bottom: 30px;
-      }
-      .premium-review-text-cta {
-        font-size: 1.8rem;
-        margin-bottom: 30px;
-      }
-      .premium-review-cta-icon {
-        font-size: 3rem;
-        margin-bottom: 20px;
-      }
-      .premium-review-stars {
-        font-size: 1rem;
-        margin-bottom: 20px;
-      }
     }
-    .review-stars { color: var(--accent-color-1); font-size: 0.8rem; letter-spacing: 2px; }
-    .reviews-nav-container {
-      position: absolute;
-      bottom: 30px;
-      left: 0;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 30px;
-      pointer-events: none; /* Let clicks pass through if not on buttons */
-    }
-    .review-nav-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: none;
-      border: none;
+    .review-tag {
       color: var(--accent-color-1);
       font-size: 0.8rem;
-      letter-spacing: 4px;
-      cursor: pointer;
-      opacity: 0.5;
-      transition: opacity 0.3s ease, transform 0.3s ease;
-      font-family: var(--font-accent);
+      font-weight: 600;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      pointer-events: auto;
     }
-    #review-prev { left: 20px; }
-    #review-next { right: 20px; }
-    .review-nav-arrow:hover {
-      opacity: 1;
-      transform: translateY(-50%) scale(1.05);
+    .review-cta {
+      background:
+        linear-gradient(135deg, rgba(201, 168, 76, 0.18), transparent 42%),
+        #0f0f0f;
     }
-    .reviews-dots {
+    .review-cta .review-quote {
+      max-width: 760px;
+    }
+    .review-cta-actions {
       display: flex;
-      justify-content: center;
-      gap: 10px;
-      pointer-events: auto;
+      flex-wrap: wrap;
+      gap: 16px;
     }
-    .reviews-dots button {
-      width: 6px; height: 6px;
+    .review-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 26px;
+    }
+    .review-arrow {
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
-      background: var(--text-color);
-      opacity: 0.2;
-      border: none;
+      border: 1px solid var(--border-color);
+      background: transparent;
+      color: var(--text-color);
       cursor: pointer;
-      padding: 0;
-      transition: all 0.3s ease;
+      font-size: 1.2rem;
+      transition: var(--transition);
     }
-    .reviews-dots button.active {
-      opacity: 1;
+    .review-arrow:hover {
+      border-color: var(--accent-color-1);
+      color: var(--accent-color-1);
+    }
+    .review-dots {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex: 1;
+    }
+    .review-dot {
+      width: 36px;
+      height: 2px;
+      border: none;
+      background: rgba(201, 168, 76, 0.28);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .review-dot.active {
       background: var(--accent-color-1);
-      transform: scale(1.3);
->>>>>>> parent of abcf9ef (Update index.html)
+      width: 54px;
     }
 
     .about-strip {
@@ -244,7 +255,20 @@
         grid-template-columns: 1fr;
       }
       .review-quote {
-        font-size: 1.2rem;
+        font-size: 2rem;
+      }
+      .reviews-intro {
+        display: block;
+      }
+      .reviews-intro p {
+        margin-top: 12px;
+      }
+      .review-viewport {
+        min-height: 500px;
+      }
+      .review-author, .review-controls {
+        align-items: flex-start;
+        flex-direction: column;
       }
       .daily-inspiration-card {
         padding: 34px 26px;
@@ -273,7 +297,6 @@
       </ul>
       <div class="nav-controls">
         <button class="lang-switch">🇬🇧 EN</button>
-        <button class="theme-toggle">Light Theme</button>
         <div class="hamburger">
           <span></span><span></span><span></span>
         </div>
@@ -297,8 +320,9 @@
       <div class="hero-logo-container">
         <img src="Images/Logo/WhatsApp Image 2026-05-28 at 22.46.40.jpeg" alt="Designs of Desire" class="hero-logo">
       </div>
-      <h1 data-i18n="hero_title">Your Brand. Elevated.</h1>
-      <p data-i18n="hero_sub">Premium visual identity & custom websites for creators who refuse to blend in.</p>
+      <h1 data-i18n="hero_title">Designed for excellence, remembered for life.</h1>
+      <p data-i18n="hero_sub">Get a high-end look without paying agency prices.</p>
+      <div class="hero-motto">Premium design for creators, models, and brands with taste.</div>
       <div class="hero-btns">
         <a href="visual-design.html" class="btn btn-primary" data-i18n="btn_explore">Explore Visual Design</a>
         <a href="websites.html" class="btn btn-outline" data-i18n="btn_get_website">Get My Website</a>
@@ -307,28 +331,6 @@
     <div class="scroll-indicator"></div>
   </header>
 
-  <!-- Stats -->
-  <section class="stats-bar">
-    <div class="container stats-grid reveal">
-      <div class="stat-item">
-        <div class="stat-number" data-target="50" data-suffix="+">0</div>
-        <div class="stat-label" data-i18n="stats_creators">Creators Served</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number" data-target="100" data-suffix="%">0</div>
-        <div class="stat-label" data-i18n="stats_custom">Custom Designs</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number" data-target="4">0</div>
-        <div class="stat-label" data-i18n="stats_platforms">Platforms Supported</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number" data-target="24" data-suffix="h">0</div>
-        <div class="stat-label" data-i18n="stats_turnaround">Avg Turnaround</div>
-      </div>
-    </div>
-  </section>
-
   <!-- Daily Inspiration -->
   <section class="daily-inspiration-section">
     <div class="container reveal">
@@ -336,7 +338,7 @@
         <div class="daily-inspiration-kicker">Daily Inspiration</div>
         <blockquote class="daily-inspiration-quote" id="daily-inspiration-quote">“Design is the silent ambassador of your brand.”</blockquote>
         <div class="daily-inspiration-person" id="daily-inspiration-person">Paul Rand</div>
-        <div class="daily-inspiration-meta" id="daily-inspiration-meta">A new thought appears here every day.</div>
+        <div class="daily-inspiration-meta" id="daily-inspiration-meta">A new quote appears here every day.</div>
       </div>
     </div>
   </section>
@@ -353,7 +355,7 @@
       <div class="card service-card">
         <div class="service-icon">✦</div>
         <h2 class="card-title" data-i18n="service_web_title">Website Creation</h2>
-        <p class="card-desc" data-i18n="service_web_desc">Basic to fully custom with payment & subscriptions — Starting from €100</p>
+        <p class="card-desc" data-i18n="service_web_desc">Full custom websites, commerce platforms, and bespoke digital systems — Starting from €400</p>
         <a href="websites.html" class="gold-gradient-text" data-i18n="btn_learn_more">Learn More →</a>
       </div>
     </div>
@@ -362,52 +364,58 @@
   <!-- Reviews Section -->
   <section class="reviews-section">
     <div class="container reveal">
-      <h2 class="text-center" style="font-size: 2.5rem; margin-bottom: 60px;">What Creators Say</h2>
-      <div class="reviews-grid">
-        <!-- // REPLACE_WITH_REAL_REVIEWS -->
-        <div class="card review-card">
-          <p class="review-quote">"She transformed my entire brand. The logo alone made my subscribers double-take. Worth every cent."</p>
-          <div class="review-author">
-            <div><strong>Sofia R.</strong> <br><small>OnlyFans Creator</small></div>
-            <div class="stars">★★★★★</div>
-          </div>
+      <div class="reviews-intro">
+        <div>
+          <div class="reviews-kicker">Private Client Notes</div>
+          <h2>What Creators Say</h2>
         </div>
-        <div class="card review-card">
-          <p class="review-quote">"The website she built me is absolutely elite. I stopped losing 20% to OnlyFans. Best investment I made."</p>
-          <div class="review-author">
-            <div><strong>Mia K.</strong> <br><small>Independent Creator</small></div>
-            <div class="stars">★★★★★</div>
-          </div>
+        <p>Real words from creators who trusted the process, saw their identity sharpen, and left with assets that felt unmistakably theirs.</p>
+      </div>
+
+      <div class="review-carousel" aria-label="Client reviews carousel">
+        <div class="review-viewport">
+          <article class="review-slide active" data-review-slide>
+            <div class="review-tag">Miss Selina · The Soft Command</div>
+            <p class="review-quote">"You captured my essence exactly ❤️"</p>
+            <div class="review-author">
+              <div><strong>Miss Selina</strong><br><small>Independent Creator · Australia</small></div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </article>
+
+          <article class="review-slide" data-review-slide>
+            <div class="review-tag">Miss Selina · Full Brand System</div>
+            <p class="review-quote">"You put so much energy into this… thank you."</p>
+            <div class="review-author">
+              <div><strong>Miss Selina</strong><br><small>The Soft Command</small></div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </article>
+
+          <article class="review-slide" data-review-slide>
+            <div class="review-tag">Viper Queen · Logo Identity</div>
+            <p class="review-quote">"Other models logos are good, but mine is the best."</p>
+            <div class="review-author">
+              <div><strong>Viper Queen</strong><br><small>Creator Brand Identity</small></div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </article>
+
+          <article class="review-slide review-cta" data-review-slide>
+            <div class="review-tag">Invitation Only Energy</div>
+            <p class="review-quote">Want your brand to be the next one they remember?</p>
+            <div class="review-cta-actions">
+              <a href="visual-design.html" class="btn btn-primary">Explore Visual Design</a>
+              <a href="websites.html" class="btn btn-outline">Build a Website</a>
+            </div>
+          </article>
         </div>
-        <div class="card review-card">
-          <p class="review-quote">"My price list looks more professional than most big agencies. I get compliments every day."</p>
-          <div class="review-author">
-            <div><strong>Leonie V.</strong> <br><small>FeetFinder Model</small></div>
-            <div class="stars">★★★★★</div>
-          </div>
+
+        <div class="review-controls">
+          <button class="review-arrow" id="review-prev" aria-label="Previous review">←</button>
+          <div class="review-dots" id="review-dots" aria-label="Review pagination"></div>
+          <button class="review-arrow" id="review-next" aria-label="Next review">→</button>
         </div>
-        <div class="card review-card">
-          <p class="review-quote">"Fast, stunning, exactly what I described. She just GETS it."</p>
-          <div class="review-author">
-            <div><strong>Valentina S.</strong> <br><small>Patreon Creator</small></div>
-            <div class="stars">★★★★★</div>
-          </div>
-        </div>
-        <div class="card review-card">
-          <p class="review-quote">"The Rules & Boundaries poster alone filtered out 90% of time-wasters. Game changer."</p>
-          <div class="review-author">
-            <div><strong>Ariel M.</strong> <br><small>Content Creator</small></div>
-            <div class="stars">★★★★★</div>
-          </div>
-        </div>
-<<<<<<< HEAD
-=======
-        <div class="reviews-nav-container">
-          <button class="review-nav-arrow" id="review-prev">Prev</button>
-          <div class="reviews-dots" id="reviews-dots"></div>
-          <button class="review-nav-arrow" id="review-next">Next</button>
-        </div>
->>>>>>> parent of abcf9ef (Update index.html)
       </div>
     </div>
   </section>
@@ -451,7 +459,7 @@
             <a href="premades.html" data-i18n="nav_premades">Premades</a>
           </div>
           <div class="footer-links">
-            <a href="https://www.instagram.com/designs_of_desire_official/" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/designs_of_desire_official_/" target="_blank">Instagram</a>
             <a href="mailto:designs.of.desirex@gmail.com">Email Us</a>
             <span style="opacity: 0.8; margin-top: 20px;">Accepted: PayPal</span>
           </div>

@@ -48,40 +48,6 @@
       margin: 15px 0;
     }
 
-    .bundles-section {
-      padding: 100px 0;
-      background: rgba(201, 168, 76, 0.03);
-    }
-    .bundle-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      margin-top: 50px;
-    }
-    .bundle-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border-color);
-      padding: 40px;
-      position: relative;
-      overflow: hidden;
-    }
-    .bundle-card.featured {
-      border: 2px solid var(--accent-color-1);
-      box-shadow: 0 0 20px var(--border-glow);
-    }
-    .discount-badge {
-      position: absolute;
-      top: 20px;
-      right: -30px;
-      background: var(--accent-color-1);
-      color: var(--button-text);
-      padding: 5px 40px;
-      transform: rotate(45deg);
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-    
     .addons-section {
       padding: 100px 0;
       text-align: center;
@@ -100,10 +66,6 @@
       font-size: 0.9rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-    }
-
-    @media (max-width: 768px) {
-      .bundle-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -125,7 +87,6 @@
       </ul>
       <div class="nav-controls">
         <button class="lang-switch">🇬🇧 EN</button>
-        <button class="theme-toggle">Light Theme</button>
         <div class="hamburger">
           <span></span><span></span><span></span>
         </div>
@@ -207,45 +168,6 @@
 
   </section>
 
-  <!-- Bundles -->
-  <section class="bundles-section">
-    <div class="container reveal">
-      <h2 class="text-center" style="font-size: 2.5rem;">Discounted Bundles</h2>
-      <p class="text-center" style="opacity: 0.8;">More Value, More Impact</p>
-
-      <div class="bundle-grid">
-        <div class="bundle-card">
-          <div class="discount-badge">5% OFF</div>
-          <h3 style="font-size: 1.8rem; margin-bottom: 10px;">The Identity Pack</h3>
-          <p style="opacity: 0.8; margin-bottom: 20px;">Logo + Banner</p>
-          <div style="font-family: var(--font-display); font-size: 2rem;">€47.50 <s style="font-size: 1.2rem; opacity: 0.5;">€50</s></div>
-        </div>
-
-        <div class="bundle-card">
-          <div class="discount-badge">10% OFF</div>
-          <h3 style="font-size: 1.8rem; margin-bottom: 10px;">The Professional Pack</h3>
-          <p style="opacity: 0.8; margin-bottom: 20px;">Logo + Banner + Price List</p>
-          <div style="font-family: var(--font-display); font-size: 2rem;">€67.50 <s style="font-size: 1.2rem; opacity: 0.5;">€75</s></div>
-        </div>
-
-        <div class="bundle-card">
-          <div class="discount-badge">15% OFF</div>
-          <h3 style="font-size: 1.8rem; margin-bottom: 10px;">The Empire Pack</h3>
-          <p style="opacity: 0.8; margin-bottom: 20px;">Logo + Banner + Price List + Basic Website</p>
-          <div style="font-family: var(--font-display); font-size: 2rem;">€148.75 <s style="font-size: 1.2rem; opacity: 0.5;">€175</s></div>
-        </div>
-
-        <div class="bundle-card featured">
-          <div class="discount-badge">20% OFF</div>
-          <h3 style="font-size: 1.8rem; margin-bottom: 10px; color: var(--accent-color-1);">The Independence Pack</h3>
-          <p style="opacity: 0.8; margin-bottom: 20px;">Full Branding + Full Custom Website</p>
-          <div style="font-family: var(--font-display); font-size: 2rem;">From €800 <s style="font-size: 1.2rem; opacity: 0.5;">€1,000+</s></div>
-          <p style="margin-top: 10px; color: var(--accent-color-1);">You save over €200</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Add-ons -->
   <section class="addons-section container reveal">
     <h2 style="font-size: 2.5rem;">Custom Add-Ons</h2>
@@ -262,7 +184,7 @@
     <div class="container">
       <h2 style="font-size: 2.5rem; margin-bottom: 40px; color: var(--button-text);">Not sure which to choose?</h2>
       <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-        <a href="https://www.instagram.com/designs_of_desire_official/" class="btn btn-outline" style="border-color: var(--button-text); color: var(--button-text);">Message Me on Instagram</a>
+        <a href="https://www.instagram.com/designs_of_desire_official_/" class="btn btn-outline" style="border-color: var(--button-text); color: var(--button-text);">Message Me on Instagram</a>
         <a href="mailto:designs.of.desirex@gmail.com" class="btn btn-outline" style="border-color: var(--button-text); color: var(--button-text);">Email Me</a>
       </div>
     </div>
@@ -287,7 +209,7 @@
             <a href="premades.html" data-i18n="nav_premades">Premades</a>
           </div>
           <div class="footer-links">
-            <a href="https://www.instagram.com/designs_of_desire_official/" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/designs_of_desire_official_/" target="_blank">Instagram</a>
             <a href="mailto:designs.of.desirex@gmail.com">Email Us</a>
             <span style="opacity: 0.8; margin-top: 20px;">Accepted: PayPal</span>
           </div>

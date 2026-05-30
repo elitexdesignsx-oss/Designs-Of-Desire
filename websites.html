@@ -25,17 +25,20 @@
     /* Website Cards */
     .web-cards-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 28px;
       padding-bottom: 100px;
+      align-items: stretch;
     }
     .web-card {
       background: var(--card-bg);
       border: 1px solid var(--border-color);
-      padding: 50px;
+      padding: 38px;
       transition: var(--transition);
       position: relative;
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
     }
     .web-card:hover {
       box-shadow: 0 10px 40px var(--border-glow);
@@ -43,11 +46,37 @@
     .web-card.premium {
       border: 2px solid var(--accent-color-1);
     }
+    .web-card.elite {
+      border: 2px solid var(--accent-color-1);
+      box-shadow: 0 0 22px var(--border-glow);
+    }
+    .fit-label {
+      display: inline-block;
+      color: var(--accent-color-1);
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+    .web-card h2 {
+      font-size: clamp(1.8rem, 2.7vw, 2.45rem);
+      margin-bottom: 12px;
+    }
+    .web-price {
+      font-size: clamp(1.35rem, 2vw, 1.7rem);
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+    .web-fit {
+      margin-top: 15px;
+      opacity: 0.82;
+    }
     .web-card ul {
       margin-top: 30px;
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 13px;
     }
     .web-card li {
       position: relative;
@@ -61,64 +90,365 @@
       color: var(--accent-color-1);
       font-weight: bold;
     }
+    .web-card .btn {
+      margin-top: auto;
+    }
+
+    .agency-value-section {
+      padding-bottom: 80px;
+    }
+    .agency-value-panel {
+      border: 1px solid var(--border-color);
+      background:
+        linear-gradient(135deg, rgba(201, 168, 76, 0.1), transparent 34%),
+        var(--card-bg);
+      padding: clamp(34px, 6vw, 64px);
+    }
+    .agency-kicker {
+      color: var(--accent-color-1);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+    .agency-value-panel h2 {
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      max-width: 820px;
+      margin-bottom: 18px;
+    }
+    .agency-value-panel > p {
+      max-width: 760px;
+      opacity: 0.78;
+      margin-bottom: 38px;
+      font-size: 1.08rem;
+    }
+    .agency-compare-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+    .agency-compare-card {
+      border: 1px solid var(--border-color);
+      padding: 26px;
+      background: rgba(10, 10, 10, 0.36);
+    }
+    .agency-compare-card span {
+      display: block;
+      color: var(--accent-color-1);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    .agency-compare-card strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: clamp(1.65rem, 3vw, 2.45rem);
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    .agency-compare-card p {
+      opacity: 0.74;
+    }
+    .agency-note {
+      margin-top: 22px;
+      opacity: 0.58;
+      font-size: 0.9rem;
+    }
+    .agency-disclaimer {
+      display: inline-block;
+      border: 1px solid var(--accent-color-1);
+      color: var(--accent-color-1);
+      background: rgba(201, 168, 76, 0.08);
+      padding: 9px 16px;
+      margin-bottom: 22px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .agency-price-label {
+      display: inline-block;
+      border: 1px solid rgba(231, 76, 60, 0.48);
+      color: #f05a47;
+      padding: 6px 10px;
+      margin-bottom: 14px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .dod-start {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(201, 168, 76, 0.24);
+    }
+    .dod-start span {
+      display: block;
+      color: var(--accent-color-1);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .dod-start strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: clamp(1.35rem, 2.4vw, 2rem);
+      color: var(--accent-color-1);
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    @media (max-width: 1120px) {
+      .web-cards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
 
     /* ROI Calculator */
     .calculator-section {
-      padding: 100px 0;
-      background: var(--card-bg);
+      padding: 110px 0;
+      background:
+        linear-gradient(180deg, rgba(201, 168, 76, 0.05), transparent 18%, rgba(201, 168, 76, 0.035)),
+        var(--card-bg);
       border-top: 1px solid var(--border-color);
       border-bottom: 1px solid var(--border-color);
     }
     .calc-container {
-      max-width: 900px;
+      max-width: 1160px;
       margin: 0 auto;
-      background: var(--bg-color);
-      border: 1px solid var(--border-color);
-      border-radius: 12px;
-      padding: 40px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.035), transparent 28%),
+        linear-gradient(180deg, rgba(201, 168, 76, 0.045), rgba(0, 0, 0, 0.08)),
+        #070706;
+      border: 1px solid rgba(201, 168, 76, 0.36);
+      border-radius: 4px;
+      padding: clamp(24px, 4vw, 42px);
+      box-shadow:
+        0 24px 70px rgba(0, 0, 0, 0.42),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      position: relative;
+      overflow: hidden;
+    }
+    .calc-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 32px;
+      right: 32px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(244, 218, 139, 0.72), transparent);
     }
     .calc-grid {
       display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 50px;
+      grid-template-columns: minmax(290px, 0.82fr) minmax(0, 1.18fr);
+      gap: clamp(24px, 4vw, 42px);
+      align-items: start;
     }
     .calc-inputs {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 28px;
+      padding: clamp(22px, 3vw, 30px);
+      border: 1px solid rgba(201, 168, 76, 0.22);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent),
+        rgba(0, 0, 0, 0.24);
+      min-height: 100%;
     }
     .input-group label {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 10px;
-      font-weight: 500;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 14px;
+      font-weight: 700;
       text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.78rem;
+      line-height: 1.4;
+    }
+    .input-group label span {
+      color: var(--accent-color-1);
+      font-size: 0.95rem;
       letter-spacing: 1px;
-      font-size: 0.9rem;
+      white-space: nowrap;
     }
     .input-group select, .input-group input[type="range"] {
       width: 100%;
-      background: var(--card-bg);
+      background: #0d0c0a;
       border: 1px solid var(--border-color);
       color: var(--text-color);
-      padding: 12px;
-      border-radius: 6px;
+      border-radius: 4px;
       font-family: var(--font-body);
     }
+    .input-group select {
+      min-height: 56px;
+      padding: 0 18px;
+      outline: none;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    }
+    .input-group select:focus {
+      border-color: var(--accent-color-1);
+      box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.12);
+    }
+    .input-group input[type="range"] {
+      appearance: none;
+      height: 4px;
+      padding: 0;
+      border: 0;
+      background: rgba(255, 255, 255, 0.18);
+      accent-color: var(--accent-color-1);
+    }
+    .input-group input[type="range"]::-webkit-slider-runnable-track {
+      height: 4px;
+      background: linear-gradient(90deg, rgba(244, 218, 139, 0.95), rgba(201, 168, 76, 0.86));
+      border-radius: 999px;
+    }
+    .input-group input[type="range"]::-webkit-slider-thumb {
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      margin-top: -7px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 30%, #fff3bc, #c9a84c 55%, #6f5515);
+      border: 1px solid rgba(255, 245, 190, 0.75);
+      box-shadow: 0 0 18px rgba(201, 168, 76, 0.42);
+      cursor: pointer;
+    }
+    .input-group input[type="range"]::-moz-range-track {
+      height: 4px;
+      background: linear-gradient(90deg, rgba(244, 218, 139, 0.95), rgba(201, 168, 76, 0.86));
+      border-radius: 999px;
+    }
+    .input-group input[type="range"]::-moz-range-thumb {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 30%, #fff3bc, #c9a84c 55%, #6f5515);
+      border: 1px solid rgba(255, 245, 190, 0.75);
+      box-shadow: 0 0 18px rgba(201, 168, 76, 0.42);
+      cursor: pointer;
+    }
     .calc-outputs {
-      background: rgba(201, 168, 76, 0.05);
-      border: 1px solid var(--border-color);
-      padding: 30px;
-      border-radius: 8px;
+      background:
+        linear-gradient(135deg, rgba(201, 168, 76, 0.08), transparent 36%),
+        rgba(16, 15, 11, 0.92);
+      border: 1px solid rgba(201, 168, 76, 0.32);
+      padding: clamp(22px, 3vw, 34px);
+      border-radius: 4px;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035);
+    }
+    .calc-explainer {
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      border-left: 3px solid var(--accent-color-1);
+      background: rgba(0, 0, 0, 0.24);
+      padding: 18px 20px;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+    }
+    .calc-explainer strong {
+      color: var(--accent-color-1);
+      display: block;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.78rem;
+    }
+    .calc-explainer p {
+      opacity: 0.78;
+      line-height: 1.65;
+    }
+    .calc-kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .calc-kpi-card {
+      border: 1px solid rgba(201, 168, 76, 0.26);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent),
+        rgba(0, 0, 0, 0.26);
+      padding: 20px;
+      min-height: 146px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+    .calc-kpi-card::after {
+      content: '';
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.72), transparent);
+    }
+    .calc-kpi-card span {
+      display: block;
+      color: var(--accent-color-1);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .calc-kpi-card strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 3.4vw, 3rem);
+      line-height: 1;
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+    .calc-kpi-card small {
+      display: block;
+      opacity: 0.58;
+      font-size: 0.78rem;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+    .calc-kpi-card.danger strong {
+      color: #f05a47;
+    }
+    .calc-kpi-card.gain strong {
+      color: var(--accent-color-1);
+    }
+    .calc-kpi-card.highlight {
+      border-color: var(--accent-color-1);
+      background:
+        linear-gradient(135deg, rgba(201, 168, 76, 0.18), transparent 46%),
+        rgba(0, 0, 0, 0.35);
+      box-shadow: 0 0 22px rgba(201, 168, 76, 0.18);
+    }
+    .calc-small {
+      display: block;
+      opacity: 0.58;
+      font-size: 0.8rem;
+      margin-top: 4px;
+      max-width: 300px;
     }
     .output-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 15px;
-      padding-bottom: 15px;
+      gap: 24px;
+      margin-bottom: 0;
+      padding: 18px 0;
       border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .output-label strong {
+      display: block;
+      font-size: 0.95rem;
+      line-height: 1.35;
+      margin-bottom: 4px;
     }
     [data-theme="marble"] .output-row {
       border-bottom-color: rgba(0,0,0,0.1);
@@ -129,19 +459,27 @@
       padding-bottom: 0;
     }
     .output-val {
-      font-size: 1.5rem;
+      font-size: clamp(1.35rem, 2.3vw, 2rem);
       font-family: var(--font-display);
-      font-weight: bold;
+      font-weight: 500;
+      letter-spacing: 0;
+      white-space: nowrap;
     }
     .val-red { color: #e74c3c; }
-    .val-green { color: var(--accent-color-1); font-size: 2rem; }
+    .val-green { color: var(--accent-color-1); font-size: clamp(1.75rem, 3vw, 2.55rem); }
     
     .calc-conclusion {
-      margin-top: 30px;
+      margin-top: 32px;
+      padding: 26px clamp(20px, 4vw, 48px) 0;
+      border-top: 1px solid rgba(201, 168, 76, 0.28);
       text-align: center;
       font-family: var(--font-display);
-      font-size: 1.4rem;
+      font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+      line-height: 1.7;
       color: var(--accent-color-1);
+      max-width: 980px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Timeline */
@@ -190,7 +528,13 @@
     }
 
     @media (max-width: 768px) {
-      .web-cards-grid, .calc-grid {
+      .calc-grid {
+        grid-template-columns: 1fr;
+      }
+      .calc-kpi-grid {
+        grid-template-columns: 1fr;
+      }
+      .agency-compare-grid {
         grid-template-columns: 1fr;
       }
       .timeline {
@@ -232,7 +576,6 @@
       </ul>
       <div class="nav-controls">
         <button class="lang-switch">🇬🇧 EN</button>
-        <button class="theme-toggle">Light Theme</button>
         <div class="hamburger">
           <span></span><span></span><span></span>
         </div>
@@ -252,63 +595,126 @@
 
   <header class="page-header container reveal">
     <h1>Your Own Platform.<br>Your Own Rules.</h1>
-    <p>Stop giving 20% of your income to platforms that don't care about you.</p>
+    <p>Get a high-end look without paying agency prices.</p>
   </header>
+
+  <!-- Agency Value -->
+  <section class="agency-value-section container reveal">
+    <div class="agency-value-panel">
+      <div class="agency-kicker">Agency-level presence, independent pricing</div>
+      <h2>High-end custom design without the agency invoice.</h2>
+      <div class="agency-disclaimer">Not Designs of Desire pricing</div>
+      <p>This section is market context only. The dollar ranges below are examples of what agencies may charge elsewhere, not what Designs of Desire charges. Your actual price is the package price shown in the website section and depends on scope.</p>
+      <div class="agency-compare-grid">
+        <div class="agency-compare-card">
+          <span>Typical small agency</span>
+          <div class="agency-price-label">Agency reference only</div>
+          <strong>$5,000 — $15,000</strong>
+          <p>Often seen for custom websites at traditional agencies.</p>
+          <div class="dod-start">
+            <span>Designs of Desire starts at</span>
+            <strong>€400 — €600</strong>
+            <p>For a Full Custom Website.</p>
+          </div>
+        </div>
+        <div class="agency-compare-card">
+          <span>Advanced / luxury agency</span>
+          <div class="agency-price-label">Agency reference only</div>
+          <strong>$15,000 — $50,000</strong>
+          <p>Often seen for luxury platforms at traditional agencies.</p>
+          <div class="dod-start">
+            <span>Designs of Desire starts at</span>
+            <strong>€2,000+</strong>
+            <p>For bespoke digital systems with advanced functionality.</p>
+          </div>
+        </div>
+      </div>
+      <div class="agency-note">The dollar amounts are not your invoice and not Designs of Desire package prices. They are shown only to explain the gap between agency market pricing and independent creator-friendly pricing.</div>
+    </div>
+  </section>
 
   <!-- Web Cards -->
   <section class="container web-cards-grid reveal">
     <div class="web-card">
-      <h2 style="font-size: 2.2rem; margin-bottom: 10px;">Basic Website</h2>
-      <div class="gold-gradient-text" style="font-size: 1.5rem; font-weight: bold;">€100 — €400</div>
-      <p style="margin-top: 15px; opacity: 0.8;">Ideal for establishing your online presence professionally.</p>
+      <div class="fit-label">For presence</div>
+      <h2>Full Custom Website</h2>
+      <div class="gold-gradient-text web-price">€400 — €600</div>
+      <p class="web-fit">Best for creators, models, fetish pages, or brands who need a polished home, clear offer, and a premium first impression.</p>
       <ul>
-        <li>Multi-page website</li>
+        <li>Custom multi-page presentation site</li>
         <li>Mobile-first, modern design</li>
         <li>Contact / booking integration</li>
         <li>Brand-consistent styling</li>
+        <li>Better routing, clearer offer, fewer confused visitors</li>
       </ul>
-      <a href="mailto:designs.of.desirex@gmail.com?subject=Booking:%20Basic%20Website" class="btn btn-outline" style="width: 100%; margin-top: 40px;">Book Basic Website</a>
+      <a href="mailto:designs.of.desirex@gmail.com?subject=Booking:%20Full%20Custom%20Website" class="btn btn-outline" style="width: 100%;">Book Full Custom</a>
     </div>
 
     <div class="web-card premium">
-      <div style="position: absolute; top: 0; right: 0; background: var(--accent-color-1); color: var(--button-text); padding: 5px 20px; font-weight: bold; font-size: 0.8rem; text-transform: uppercase;">Most Popular</div>
-      <h2 style="font-size: 2.2rem; margin-bottom: 10px;">Full Custom Website</h2>
-      <div class="gold-gradient-text" style="font-size: 1.5rem; font-weight: bold;">€900 — €1,500</div>
-      <p style="margin-top: 15px; opacity: 0.8;">Own your platform. Own your income.</p>
+      <div class="fit-label">For selling</div>
+      <h2>Creator Commerce Platform</h2>
+      <div class="gold-gradient-text web-price">€1,200 — €1,500</div>
+      <p class="web-fit">Best for creators who want to sell directly: content menus, bookings, digital products, subscriptions, or private access.</p>
       <ul>
-        <li>Everything in Basic, plus:</li>
+        <li>Everything in Full Custom Website</li>
         <li>Payment integration (Stripe, PayPal)</li>
         <li>Subscription management system</li>
         <li>Digital product / content shop</li>
         <li>Members-only access area</li>
-        <li>SEO-optimised structure</li>
+        <li>Direct selling structure to reduce friction</li>
       </ul>
-      <a href="mailto:designs.of.desirex@gmail.com?subject=Booking:%20Full%20Custom%20Website" class="btn btn-primary" style="width: 100%; margin-top: 40px;">Book Custom Website</a>
+      <a href="mailto:designs.of.desirex@gmail.com?subject=Booking:%20Creator%20Commerce%20Platform" class="btn btn-primary" style="width: 100%;">Book Commerce Platform</a>
+    </div>
+
+    <div class="web-card elite">
+      <div class="fit-label">For systems</div>
+      <h2>Bespoke Digital System</h2>
+      <div class="gold-gradient-text web-price">€2,000+ discussion</div>
+      <p class="web-fit">Best for advanced creator businesses or other brands needing custom tools, automations, chatbot flows, dashboards, or unusual logic.</p>
+      <ul>
+        <li>Everything in Creator Commerce Platform</li>
+        <li>Custom chatbot or guided client assistant</li>
+        <li>Advanced automations and dashboards</li>
+        <li>Custom booking, forms, or private flows</li>
+        <li>Follow-ups and systems that reduce manual chaos</li>
+        <li>Special integrations scoped after discovery</li>
+      </ul>
+      <a href="mailto:designs.of.desirex@gmail.com?subject=Inquiry:%20Bespoke%20Digital%20System" class="btn btn-outline" style="width: 100%;">Discuss Bespoke Build</a>
     </div>
   </section>
 
   <!-- ROI Calculator -->
   <section class="calculator-section reveal" id="roi-calculator">
     <div class="container">
-      <h2 class="text-center" style="font-size: 2.5rem; margin-bottom: 15px;">See How Much You're Losing</h2>
-      <p class="text-center" style="opacity: 0.8; margin-bottom: 60px;">And what you could keep by owning your own platform.</p>
+      <h2 class="text-center" style="font-size: 2.5rem; margin-bottom: 15px;">What Could a Website Help You Keep?</h2>
+      <p class="text-center" style="opacity: 0.8; margin-bottom: 60px;">Start with what you currently keep each month. The calculator estimates your full monthly potential, then shows what the selected website package may help recover.</p>
       
       <div class="calc-container">
         <div class="calc-grid">
           
           <div class="calc-inputs">
             <div class="input-group">
-              <label>Monthly Income <span id="income-value">€5,000</span></label>
+              <label>Current Monthly Income You Keep <span id="income-value">€5,000</span></label>
               <input type="range" id="monthly-income" min="100" max="20000" step="100" value="5000">
             </div>
             <div class="input-group">
-              <label>Primary Platform</label>
+              <label>Where Most People Find You</label>
               <select id="platform-select">
-                <option value="20">OnlyFans (20%)</option>
-                <option value="20">Fansly (20%)</option>
-                <option value="20">FeetFinder (20%)</option>
-                <option value="15">Fanvue (15%)</option>
-                <option value="10">Patreon (10%)</option>
+                <option value="Instagram" data-kind="social" data-missed="40" data-fee="0">Instagram - no fee, estimated 40% missed potential</option>
+                <option value="Twitter / X" data-kind="social" data-missed="40" data-fee="0">Twitter / X - no fee, estimated 40% missed potential</option>
+                <option value="OnlyFans" data-kind="fee" data-missed="40" data-fee="20">OnlyFans - 20% fee + estimated 40% missed potential</option>
+                <option value="Fansly" data-kind="fee" data-missed="40" data-fee="20">Fansly - 20% fee + estimated 40% missed potential</option>
+                <option value="FeetFinder" data-kind="fee" data-missed="40" data-fee="20">FeetFinder - 20% fee + estimated 40% missed potential</option>
+                <option value="Fanvue" data-kind="fee" data-missed="40" data-fee="15">Fanvue - 15% fee + estimated 40% missed potential</option>
+                <option value="Patreon" data-kind="fee" data-missed="40" data-fee="10">Patreon - 10% fee + estimated 40% missed potential</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label>Website Package</label>
+              <select id="website-package">
+                <option value="500" data-name="Full Custom Website" data-potential="15" selected>Full Custom Website (€400–€600)</option>
+                <option value="1350" data-name="Creator Commerce Platform" data-potential="20">Creator Commerce Platform (€1,200–€1,500)</option>
+                <option value="2000" data-name="Bespoke Digital System" data-potential="40">Bespoke Digital System (€2,000+)</option>
               </select>
             </div>
             <div class="input-group">
@@ -318,38 +724,52 @@
           </div>
 
           <div class="calc-outputs">
-            <div class="output-row">
-              <span>Lost Per Month:</span>
-              <span class="output-val val-red" id="out-monthly">€1,000</span>
+            <div class="calc-explainer">
+              <strong id="calc-explainer-title">How to read this</strong>
+              <p id="calc-explainer-text">This starts from what you currently keep and estimates the larger earning potential behind it.</p>
             </div>
-            <div class="output-row">
-              <span>Lost Per Year:</span>
-              <span class="output-val val-red" id="out-yearly">€12,000</span>
-            </div>
-            <div class="output-row">
-              <span>Total Lost:</span>
-              <span class="output-val val-red" id="out-total">€12,000</span>
+            <div class="calc-kpi-grid">
+              <div class="calc-kpi-card danger">
+                <span>Leaking Now / Month</span>
+                <strong id="out-monthly">€3,333</strong>
+                <small id="out-monthly-help">Estimated full potential minus what you keep now.</small>
+              </div>
+              <div class="calc-kpi-card gain">
+                <span>Website Gross Gain / Month</span>
+                <strong id="out-yearly">€1,250</strong>
+                <small id="out-yearly-help">Full Custom Website recovers 15% of full potential.</small>
+              </div>
+              <div class="calc-kpi-card highlight">
+                <span>New Monthly Total</span>
+                <strong id="out-after-monthly">€6,250</strong>
+                <small>Current income + estimated website recovery.</small>
+              </div>
+              <div class="calc-kpi-card gain">
+                <span>Recovered Value / Year</span>
+                <strong id="out-yearly-saved">€15,000</strong>
+                <small>Website gross monthly gain × 12.</small>
+              </div>
             </div>
             <div style="height: 1px; background: var(--border-color); margin: 20px 0;"></div>
             <div class="output-row">
-              <span>Custom Website Cost (One-time):</span>
-              <span class="output-val" id="out-website">€1,200</span>
+              <span class="output-label"><strong><span id="out-package-name">Full Custom Website</span> Cost:</strong><small class="calc-small">One-time website investment.</small></span>
+              <span class="output-val" id="out-website">€500</span>
             </div>
             <div class="output-row">
-              <span>Break-Even Point:</span>
-              <span class="output-val" id="out-breakeven" style="color: var(--accent-color-1);">2 Months</span>
+              <span class="output-label"><strong id="out-breakeven-label">Estimated time to cover the website cost:</strong><small class="calc-small">Website cost ÷ estimated monthly recovery.</small></span>
+              <span class="output-val" id="out-breakeven" style="color: var(--accent-color-1);">1 Month</span>
             </div>
             <div class="output-row" style="margin-top: 15px;">
-              <span>Total Savings:</span>
-              <span class="output-val val-green" id="out-savings">€10,800</span>
+              <span class="output-label"><strong id="out-savings-label">Net Recovered After Website Cost:</strong><small class="calc-small">Recovered value across your selected timeframe, minus the one-time website cost.</small></span>
+              <span class="output-val val-green" id="out-savings">€14,500</span>
             </div>
           </div>
 
         </div>
         <div class="calc-conclusion" id="out-conclusion">
-          With your own website, you keep €12,000 more per year — your site pays for itself in 2 months.
+          This is a simple planning estimate, not a promise. It shows how much value a clearer website path could help recover.
         </div>
-        <p class="text-center" style="margin-top: 15px; opacity: 0.7; font-size: 0.9rem;">Add a digital shop and subscription system to multiply that figure further.</p>
+        <p class="text-center" style="margin-top: 15px; opacity: 0.7; font-size: 0.9rem;">Estimates are planning tools, not guaranteed income. Actual results depend on audience quality, offer, traffic, pricing, and consistency.</p>
       </div>
     </div>
   </section>
@@ -385,9 +805,10 @@
   <section class="bottom-cta gold-gradient-bg reveal">
     <div class="container">
       <h2 style="font-size: 2.5rem; margin-bottom: 40px; color: var(--button-text);">Ready to own your income?</h2>
+      <p style="max-width: 620px; margin: -22px auto 34px; color: var(--button-text); opacity: 0.82;">Get a high-end look without paying agency prices.</p>
       <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
         <a href="mailto:designs.of.desirex@gmail.com?subject=Website%20Inquiry" class="btn btn-outline" style="border-color: var(--button-text); color: var(--button-text);">Book Your Website</a>
-        <a href="https://www.instagram.com/designs_of_desire_official/" class="btn btn-outline" style="border-color: var(--button-text); color: var(--button-text);">DM on Instagram</a>
+        <a href="https://www.instagram.com/designs_of_desire_official_/" class="btn btn-outline" style="border-color: var(--button-text); color: var(--button-text);">DM on Instagram</a>
       </div>
     </div>
   </section>
@@ -411,7 +832,7 @@
             <a href="premades.html" data-i18n="nav_premades">Premades</a>
           </div>
           <div class="footer-links">
-            <a href="https://www.instagram.com/designs_of_desire_official/" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/designs_of_desire_official_/" target="_blank">Instagram</a>
             <a href="mailto:designs.of.desirex@gmail.com">Email Us</a>
             <span style="opacity: 0.8; margin-top: 20px;">Accepted: PayPal</span>
           </div>

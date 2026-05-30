@@ -28,6 +28,43 @@
       align-items: center;
       margin-bottom: 120px;
     }
+    .showcase-block.vip-client {
+      position: relative;
+      padding: clamp(18px, 3vw, 28px);
+      border: 1px solid rgba(201, 168, 76, 0.28);
+      background:
+        linear-gradient(135deg, rgba(201, 168, 76, 0.08), transparent 34%),
+        radial-gradient(circle at 20% 18%, rgba(128, 69, 171, 0.18), transparent 38%),
+        rgba(0, 0, 0, 0.16);
+      box-shadow:
+        0 24px 70px rgba(0, 0, 0, 0.34),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      overflow: hidden;
+    }
+    .showcase-block.vip-client::before {
+      content: '';
+      position: absolute;
+      inset: 10px;
+      border: 1px solid rgba(244, 218, 139, 0.12);
+      pointer-events: none;
+    }
+    .vip-client::after {
+      content: 'VIP LOYAL CLIENT';
+      position: absolute;
+      top: 24px;
+      right: -48px;
+      width: 220px;
+      padding: 9px 0;
+      text-align: center;
+      background: linear-gradient(135deg, #f4da8b, #c9a84c 55%, #7f611b);
+      color: #100d05;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      transform: rotate(38deg);
+      box-shadow: 0 8px 26px rgba(0, 0, 0, 0.35);
+      z-index: 4;
+    }
     .showcase-block.reverse {
       grid-template-columns: 1fr 1.2fr;
     }
@@ -43,6 +80,46 @@
       border: 1px solid var(--border-color);
       border-radius: 8px;
     }
+    .vip-client .showcase-img-col {
+      position: relative;
+      border-color: rgba(244, 218, 139, 0.42);
+      background:
+        linear-gradient(135deg, rgba(244, 218, 139, 0.11), transparent 30%),
+        #080807;
+      box-shadow:
+        0 0 0 1px rgba(201, 168, 76, 0.08),
+        0 22px 56px rgba(201, 168, 76, 0.16);
+      overflow: hidden;
+    }
+    .vip-client .showcase-img-col::before {
+      content: 'Loyal Client Feature';
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      z-index: 3;
+      color: #130f05;
+      background: linear-gradient(135deg, #f4da8b, #c9a84c);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.34);
+    }
+    .vip-client .showcase-img-col::after {
+      content: '';
+      position: absolute;
+      top: -35%;
+      bottom: -35%;
+      left: -75%;
+      width: 42%;
+      background: linear-gradient(90deg, transparent, rgba(255, 245, 200, 0.22), transparent);
+      transform: rotate(18deg);
+      animation: vipSheen 4.8s ease-in-out infinite;
+      pointer-events: none;
+      z-index: 2;
+    }
     .showcase-img {
       width: 100%;
       height: auto;
@@ -52,6 +129,15 @@
     .creator-card {
       padding: 40px;
       border-left: 3px solid var(--accent-color-1);
+    }
+    .vip-client .creator-card {
+      border-left-color: #f4da8b;
+      background: linear-gradient(90deg, rgba(201, 168, 76, 0.08), transparent 70%);
+      position: relative;
+    }
+    .vip-client .creator-name {
+      color: #fff;
+      text-shadow: 0 0 28px rgba(201, 168, 76, 0.18);
     }
     .creator-name {
       font-size: 2.5rem;
@@ -68,6 +154,28 @@
       text-transform: uppercase;
       margin-bottom: 20px;
       font-weight: 500;
+    }
+    .vip-client .creator-platform {
+      background: rgba(201, 168, 76, 0.18);
+      border: 1px solid rgba(201, 168, 76, 0.35);
+      box-shadow: 0 0 18px rgba(201, 168, 76, 0.12);
+    }
+    .vip-meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .vip-meta span {
+      border: 1px solid rgba(201, 168, 76, 0.28);
+      color: var(--accent-color-1);
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      background: rgba(201, 168, 76, 0.05);
     }
     .creator-bio {
       opacity: 0.8;
@@ -144,6 +252,58 @@
     .portfolio-item:hover .portfolio-overlay {
       opacity: 1;
     }
+    .portfolio-panorama {
+      grid-column: span 1;
+      aspect-ratio: 4/5;
+      cursor: default;
+    }
+    .portfolio-panorama:hover img {
+      transform: none;
+    }
+    .panorama-track {
+      height: 100%;
+      display: flex;
+      width: 300%;
+      animation: selinaPanorama 12s infinite ease-in-out;
+    }
+    .panorama-slide {
+      width: calc(100% / 3);
+      height: 100%;
+      background:
+        radial-gradient(circle at 50% 38%, rgba(201, 168, 76, 0.13), transparent 45%),
+        #070707;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .panorama-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 18px;
+    }
+    .portfolio-panorama .portfolio-overlay {
+      display: none;
+    }
+    [data-theme="marble"] .panorama-slide {
+      background:
+        radial-gradient(circle at 50% 38%, rgba(185, 135, 24, 0.15), transparent 45%),
+        #fffaf0;
+    }
+
+    @keyframes selinaPanorama {
+      0%, 24% { transform: translateX(0); }
+      33%, 57% { transform: translateX(-33.333%); }
+      66%, 90% { transform: translateX(-66.666%); }
+      100% { transform: translateX(0); }
+    }
+
+    @keyframes vipSheen {
+      0%, 44% { left: -75%; opacity: 0; }
+      52% { opacity: 1; }
+      72% { left: 135%; opacity: 0; }
+      100% { left: 135%; opacity: 0; }
+    }
 
     @media (max-width: 768px) {
       .showcase-block, .showcase-block.reverse {
@@ -157,6 +317,12 @@
       }
       .creator-card {
         padding: 20px 0 0 20px;
+      }
+      .vip-client::after {
+        top: 18px;
+        right: -62px;
+        width: 210px;
+        font-size: 0.62rem;
       }
     }
   </style>
@@ -179,7 +345,6 @@
       </ul>
       <div class="nav-controls">
         <button class="lang-switch">🇬🇧 EN</button>
-        <button class="theme-toggle">Light Theme</button>
         <div class="hamburger">
           <span></span><span></span><span></span>
         </div>
@@ -206,13 +371,18 @@
   <section class="container reveal">
     
     <!-- CREATOR_1 -->
-    <div class="showcase-block">
+    <div class="showcase-block vip-client">
       <a class="showcase-img-col" href="miss-selina.html" aria-label="View Miss Selina loyal client profile">
         <img src="Images/Recent Work/The Soft command logo/WhatsApp Image 2026-05-28 at 22.46.40 (1).jpeg" alt="The Soft Command logo" class="showcase-img">
       </a>
       <div class="showcase-text-col creator-card">
         <h2 class="creator-name">The Soft Command</h2>
         <div class="creator-platform">Independent Creator</div>
+        <div class="vip-meta">
+          <span>VIP Archive</span>
+          <span>Loyal Client</span>
+          <span>Signature Identity</span>
+        </div>
         <p class="creator-bio">A sophisticated creator looking for a minimalist, elegant aesthetic that speaks to high-net-worth clients.</p>
         <div class="creator-deliverable">Delivered: Logo & Brand Identity</div>
         <p class="creator-quote">"You captured my essence exactly."</p>
@@ -226,7 +396,7 @@
     <!-- CREATOR_2 -->
     <div class="showcase-block reverse">
       <div class="showcase-img-col">
-        <img src="Images/Recent Work/Viper Queen Logo/WhatsApp Image 2026-05-28 at 22.46.41.jpeg" alt="Viper Queen Logo" class="showcase-img">
+        <img src="Images/Recent Work/Viper Queen Logo/Viperqueenofficialgold-Photoroom.png" alt="Viper Queen Logo" class="showcase-img">
       </div>
       <div class="showcase-text-col creator-card">
         <h2 class="creator-name">Viper Queen</h2>
@@ -245,20 +415,21 @@
       <h2 class="text-center" style="font-size: 2.5rem;">More Work</h2>
       
       <div class="portfolio-grid">
-        <div class="portfolio-item">
-          <img src="Images/Recent Work/The Soft command logo/WhatsApp Image 2026-05-28 at 22.46.40 (2).jpeg" alt="Work 1">
-          <div class="portfolio-overlay">Brand Asset</div>
+        <div class="portfolio-item portfolio-panorama" aria-label="Looping Miss Selina logo showcase">
+          <div class="panorama-track">
+            <div class="panorama-slide">
+              <img src="Images/Recent Work/The Soft command logo/WhatsApp Image 2026-05-28 at 22.46.40 (2).jpeg" alt="Miss Selina logo showcase one">
+            </div>
+            <div class="panorama-slide">
+              <img src="Images/Recent Work/The Soft command logo/WhatsApp Image 2026-05-28 at 22.46.41 (1).jpeg" alt="Miss Selina logo showcase two">
+            </div>
+            <div class="panorama-slide">
+              <img src="Images/Recent Work/The Soft command logo/WhatsApp Image 2026-05-28 at 22.46.41 (2).jpeg" alt="Miss Selina logo showcase three">
+            </div>
+          </div>
         </div>
         <div class="portfolio-item">
-          <img src="Images/Recent Work/The Soft command logo/WhatsApp Image 2026-05-28 at 22.46.41 (1).jpeg" alt="Work 2">
-          <div class="portfolio-overlay">Brand Asset</div>
-        </div>
-        <div class="portfolio-item">
-          <img src="Images/Recent Work/The Soft command logo/WhatsApp Image 2026-05-28 at 22.46.41 (2).jpeg" alt="Work 3">
-          <div class="portfolio-overlay">Brand Asset</div>
-        </div>
-        <div class="portfolio-item">
-          <img src="Images/Recent Work/Viper Queen Logo/WhatsApp Image 2026-05-28 at 22.46.45.jpeg" alt="Work 4">
+          <img src="Images/Recent Work/Viper Queen Logo/Viperqueenofficialsilver-Photoroom.png" alt="Viper Queen silver logo variation">
           <div class="portfolio-overlay">Logo Variant</div>
         </div>
         <!-- Placeholders for 2 more -->
@@ -302,7 +473,7 @@
             <a href="premades.html" data-i18n="nav_premades">Premades</a>
           </div>
           <div class="footer-links">
-            <a href="https://www.instagram.com/designs_of_desire_official/" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/designs_of_desire_official_/" target="_blank">Instagram</a>
             <a href="mailto:designs.of.desirex@gmail.com">Email Us</a>
             <span style="opacity: 0.8; margin-top: 20px;">Accepted: PayPal</span>
           </div>

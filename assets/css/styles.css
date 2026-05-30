@@ -20,21 +20,20 @@
 }
 
 [data-theme="marble"] {
-  /* Marble Prestige */
-  /* Using a CSS gradient to simulate a subtle marble texture */
-  --bg-color: #FDFDFD;
+  /* Gilded Marble */
+  --bg-color: #FFFDF8;
   background-image: 
-    radial-gradient(circle at 15% 50%, rgba(0,0,0,0.015) 0%, transparent 50%),
-    radial-gradient(circle at 85% 30%, rgba(0,0,0,0.02) 0%, transparent 50%);
-  --text-color: #1A1A1A;
-  --card-bg: #FFFFFF;
-  --accent-color-1: #B8962E;
-  --accent-color-2: #D4AF37;
-  --border-color: rgba(184, 150, 46, 0.3);
-  --border-glow: rgba(184, 150, 46, 0.5);
-  --button-text: #FFFFFF;
-  --glass-bg: rgba(255, 255, 255, 0.8);
-  --nav-bg: rgba(253, 253, 253, 0.9);
+    radial-gradient(circle at 12% 18%, rgba(212, 175, 55, 0.2) 0%, transparent 28%),
+    linear-gradient(135deg, #FFFFFF 0%, #FFF7DF 42%, #FFFFFF 72%, #F6E6B8 100%);
+  --text-color: #15120B;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --accent-color-1: #B98718;
+  --accent-color-2: #E8C76B;
+  --border-color: rgba(185, 135, 24, 0.32);
+  --border-glow: rgba(185, 135, 24, 0.32);
+  --button-text: #141006;
+  --glass-bg: rgba(255, 253, 247, 0.78);
+  --nav-bg: rgba(255, 253, 247, 0.88);
 }
 
 * {
@@ -50,6 +49,13 @@ body {
   overflow-x: hidden;
   transition: background-color 0.4s ease, color 0.4s ease;
   line-height: 1.6;
+}
+
+[data-theme="marble"] body {
+  background:
+    radial-gradient(circle at top left, rgba(232, 199, 107, 0.24), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(185, 135, 24, 0.12), transparent 30%),
+    linear-gradient(135deg, #FFFFFF 0%, #FFF9E9 42%, #FFFFFF 70%, #F7E7BA 100%);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -112,6 +118,9 @@ nav.scrolled {
   -webkit-backdrop-filter: blur(10px);
   padding: 15px 0;
   border-bottom: 1px solid var(--border-color);
+}
+[data-theme="marble"] nav.scrolled {
+  box-shadow: 0 12px 36px rgba(185, 135, 24, 0.12);
 }
 
 .nav-container {
@@ -326,6 +335,14 @@ nav.scrolled {
   gap: 20px;
   justify-content: center;
 }
+.hero-motto {
+  color: var(--accent-color-1);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin: -24px 0 32px;
+  text-transform: uppercase;
+}
 
 .scroll-indicator {
   position: absolute;
@@ -370,6 +387,9 @@ nav.scrolled {
   padding: 40px;
   transition: var(--transition);
   position: relative;
+}
+[data-theme="marble"] .card {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.86);
 }
 
 .card:hover {

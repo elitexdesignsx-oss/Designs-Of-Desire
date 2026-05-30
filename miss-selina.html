@@ -166,8 +166,17 @@
       width: 100%;
       aspect-ratio: 1 / 1;
       display: block;
-      object-fit: cover;
+      object-fit: contain;
+      padding: 12px;
+      background:
+        radial-gradient(circle at 50% 34%, rgba(201, 168, 76, 0.14), transparent 44%),
+        #080808;
       transition: transform 0.5s ease;
+    }
+    [data-theme="marble"] .work-item img {
+      background:
+        radial-gradient(circle at 50% 34%, rgba(185, 135, 24, 0.15), transparent 44%),
+        #fffaf0;
     }
     .work-item:hover img {
       transform: scale(1.04);
@@ -379,7 +388,6 @@
       </ul>
       <div class="nav-controls">
         <button class="lang-switch">🇬🇧 EN</button>
-        <button class="theme-toggle">Light Theme</button>
         <div class="hamburger">
           <span></span><span></span><span></span>
         </div>
@@ -474,39 +482,95 @@
         <div class="work-grid">
           <button class="work-item" data-full="Images/Miss Selina/Logo/Logo Metallic style.png">
             <img src="Images/Miss Selina/Logo/Logo Metallic style.png" alt="Miss Selina metallic logo">
-            <div class="work-label"><strong>Metallic Logo</strong><span>Identity</span></div>
+            <div class="work-label"><strong>Gilded Command</strong><span>Identity</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Logo/other variations/Logo Variation 1.png">
+            <img src="Images/Miss Selina/Logo/other variations/Logo Variation 1.png" alt="Miss Selina logo variation one">
+            <div class="work-label"><strong>Velvet Authority</strong><span>Logo</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Logo/other variations/Logo Variation 1.1.png">
+            <img src="Images/Miss Selina/Logo/other variations/Logo Variation 1.1.png" alt="Miss Selina logo variation one point one">
+            <div class="work-label"><strong>Golden Poise</strong><span>Logo</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Logo/other variations/Logo Variation 1.2.png">
+            <img src="Images/Miss Selina/Logo/other variations/Logo Variation 1.2.png" alt="Miss Selina logo variation one point two">
+            <div class="work-label"><strong>Soft Dominion</strong><span>Logo</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Logo/other variations/Logo Variation 1.3.png">
+            <img src="Images/Miss Selina/Logo/other variations/Logo Variation 1.3.png" alt="Miss Selina logo variation one point three">
+            <div class="work-label"><strong>Midnight Devotion</strong><span>Logo</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Logo/other variations/Logo Variation 2.png">
+            <img src="Images/Miss Selina/Logo/other variations/Logo Variation 2.png" alt="Miss Selina logo variation two">
+            <div class="work-label"><strong>Crowned Allure</strong><span>Logo</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Logo/other variations/Logo Variation 3.png">
+            <img src="Images/Miss Selina/Logo/other variations/Logo Variation 3.png" alt="Miss Selina logo variation three">
+            <div class="work-label"><strong>Obsidian Muse</strong><span>Logo</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Logo/other variations/Logo Variation 4.png">
+            <img src="Images/Miss Selina/Logo/other variations/Logo Variation 4.png" alt="Miss Selina logo variation four">
+            <div class="work-label"><strong>Imperial Whisper</strong><span>Logo</span></div>
           </button>
           <button class="work-item" data-full="Images/Miss Selina/Logo/Logo Transparent version .png">
-            <img src="Images/Miss Selina/Logo/Logo Transparent version .png" alt="Miss Selina transparent logo">
-            <div class="work-label"><strong>Transparent Mark</strong><span>Logo</span></div>
+            <img src="Images/Miss Selina/Logo/Logo Transparent version .png" alt="Miss Selina transparent logo file">
+            <div class="work-label"><strong>Signature Cutout</strong><span>Delivery</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Logo/other variations/Logo Transparent Variation 1.png">
+            <img src="Images/Miss Selina/Logo/other variations/Logo Transparent Variation 1.png" alt="Miss Selina transparent logo variation one">
+            <div class="work-label"><strong>Bare Gold Silhouette</strong><span>Delivery</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Logo/other variations/Logo Transparent Variation 2.png">
+            <img src="Images/Miss Selina/Logo/other variations/Logo Transparent Variation 2.png" alt="Miss Selina transparent logo variation two">
+            <div class="work-label"><strong>Command Cutout</strong><span>Delivery</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Logo/other variations/Logo Transparent Variation 3.png">
+            <img src="Images/Miss Selina/Logo/other variations/Logo Transparent Variation 3.png" alt="Miss Selina transparent logo variation three">
+            <div class="work-label"><strong>Devotion Cutout</strong><span>Delivery</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Logo/other variations/Logo Transparent Variation 4.png">
+            <img src="Images/Miss Selina/Logo/other variations/Logo Transparent Variation 4.png" alt="Miss Selina transparent logo variation four">
+            <div class="work-label"><strong>Luxe Cutout</strong><span>Delivery</span></div>
           </button>
           <button class="work-item" data-full="Images/Miss Selina/List of services/List of services.png">
             <img src="Images/Miss Selina/List of services/List of services.png" alt="Miss Selina services menu">
-            <div class="work-label"><strong>Services Menu</strong><span>Sales Asset</span></div>
+            <div class="work-label"><strong>The Offering</strong><span>Services</span></div>
           </button>
           <button class="work-item" data-full="Images/Miss Selina/Price list/Slide 1.png">
             <img src="Images/Miss Selina/Price list/Slide 1.png" alt="Miss Selina price list slide one">
-            <div class="work-label"><strong>Price List I</strong><span>Pricing</span></div>
+            <div class="work-label"><strong>Velvet Rates I</strong><span>Pricing</span></div>
           </button>
           <button class="work-item" data-full="Images/Miss Selina/Price list/Slide 2.jpg">
             <img src="Images/Miss Selina/Price list/Slide 2.jpg" alt="Miss Selina price list slide two">
-            <div class="work-label"><strong>Price List II</strong><span>Pricing</span></div>
+            <div class="work-label"><strong>Velvet Rates II</strong><span>Pricing</span></div>
           </button>
           <button class="work-item" data-full="Images/Miss Selina/Rule/General/General Rules.png">
             <img src="Images/Miss Selina/Rule/General/General Rules.png" alt="Miss Selina general rules">
-            <div class="work-label"><strong>Rules</strong><span>Boundaries</span></div>
+            <div class="work-label"><strong>Boundaries of Devotion</strong><span>Rules</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Rule/Full/Slide 1.png">
+            <img src="Images/Miss Selina/Rule/Full/Slide 1.png" alt="Miss Selina full rules slide one">
+            <div class="work-label"><strong>Terms of Devotion I</strong><span>Rules</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Rule/Full/Slide 2.png">
+            <img src="Images/Miss Selina/Rule/Full/Slide 2.png" alt="Miss Selina full rules slide two">
+            <div class="work-label"><strong>Terms of Devotion II</strong><span>Rules</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss Selina/Rule/Full/Slide 3.png">
+            <img src="Images/Miss Selina/Rule/Full/Slide 3.png" alt="Miss Selina full rules slide three">
+            <div class="work-label"><strong>Terms of Devotion III</strong><span>Rules</span></div>
           </button>
           <button class="work-item" data-full="Images/Miss Selina/Story Highlight/Devotion.png">
             <img src="Images/Miss Selina/Story Highlight/Devotion.png" alt="Miss Selina devotion story highlight">
-            <div class="work-label"><strong>Devotion</strong><span>Highlight</span></div>
+            <div class="work-label"><strong>Devotion Seal</strong><span>Highlight</span></div>
           </button>
           <button class="work-item" data-full="Images/Miss Selina/Story Highlight/Rules.png">
             <img src="Images/Miss Selina/Story Highlight/Rules.png" alt="Miss Selina rules story highlight">
-            <div class="work-label"><strong>Rules</strong><span>Highlight</span></div>
+            <div class="work-label"><strong>Rule Seal</strong><span>Highlight</span></div>
           </button>
           <button class="work-item" data-full="Images/Miss Selina/Story Highlight/At my feet.png">
             <img src="Images/Miss Selina/Story Highlight/At my feet.png" alt="Miss Selina story highlight">
-            <div class="work-label"><strong>At My Feet</strong><span>Highlight</span></div>
+            <div class="work-label"><strong>At My Feet Seal</strong><span>Highlight</span></div>
           </button>
         </div>
       </div>
@@ -558,7 +622,7 @@
             <a href="premades.html" data-i18n="nav_premades">Premades</a>
           </div>
           <div class="footer-links">
-            <a href="https://www.instagram.com/designs_of_desire_official/" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/designs_of_desire_official_/" target="_blank">Instagram</a>
             <a href="https://www.instagram.com/the.soft.command/" target="_blank">The Soft Command</a>
             <a href="mailto:designs.of.desirex@gmail.com">Email Us</a>
             <span style="opacity: 0.8; margin-top: 20px;">Accepted: PayPal</span>
