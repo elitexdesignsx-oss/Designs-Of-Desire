@@ -277,6 +277,33 @@
     .portfolio-logo-frame:hover > img {
       transform: none;
     }
+    .portfolio-logo-frame .panorama-track,
+    .portfolio-logo-frame.two-slide .panorama-track {
+      position: relative;
+      width: 100%;
+      animation: none;
+    }
+    .portfolio-logo-frame .panorama-slide,
+    .portfolio-logo-frame.two-slide .panorama-slide {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      opacity: 0;
+      animation: logoFadeThree 12s infinite ease-in-out;
+    }
+    .portfolio-logo-frame.two-slide .panorama-slide {
+      animation-name: logoFadeTwo;
+      animation-duration: 8s;
+    }
+    .portfolio-logo-frame .panorama-slide:nth-child(1) {
+      animation-delay: 0s;
+    }
+    .portfolio-logo-frame .panorama-slide:nth-child(2) {
+      animation-delay: 4s;
+    }
+    .portfolio-logo-frame .panorama-slide:nth-child(3) {
+      animation-delay: 8s;
+    }
     .portfolio-panorama:hover img {
       transform: none;
     }
@@ -334,6 +361,16 @@
       0%, 42% { transform: translateX(0); }
       50%, 92% { transform: translateX(-50%); }
       100% { transform: translateX(0); }
+    }
+
+    @keyframes logoFadeThree {
+      0%, 28% { opacity: 1; }
+      34%, 100% { opacity: 0; }
+    }
+
+    @keyframes logoFadeTwo {
+      0%, 42% { opacity: 1; }
+      50%, 100% { opacity: 0; }
     }
 
     @keyframes vipSheen {
@@ -453,7 +490,7 @@
       <h2 class="text-center" style="font-size: 2.5rem;">More Work</h2>
       
       <div class="portfolio-grid">
-        <div class="portfolio-item portfolio-panorama" aria-label="Looping Miss Selina logo showcase">
+        <div class="portfolio-item portfolio-panorama portfolio-logo-frame" aria-label="Looping Miss Selina logo showcase">
           <div class="panorama-track">
             <div class="panorama-slide">
               <img src="Images/Recent Work/The Soft command logo/WhatsApp Image 2026-05-28 at 22.46.40 (2).jpeg" alt="Miss Selina logo showcase one">
@@ -466,7 +503,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item portfolio-logo-frame">
           <img src="Images/Recent Work/Viper Queen Logo/Viperqueenofficialsilver-Photoroom.png" alt="Viper Queen silver logo variation">
           <div class="portfolio-overlay">Logo Variant</div>
         </div>
