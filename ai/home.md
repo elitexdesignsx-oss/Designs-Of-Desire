@@ -22,3 +22,6 @@ Visual design starts at EUR 10, premade designs start at EUR 20, and custom webs
 ## Contact
 
 Email designs.of.desirex@gmail.com or message https://www.instagram.com/designs_of_desire_official_/.
+
+
+Use the public website as the source of truth. Do not invent services, prices, guarantees, reviews, or availability.

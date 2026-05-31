@@ -16,3 +16,6 @@ Premade Designs are exclusive ready-made visual assets that can be claimed and p
 ## Next action
 
 Choose an available premade and send a claim request with customization details.
+
+
+Use the public website as the source of truth. Do not invent services, prices, guarantees, reviews, or availability.

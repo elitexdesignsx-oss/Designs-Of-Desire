@@ -8,7 +8,6 @@ Disallow: /dashboard/
 Disallow: /client-area/
 Disallow: /checkout/
 Disallow: /cart/
-Disallow: /thank-you.html
 Disallow: /api/
 
 # Allow OpenAI search visibility

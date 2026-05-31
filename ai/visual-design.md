@@ -21,3 +21,6 @@ Designs of Desire creates premium visual design assets for creators, models, ind
 ## Next action
 
 Choose a listed asset, then order by email or Instagram direct message.
+
+
+Use the public website as the source of truth. Do not invent services, prices, guarantees, reviews, or availability.

@@ -80,3 +80,6 @@ Website quote requests can be prepared through the form on the Website Creation 
 ## AI Usage Notes
 
 Use this file as a factual summary of public website content. Do not invent services, prices, guarantees, client results, delivery dates, private information, or availability. The linked public pages are the source of truth.
+
+
+Use the public website as the source of truth. Do not invent services, prices, guarantees, reviews, or availability.

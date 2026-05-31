@@ -1,0 +1,489 @@
+{
+  "report": {
+    "pages": {
+      "index.html": {
+        "images_checked": 4,
+        "with_alt": 4,
+        "with_lazy": 0,
+        "with_async": 0,
+        "with_dimensions": 0,
+        "intentional_not_lazy": [
+          "Images/Logo/designs-of-desire-luxury-logo.jpeg (identified as hero/logo)",
+          "Images/Logo/designs-of-desire-luxury-logo.jpeg (identified as hero/logo)",
+          "Images/Logo/designs-of-desire-luxury-logo.jpeg (identified as hero/logo)",
+          "Images/Logo/designs-of-desire-luxury-logo.jpeg (identified as hero/logo)"
+        ],
+        "missing_broken": [],
+        "renaming_rec": []
+      },
+      "visual-design.html": {
+        "images_checked": 2,
+        "with_alt": 2,
+        "with_lazy": 0,
+        "with_async": 0,
+        "with_dimensions": 0,
+        "intentional_not_lazy": [
+          "Images/Logo/designs-of-desire-luxury-logo.jpeg (identified as hero/logo)",
+          "Images/Logo/designs-of-desire-luxury-logo.jpeg (identified as hero/logo)"
+        ],
+        "missing_broken": [],
+        "renaming_rec": []
+      },
+      "websites.html": {
+        "images_checked": 2,
+        "with_alt": 2,
+        "with_lazy": 0,
+        "with_async": 0,
+        "with_dimensions": 0,
+        "intentional_not_lazy": [
+          "Images/Logo/designs-of-desire-luxury-logo.jpeg (identified as hero/logo)",
+          "Images/Logo/designs-of-desire-luxury-logo.jpeg (identified as hero/logo)"
+        ],
+        "missing_broken": [],
+        "renaming_rec": []
+      },
+      "recent-work.html": {
+        "images_checked": 16,
+        "with_alt": 16,
+        "with_lazy": 0,
+        "with_async": 0,
+        "with_dimensions": 0,
+        "intentional_not_lazy": [
+          "Images/Logo/designs-of-desire-luxury-logo.jpeg (identified as hero/logo)",
+          "Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-the-soft-command-brand-identity-3.jpeg (identified as hero/logo)",
+          "Images/Recent%20Work/Viper%20Queen%20Logo/viper-queen-luxury-logo-gold.png (identified as hero/logo)",
+          "Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-the-soft-command-brand-identity.jpeg (identified as hero/logo)",
+          "Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-the-soft-command-brand-identity-1.jpeg (identified as hero/logo)",
+          "Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-the-soft-command-brand-identity-2.jpeg (identified as hero/logo)",
+          "Images/Recent%20Work/Viper%20Queen%20Logo/viper-queen-luxury-logo-silver.png (identified as hero/logo)",
+          "Images/Recent%20Work/Miss%20Chooloub%20Logo/miss-chooloub-logo.png (identified as hero/logo)",
+          "Images/Logo/designs-of-desire-luxury-logo.jpeg (identified as hero/logo)"
+        ],
+        "missing_broken": [],
+        "renaming_rec": [
+          "Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-the-soft-command-brand-identity-3.jpeg",
+          "Images/Recent%20Work/Viper%20Queen%20Logo/viper-queen-luxury-logo-gold.png",
+          "Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-the-soft-command-brand-identity.jpeg",
+          "Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-the-soft-command-brand-identity-1.jpeg",
+          "Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-the-soft-command-brand-identity-2.jpeg",
+          "Images/Recent%20Work/Viper%20Queen%20Logo/viper-queen-luxury-logo-silver.png",
+          "Images/Recent%20Work/Miss%20Blue/miss-blue-variation-1.png",
+          "Images/Recent%20Work/Miss%20Blue/miss-blue-variation-2.png",
+          "Images/Recent%20Work/Miss%20Blue/miss-blue-variation-3.png",
+          "Images/Recent%20Work/Miss%20Chooloub%20Logo/miss-chooloub-logo.png",
+          "Images/Recent%20Work/Miss%20Lien/miss-lien.png",
+          "Images/Recent%20Work/Miss%20Lien/miss-lien-1.png",
+          "Images/Recent%20Work/Lady%20Alisson/lady-alisson.png",
+          "Images/Recent%20Work/Lady%20Alisson/lady-alisson-1.png"
+        ]
+      },
+      "loyal-clients.html": {
+        "images_checked": 2,
+        "with_alt": 2,
+        "with_lazy": 0,
+        "with_async": 0,
+        "with_dimensions": 0,
+        "intentional_not_lazy": [
+          "Images/Logo/designs-of-desire-luxury-logo.jpeg (identified as hero/logo)",
+          "Images/Logo/designs-of-desire-luxury-logo.jpeg (identified as hero/logo)"
+        ],
+        "missing_broken": [],
+        "renaming_rec": []
+      },
+      "miss-selina.html": {
+        "images_checked": 27,
+        "with_alt": 26,
+        "with_lazy": 0,
+        "with_async": 0,
+        "with_dimensions": 0,
+        "intentional_not_lazy": [
+          "Images/Logo/designs-of-desire-luxury-logo.jpeg (identified as hero/logo)",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-variation-1.png (identified as hero/logo)",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-variation-1-1.png (identified as hero/logo)",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-variation-1-2.png (identified as hero/logo)",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-variation-1-3.png (identified as hero/logo)",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-variation-2.png (identified as hero/logo)",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-variation-3.png (identified as hero/logo)",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-variation-4.png (identified as hero/logo)",
+          "Images/Miss%20Selina/Logo/logo-transparent-version.png (identified as hero/logo)",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-transparent-variation-1.png (identified as hero/logo)",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-transparent-variation-2.png (identified as hero/logo)",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-transparent-variation-3.png (identified as hero/logo)",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-transparent-variation-4.png (identified as hero/logo)",
+          "Images/Logo/designs-of-desire-luxury-logo.jpeg (identified as hero/logo)"
+        ],
+        "missing_broken": [
+          "Broken path: Images/Miss%20Selina/Logo/logo-metallic-style-1.png",
+          "Broken path: Images/Miss%20Selina/Logo/logo-metallic-style-1.png",
+          "Missing src in tag: <img src=\"\" alt=\"\" id=\"modal-image\">"
+        ],
+        "renaming_rec": [
+          "Images/Miss%20Selina/Logo/other%20variations/logo-variation-1.png",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-variation-1-1.png",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-variation-1-2.png",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-variation-1-3.png",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-variation-2.png",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-variation-3.png",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-variation-4.png",
+          "Images/Miss%20Selina/Logo/logo-transparent-version.png",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-transparent-variation-1.png",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-transparent-variation-2.png",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-transparent-variation-3.png",
+          "Images/Miss%20Selina/Logo/other%20variations/logo-transparent-variation-4.png",
+          "Images/Miss%20Selina/List%20of%20services/list-of-services.png",
+          "Images/Miss%20Selina/Price%20list/slide-1.png",
+          "Images/Miss%20Selina/Price%20list/slide-2.jpg",
+          "Images/Miss%20Selina/Rule/General/general-rules.png",
+          "Images/Miss%20Selina/Rule/Full/slide-1-1.png",
+          "Images/Miss%20Selina/Rule/Full/slide-2-1.png",
+          "Images/Miss%20Selina/Rule/Full/slide-3.png",
+          "Images/Miss%20Selina/Story%20Highlight/devotion.png",
+          "Images/Miss%20Selina/Story%20Highlight/rules.png",
+          "Images/Miss%20Selina/Story%20Highlight/at-my-feet.png"
+        ]
+      },
+      "premades.html": {
+        "images_checked": 12,
+        "with_alt": 12,
+        "with_lazy": 0,
+        "with_async": 0,
+        "with_dimensions": 0,
+        "intentional_not_lazy": [
+          "Images/Logo/designs-of-desire-luxury-logo.jpeg (identified as hero/logo)",
+          "Images/Logo/designs-of-desire-luxury-logo.jpeg (identified as hero/logo)"
+        ],
+        "missing_broken": [],
+        "renaming_rec": []
+      },
+      "thank-you.html": {
+        "images_checked": 1,
+        "with_alt": 1,
+        "with_lazy": 0,
+        "with_async": 0,
+        "with_dimensions": 0,
+        "intentional_not_lazy": [
+          "Images/Logo/designs-of-desire-luxury-logo.jpeg (identified as hero/logo)"
+        ],
+        "missing_broken": [],
+        "renaming_rec": []
+      }
+    }
+  },
+  "replacements": [
+    {
+      "file": "index.html",
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "index.html",
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire\" class=\"hero-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire\" class=\"hero-logo\" width=\"1254\" height=\"1254\" fetchpriority=\"high\">"
+    },
+    {
+      "file": "index.html",
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Crest\" class=\"about-img\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Crest\" class=\"about-img\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "index.html",
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "visual-design.html",
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "visual-design.html",
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "websites.html",
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "websites.html",
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "recent-work.html",
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "recent-work.html",
+      "target": "<img src=\"Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-the-soft-command-brand-identity-3.jpeg\" alt=\"The Soft Command logo\" class=\"showcase-img\">",
+      "replacement": "<img src=\"Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-the-soft-command-brand-identity-3.jpeg\" alt=\"The Soft Command logo\" class=\"showcase-img\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "recent-work.html",
+      "target": "<img src=\"Images/Recent%20Work/Viper%20Queen%20Logo/viper-queen-luxury-logo-gold.png\" alt=\"Viper Queen Logo\" class=\"showcase-img\">",
+      "replacement": "<img src=\"Images/Recent%20Work/Viper%20Queen%20Logo/viper-queen-luxury-logo-gold.png\" alt=\"Viper Queen Logo\" class=\"showcase-img\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "recent-work.html",
+      "target": "<img src=\"Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-the-soft-command-brand-identity.jpeg\" alt=\"Miss Selina logo showcase one\">",
+      "replacement": "<img src=\"Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-the-soft-command-brand-identity.jpeg\" alt=\"Miss Selina logo showcase one\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "recent-work.html",
+      "target": "<img src=\"Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-the-soft-command-brand-identity-1.jpeg\" alt=\"Miss Selina logo showcase two\">",
+      "replacement": "<img src=\"Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-the-soft-command-brand-identity-1.jpeg\" alt=\"Miss Selina logo showcase two\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "recent-work.html",
+      "target": "<img src=\"Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-the-soft-command-brand-identity-2.jpeg\" alt=\"Miss Selina logo showcase three\">",
+      "replacement": "<img src=\"Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-the-soft-command-brand-identity-2.jpeg\" alt=\"Miss Selina logo showcase three\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "recent-work.html",
+      "target": "<img src=\"Images/Recent%20Work/Viper%20Queen%20Logo/viper-queen-luxury-logo-silver.png\" alt=\"Viper Queen silver logo variation\">",
+      "replacement": "<img src=\"Images/Recent%20Work/Viper%20Queen%20Logo/viper-queen-luxury-logo-silver.png\" alt=\"Viper Queen silver logo variation\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "recent-work.html",
+      "target": "<img src=\"Images/Recent%20Work/Miss%20Blue/miss-blue-variation-1.png\" alt=\"Miss Blue logo variation one\">",
+      "replacement": "<img src=\"Images/Recent%20Work/Miss%20Blue/miss-blue-variation-1.png\" alt=\"Miss Blue logo variation one\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "recent-work.html",
+      "target": "<img src=\"Images/Recent%20Work/Miss%20Blue/miss-blue-variation-2.png\" alt=\"Miss Blue logo variation two\">",
+      "replacement": "<img src=\"Images/Recent%20Work/Miss%20Blue/miss-blue-variation-2.png\" alt=\"Miss Blue logo variation two\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "recent-work.html",
+      "target": "<img src=\"Images/Recent%20Work/Miss%20Blue/miss-blue-variation-3.png\" alt=\"Miss Blue logo variation three\">",
+      "replacement": "<img src=\"Images/Recent%20Work/Miss%20Blue/miss-blue-variation-3.png\" alt=\"Miss Blue logo variation three\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "recent-work.html",
+      "target": "<img src=\"Images/Recent%20Work/Miss%20Chooloub%20Logo/miss-chooloub-logo.png\" alt=\"Miss Chouloub logo\">",
+      "replacement": "<img src=\"Images/Recent%20Work/Miss%20Chooloub%20Logo/miss-chooloub-logo.png\" alt=\"Miss Chouloub logo\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "recent-work.html",
+      "target": "<img src=\"Images/Recent%20Work/Miss%20Lien/miss-lien.png\" alt=\"Miss Lien logo design\">",
+      "replacement": "<img src=\"Images/Recent%20Work/Miss%20Lien/miss-lien.png\" alt=\"Miss Lien logo design\" loading=\"lazy\" decoding=\"async\" width=\"1122\" height=\"1402\">"
+    },
+    {
+      "file": "recent-work.html",
+      "target": "<img src=\"Images/Recent%20Work/Miss%20Lien/miss-lien-1.png\" alt=\"Miss Lien logo variation\">",
+      "replacement": "<img src=\"Images/Recent%20Work/Miss%20Lien/miss-lien-1.png\" alt=\"Miss Lien logo variation\" loading=\"lazy\" decoding=\"async\" width=\"1448\" height=\"1086\">"
+    },
+    {
+      "file": "recent-work.html",
+      "target": "<img src=\"Images/Recent%20Work/Lady%20Alisson/lady-alisson.png\" alt=\"Lady Alisson logo design\">",
+      "replacement": "<img src=\"Images/Recent%20Work/Lady%20Alisson/lady-alisson.png\" alt=\"Lady Alisson logo design\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "recent-work.html",
+      "target": "<img src=\"Images/Recent%20Work/Lady%20Alisson/lady-alisson-1.png\" alt=\"Lady Alisson logo variation\">",
+      "replacement": "<img src=\"Images/Recent%20Work/Lady%20Alisson/lady-alisson-1.png\" alt=\"Lady Alisson logo variation\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "recent-work.html",
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "loyal-clients.html",
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "loyal-clients.html",
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-variation-1.png\" alt=\"Miss Selina logo variation one\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-variation-1.png\" alt=\"Miss Selina logo variation one\" width=\"648\" height=\"649\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-variation-1-1.png\" alt=\"Miss Selina logo variation one point one\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-variation-1-1.png\" alt=\"Miss Selina logo variation one point one\" width=\"651\" height=\"649\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-variation-1-2.png\" alt=\"Miss Selina logo variation one point two\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-variation-1-2.png\" alt=\"Miss Selina logo variation one point two\" width=\"646\" height=\"639\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-variation-1-3.png\" alt=\"Miss Selina logo variation one point three\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-variation-1-3.png\" alt=\"Miss Selina logo variation one point three\" width=\"643\" height=\"644\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-variation-2.png\" alt=\"Miss Selina logo variation two\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-variation-2.png\" alt=\"Miss Selina logo variation two\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-variation-3.png\" alt=\"Miss Selina logo variation three\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-variation-3.png\" alt=\"Miss Selina logo variation three\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-variation-4.png\" alt=\"Miss Selina logo variation four\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-variation-4.png\" alt=\"Miss Selina logo variation four\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Logo/logo-transparent-version.png\" alt=\"Miss Selina transparent logo file\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Logo/logo-transparent-version.png\" alt=\"Miss Selina transparent logo file\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-transparent-variation-1.png\" alt=\"Miss Selina transparent logo variation one\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-transparent-variation-1.png\" alt=\"Miss Selina transparent logo variation one\" width=\"562\" height=\"851\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-transparent-variation-2.png\" alt=\"Miss Selina transparent logo variation two\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-transparent-variation-2.png\" alt=\"Miss Selina transparent logo variation two\" width=\"475\" height=\"775\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-transparent-variation-3.png\" alt=\"Miss Selina transparent logo variation three\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-transparent-variation-3.png\" alt=\"Miss Selina transparent logo variation three\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-transparent-variation-4.png\" alt=\"Miss Selina transparent logo variation four\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Logo/other%20variations/logo-transparent-variation-4.png\" alt=\"Miss Selina transparent logo variation four\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/List%20of%20services/list-of-services.png\" alt=\"Miss Selina services menu\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/List%20of%20services/list-of-services.png\" alt=\"Miss Selina services menu\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Price%20list/slide-1.png\" alt=\"Miss Selina price list slide one\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Price%20list/slide-1.png\" alt=\"Miss Selina price list slide one\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Price%20list/slide-2.jpg\" alt=\"Miss Selina price list slide two\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Price%20list/slide-2.jpg\" alt=\"Miss Selina price list slide two\" loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1024\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Rule/General/general-rules.png\" alt=\"Miss Selina general rules\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Rule/General/general-rules.png\" alt=\"Miss Selina general rules\" loading=\"lazy\" decoding=\"async\" width=\"1122\" height=\"1402\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Rule/Full/slide-1-1.png\" alt=\"Miss Selina full rules slide one\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Rule/Full/slide-1-1.png\" alt=\"Miss Selina full rules slide one\" loading=\"lazy\" decoding=\"async\" width=\"1122\" height=\"1402\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Rule/Full/slide-2-1.png\" alt=\"Miss Selina full rules slide two\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Rule/Full/slide-2-1.png\" alt=\"Miss Selina full rules slide two\" loading=\"lazy\" decoding=\"async\" width=\"1122\" height=\"1402\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Rule/Full/slide-3.png\" alt=\"Miss Selina full rules slide three\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Rule/Full/slide-3.png\" alt=\"Miss Selina full rules slide three\" loading=\"lazy\" decoding=\"async\" width=\"1122\" height=\"1402\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Story%20Highlight/devotion.png\" alt=\"Miss Selina devotion story highlight\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Story%20Highlight/devotion.png\" alt=\"Miss Selina devotion story highlight\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Story%20Highlight/rules.png\" alt=\"Miss Selina rules story highlight\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Story%20Highlight/rules.png\" alt=\"Miss Selina rules story highlight\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Miss%20Selina/Story%20Highlight/at-my-feet.png\" alt=\"Miss Selina story highlight\">",
+      "replacement": "<img src=\"Images/Miss%20Selina/Story%20Highlight/at-my-feet.png\" alt=\"Miss Selina story highlight\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "miss-selina.html",
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "premades.html",
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "premades.html",
+      "target": "<img src=\"Images/Premades/10.png\" alt=\"Available premade logo design number 10 for creator brand personalization\" class=\"premade-img\">",
+      "replacement": "<img src=\"Images/Premades/10.png\" alt=\"Available premade logo design number 10 for creator brand personalization\" class=\"premade-img\" loading=\"lazy\" decoding=\"async\" width=\"900\" height=\"1600\">"
+    },
+    {
+      "file": "premades.html",
+      "target": "<img src=\"Images/Premades/11.png\" alt=\"Available premade logo design number 11 for creator brand personalization\" class=\"premade-img\">",
+      "replacement": "<img src=\"Images/Premades/11.png\" alt=\"Available premade logo design number 11 for creator brand personalization\" class=\"premade-img\" loading=\"lazy\" decoding=\"async\" width=\"900\" height=\"1600\">"
+    },
+    {
+      "file": "premades.html",
+      "target": "<img src=\"Images/Premades/12.png\" alt=\"Available premade logo design number 12 for creator brand personalization\" class=\"premade-img\">",
+      "replacement": "<img src=\"Images/Premades/12.png\" alt=\"Available premade logo design number 12 for creator brand personalization\" class=\"premade-img\" loading=\"lazy\" decoding=\"async\" width=\"900\" height=\"1600\">"
+    },
+    {
+      "file": "premades.html",
+      "target": "<img src=\"Images/Premades/2.png\" alt=\"Claimed premade price list design number 2 shown in grayscale\" class=\"premade-img\" style=\"filter: grayscale(100%);\">",
+      "replacement": "<img src=\"Images/Premades/2.png\" alt=\"Claimed premade price list design number 2 shown in grayscale\" class=\"premade-img\" style=\"filter: grayscale(100%);\" loading=\"lazy\" decoding=\"async\" width=\"900\" height=\"1600\">"
+    },
+    {
+      "file": "premades.html",
+      "target": "<img src=\"Images/Premades/3.png\" alt=\"Available premade banner design number 3 for creator brand personalization\" class=\"premade-img\">",
+      "replacement": "<img src=\"Images/Premades/3.png\" alt=\"Available premade banner design number 3 for creator brand personalization\" class=\"premade-img\" loading=\"lazy\" decoding=\"async\" width=\"900\" height=\"1600\">"
+    },
+    {
+      "file": "premades.html",
+      "target": "<img src=\"Images/Premades/4.png\" alt=\"Available premade bundle design number 4 for creator brand personalization\" class=\"premade-img\">",
+      "replacement": "<img src=\"Images/Premades/4.png\" alt=\"Available premade bundle design number 4 for creator brand personalization\" class=\"premade-img\" loading=\"lazy\" decoding=\"async\" width=\"900\" height=\"1600\">"
+    },
+    {
+      "file": "premades.html",
+      "target": "<img src=\"Images/Premades/5.png\" alt=\"Available premade logo design number 5 for creator brand personalization\" class=\"premade-img\">",
+      "replacement": "<img src=\"Images/Premades/5.png\" alt=\"Available premade logo design number 5 for creator brand personalization\" class=\"premade-img\" loading=\"lazy\" decoding=\"async\" width=\"900\" height=\"1600\">"
+    },
+    {
+      "file": "premades.html",
+      "target": "<img src=\"Images/Premades/7.png\" alt=\"Available premade logo design number 7 for creator brand personalization\" class=\"premade-img\">",
+      "replacement": "<img src=\"Images/Premades/7.png\" alt=\"Available premade logo design number 7 for creator brand personalization\" class=\"premade-img\" loading=\"lazy\" decoding=\"async\" width=\"900\" height=\"1600\">"
+    },
+    {
+      "file": "premades.html",
+      "target": "<img src=\"Images/Premades/8.png\" alt=\"Available premade logo design number 8 for creator brand personalization\" class=\"premade-img\">",
+      "replacement": "<img src=\"Images/Premades/8.png\" alt=\"Available premade logo design number 8 for creator brand personalization\" class=\"premade-img\" loading=\"lazy\" decoding=\"async\" width=\"900\" height=\"1600\">"
+    },
+    {
+      "file": "premades.html",
+      "target": "<img src=\"Images/Premades/9.png\" alt=\"Available premade logo design number 9 for creator brand personalization\" class=\"premade-img\">",
+      "replacement": "<img src=\"Images/Premades/9.png\" alt=\"Available premade logo design number 9 for creator brand personalization\" class=\"premade-img\" loading=\"lazy\" decoding=\"async\" width=\"900\" height=\"1600\">"
+    },
+    {
+      "file": "premades.html",
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
+    },
+    {
+      "file": "thank-you.html",
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire\" class=\"hero-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire\" class=\"hero-logo\" width=\"1254\" height=\"1254\" fetchpriority=\"high\">"
+    }
+  ]
+}

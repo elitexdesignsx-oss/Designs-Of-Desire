@@ -18,3 +18,6 @@ Recent Work collects Designs of Desire portfolio examples across logo design, cr
 ## Next action
 
 Review the work examples, then request a similar logo, brand identity, or visual design package.
+
+
+Use the public website as the source of truth. Do not invent services, prices, guarantees, reviews, or availability.
