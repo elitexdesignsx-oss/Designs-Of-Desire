@@ -1,0 +1,26 @@
+# General public website crawling
+User-agent: *
+Allow: /
+
+# Do not crawl private or low-value areas if they are added later
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /client-area/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /thank-you.html
+Disallow: /api/
+
+# Allow OpenAI search visibility
+User-agent: OAI-SearchBot
+Allow: /
+
+# Allow user-triggered ChatGPT browsing and agent access
+User-agent: ChatGPT-User
+Allow: /
+
+# Optional: disallow OpenAI training crawler while preserving search access
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://elitexdesignsx-oss.github.io/Designs-Of-Desire/sitemap.xml

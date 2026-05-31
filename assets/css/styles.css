@@ -101,6 +101,134 @@ ul {
   text-align: center;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.agent-summary {
+  padding: 0 0 90px;
+}
+
+.agent-summary-panel {
+  border: 1px solid var(--border-color);
+  background:
+    linear-gradient(135deg, rgba(201, 168, 76, 0.08), transparent 36%),
+    var(--card-bg);
+  padding: clamp(30px, 5vw, 54px);
+}
+
+.agent-summary-panel h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-bottom: 18px;
+}
+
+.agent-summary-panel > p {
+  max-width: 780px;
+  opacity: 0.82;
+  margin-bottom: 28px;
+}
+
+.agent-summary-panel dl {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.32fr) 1fr;
+  gap: 16px 28px;
+}
+
+.agent-summary-panel dt {
+  color: var(--accent-color-1);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.agent-summary-panel dd {
+  opacity: 0.86;
+}
+
+.last-updated {
+  margin-top: 24px;
+  opacity: 0.58;
+  font-size: 0.9rem;
+}
+
+.quote-form-section,
+.faq-section {
+  padding: 90px 0;
+}
+
+.quote-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.quote-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--accent-color-1);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  width: 100%;
+  min-height: 52px;
+  border: 1px solid var(--border-color);
+  background: rgba(0, 0, 0, 0.24);
+  color: var(--text-color);
+  padding: 13px 15px;
+  font: inherit;
+  outline: none;
+}
+
+.quote-form textarea,
+.quote-form .full {
+  grid-column: 1 / -1;
+}
+
+.quote-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus {
+  border-color: var(--accent-color-1);
+  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.12);
+}
+
+.faq-list {
+  display: grid;
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.faq-list article {
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  padding: 24px;
+}
+
+.faq-list h3 {
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+}
+
 /* Navigation */
 nav {
   position: fixed;
@@ -261,7 +389,7 @@ nav.scrolled {
   text-align: center;
   padding-top: 80px;
   overflow: hidden;
-  background-image: url('../Images/Logo/WhatsApp\\ Image\\ 2026-05-28\\ at\\ 22.46.40.jpeg');
+  background-image: url('../../Images/Logo/WhatsApp\\ Image\\ 2026-05-28\\ at\\ 22.46.40.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; /* or contain */
@@ -472,6 +600,9 @@ footer {
   }
   .hamburger {
     display: flex;
+    border: 0;
+    background: transparent;
+    padding: 6px;
   }
 }
 
@@ -485,6 +616,10 @@ footer {
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+  .agent-summary-panel dl,
+  .quote-form {
+    grid-template-columns: 1fr;
   }
 }
 
