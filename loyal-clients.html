@@ -226,21 +226,6 @@
       opacity: 0.76;
       margin-bottom: 26px;
     }
-    .loyal-cta {
-      padding: 100px 0;
-      text-align: center;
-      border-top: 1px solid var(--border-color);
-      background: var(--card-bg);
-    }
-    .loyal-cta h2 {
-      font-size: clamp(2rem, 4vw, 3.4rem);
-      margin-bottom: 18px;
-    }
-    .loyal-cta p {
-      max-width: 640px;
-      margin: 0 auto 36px;
-      opacity: 0.78;
-    }
     @media (max-width: 900px) {
       .page-hero {
         background: linear-gradient(180deg, rgba(10, 10, 10, 0.86), rgba(10, 10, 10, 0.98));
@@ -282,7 +267,7 @@
         <li><a href="premades.html" data-i18n="nav_premades">Premades</a></li>
       </ul>
       <div class="nav-controls">
-        <button class="lang-switch" type="button" aria-label="Change language">🇬🇧 EN</button>
+        <button class="lang-switch" type="button" aria-label="Change language"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> EN</button>
         <button class="hamburger" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -356,11 +341,13 @@
       </div>
     </section>
 
-    <section class="loyal-cta reveal">
+    <section class="uniform-stripe gold-gradient-bg reveal">
       <div class="container">
         <h2>Want your own client story?</h2>
         <p>Start with one asset, or build the full identity: logo, price list, services, rules, highlights, banners, and a brand system that feels unmistakably yours.</p>
-        <a href="mailto:designs.of.desirex@gmail.com?subject=Loyal%20Client%20Profile%20Inquiry" class="btn btn-primary">Start the Story</a>
+        <div class="stripe-actions">
+          <a href="mailto:designs.of.desirex@gmail.com?subject=Loyal%20Client%20Profile%20Inquiry" class="btn btn-outline">Start the Story</a>
+        </div>
       </div>
     </section>
   </main>

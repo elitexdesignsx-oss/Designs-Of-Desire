@@ -16,7 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const langSwitchBtn = document.querySelector('.lang-switch');
   const currentLang = localStorage.getItem('dod-lang') || 'en';
   const langs = ['en', 'fr', 'de', 'es'];
-  const langLabels = { en: '🇬🇧 EN', fr: '🇫🇷 FR', de: '🇩🇪 DE', es: '🇪🇸 ES' };
+  const globeIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px; margin-bottom: 2px;"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>';
+  const langLabels = { 
+    en: `${globeIcon}EN`, 
+    fr: `${globeIcon}FR`, 
+    de: `${globeIcon}DE`, 
+    es: `${globeIcon}ES` 
+  };
   
   const updateLanguage = (lang) => {
     document.querySelectorAll('[data-i18n]').forEach(el => {

@@ -284,12 +284,6 @@
       color: var(--text-color);
       font-size: 2rem; cursor: pointer;
     }
-
-    .upload-section {
-      padding: 100px 0;
-      text-align: center;
-      background: rgba(201, 168, 76, 0.03);
-    }
   </style>
 </head>
 <body>
@@ -309,7 +303,7 @@
         <li><a href="premades.html" data-i18n="nav_premades">Premades</a></li>
       </ul>
       <div class="nav-controls">
-        <button class="lang-switch" type="button" aria-label="Change language">🇬🇧 EN</button>
+        <button class="lang-switch" type="button" aria-label="Change language"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> EN</button>
         <button class="hamburger" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -474,11 +468,13 @@
   </section>
 
   <!-- Upload Your Own Taste -->
-  <section class="upload-section reveal">
+  <section class="uniform-stripe gold-gradient-bg reveal">
     <div class="container">
-      <h2 style="font-size: 2rem; margin-bottom: 20px;">Upload Your Own Taste</h2>
+      <h2>Upload Your Own Taste</h2>
       <p style="opacity: 0.8; margin-bottom: 40px;">Not sure which style you like? Upload an inspiration image and I'll match your vibe.</p>
-      <a href="mailto:designs.of.desirex@gmail.com?subject=Inspiration%20Upload" class="btn btn-outline">Email Inspiration Image</a>
+      <div class="stripe-actions">
+        <a href="mailto:designs.of.desirex@gmail.com?subject=Inspiration%20Upload" class="btn btn-outline">Email Inspiration Image</a>
+      </div>
     </div>
   </section>
   </main>
