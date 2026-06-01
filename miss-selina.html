@@ -223,6 +223,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 22px;
+      align-items: start;
     }
     .work-item {
       border: 1px solid var(--border-color);
@@ -233,10 +234,12 @@
       color: inherit;
       font-family: var(--font-body);
       padding: 0;
+      display: flex;
+      flex-direction: column;
     }
     .work-item img {
       width: 100%;
-      aspect-ratio: 1 / 1;
+      height: clamp(280px, 28vw, 430px);
       display: block;
       object-fit: contain;
       padding: 12px;
@@ -258,6 +261,7 @@
       justify-content: space-between;
       gap: 14px;
       align-items: center;
+      margin-top: auto;
       padding: 18px;
       border-top: 1px solid var(--border-color);
     }
@@ -420,6 +424,9 @@
       .work-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+      .work-item img {
+        height: clamp(260px, 44vw, 390px);
+      }
     }
     @media (max-width: 620px) {
       .selina-hero {
@@ -428,6 +435,9 @@
       .profile-bar,
       .work-grid {
         grid-template-columns: 1fr;
+      }
+      .work-item img {
+        height: min(78vw, 380px);
       }
       .quote-shell {
         padding: 34px 26px;
