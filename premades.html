@@ -169,11 +169,14 @@
       padding: 20px;
       scroll-snap-align: center;
       position: relative;
-      transition: transform 0.3s;
+      transition: transform 220ms var(--ease-out), box-shadow 220ms var(--ease-out), border-color 180ms var(--ease-out);
     }
-    .premade-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px var(--border-glow);
+    @media (hover: hover) and (pointer: fine) {
+      .premade-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px var(--border-glow);
+        border-color: var(--accent-color-1);
+      }
     }
     .premade-img {
       width: 100%;
@@ -237,11 +240,16 @@
       align-items: center;
       justify-content: center;
       font-size: 1.5rem;
-      transition: var(--transition);
+      transition: color 160ms var(--ease-out), border-color 160ms var(--ease-out), background-color 160ms var(--ease-out), transform 140ms var(--ease-out);
     }
-    .gallery-btn:hover {
-      border-color: var(--accent-color-1);
-      color: var(--accent-color-1);
+    .gallery-btn:active {
+      transform: scale(0.94);
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .gallery-btn:hover {
+        border-color: var(--accent-color-1);
+        color: var(--accent-color-1);
+      }
     }
 
     /* Modal */
@@ -256,7 +264,7 @@
       justify-content: center;
       opacity: 0;
       pointer-events: none;
-      transition: var(--transition);
+      transition: opacity 200ms var(--ease-out), backdrop-filter 200ms var(--ease-out);
     }
     .modal-overlay.active {
       opacity: 1;
@@ -271,11 +279,13 @@
       width: 90%;
       position: relative;
       text-align: center;
-      transform: translateY(20px);
-      transition: var(--transition);
+      opacity: 0;
+      transform: translateY(14px) scale(0.97);
+      transition: opacity 200ms var(--ease-out), transform 220ms var(--ease-out);
     }
     .modal-overlay.active .modal-content {
-      transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0) scale(1);
     }
     .modal-close {
       position: absolute;

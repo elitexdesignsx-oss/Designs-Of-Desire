@@ -183,14 +183,17 @@
       background: var(--card-bg);
       border: 1px solid var(--border-color);
       padding: 38px;
-      transition: var(--transition);
+      transition: transform 220ms var(--ease-out), border-color 180ms var(--ease-out), box-shadow 220ms var(--ease-out);
       position: relative;
       overflow: hidden;
       display: flex;
       flex-direction: column;
     }
-    .web-card:hover {
-      box-shadow: 0 10px 40px var(--border-glow);
+    @media (hover: hover) and (pointer: fine) {
+      .web-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 40px var(--border-glow);
+      }
     }
     .web-card.premium {
       border: 2px solid var(--accent-color-1);
@@ -663,15 +666,7 @@
       text-align: center;
       flex: 1;
       padding: 0 10px;
-      transition: var(--transition);
-    }
-    .timeline-step:hover {
-      transform: translateY(-8px);
-    }
-    .timeline-step:hover .step-icon {
-      background: rgba(201, 168, 76, 0.08);
-      box-shadow: 0 0 30px rgba(201, 168, 76, 0.25);
-      border-color: var(--accent-color-2);
+      transition: transform 220ms var(--ease-out);
     }
     .step-icon {
       width: 70px;
@@ -685,7 +680,18 @@
       justify-content: center;
       margin: 0 auto 20px;
       color: var(--accent-color-1);
-      transition: var(--transition);
+      transition: background-color 180ms var(--ease-out), border-color 180ms var(--ease-out), box-shadow 220ms var(--ease-out), transform 220ms var(--ease-out);
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .timeline-step:hover {
+        transform: translateY(-8px);
+      }
+      .timeline-step:hover .step-icon {
+        background: rgba(201, 168, 76, 0.08);
+        box-shadow: 0 0 30px rgba(201, 168, 76, 0.25);
+        border-color: var(--accent-color-2);
+        transform: scale(1.03);
+      }
     }
     .step-icon svg {
       width: 28px;

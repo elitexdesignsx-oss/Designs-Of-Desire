@@ -158,12 +158,14 @@
       overflow: hidden;
       border: 1px solid var(--border-color);
       background: var(--card-bg);
-      transition: var(--transition);
+      transition: transform 220ms var(--ease-out), border-color 180ms var(--ease-out), box-shadow 220ms var(--ease-out);
     }
-    .client-tile:hover {
-      border-color: var(--accent-color-1);
-      box-shadow: 0 18px 45px var(--border-glow);
-      transform: translateY(-8px);
+    @media (hover: hover) and (pointer: fine) {
+      .client-tile:hover {
+        border-color: var(--accent-color-1);
+        box-shadow: 0 18px 45px var(--border-glow);
+        transform: translateY(-6px);
+      }
     }
     .client-image {
       min-height: 340px;

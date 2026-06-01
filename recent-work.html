@@ -336,7 +336,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.5s ease;
+      transition: transform 260ms var(--ease-out);
     }
     .portfolio-overlay {
       position: absolute;
@@ -346,7 +346,7 @@
       align-items: center;
       justify-content: center;
       opacity: 0;
-      transition: opacity 0.3s ease;
+      transition: opacity 180ms var(--ease-out);
       color: #fff;
       font-family: var(--font-display);
       font-size: 1.5rem;
@@ -356,11 +356,13 @@
       background: rgba(255, 255, 255, 0.9);
       color: #1a1a1a;
     }
-    .portfolio-item:hover img {
-      transform: scale(1.05);
-    }
-    .portfolio-item:hover .portfolio-overlay {
-      opacity: 1;
+    @media (hover: hover) and (pointer: fine) {
+      .portfolio-item:hover img {
+        transform: scale(1.04);
+      }
+      .portfolio-item:hover .portfolio-overlay {
+        opacity: 1;
+      }
     }
     .portfolio-panorama {
       grid-column: span 1;
@@ -384,8 +386,10 @@
     .portfolio-logo-frame .panorama-slide img {
       padding: 0;
     }
-    .portfolio-logo-frame:hover > img {
-      transform: none;
+    @media (hover: hover) and (pointer: fine) {
+      .portfolio-logo-frame:hover > img {
+        transform: none;
+      }
     }
     .portfolio-logo-frame .panorama-track,
     .portfolio-logo-frame.two-slide .panorama-track {
@@ -414,8 +418,10 @@
     .portfolio-logo-frame .panorama-slide:nth-child(3) {
       animation-delay: 8s;
     }
-    .portfolio-panorama:hover img {
-      transform: none;
+    @media (hover: hover) and (pointer: fine) {
+      .portfolio-panorama:hover img {
+        transform: none;
+      }
     }
     .panorama-track {
       height: 100%;
