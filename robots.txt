@@ -9,6 +9,7 @@ Disallow: /client-area/
 Disallow: /checkout/
 Disallow: /cart/
 Disallow: /api/
+Disallow: /archive/
 
 # Allow OpenAI search visibility
 User-agent: OAI-SearchBot

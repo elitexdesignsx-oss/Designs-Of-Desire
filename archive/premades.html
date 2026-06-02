@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <title>Premade Logo & Brand Designs | Designs of Desire</title>
   <meta name="description" content="Claim exclusive premade logos, banners, price lists, and brand design bundles from Designs of Desire. Personalize with your name, colors, and details. From EUR 20.">
   <link rel="canonical" href="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/premades.html">
@@ -509,7 +510,7 @@
           </div>
           <address class="footer-links">
 
-            <a href="https://www.instagram.com/designs_of_desire_official_/" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/designs_of_desire_official_x/" target="_blank">Instagram</a>
             <a href="mailto:designs.of.desirex@gmail.com">Email Us</a>
             <span style="opacity: 0.8; margin-top: 20px;">Accepted: PayPal</span>
           </address>
@@ -522,7 +523,7 @@
   </footer>
 
   <!-- Modal -->
-  <div class="modal-overlay" id="claim-modal">
+  <div class="modal-overlay" id="claim-modal" aria-hidden="true">
     <div class="modal-content">
       <button class="modal-close" id="close-modal" type="button" aria-label="Close premade inquiry">&times;</button>
       <h2 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 10px;">You're interested in</h2>
@@ -531,8 +532,8 @@
       <p style="opacity: 0.8; margin-bottom: 30px;">Includes customisation with your name, colors, and specific details.</p>
       
       <div style="display: flex; flex-direction: column; gap: 15px;">
-        <a href="#" id="modal-email-btn" class="btn btn-primary">Send to Designer →</a>
-        <a href="https://www.instagram.com/designs_of_desire_official_/" class="btn btn-outline" target="_blank">Message on Instagram →</a>
+        <a href="mailto:designs.of.desirex@gmail.com?subject=Premade%20Inquiry" id="modal-email-btn" class="btn btn-primary">Send to Designer →</a>
+        <a href="https://www.instagram.com/designs_of_desire_official_x/" class="btn btn-outline" target="_blank">Message on Instagram →</a>
       </div>
     </div>
   </div>
@@ -579,16 +580,27 @@
           emailBtn.href = `mailto:designs.of.desirex@gmail.com?subject=${subject}&body=${body}`;
           
           modal.classList.add('active');
+          modal.setAttribute('aria-hidden', 'false');
+          closeModal.focus();
         });
       });
 
-      closeModal.addEventListener('click', () => {
+      const hideModal = () => {
         modal.classList.remove('active');
-      });
+        modal.setAttribute('aria-hidden', 'true');
+      };
+
+      closeModal.addEventListener('click', hideModal);
 
       modal.addEventListener('click', (e) => {
         if (e.target === modal) {
-          modal.classList.remove('active');
+          hideModal();
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+          hideModal();
         }
       });
     });

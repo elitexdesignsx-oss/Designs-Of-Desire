@@ -15,7 +15,7 @@
   <meta name="twitter:title" content="Custom Website Design | Designs of Desire · Casablanca">
   <meta name="twitter:description" content="High-end custom website design and creator commerce platforms without agency pricing. Based in Casablanca.">
   <meta name="twitter:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Logo/designs-of-desire-luxury-logo-1.jpeg">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css?v=faq-carousel-3">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -755,7 +755,6 @@
         <li><a href="websites.html" data-i18n="nav_websites">Websites</a></li>
         <li><a href="recent-work.html" data-i18n="nav_work">Recent Work</a></li>
         <li><a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a></li>
-        <li><a href="premades.html" data-i18n="nav_premades">Premades</a></li>
       </ul>
       <div class="nav-controls">
         <button class="lang-switch" type="button" aria-label="Change language"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> EN</button>
@@ -773,7 +772,6 @@
     <a href="websites.html" data-i18n="nav_websites">Websites</a>
     <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
     <a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a>
-    <a href="premades.html" data-i18n="nav_premades">Premades</a>
   </div>
 
   <main>
@@ -818,7 +816,7 @@
         <li>Brand-consistent styling</li>
         <li>Better routing, clearer offer, fewer confused visitors</li>
       </ul>
-      <a href="mailto:designs.of.desirex@gmail.com?subject=Booking:%20Full%20Custom%20Website" class="btn btn-outline" style="width: 100%;">Book Full Custom</a>
+      <a href="#website-quote-form" class="btn btn-outline" style="width: 100%;" data-quote-service="Full Custom Website">Book Full Custom</a>
     </div>
 
     <div class="web-card premium">
@@ -835,7 +833,7 @@
         <li>Members-only access area</li>
         <li>Direct selling structure to reduce friction</li>
       </ul>
-      <a href="mailto:designs.of.desirex@gmail.com?subject=Booking:%20Creator%20Commerce%20Platform" class="btn btn-primary" style="width: 100%;">Book Commerce Platform</a>
+      <a href="#website-quote-form" class="btn btn-primary" style="width: 100%;" data-quote-service="Creator Commerce Platform">Book Commerce Platform</a>
     </div>
 
     <div class="web-card elite">
@@ -992,11 +990,10 @@
   </section>
 
   <section class="quote-form-section container reveal" aria-labelledby="quote-form-title">
-    <div class="agent-summary sr-only">
+    <div class="agent-summary-panel">
       <h2 id="quote-form-title">Request a Website Quote</h2>
-      <p>Use this form to prepare a clear inquiry. It will submit your project details so the scope can be reviewed before pricing is confirmed.</p>
-      <form class="quote-form" action="/api/contact" method="post" aria-labelledby="quote-form-title">
-        <input type="hidden" name="redirect" value="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/thank-you.html">
+      <p>Use this form to prepare a clear inquiry. It opens a prefilled email draft so your project details can be reviewed before pricing is confirmed.</p>
+      <form class="quote-form" id="website-quote-form" aria-labelledby="quote-form-title">
         <label>
           Your name or brand
           <input type="text" name="name-or-brand" autocomplete="name" required>
@@ -1048,12 +1045,84 @@
     <h2 id="website-faq-title" class="text-center" style="font-size: 2.5rem;">Website Creation FAQ</h2>
     <div class="faq-list">
       <article>
-        <h3>What website packages are available?</h3>
-        <p>Designs of Desire offers a Full Custom Website for EUR 400 to EUR 600, a Creator Commerce Platform for EUR 1,200 to EUR 1,500, and Bespoke Digital Systems starting at EUR 2,000.</p>
+        <h3>What kind of websites do you create?</h3>
+        <p>Designs of Desire creates premium custom websites for creators, models, personal brands, independent businesses, and luxury-leaning digital identities. The focus is on elegant presentation, clear offers, smooth navigation, and a professional first impression.</p>
       </article>
       <article>
-        <h3>How do I request a website quote?</h3>
-        <p>Use the quote request form on this page, email designs.of.desirex@gmail.com, or message Designs of Desire on Instagram.</p>
+        <h3>Who is a custom website best for?</h3>
+        <p>A custom website is best for someone who wants to look more serious, trustworthy, and established online. It is especially useful if your offers, links, prices, booking information, or content are currently scattered across DMs, social media, and multiple platforms.</p>
+      </article>
+      <article>
+        <h3>Why do I need a website if I already have social media?</h3>
+        <p>Social media is useful for visibility, but it does not fully belong to you. A website gives your brand a polished home where visitors can understand who you are, what you offer, how to contact you, and why they should trust you.</p>
+      </article>
+      <article>
+        <h3>What makes your websites different from simple templates?</h3>
+        <p>A template gives you a layout. Designs of Desire builds a full visual experience around your brand: premium styling, elegant sections, clear messaging, conversion-focused structure, and a look that feels intentional rather than generic.</p>
+      </article>
+      <article>
+        <h3>What is included in a Full Custom Website?</h3>
+        <p>A Full Custom Website can include a polished homepage, service sections, about section, portfolio or gallery, pricing or offer display, contact path, booking/contact buttons, mobile-responsive design, basic SEO structure, and a refined visual direction.</p>
+      </article>
+      <article>
+        <h3>What is the difference between a website and a Creator Commerce Platform?</h3>
+        <p>A custom website mainly presents your brand, offers, portfolio, and contact path. A Creator Commerce Platform is more advanced and can support direct selling, bookings, digital products, private access, payment flows, or a more complete business system.</p>
+      </article>
+      <article>
+        <h3>What is a Bespoke Digital System?</h3>
+        <p>A Bespoke Digital System is for advanced needs such as custom automations, dashboards, chatbot flows, booking logic, follow-up systems, private client areas, or unusual digital workflows. It is quoted after discussion because the scope can vary a lot.</p>
+      </article>
+      <article>
+        <h3>Can you create a website for adult creators?</h3>
+        <p>Yes, creator websites can be designed for adult creators, models, and private content brands, as long as the project respects legal requirements, platform rules, payment processor rules, and safety boundaries. Payment and direct-sale features may depend on what your payment provider allows.</p>
+      </article>
+      <article>
+        <h3>Can my website help me sell more?</h3>
+        <p>A website cannot guarantee sales, but it can improve how your brand is perceived. A clear, premium, and organized website can make it easier for visitors to understand your offers, trust your presentation, contact you, book, or buy.</p>
+      </article>
+      <article>
+        <h3>Do you write the website text?</h3>
+        <p>Website copy can be guided, refined, or created depending on the package and scope. If you already have text, it can be polished. If you do not, Designs of Desire can help structure your message so it sounds clear, premium, and convincing.</p>
+      </article>
+      <article>
+        <h3>Will the website work on mobile?</h3>
+        <p>Yes. Mobile responsiveness is essential. Your website will be designed to look polished on phones, tablets, and desktop screens, because many visitors will discover your brand from social media.</p>
+      </article>
+      <article>
+        <h3>Can you add booking or contact buttons?</h3>
+        <p>Yes. Your website can include direct contact buttons, email links, Instagram links, booking links, WhatsApp links, or custom call-to-action sections depending on how you want clients to reach you.</p>
+      </article>
+      <article>
+        <h3>Can you add payments or subscriptions?</h3>
+        <p>Payment and subscription features may be possible depending on your business type, content, country, and payment processor rules. These features are discussed before the project begins to avoid building something that cannot be safely or reliably used.</p>
+      </article>
+      <article>
+        <h3>Do I need to buy a domain?</h3>
+        <p>A custom domain is strongly recommended if you want to look professional. A domain makes your brand feel more serious and easier to remember. If needed, you can receive guidance on choosing and connecting one.</p>
+      </article>
+      <article>
+        <h3>Do I need hosting?</h3>
+        <p>Yes, every website needs hosting. The best hosting setup depends on the type of website. A simple premium website may need lightweight hosting, while a commerce platform or custom system may require a more advanced setup.</p>
+      </article>
+      <article>
+        <h3>Will my website appear on Google?</h3>
+        <p>The website can be built with basic SEO structure, including clean headings, metadata, image alt text, sitemap, robots.txt, and search-friendly content. However, ranking on Google depends on competition, content quality, domain authority, and time.</p>
+      </article>
+      <article>
+        <h3>Can you make the website readable for AI tools too?</h3>
+        <p>Yes. The website can include AI-readable structure such as semantic HTML, structured data, clear service descriptions, FAQ sections, metadata, and optional llms.txt or markdown summaries for better machine readability.</p>
+      </article>
+      <article>
+        <h3>How much does a website cost?</h3>
+        <p>A Full Custom Website starts around €400-€600 depending on scope. Creator Commerce Platforms are usually around €1,200-€1,500. Bespoke Digital Systems start from €2,000+ and require discussion.</p>
+      </article>
+      <article>
+        <h3>Why are your websites cheaper than traditional agencies?</h3>
+        <p>Designs of Desire offers boutique-level visual direction without the heavy structure, overhead, and pricing of a traditional agency. The goal is to give creators and small brands a premium digital presence at a more accessible level.</p>
+      </article>
+      <article>
+        <h3>How do I start a website project?</h3>
+        <p>Send a message with your brand name, current links, the type of website you want, your main goal, your budget range, and any examples of websites you like. From there, Designs of Desire can suggest the best direction and package.</p>
       </article>
     </div>
   </section>
@@ -1064,8 +1133,8 @@
       <h2 style="font-size: 2.5rem; margin-bottom: 40px; color: var(--button-text);">Ready to own your income?</h2>
       <p style="max-width: 620px; margin: -22px auto 34px; color: var(--button-text); opacity: 0.82;">Get a high-end look without paying agency prices.</p>
       <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-        <a href="mailto:designs.of.desirex@gmail.com?subject=Website%20Inquiry" class="btn btn-outline" style="border-color: var(--button-text); color: var(--button-text);">Book Your Website</a>
-        <a href="https://www.instagram.com/designs_of_desire_official_/" class="btn btn-outline" style="border-color: var(--button-text); color: var(--button-text);">DM on Instagram</a>
+        <a href="#website-quote-form" class="btn btn-outline" style="border-color: var(--button-text); color: var(--button-text);">Book Your Website</a>
+        <a href="https://www.instagram.com/designs_of_desire_official_x/" class="btn btn-outline" style="border-color: var(--button-text); color: var(--button-text);">DM on Instagram</a>
       </div>
     </div>
   </section>
@@ -1087,11 +1156,10 @@
             <a href="websites.html" data-i18n="nav_websites">Websites</a>
             <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
             <a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a>
-            <a href="premades.html" data-i18n="nav_premades">Premades</a>
           </div>
           <address class="footer-links">
 
-            <a href="https://www.instagram.com/designs_of_desire_official_/" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/designs_of_desire_official_x/" target="_blank">Instagram</a>
             <a href="mailto:designs.of.desirex@gmail.com">Email Us</a>
             <span style="opacity: 0.8; margin-top: 20px;">Accepted: PayPal</span>
           </address>
@@ -1104,7 +1172,45 @@
   </footer>
 
   <script src="assets/js/translations.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=faq-carousel-4"></script>
   <script src="assets/js/calculator.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const quoteForm = document.getElementById('website-quote-form');
+      if (!quoteForm) return;
+      const serviceSelect = quoteForm.querySelector('select[name="service-needed"]');
+
+      document.querySelectorAll('[data-quote-service]').forEach(link => {
+        link.addEventListener('click', () => {
+          if (serviceSelect) {
+            serviceSelect.value = link.getAttribute('data-quote-service') || '';
+          }
+        });
+      });
+
+      quoteForm.addEventListener('submit', event => {
+        event.preventDefault();
+        if (!quoteForm.reportValidity()) return;
+
+        const formData = new FormData(quoteForm);
+        const brand = formData.get('name-or-brand') || 'New website inquiry';
+        const lines = [
+          `Name or brand: ${brand}`,
+          `Email: ${formData.get('email') || ''}`,
+          `Service needed: ${formData.get('service-needed') || ''}`,
+          `Budget range: ${formData.get('budget-range') || ''}`,
+          `Ideal deadline: ${formData.get('deadline') || ''}`,
+          `Brand or platform link: ${formData.get('brand-link') || ''}`,
+          '',
+          'Project details:',
+          formData.get('project-details') || ''
+        ];
+
+        const subject = encodeURIComponent(`Website Quote Request: ${brand}`);
+        const body = encodeURIComponent(lines.join('\n'));
+        window.location.href = `mailto:designs.of.desirex@gmail.com?subject=${subject}&body=${body}`;
+      });
+    });
+  </script>
 </body>
 </html>

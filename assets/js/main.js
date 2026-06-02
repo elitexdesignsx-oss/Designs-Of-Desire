@@ -189,6 +189,117 @@ document.addEventListener('DOMContentLoaded', () => {
     restartReviewTimer();
   }
 
+  // Long FAQ sections become focused carousels with keyboard and touch-friendly controls.
+  document.querySelectorAll('.faq-section .faq-list').forEach((list, carouselIndex) => {
+    const section = list.closest('.faq-section');
+    const items = Array.from(list.querySelectorAll('article'));
+
+    if (!section || items.length <= 1) {
+      return;
+    }
+
+    let activeIndex = 0;
+
+    const ui = document.createElement('div');
+    ui.className = 'faq-carousel-ui';
+
+    const counter = document.createElement('div');
+    counter.className = 'faq-counter';
+    counter.setAttribute('aria-live', 'polite');
+
+    const nav = document.createElement('div');
+    nav.className = 'faq-nav';
+
+    const previousButton = document.createElement('button');
+    previousButton.className = 'faq-arrow';
+    previousButton.type = 'button';
+    previousButton.setAttribute('aria-label', 'Previous FAQ');
+    previousButton.innerText = '←';
+
+    const dots = document.createElement('div');
+    dots.className = 'faq-dots';
+    dots.setAttribute('aria-label', 'FAQ pages');
+
+    const nextButton = document.createElement('button');
+    nextButton.className = 'faq-arrow';
+    nextButton.type = 'button';
+    nextButton.setAttribute('aria-label', 'Next FAQ');
+    nextButton.innerText = '→';
+
+    nav.append(previousButton, dots, nextButton);
+    ui.append(counter, nav);
+    list.after(ui);
+
+    section.classList.add('faq-carousel-ready');
+    section.setAttribute('tabindex', '0');
+
+    const syncHeight = () => {
+      const activeItem = items[activeIndex];
+
+      if (!activeItem) {
+        return;
+      }
+
+      list.style.setProperty('--faq-height', '0px');
+      const minimumHeight = window.matchMedia('(max-width: 760px)').matches ? 300 : 320;
+      const measuredHeight = Math.max(Math.ceil(activeItem.scrollHeight), minimumHeight);
+      list.style.setProperty('--faq-height', `${measuredHeight}px`);
+    };
+
+    const showFaq = (nextIndex) => {
+      const previousIndex = activeIndex;
+      activeIndex = (nextIndex + items.length) % items.length;
+      list.dataset.direction = activeIndex < previousIndex ? 'prev' : 'next';
+
+      items.forEach((item, index) => {
+        const isActive = index === activeIndex;
+        item.classList.toggle('is-active', isActive);
+        item.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+      });
+
+      dotButtons.forEach((dot, index) => {
+        const isActive = index === activeIndex;
+        dot.classList.toggle('is-active', isActive);
+        dot.setAttribute('aria-current', isActive ? 'true' : 'false');
+      });
+
+      counter.innerText = `${String(activeIndex + 1).padStart(2, '0')} / ${String(items.length).padStart(2, '0')}`;
+      syncHeight();
+    };
+
+    items.forEach((item, index) => {
+      const heading = item.querySelector('h3');
+      const dot = document.createElement('button');
+      const label = heading ? heading.innerText.trim() : `FAQ ${index + 1}`;
+
+      item.id = item.id || `faq-${carouselIndex + 1}-${index + 1}`;
+      dot.className = 'faq-dot';
+      dot.type = 'button';
+      dot.setAttribute('aria-label', `Show ${label}`);
+      dot.addEventListener('click', () => showFaq(index));
+      dots.appendChild(dot);
+    });
+
+    const dotButtons = Array.from(dots.querySelectorAll('.faq-dot'));
+
+    previousButton.addEventListener('click', () => showFaq(activeIndex - 1));
+    nextButton.addEventListener('click', () => showFaq(activeIndex + 1));
+
+    section.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowLeft') {
+        showFaq(activeIndex - 1);
+      }
+
+      if (event.key === 'ArrowRight') {
+        showFaq(activeIndex + 1);
+      }
+    });
+
+    window.addEventListener('resize', syncHeight);
+    showFaq(0);
+    window.requestAnimationFrame(syncHeight);
+  });
+
   // Daily inspiration rotates once per local calendar day.
   const dailyQuoteEl = document.getElementById('daily-inspiration-quote');
   const dailyPersonEl = document.getElementById('daily-inspiration-person');
