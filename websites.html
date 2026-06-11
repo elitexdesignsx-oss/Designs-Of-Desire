@@ -189,7 +189,7 @@
     .web-cards-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 28px;
+      gap: clamp(18px, 2.2vw, 28px);
       padding-bottom: 100px;
       align-items: stretch;
     }
@@ -204,10 +204,17 @@
       line-height: 1.6;
     }
     .web-card {
-      background: var(--card-bg);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.026), transparent 32%),
+        radial-gradient(circle at 18% 0%, rgba(201, 168, 76, 0.08), transparent 34%),
+        var(--card-bg);
       border: 1px solid var(--border-color);
-      padding: 38px;
-      transition: transform 220ms var(--ease-out), border-color 180ms var(--ease-out), box-shadow 220ms var(--ease-out);
+      padding: clamp(28px, 2.8vw, 38px);
+      transition:
+        transform 180ms var(--ease-out),
+        border-color 180ms var(--ease-out),
+        box-shadow 220ms var(--ease-out),
+        background-color 180ms var(--ease-out);
       position: relative;
       overflow: hidden;
       display: flex;
@@ -215,16 +222,21 @@
     }
     @media (hover: hover) and (pointer: fine) {
       .web-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 40px var(--border-glow);
+        transform: translateY(-4px);
+        box-shadow: 0 18px 42px rgba(0, 0, 0, 0.34), 0 0 22px rgba(201, 168, 76, 0.16);
+        border-color: rgba(201, 168, 76, 0.46);
       }
+    }
+    .web-card:active {
+      transform: scale(0.992);
     }
     .web-card.premium {
       border: 2px solid var(--accent-color-1);
+      box-shadow: 0 0 0 1px rgba(201, 168, 76, 0.08), 0 18px 52px rgba(201, 168, 76, 0.12);
     }
     .web-card.elite {
-      border: 2px solid var(--accent-color-1);
-      box-shadow: 0 0 22px var(--border-glow);
+      border: 1px solid rgba(201, 168, 76, 0.58);
+      box-shadow: 0 0 22px rgba(201, 168, 76, 0.12);
     }
     .web-card.business-tier {
       grid-column: 1 / -1;
@@ -282,20 +294,27 @@
     .fit-label {
       display: inline-block;
       color: var(--accent-color-1);
-      font-size: 0.76rem;
-      font-weight: 600;
-      letter-spacing: 2px;
-      margin-bottom: 18px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 1.9px;
+      margin-bottom: 16px;
       text-transform: uppercase;
     }
     .web-card h2 {
       font-size: clamp(1.8rem, 2.7vw, 2.45rem);
       margin-bottom: 12px;
     }
+    .web-card h3 {
+      font-size: clamp(2rem, 2.4vw, 2.45rem) !important;
+      line-height: 1.06;
+      margin-bottom: 10px;
+      text-wrap: balance;
+    }
     .web-price {
-      font-size: clamp(1.35rem, 2vw, 1.7rem);
+      font-size: clamp(1.5rem, 2vw, 1.9rem);
       font-weight: bold;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      font-variant-numeric: tabular-nums;
     }
     .web-price-note {
       color: var(--accent-color-2);
@@ -303,15 +322,59 @@
       font-weight: 700;
       letter-spacing: 1.4px;
       text-transform: uppercase;
-      margin-bottom: 18px;
+      margin-bottom: 14px;
+    }
+    .follower-fit {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      width: fit-content;
+      max-width: 100%;
+      margin: 6px 0 18px;
+      padding: 8px 13px;
+      border: 1px solid rgba(201, 168, 76, 0.22);
+      border-radius: 7px;
+      background: rgba(201, 168, 76, 0.075);
+      color: var(--text-color);
+      font-size: 0.84rem;
+      font-weight: 600;
+      line-height: 1.25;
+      opacity: 0.92;
+    }
+    .follower-fit::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border: 1px solid var(--accent-color-1);
+      border-radius: 2px;
+      background: rgba(201, 168, 76, 0.08);
+      flex: 0 0 auto;
+    }
+    .web-card.premium .follower-fit {
+      border-color: rgba(201, 168, 76, 0.36);
+      background: rgba(201, 168, 76, 0.12);
+    }
+    .recommended-pill {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      margin: -4px 0 14px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(244, 198, 111, 0.98), rgba(201, 168, 76, 0.88));
+      color: #241a08;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
     }
     .web-fit {
-      margin-top: 15px;
-      opacity: 0.82;
+      margin-top: 6px;
+      opacity: 0.78;
+      line-height: 1.65;
     }
     .payment-plan {
       margin: 24px 0 18px;
-      padding-top: 18px;
+      padding-top: 16px;
       border-top: 1px solid rgba(201, 168, 76, 0.2);
       color: var(--text-color);
       font-size: 0.94rem;
@@ -326,15 +389,16 @@
       text-transform: uppercase;
     }
     .web-card ul {
-      margin-top: 30px;
+      margin-top: 24px;
       display: flex;
       flex-direction: column;
-      gap: 13px;
+      gap: 10px;
     }
     .web-card li {
       position: relative;
-      padding-left: 25px;
-      opacity: 0.9;
+      padding-left: 24px;
+      opacity: 0.88;
+      line-height: 1.44;
     }
     .web-card li::before {
       content: '✓';
@@ -345,6 +409,10 @@
     }
     .web-card .btn {
       margin-top: auto;
+      min-height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .upgrade-policy {
@@ -1060,6 +1128,7 @@
       <h3 style="font-size: 2.2rem;">Link & Look</h3>
       <div class="gold-gradient-text web-price">€150–250</div>
       <p class="web-price-note">One-time, no subscription</p>
+      <p class="follower-fit">Best for under 5K followers</p>
       <p class="web-fit">For micro creators with under 5k followers who need more than a Linktree but aren't ready for a full site.</p>
       <ul>
         <li>Single-page landing: bio, links, teaser gallery</li>
@@ -1074,10 +1143,12 @@
     </div>
 
     <div class="web-card premium">
-      <div class="fit-label">Growth · Most needed</div>
+      <span class="recommended-pill">Most needed</span>
+      <div class="fit-label">Growth</div>
       <h3 style="font-size: 2.2rem;">Creator Presence</h3>
       <div class="gold-gradient-text web-price">€400–700</div>
       <p class="web-price-note">One-time build</p>
+      <p class="follower-fit">Best for 5K–50K followers</p>
       <p class="web-fit">For creators with a niche audience, like foot fetish, feet content, or adult modeling, who need a real home base off social.</p>
       <ul>
         <li>Multi-page site: home, about, services, contact</li>
@@ -1096,6 +1167,7 @@
       <h3 style="font-size: 2.2rem;">Monetization Hub</h3>
       <div class="gold-gradient-text web-price">€1,000–1,600</div>
       <p class="web-price-note">One-time build</p>
+      <p class="follower-fit">Best for 50K–250K followers</p>
       <p class="web-fit">For established creators ready to sell directly — custom content, subscriptions, clip stores, or private access.</p>
       <ul>
         <li>Everything in Creator Presence</li>
@@ -1117,6 +1189,7 @@
           <h3 style="font-size: 2.2rem;">Creator Business</h3>
           <div class="gold-gradient-text web-price">€2,000+</div>
           <p class="web-price-note">Scoped after discovery call</p>
+          <p class="follower-fit">Best for 250K+ followers</p>
           <p class="web-fit">For creators running an actual business: team accounts, multiple revenue streams, brand deals, automation, and protection flows that need custom planning.</p>
           <p class="payment-plan"><strong>Payment plan</strong>Discussed individually per project scope</p>
         </div>
