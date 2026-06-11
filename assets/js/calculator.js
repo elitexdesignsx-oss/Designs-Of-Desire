@@ -99,12 +99,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (monthlyRecovery > 0) {
       outBreakeven.innerText = `${breakEvenMonths} Month${breakEvenMonths === 1 ? '' : 's'}`;
       outSavings.innerText = `€${netPotential.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})}`;
-      if (packageName === 'Full Custom Website') {
-        outConclusion.innerText = `${platformFeeNote} ${packageName} aims to recover ${recoveryPct}% of full potential through premium presentation, clearer offers, routing, and booking/contact flow.`;
-      } else if (packageName === 'Creator Commerce Platform') {
-        outConclusion.innerText = `${platformFeeNote} ${packageName} aims to recover ${recoveryPct}% of full potential through direct payments, shop structure, subscriptions, and members access.`;
+      if (packageName === 'Starter: Link & Look') {
+        outConclusion.innerText = `${platformFeeNote} ${packageName} aims to recover ${recoveryPct}% of full potential through a stronger link-in-bio path, mobile-first presentation, and clearer contact flow.`;
+      } else if (packageName === 'Growth: Creator Presence') {
+        outConclusion.innerText = `${platformFeeNote} ${packageName} aims to recover ${recoveryPct}% of full potential through a real home base, tasteful teaser content, age gating, and clearer request paths.`;
+      } else if (packageName === 'Pro: Monetization Hub') {
+        outConclusion.innerText = `${platformFeeNote} ${packageName} aims to recover ${recoveryPct}% of full potential through direct payments, store structure, subscriptions, requests, and private access.`;
       } else {
-        outConclusion.innerText = `${platformFeeNote} ${packageName} aims to recover up to ${recoveryPct}% of full potential through direct sales, automations, dashboards, chatbot flows, custom booking, and follow-ups.`;
+        outConclusion.innerText = `${platformFeeNote} ${packageName} aims to recover up to ${recoveryPct}% of full potential through advanced analytics, automation, multi-brand structure, protected content flows, and business systems.`;
       }
     } else {
       outBreakeven.innerText = `-`;

@@ -24,6 +24,55 @@ document.addEventListener('DOMContentLoaded', () => {
     es: `${globeIcon}ES` 
   };
   
+  const textOriginals = new WeakMap();
+  const translatableAttributes = ['placeholder', 'aria-label', 'title'];
+  const ignoredTextParents = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'SVG', 'TEXTAREA']);
+
+  const translatePhrase = (phrase, lang) => {
+    if (lang === 'en') return phrase;
+    const textTranslations = typeof TEXT_TRANSLATIONS !== 'undefined' ? TEXT_TRANSLATIONS : {};
+    return textTranslations[lang]?.[phrase] || phrase;
+  };
+
+  const translateTextNodes = (lang) => {
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        const parent = node.parentElement;
+        if (!parent || ignoredTextParents.has(parent.tagName)) return NodeFilter.FILTER_REJECT;
+        if (parent.closest('[data-i18n], .lang-switch')) return NodeFilter.FILTER_REJECT;
+        return node.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      }
+    });
+
+    while (walker.nextNode()) {
+      const node = walker.currentNode;
+      if (!textOriginals.has(node)) {
+        textOriginals.set(node, node.nodeValue);
+      }
+
+      const original = textOriginals.get(node);
+      const key = original.trim();
+      const replacement = translatePhrase(key, lang);
+      node.nodeValue = original.replace(key, replacement);
+    }
+  };
+
+  const translateAttributes = (lang) => {
+    document.querySelectorAll(translatableAttributes.map(attr => `[${attr}]`).join(',')).forEach(el => {
+      translatableAttributes.forEach(attr => {
+        if (!el.hasAttribute(attr)) return;
+
+        const originalAttr = `data-i18n-original-${attr}`;
+        if (!el.hasAttribute(originalAttr)) {
+          el.setAttribute(originalAttr, el.getAttribute(attr));
+        }
+
+        const original = el.getAttribute(originalAttr);
+        el.setAttribute(attr, translatePhrase(original, lang));
+      });
+    });
+  };
+
   const updateLanguage = (lang) => {
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
@@ -31,6 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
         el.innerText = TRANSLATIONS[lang][key];
       }
     });
+    translateTextNodes(lang);
+    translateAttributes(lang);
+    document.documentElement.setAttribute('lang', lang);
     if (langSwitchBtn) {
       langSwitchBtn.innerHTML = langLabels[lang];
     }
