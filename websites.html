@@ -33,7 +33,7 @@
         "@id": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/websites.html#service"
       },
       "datePublished": "2026-05-31",
-      "dateModified": "2026-05-31"
+      "dateModified": "2026-06-11"
     },
     {
       "@type": "Service",
@@ -144,15 +144,15 @@
           "name": "What website packages are available?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Designs of Desire offers four creator website tiers: Starter: Link & Look for EUR 150 to EUR 250, Growth: Creator Presence for EUR 400 to EUR 700, Pro: Monetization Hub for EUR 1,000 to EUR 1,600, and Business: Creator Business starting at EUR 2,000."
+            "text": "Designs of Desire offers four creator website tiers: Starter: Link & Look for EUR 150 to EUR 250, Growth: Creator Presence for EUR 400 to EUR 700, Pro: Monetization Hub for EUR 1,000 to EUR 1,600, and Business: Creator Business starting at EUR 2,000 after a discovery call."
           }
         },
         {
           "@type": "Question",
-          "name": "Are the dollar amounts on the page Designs of Desire prices?",
+          "name": "How do package upgrades work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. Dollar amounts are shown as agency-market context only. Designs of Desire package prices are listed in EUR on the website package cards."
+            "text": "When a client upgrades to a higher package, the amount already paid is credited toward the new package. Upgrade price equals the new package price minus the amount already paid."
           }
         },
         {
@@ -233,6 +233,52 @@
         linear-gradient(225deg, rgba(58, 178, 172, 0.1), transparent 38%),
         var(--card-bg);
     }
+    .business-tier {
+      min-height: 0;
+    }
+    .business-tier .business-card-layout {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.2fr);
+      gap: clamp(34px, 6vw, 76px);
+      align-items: start;
+    }
+    .business-tier .business-card-main {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+    .business-tier .web-fit {
+      max-width: 520px;
+      margin-top: 26px;
+      font-size: clamp(1rem, 1.5vw, 1.15rem);
+      line-height: 1.7;
+    }
+    .business-tier .payment-plan {
+      margin-top: auto;
+      margin-bottom: 0;
+    }
+    .business-tier .business-card-details {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+    .business-tier .business-feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px 28px;
+      margin-top: 0;
+    }
+    .business-tier .business-feature-grid li {
+      min-height: 48px;
+      display: flex;
+      align-items: flex-start;
+      line-height: 1.45;
+    }
+    .business-tier .btn {
+      margin-top: 28px;
+      width: auto !important;
+      align-self: stretch;
+    }
     .fit-label {
       display: inline-block;
       color: var(--accent-color-1);
@@ -299,6 +345,120 @@
     }
     .web-card .btn {
       margin-top: auto;
+    }
+
+    .upgrade-policy {
+      grid-column: 1 / -1;
+      border: 1px solid rgba(201, 168, 76, 0.32);
+      background:
+        linear-gradient(135deg, rgba(201, 168, 76, 0.12), transparent 42%),
+        linear-gradient(225deg, rgba(58, 178, 172, 0.08), transparent 44%),
+        rgba(8, 8, 7, 0.82);
+      padding: clamp(28px, 5vw, 52px);
+    }
+    .upgrade-policy-header {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.75fr);
+      gap: clamp(26px, 5vw, 64px);
+      align-items: start;
+      margin-bottom: clamp(24px, 3vw, 34px);
+    }
+    .upgrade-policy h3 {
+      max-width: 560px;
+      font-size: clamp(2rem, 3.2vw, 3.1rem);
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    .upgrade-policy p {
+      opacity: 0.82;
+      line-height: 1.65;
+    }
+    .upgrade-policy-header > div > p {
+      max-width: 620px;
+    }
+    .upgrade-rule {
+      border: 1px solid rgba(201, 168, 76, 0.34);
+      border-left: 4px solid var(--accent-color-1);
+      background:
+        linear-gradient(135deg, rgba(201, 168, 76, 0.12), transparent 54%),
+        rgba(0, 0, 0, 0.28);
+      padding: clamp(20px, 3vw, 28px);
+      align-self: start;
+    }
+    .upgrade-rule span {
+      display: block;
+      color: var(--accent-color-1);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    .upgrade-rule strong {
+      display: block;
+      color: var(--accent-color-1);
+      font-size: clamp(1.15rem, 2vw, 1.55rem);
+      font-weight: 600;
+      line-height: 1.35;
+      margin-bottom: 12px;
+    }
+    .upgrade-rule small {
+      display: block;
+      color: var(--text-color);
+      font-size: 0.92rem;
+      line-height: 1.55;
+      opacity: 0.74;
+    }
+    .upgrade-table {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      background: transparent;
+      border: 0;
+    }
+    .upgrade-row {
+      display: grid;
+      gap: 12px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent),
+        rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(201, 168, 76, 0.2);
+      border-top: 2px solid rgba(201, 168, 76, 0.5);
+      padding: 20px;
+      min-height: 138px;
+    }
+    .upgrade-row > span {
+      background: transparent;
+      padding: 0;
+      line-height: 1.5;
+    }
+    .upgrade-row:first-child {
+      display: none;
+    }
+    .upgrade-example-label {
+      width: fit-content;
+      border: 1px solid rgba(201, 168, 76, 0.34);
+      color: var(--accent-color-1);
+      background: rgba(201, 168, 76, 0.08);
+      padding: 5px 8px;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+    .upgrade-example-title {
+      color: var(--accent-color-1);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+    .upgrade-example-math {
+      font-size: clamp(0.98rem, 1.45vw, 1.08rem);
+    }
+    .upgrade-row strong {
+      color: var(--accent-color-1);
+      font-weight: 600;
     }
 
     .agency-value-section {
@@ -424,6 +584,25 @@
       }
       .web-card.business-tier {
         grid-column: auto;
+      }
+      .business-tier .business-card-layout,
+      .business-tier .business-feature-grid {
+        grid-template-columns: 1fr;
+      }
+      .business-tier .payment-plan {
+        margin-top: 26px;
+      }
+      .upgrade-policy-header,
+      .upgrade-table {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 760px) {
+      .upgrade-table {
+        grid-template-columns: 1fr;
+      }
+      .upgrade-row {
+        min-height: auto;
       }
     }
 
@@ -864,7 +1043,7 @@
         <dt>Included deliverables</dt>
         <dd>Mobile-first design, brand-consistent styling, booking or contact paths, commerce or membership features when scoped, and a clearer offer structure.</dd>
         <dt>Pricing logic</dt>
-        <dd>Starter: Link & Look: EUR 150-250. Growth: Creator Presence: EUR 400-700. Pro: Monetization Hub: EUR 1,000-1,600. Business: Creator Business: EUR 2,000+ after discovery.</dd>
+        <dd>Starter: Link & Look: EUR 150-250. Growth: Creator Presence: EUR 400-700. Pro: Monetization Hub: EUR 1,000-1,600. Business: Creator Business: EUR 2,000+ after discovery. Upgrades credit previous payments toward the higher package; examples use common anchor prices of EUR 200, EUR 600, and EUR 1,300.</dd>
         <dt>Typical next step</dt>
         <dd>Send a website inquiry with the desired package, deadline, brand links, budget range, and project details.</dd>
       </dl>
@@ -875,7 +1054,7 @@
   <!-- Web Cards -->
   <section class="container web-cards-grid reveal" aria-labelledby="website-packages-title">
     <h2 id="website-packages-title" class="sr-only">Website Creation Packages</h2>
-    <p class="web-journey-line">4 tiers mapped to the actual creator journey — from micro to full business.</p>
+    <p class="web-journey-line">4 tiers mapped to the actual creator journey. Start where you are, then upgrade later with your previous payment credited.</p>
     <div class="web-card">
       <div class="fit-label">Starter</div>
       <h3 style="font-size: 2.2rem;">Link & Look</h3>
@@ -932,23 +1111,70 @@
     </div>
 
     <div class="web-card business-tier">
-      <div class="fit-label">Business</div>
-      <h3 style="font-size: 2.2rem;">Creator Business</h3>
-      <div class="gold-gradient-text web-price">€2,000+</div>
-      <p class="web-price-note">Scoped after discovery call</p>
-      <p class="web-fit">For creators running an actual business — team accounts, multiple revenue streams, brand deals, automation.</p>
-      <ul>
-        <li>Everything in Monetization Hub</li>
-        <li>Multi-persona or multi-brand setup</li>
-        <li>Chatbot or intake automation for fan screening</li>
-        <li>Collab/affiliate program for other creators</li>
-        <li>Advanced analytics dashboard</li>
-        <li>Custom DRM/content protection flows</li>
-        <li>Full brand identity integration</li>
-      </ul>
-      <p class="payment-plan"><strong>Payment plan</strong>Discussed individually per project scope</p>
-      <a href="#website-quote-form" class="btn btn-outline" style="width: 100%;" data-quote-service="Business: Creator Business">Explore this tier</a>
+      <div class="business-card-layout">
+        <div class="business-card-main">
+          <div class="fit-label">Business</div>
+          <h3 style="font-size: 2.2rem;">Creator Business</h3>
+          <div class="gold-gradient-text web-price">€2,000+</div>
+          <p class="web-price-note">Scoped after discovery call</p>
+          <p class="web-fit">For creators running an actual business: team accounts, multiple revenue streams, brand deals, automation, and protection flows that need custom planning.</p>
+          <p class="payment-plan"><strong>Payment plan</strong>Discussed individually per project scope</p>
+        </div>
+        <div class="business-card-details">
+          <ul class="business-feature-grid">
+            <li>Everything in Monetization Hub</li>
+            <li>Multi-persona or multi-brand setup</li>
+            <li>Chatbot or intake automation for fan screening</li>
+            <li>Collab/affiliate program for other creators</li>
+            <li>Advanced analytics dashboard</li>
+            <li>Custom DRM/content protection flows</li>
+            <li>Full brand identity integration</li>
+          </ul>
+          <a href="#website-quote-form" class="btn btn-outline" style="width: 100%;" data-quote-service="Business: Creator Business">Explore this tier</a>
+        </div>
+      </div>
     </div>
+
+    <aside class="upgrade-policy" aria-labelledby="upgrade-policy-title">
+      <div class="upgrade-policy-header">
+        <div>
+          <div class="fit-label">Upgrade credit policy</div>
+          <h3 id="upgrade-policy-title">Your previous payment counts toward the next tier.</h3>
+          <p>When you move from one package to a higher package, the amount already paid is credited toward the new package. The numbers below are examples only, using common anchor prices inside each range.</p>
+        </div>
+        <div class="upgrade-rule" aria-label="Upgrade formula">
+          <span>Simple rule</span>
+          <strong>New package price - amount already paid</strong>
+          <small>Final upgrade pricing uses the package price agreed for your project.</small>
+        </div>
+      </div>
+      <div class="upgrade-table" role="table" aria-label="Package upgrade examples">
+        <div class="upgrade-row" role="row">
+          <span role="columnheader">Upgrade</span>
+          <span role="columnheader">Example calculation</span>
+        </div>
+        <div class="upgrade-row" role="row">
+          <span class="upgrade-example-label" role="cell">Example</span>
+          <span class="upgrade-example-title" role="cell">Starter to Growth</span>
+          <span class="upgrade-example-math" role="cell">If Growth is scoped at <strong>EUR 600</strong> and Starter paid was <strong>EUR 200</strong>, the upgrade is <strong>EUR 400 remaining</strong>.</span>
+        </div>
+        <div class="upgrade-row" role="row">
+          <span class="upgrade-example-label" role="cell">Example</span>
+          <span class="upgrade-example-title" role="cell">Growth to Pro</span>
+          <span class="upgrade-example-math" role="cell">If Pro is scoped at <strong>EUR 1,300</strong> and Growth paid was <strong>EUR 600</strong>, the upgrade is <strong>EUR 700 remaining</strong>.</span>
+        </div>
+        <div class="upgrade-row" role="row">
+          <span class="upgrade-example-label" role="cell">Example</span>
+          <span class="upgrade-example-title" role="cell">Starter to Pro</span>
+          <span class="upgrade-example-math" role="cell">If Pro is scoped at <strong>EUR 1,300</strong> and Starter paid was <strong>EUR 200</strong>, the upgrade is <strong>EUR 1,100 remaining</strong>.</span>
+        </div>
+        <div class="upgrade-row" role="row">
+          <span class="upgrade-example-label" role="cell">Example</span>
+          <span class="upgrade-example-title" role="cell">Pro to Business</span>
+          <span class="upgrade-example-math" role="cell">Previous payment is credited, then the final Business price is scoped after the discovery call.</span>
+        </div>
+      </div>
+    </aside>
   </section>
 
   <!-- ROI Calculator -->
@@ -981,7 +1207,7 @@
               <label>Website Package</label>
               <select id="website-package">
                 <option value="200" data-name="Starter: Link & Look" data-potential="8" selected>Starter: Link & Look (€150–€250)</option>
-                <option value="550" data-name="Growth: Creator Presence" data-potential="15">Growth: Creator Presence (€400–€700)</option>
+                <option value="600" data-name="Growth: Creator Presence" data-potential="15">Growth: Creator Presence (€400–€700)</option>
                 <option value="1300" data-name="Pro: Monetization Hub" data-potential="25">Pro: Monetization Hub (€1,000–€1,600)</option>
                 <option value="2000" data-name="Business: Creator Business" data-potential="40">Business: Creator Business (€2,000+)</option>
               </select>
@@ -1207,6 +1433,10 @@
       <article>
         <h3>How much does a website cost?</h3>
         <p>Starter: Link & Look is €150-250. Growth: Creator Presence is €400-700. Pro: Monetization Hub is €1,000-1,600. Business: Creator Business starts at €2,000+ and is scoped after a discovery call.</p>
+      </article>
+      <article>
+        <h3>How do upgrades work?</h3>
+        <p>If you upgrade to a higher package, the amount you already paid is credited toward the new package. The upgrade price is the new package price minus the amount already paid; examples use common anchor prices inside each range.</p>
       </article>
       <article>
         <h3>Why are your websites cheaper than traditional agencies?</h3>

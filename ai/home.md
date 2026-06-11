@@ -17,7 +17,7 @@ Designs of Desire is a high-end visual design and website studio for creators, m
 
 ## Pricing
 
-Visual design starts at EUR 10, premade designs start at EUR 20, and custom websites start at EUR 400.
+Visual design starts at EUR 10, premade designs start at EUR 20, and custom websites start at EUR 150.
 
 ## Contact
 

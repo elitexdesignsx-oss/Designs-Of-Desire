@@ -1,6 +1,6 @@
 # Website Creation
 
-Last updated: 2026-05-31
+Last updated: 2026-06-11
 
 ## Summary
 
@@ -8,9 +8,11 @@ Designs of Desire builds premium websites and digital systems for creators, mode
 
 ## Packages
 
-- Full Custom Website: EUR 400-600
-- Creator Commerce Platform: EUR 1,200-1,500
-- Bespoke Digital System: EUR 2,000+ discussion
+- Starter: Link & Look: EUR 150-250
+- Growth: Creator Presence: EUR 400-700
+- Pro: Monetization Hub: EUR 1,000-1,600
+- Business: Creator Business: EUR 2,000+ after discovery
+- Upgrade credit policy: previous payments are credited toward higher packages. Examples use common anchor prices inside each range.
 
 ## Included paths
 
