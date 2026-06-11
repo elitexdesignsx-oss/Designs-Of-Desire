@@ -561,143 +561,151 @@
       border-radius: 4px;
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035);
     }
-    .calc-explainer {
-      border: 1px solid rgba(201, 168, 76, 0.3);
-      border-left: 3px solid var(--accent-color-1);
-      background: rgba(0, 0, 0, 0.24);
-      padding: 18px 20px;
-      margin-bottom: 24px;
-      font-size: 0.95rem;
-    }
-    .calc-explainer strong {
-      color: var(--accent-color-1);
-      display: block;
-      margin-bottom: 6px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 0.78rem;
-    }
-    .calc-explainer p {
-      opacity: 0.78;
-      line-height: 1.65;
-    }
-    .calc-kpi-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-      margin-bottom: 24px;
-    }
-    .calc-kpi-card {
-      border: 1px solid rgba(201, 168, 76, 0.26);
-      background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent),
-        rgba(0, 0, 0, 0.26);
-      padding: 20px;
-      min-height: 146px;
+    .calc-story-output {
       display: flex;
       flex-direction: column;
+      gap: 20px;
+    }
+    .calc-result-card {
+      border: 1px solid rgba(201, 168, 76, 0.4);
+      background:
+        linear-gradient(135deg, rgba(201, 168, 76, 0.17), transparent 44%),
+        rgba(0, 0, 0, 0.3);
+      padding: clamp(24px, 4vw, 38px);
+      box-shadow: 0 0 26px rgba(201, 168, 76, 0.16);
+    }
+    .calc-eyebrow {
+      display: block;
+      color: var(--accent-color-1);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+    .calc-hero-number {
+      display: block;
+      color: var(--accent-color-1);
+      font-family: var(--font-display);
+      font-size: clamp(3.4rem, 7vw, 5.8rem);
+      font-weight: 500;
+      line-height: 0.95;
+      letter-spacing: 0;
+      margin-bottom: 18px;
+      font-variant-numeric: tabular-nums;
+    }
+    .calc-result-card p {
+      max-width: 680px;
+      opacity: 0.82;
+      line-height: 1.7;
+    }
+    .calc-story-line {
+      border-left: 3px solid var(--accent-color-2);
+      background: rgba(0, 0, 0, 0.22);
+      padding: 18px 20px;
+      color: var(--text-color);
+      font-size: clamp(1rem, 1.7vw, 1.16rem);
+      line-height: 1.65;
+    }
+    .calc-story-line strong {
+      color: var(--accent-color-1);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .calc-cost-strip {
+      display: flex;
+      align-items: center;
       justify-content: space-between;
-      position: relative;
-      overflow: hidden;
+      gap: 22px;
+      border: 1px solid rgba(201, 168, 76, 0.24);
+      background: rgba(0, 0, 0, 0.2);
+      padding: 18px 20px;
     }
-    .calc-kpi-card::after {
-      content: '';
-      position: absolute;
-      left: 20px;
-      right: 20px;
-      bottom: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.72), transparent);
-    }
-    .calc-kpi-card span {
+    .calc-cost-strip span {
       display: block;
       color: var(--accent-color-1);
       font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 2px;
+      font-weight: 700;
+      letter-spacing: 1.8px;
       text-transform: uppercase;
-      margin-bottom: 10px;
     }
-    .calc-kpi-card strong {
+    .calc-cost-strip small {
       display: block;
+      margin-top: 6px;
+      opacity: 0.64;
+      line-height: 1.45;
+    }
+    .calc-cost-strip strong {
+      color: var(--text-color);
       font-family: var(--font-display);
-      font-size: clamp(2rem, 3.4vw, 3rem);
-      line-height: 1;
+      font-size: clamp(1.8rem, 3.1vw, 2.6rem);
       font-weight: 500;
       letter-spacing: 0;
+      white-space: nowrap;
     }
-    .calc-kpi-card small {
-      display: block;
-      opacity: 0.58;
-      font-size: 0.78rem;
-      margin-top: 10px;
-      line-height: 1.5;
+    .calc-details {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 4px;
     }
-    .calc-kpi-card.danger strong {
-      color: #f05a47;
-    }
-    .calc-kpi-card.gain strong {
+    .calc-details summary {
       color: var(--accent-color-1);
+      cursor: pointer;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      list-style-position: outside;
+      padding: 14px 0;
+      text-transform: uppercase;
     }
-    .calc-kpi-card.highlight {
-      border-color: var(--accent-color-1);
-      background:
-        linear-gradient(135deg, rgba(201, 168, 76, 0.18), transparent 46%),
-        rgba(0, 0, 0, 0.35);
-      box-shadow: 0 0 22px rgba(201, 168, 76, 0.18);
+    .calc-details summary:focus-visible {
+      outline: 2px solid var(--accent-color-2);
+      outline-offset: 4px;
     }
-    .calc-small {
+    .calc-detail-panel {
+      display: grid;
+      gap: 12px;
+      padding-top: 8px;
+    }
+    .calc-detail-note {
+      border: 1px solid rgba(201, 168, 76, 0.2);
+      background: rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      line-height: 1.65;
+    }
+    .calc-detail-note strong {
+      color: var(--accent-color-1);
       display: block;
-      opacity: 0.58;
-      font-size: 0.8rem;
-      margin-top: 4px;
-      max-width: 300px;
+      font-size: 0.74rem;
+      letter-spacing: 1.4px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
     }
-    .output-row {
+    .calc-detail-row {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      gap: 24px;
-      margin-bottom: 0;
-      padding: 18px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+      gap: 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 14px 0;
     }
-    .output-label strong {
+    .calc-detail-row strong {
       display: block;
       font-size: 0.95rem;
       line-height: 1.35;
       margin-bottom: 4px;
     }
-    [data-theme="marble"] .output-row {
-      border-bottom-color: rgba(0,0,0,0.1);
+    .calc-detail-row small {
+      display: block;
+      max-width: 340px;
+      opacity: 0.58;
+      line-height: 1.5;
     }
-    .output-row:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-    .output-val {
-      font-size: clamp(1.35rem, 2.3vw, 2rem);
+    .calc-detail-value {
+      color: var(--accent-color-1);
       font-family: var(--font-display);
+      font-size: clamp(1.25rem, 2vw, 1.8rem);
       font-weight: 500;
       letter-spacing: 0;
       white-space: nowrap;
-    }
-    .val-red { color: #e74c3c; }
-    .val-green { color: var(--accent-color-1); font-size: clamp(1.75rem, 3vw, 2.55rem); }
-    
-    .calc-conclusion {
-      margin-top: 32px;
-      padding: 26px clamp(20px, 4vw, 48px) 0;
-      border-top: 1px solid rgba(201, 168, 76, 0.28);
-      text-align: center;
-      font-family: var(--font-display);
-      font-size: clamp(1.05rem, 1.8vw, 1.35rem);
-      line-height: 1.7;
-      color: var(--accent-color-1);
-      max-width: 980px;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     /* Timeline Enhanced */
@@ -772,8 +780,14 @@
       .calc-grid {
         grid-template-columns: 1fr;
       }
-      .calc-kpi-grid {
-        grid-template-columns: 1fr;
+      .calc-cost-strip,
+      .calc-detail-row {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .calc-cost-strip strong,
+      .calc-detail-value {
+        white-space: normal;
       }
       .agency-compare-grid {
         grid-template-columns: 1fr;
@@ -979,51 +993,43 @@
             </div>
           </div>
 
-          <div class="calc-outputs">
-            <div class="calc-explainer">
-              <strong id="calc-explainer-title">How to read this</strong>
-              <p id="calc-explainer-text">This starts from what you currently keep and estimates the larger earning potential behind it.</p>
-            </div>
-            <div class="calc-kpi-grid">
-              <div class="calc-kpi-card danger">
-                <span>Leaking Now / Month</span>
-                <strong id="out-monthly">€3,333</strong>
-                <small id="out-monthly-help">Estimated full potential minus what you keep now.</small>
+          <div class="calc-outputs calc-story-output">
+            <article class="calc-result-card" aria-labelledby="calc-result-title">
+              <span class="calc-eyebrow" id="calc-result-title">Recovered potential / selected timeframe</span>
+              <strong class="calc-hero-number" id="out-yearly-saved">€8,000</strong>
+              <p id="out-conclusion">Over 1 year, that is roughly €8,000 in recovered potential for a one-time €200 investment.</p>
+            </article>
+
+            <p class="calc-story-line" id="calc-explainer-text">Right now, <span id="out-platform-name">Instagram</span> may be costing you around <strong id="out-yearly">€667/month</strong> in recoverable potential. Estimated payback: <strong id="out-breakeven">1 Month</strong>.</p>
+
+            <div class="calc-cost-strip">
+              <div>
+                <span>Package cost</span>
+                <small><span id="out-package-name">Starter: Link & Look</span> · one-time website investment</small>
               </div>
-              <div class="calc-kpi-card gain">
-                <span>Website Gross Gain / Month</span>
-                <strong id="out-yearly">€1,250</strong>
-                <small id="out-yearly-help">Starter: Link & Look recovers 8% of full potential.</small>
+              <strong id="out-website">€200</strong>
+            </div>
+
+            <details class="calc-details">
+              <summary>See how we calculated this</summary>
+              <div class="calc-detail-panel">
+                <p class="calc-detail-note"><strong id="calc-explainer-title">Instagram estimate</strong><span id="out-yearly-help">Starter: Link & Look uses an 8% recovery estimate from the full potential.</span></p>
+                <div class="calc-detail-row">
+                  <span><strong>Estimated missed potential before the website</strong><small id="out-monthly-help">Mostly missed buying-path value. No platform fee is counted for Instagram.</small></span>
+                  <span class="calc-detail-value" id="out-monthly">€3,333</span>
+                </div>
+                <div class="calc-detail-row">
+                  <span><strong>Estimated monthly total after the website</strong><small>Current income + estimated website recovery.</small></span>
+                  <span class="calc-detail-value" id="out-after-monthly">€5,667</span>
+                </div>
+                <div class="calc-detail-row">
+                  <span><strong id="out-savings-label">Net recovered value after cost</strong><small>Recovered value across your selected timeframe, minus the one-time website cost.</small></span>
+                  <span class="calc-detail-value" id="out-savings">€7,800</span>
+                </div>
               </div>
-              <div class="calc-kpi-card highlight">
-                <span>New Monthly Total</span>
-                <strong id="out-after-monthly">€6,250</strong>
-                <small>Current income + estimated website recovery.</small>
-              </div>
-              <div class="calc-kpi-card gain">
-                <span>Recovered Value / Year</span>
-                <strong id="out-yearly-saved">€15,000</strong>
-                <small>Website gross monthly gain × 12.</small>
-              </div>
-            </div>
-            <div style="height: 1px; background: var(--border-color); margin: 20px 0;"></div>
-            <div class="output-row">
-              <span class="output-label"><strong><span id="out-package-name">Starter: Link & Look</span> Cost:</strong><small class="calc-small">One-time website investment.</small></span>
-              <span class="output-val" id="out-website">€500</span>
-            </div>
-            <div class="output-row">
-              <span class="output-label"><strong id="out-breakeven-label">Estimated time to cover the website cost:</strong><small class="calc-small">Website cost ÷ estimated monthly recovery.</small></span>
-              <span class="output-val" id="out-breakeven" style="color: var(--accent-color-1);">1 Month</span>
-            </div>
-            <div class="output-row" style="margin-top: 15px;">
-              <span class="output-label"><strong id="out-savings-label">Net Recovered After Website Cost:</strong><small class="calc-small">Recovered value across your selected timeframe, minus the one-time website cost.</small></span>
-              <span class="output-val val-green" id="out-savings">€14,500</span>
-            </div>
+            </details>
           </div>
 
-        </div>
-        <div class="calc-conclusion" id="out-conclusion">
-          This is a simple planning estimate, not a promise. It shows how much value a clearer website path could help recover.
         </div>
         <p class="text-center" style="margin-top: 15px; opacity: 0.7; font-size: 0.9rem;">Estimates are planning tools, not guaranteed income. Actual results depend on audience quality, offer, traffic, pricing, and consistency.</p>
       </div>

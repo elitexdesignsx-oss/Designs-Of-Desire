@@ -20,10 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const outConclusion = document.getElementById('out-conclusion');
   const outMonthlyHelp = document.getElementById('out-monthly-help');
   const outYearlyHelp = document.getElementById('out-yearly-help');
-  const outBreakevenLabel = document.getElementById('out-breakeven-label');
   const outSavingsLabel = document.getElementById('out-savings-label');
   const calcExplainerTitle = document.getElementById('calc-explainer-title');
-  const calcExplainerText = document.getElementById('calc-explainer-text');
+  const outPlatformName = document.getElementById('out-platform-name');
+
+  const formatCurrency = (value) => `€${value.toLocaleString(undefined, {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0
+  })}`;
 
   const updateCalculator = () => {
     const income = parseFloat(incomeInput.value);
@@ -54,64 +58,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const breakEvenMonths = monthlyRecovery > 0 ? Math.ceil(websiteCost / monthlyRecovery) : 0;
     const netPotential = totalRecovery - websiteCost;
-    const platformFeeNote = platformKind === 'fee'
-      ? `${platformName} includes two issues in this estimate: about ${missedPct}% missed potential before people buy, then a ${feePct}% platform fee on what remains.`
-      : `${platformName} has no platform fee counted here. This estimates about ${missedPct}% missed potential from weak routing, unclear offer, or no direct sales path.`;
+    const timeframeLabel = `${years} year${years > 1 ? 's' : ''}`;
 
-    outMonthly.innerText = `€${monthlyLeakage.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})}`;
-    outYearly.innerText = `€${monthlyRecovery.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})}`;
+    outMonthly.innerText = formatCurrency(monthlyLeakage);
+    outYearly.innerText = `${formatCurrency(monthlyRecovery)}/month`;
     if (outAfterMonthly) {
-      outAfterMonthly.innerText = `€${monthlyAfterWebsite.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})}`;
+      outAfterMonthly.innerText = formatCurrency(monthlyAfterWebsite);
     }
     if (outYearlySaved) {
-      outYearlySaved.innerText = `€${yearlyRecovery.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})}`;
+      outYearlySaved.innerText = formatCurrency(totalRecovery);
     }
-    outWebsite.innerText = `€${websiteCost.toLocaleString()}`;
+    outWebsite.innerText = formatCurrency(websiteCost);
     if (outPackageName) {
       outPackageName.innerText = packageName;
     }
-
-    if (outBreakevenLabel) {
-      outBreakevenLabel.innerText = 'Estimated time to cover the website cost:';
+    if (outPlatformName) {
+      outPlatformName.innerText = platformName;
     }
+
     if (outSavingsLabel) {
       outSavingsLabel.innerText = 'Net recovered value after website cost:';
     }
     if (outMonthlyHelp) {
       outMonthlyHelp.innerText = platformKind === 'fee'
-        ? `About €${monthlyMissedPotential.toLocaleString(undefined, {maximumFractionDigits: 0})} missed before buying + €${monthlyPlatformFee.toLocaleString(undefined, {maximumFractionDigits: 0})} in ${platformName} fees.`
-        : `Mostly missed buying-path value. No platform fee is counted for ${platformName}.`;
+        ? `Includes about ${formatCurrency(monthlyMissedPotential)} missed before buying plus ${formatCurrency(monthlyPlatformFee)} in ${platformName} fees.`
+        : `Estimated from weak routing, unclear offer, or no direct sales path. No platform fee is counted for ${platformName}.`;
     }
     if (outYearlyHelp) {
       outYearlyHelp.innerText = `${packageName} uses a ${recoveryPct}% recovery estimate from the full potential.`;
     }
 
-    if (calcExplainerTitle && calcExplainerText) {
-      if (platformKind === 'fee') {
-        calcExplainerTitle.innerText = `${platformName}: missed sales + platform fee`;
-        calcExplainerText.innerText = `You currently keep €${income.toLocaleString()}. The calculator works backward: €${income.toLocaleString()} ÷ ${(visibilityFactor * 100).toFixed(0)}% ÷ ${(feeFactor * 100).toFixed(0)}% = about €${fullMonthlyPotential.toLocaleString(undefined, {maximumFractionDigits: 0})} full potential. The monthly leak is about €${monthlyMissedPotential.toLocaleString(undefined, {maximumFractionDigits: 0})} in missed buying-path value plus €${monthlyPlatformFee.toLocaleString(undefined, {maximumFractionDigits: 0})} in platform fees.`;
-      } else {
-        calcExplainerTitle.innerText = `${platformName}: attention without a clear buying path`;
-        calcExplainerText.innerText = `You currently keep €${income.toLocaleString()}. ${platformName} has no platform fee counted here, so the calculator works backward from the buying-path loss: €${income.toLocaleString()} ÷ ${(visibilityFactor * 100).toFixed(0)}% = about €${fullMonthlyPotential.toLocaleString(undefined, {maximumFractionDigits: 0})} full potential. That means roughly €${monthlyLeakage.toLocaleString(undefined, {maximumFractionDigits: 0})} is leaking each month.`;
-      }
+    if (calcExplainerTitle) {
+      calcExplainerTitle.innerText = `${platformName}: calculation note`;
     }
     
     if (monthlyRecovery > 0) {
       outBreakeven.innerText = `${breakEvenMonths} Month${breakEvenMonths === 1 ? '' : 's'}`;
-      outSavings.innerText = `€${netPotential.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})}`;
-      if (packageName === 'Starter: Link & Look') {
-        outConclusion.innerText = `${platformFeeNote} ${packageName} aims to recover ${recoveryPct}% of full potential through a stronger link-in-bio path, mobile-first presentation, and clearer contact flow.`;
-      } else if (packageName === 'Growth: Creator Presence') {
-        outConclusion.innerText = `${platformFeeNote} ${packageName} aims to recover ${recoveryPct}% of full potential through a real home base, tasteful teaser content, age gating, and clearer request paths.`;
-      } else if (packageName === 'Pro: Monetization Hub') {
-        outConclusion.innerText = `${platformFeeNote} ${packageName} aims to recover ${recoveryPct}% of full potential through direct payments, store structure, subscriptions, requests, and private access.`;
-      } else {
-        outConclusion.innerText = `${platformFeeNote} ${packageName} aims to recover up to ${recoveryPct}% of full potential through advanced analytics, automation, multi-brand structure, protected content flows, and business systems.`;
+      outSavings.innerText = formatCurrency(netPotential);
+      if (outConclusion) {
+        outConclusion.innerText = `Over ${timeframeLabel}, that is roughly ${formatCurrency(totalRecovery)} in recovered potential for a one-time ${formatCurrency(websiteCost)} investment.`;
       }
     } else {
       outBreakeven.innerText = `-`;
       outSavings.innerText = `-`;
-      outConclusion.innerText = `Use this as a planning estimate once you have consistent traffic and a clear offer.`;
+      if (outConclusion) {
+        outConclusion.innerText = `Use this as a planning estimate once you have consistent traffic and a clear offer.`;
+      }
     }
   };
 
