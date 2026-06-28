@@ -1,10 +1,10 @@
-# Designs of Desire
+# Amazing Designs
 
 Last updated: 2026-05-31
 
 ## Summary
 
-Designs of Desire is a high-end visual design and website studio for creators, models, independent brands, and luxury-leaning personal brands.
+Amazing Designs is a high-end visual design and website studio for creators, models, independent brands, and luxury-leaning personal brands.
 
 ## Core services
 

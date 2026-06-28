@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>Premade Logo & Brand Designs | Designs of Desire</title>
-  <meta name="description" content="Claim exclusive premade logos, banners, price lists, and brand design bundles from Designs of Desire. Personalize with your name, colors, and details. From EUR 20.">
+  <title>Premade Logo & Brand Designs | Amazing Designs</title>
+  <meta name="description" content="Claim exclusive premade logos, banners, price lists, and brand design bundles from Amazing Designs. Personalize with your name, colors, and details. From EUR 20.">
   <link rel="canonical" href="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/premades.html">
-  <meta property="og:title" content="Premade Logo & Brand Designs | Designs of Desire">
+  <meta property="og:title" content="Premade Logo & Brand Designs | Amazing Designs">
   <meta property="og:description" content="Claim exclusive premade logos, banners, price lists, and brand design bundles. Personalize with your name, colors, and details.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/premades.html">
   <meta property="og:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Premades/10.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Premade Logo & Brand Designs | Designs of Desire">
+  <meta name="twitter:title" content="Premade Logo & Brand Designs | Amazing Designs">
   <meta name="twitter:description" content="Claim exclusive premade logos, banners, price lists, and brand design bundles. Personalize with your name, colors, and details.">
   <meta name="twitter:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Premades/10.png">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -298,12 +298,24 @@
   </style>
 </head>
 <body>
+  <!-- VIP Overlay -->
+  <div id="vip-overlay">
+    <div class="vip-box">
+      <h2>VIP Access Only</h2>
+      <p>This gallery is reserved for loyal clients. Please enter your VIP password.</p>
+      <input type="password" id="vip-password" class="vip-input" placeholder="PASSWORD" />
+      <button id="vip-submit" class="btn btn-primary" style="width: 100%;">Enter Gallery</button>
+      <div id="vip-error">Incorrect password.</div>
+    </div>
+  </div>
+
+  <div id="vip-protected-content" style="display: none;">
 
   <!-- Navigation -->
   <nav aria-label="Main navigation">
     <div class="container nav-container">
-      <a href="index.html" aria-label="Go to Designs of Desire homepage">
-        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire luxury logo" class="nav-logo" width="1254" height="1254">
+      <a href="index.html" aria-label="Go to Amazing Designs homepage">
+        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs luxury logo" class="nav-logo" width="1254" height="1254">
       </a>
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav_home">Home</a></li>
@@ -407,12 +419,12 @@
       </div>
 
       <div class="premade-card">
-        <div class="badge claimed">Claimed</div>
-        <img src="Images/Premades/2.png" alt="Claimed premade price list design number 2 shown in grayscale" class="premade-img" style="filter: grayscale(100%);" loading="lazy" decoding="async" width="900" height="1600">
+        <div class="badge available">Available</div>
+        <img src="Images/Premades/2.png" alt="Available premade price list design number 2 for creator brand personalization" class="premade-img" loading="lazy" decoding="async" width="900" height="1600">
         <div class="premade-type">Price List</div>
         <h3 class="premade-title">Premade #2</h3>
         <div class="premade-price">€30</div>
-        <button class="btn btn-outline" style="width: 100%; opacity: 0.5; cursor: not-allowed;" disabled>Claimed</button>
+        <button class="btn btn-outline claim-btn" style="width: 100%;" data-name="Premade #2" data-price="€30" data-type="Price List">I Want This</button>
       </div>
 
       <div class="premade-card">
@@ -495,8 +507,8 @@
     <div class="container">
       <div class="footer-content">
         <div>
-          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire luxury logo" class="footer-logo" loading="lazy" decoding="async" width="1254" height="1254">
-          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Designs of Desire</h3>
+          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs luxury logo" class="footer-logo" loading="lazy" decoding="async" width="1254" height="1254">
+          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Amazing Designs</h3>
           <p style="opacity: 0.8; max-width: 300px;">High-End Exclusive Design. Built for Creators Who Want More.</p>
         </div>
         <div style="display: flex; gap: 60px;">
@@ -517,7 +529,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; 2026 Designs of Desire. All rights reserved.
+        &copy; 2026 Amazing Designs. All rights reserved.
       </div>
     </div>
   </footer>
@@ -604,6 +616,45 @@
         }
       });
     });
+  </script>
+  </div> <!-- /vip-protected-content -->
+  <script>
+    (function() {
+      const overlay = document.getElementById('vip-overlay');
+      const content = document.getElementById('vip-protected-content');
+      const passInput = document.getElementById('vip-password');
+      const submitBtn = document.getElementById('vip-submit');
+      const errorMsg = document.getElementById('vip-error');
+      
+      const VIP_PASS = 'DESIRE';
+
+      if (localStorage.getItem('vip_access') === 'true') {
+        overlay.style.display = 'none';
+        content.style.display = 'block';
+      } else {
+        passInput.focus();
+      }
+
+      function checkPassword() {
+        if (passInput.value.toUpperCase() === VIP_PASS) {
+          localStorage.setItem('vip_access', 'true');
+          overlay.style.opacity = '0';
+          setTimeout(() => {
+            overlay.style.display = 'none';
+            content.style.display = 'block';
+          }, 500);
+        } else {
+          errorMsg.style.display = 'block';
+          passInput.value = '';
+          passInput.focus();
+        }
+      }
+
+      submitBtn.addEventListener('click', checkPassword);
+      passInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') checkPassword();
+      });
+    })();
   </script>
 </body>
 </html>

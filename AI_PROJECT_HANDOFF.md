@@ -1,10 +1,10 @@
-# Designs of Desire - AI Project Handoff
+# Amazing Designs - AI Project Handoff
 
 Generated for AI/developer context. This file is a single copy-paste reference for understanding and editing the project.
 
 ## Project Context
 
-Designs of Desire is a luxury visual design and website studio site for creators, models, independent brands, and premium personal brands. It presents visual identity services, custom website packages, portfolio work, loyal client case studies, AI-readable SEO summaries, and contact/booking paths.
+Amazing Designs is a luxury visual design and website studio site for creators, models, independent brands, and premium personal brands. It presents visual identity services, custom website packages, portfolio work, loyal client case studies, AI-readable SEO summaries, and contact/booking paths.
 
 Primary public pages:
 - `index.html` - Home page and brand overview.
@@ -338,13 +338,13 @@ print("Gold stripes successfully added to all targeted sections.")
 ### `ai\home.md`
 
 ``markdown
-# Designs of Desire
+# Amazing Designs
 
 Last updated: 2026-05-31
 
 ## Summary
 
-Designs of Desire is a high-end visual design and website studio for creators, models, independent brands, and luxury-leaning personal brands.
+Amazing Designs is a high-end visual design and website studio for creators, models, independent brands, and luxury-leaning personal brands.
 
 ## Core services
 
@@ -376,7 +376,7 @@ Last updated: 2026-05-31
 
 ## Summary
 
-Recent Work collects Designs of Desire portfolio examples across logo design, creator brand identity, VIP loyal client features, and visual systems.
+Recent Work collects Amazing Designs portfolio examples across logo design, creator brand identity, VIP loyal client features, and visual systems.
 
 ## Featured examples
 
@@ -404,7 +404,7 @@ Last updated: 2026-05-31
 
 ## Summary
 
-Designs of Desire creates premium visual design assets for creators, models, independent brands, and luxury-leaning personal brands.
+Amazing Designs creates premium visual design assets for creators, models, independent brands, and luxury-leaning personal brands.
 
 ## Services and prices
 
@@ -435,7 +435,7 @@ Last updated: 2026-05-31
 
 ## Summary
 
-Designs of Desire builds premium websites and digital systems for creators, models, independent brands, and luxury-leaning businesses.
+Amazing Designs builds premium websites and digital systems for creators, models, independent brands, and luxury-leaning businesses.
 
 ## Packages
 
@@ -449,11 +449,11 @@ Projects may include mobile-first design, brand-consistent styling, booking or c
 
 ## Important note
 
-Any dollar amounts on the website page are agency-market context only. Designs of Desire package prices are listed in EUR.
+Any dollar amounts on the website page are agency-market context only. Amazing Designs package prices are listed in EUR.
 
 ## Next action
 
-Use the website quote form, email designs.of.desirex@gmail.com, or message Designs of Desire on Instagram.
+Use the website quote form, email designs.of.desirex@gmail.com, or message Amazing Designs on Instagram.
 
 
 Use the public website as the source of truth. Do not invent services, prices, guarantees, reviews, or availability.
@@ -873,16 +873,16 @@ Use the public website as the source of truth. Do not invent services, prices, g
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>Premade Logo & Brand Designs | Designs of Desire</title>
-  <meta name="description" content="Claim exclusive premade logos, banners, price lists, and brand design bundles from Designs of Desire. Personalize with your name, colors, and details. From EUR 20.">
+  <title>Premade Logo & Brand Designs | Amazing Designs</title>
+  <meta name="description" content="Claim exclusive premade logos, banners, price lists, and brand design bundles from Amazing Designs. Personalize with your name, colors, and details. From EUR 20.">
   <link rel="canonical" href="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/premades.html">
-  <meta property="og:title" content="Premade Logo & Brand Designs | Designs of Desire">
+  <meta property="og:title" content="Premade Logo & Brand Designs | Amazing Designs">
   <meta property="og:description" content="Claim exclusive premade logos, banners, price lists, and brand design bundles. Personalize with your name, colors, and details.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/premades.html">
   <meta property="og:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Premades/10.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Premade Logo & Brand Designs | Designs of Desire">
+  <meta name="twitter:title" content="Premade Logo & Brand Designs | Amazing Designs">
   <meta name="twitter:description" content="Claim exclusive premade logos, banners, price lists, and brand design bundles. Personalize with your name, colors, and details.">
   <meta name="twitter:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Premades/10.png">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -1171,8 +1171,8 @@ Use the public website as the source of truth. Do not invent services, prices, g
   <!-- Navigation -->
   <nav aria-label="Main navigation">
     <div class="container nav-container">
-      <a href="index.html" aria-label="Go to Designs of Desire homepage">
-        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire luxury logo" class="nav-logo" width="1254" height="1254">
+      <a href="index.html" aria-label="Go to Amazing Designs homepage">
+        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs luxury logo" class="nav-logo" width="1254" height="1254">
       </a>
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav_home">Home</a></li>
@@ -1364,8 +1364,8 @@ Use the public website as the source of truth. Do not invent services, prices, g
     <div class="container">
       <div class="footer-content">
         <div>
-          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire luxury logo" class="footer-logo" loading="lazy" decoding="async" width="1254" height="1254">
-          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Designs of Desire</h3>
+          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs luxury logo" class="footer-logo" loading="lazy" decoding="async" width="1254" height="1254">
+          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Amazing Designs</h3>
           <p style="opacity: 0.8; max-width: 300px;">High-End Exclusive Design. Built for Creators Who Want More.</p>
         </div>
         <div style="display: flex; gap: 60px;">
@@ -1386,7 +1386,7 @@ Use the public website as the source of truth. Do not invent services, prices, g
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; 2026 Designs of Desire. All rights reserved.
+        &copy; 2026 Amazing Designs. All rights reserved.
       </div>
     </div>
   </footer>
@@ -3301,7 +3301,7 @@ const TRANSLATIONS = {
     service_web_title: "Website Creation",
     service_web_desc: "Full custom websites, commerce platforms, and bespoke digital systems — Starting from €400",
     btn_learn_more: "Learn More →",
-    about_text: "Designs of Desire was built for creators who know their worth. Every pixel is intentional. Every design is exclusive. You're not getting a template — you're getting a visual identity that demands attention.",
+    about_text: "Amazing Designs was built for creators who know their worth. Every pixel is intentional. Every design is exclusive. You're not getting a template — you're getting a visual identity that demands attention.",
     bottom_cta: "Ready to look like the top 1%?",
     btn_book: "Book Your Design"
   },
@@ -3324,7 +3324,7 @@ const TRANSLATIONS = {
     service_web_title: "Création de Site Web",
     service_web_desc: "Sites sur mesure, plateformes commerce et systèmes digitaux — À partir de 400 €",
     btn_learn_more: "En Savoir Plus →",
-    about_text: "Designs of Desire a été créé pour les créateurs qui connaissent leur valeur. Chaque pixel est intentionnel. Chaque design est exclusif. Vous n'obtenez pas un modèle — vous obtenez une identité visuelle qui capte l'attention.",
+    about_text: "Amazing Designs a été créé pour les créateurs qui connaissent leur valeur. Chaque pixel est intentionnel. Chaque design est exclusif. Vous n'obtenez pas un modèle — vous obtenez une identité visuelle qui capte l'attention.",
     bottom_cta: "Prêt à ressembler au top 1 % ?",
     btn_book: "Réservez Votre Design"
   },
@@ -3347,7 +3347,7 @@ const TRANSLATIONS = {
     service_web_title: "Website-Erstellung",
     service_web_desc: "Individuelle Websites, Commerce-Plattformen und digitale Systeme — Ab 400 €",
     btn_learn_more: "Mehr Erfahren →",
-    about_text: "Designs of Desire wurde für Schöpfer entwickelt, die ihren Wert kennen. Jeder Pixel ist gewollt. Jedes Design ist exklusiv. Sie erhalten keine Vorlage — Sie erhalten eine visuelle Identität, die Aufmerksamkeit fordert.",
+    about_text: "Amazing Designs wurde für Schöpfer entwickelt, die ihren Wert kennen. Jeder Pixel ist gewollt. Jedes Design ist exklusiv. Sie erhalten keine Vorlage — Sie erhalten eine visuelle Identität, die Aufmerksamkeit fordert.",
     bottom_cta: "Bereit, wie die Top 1% auszusehen?",
     btn_book: "Design Buchen"
   },
@@ -3370,7 +3370,7 @@ const TRANSLATIONS = {
     service_web_title: "Creación de Sitios Web",
     service_web_desc: "Webs personalizadas, plataformas comerciales y sistemas digitales — Desde 400 €",
     btn_learn_more: "Saber Más →",
-    about_text: "Designs of Desire fue creado para creadores que conocen su valor. Cada píxel es intencional. Cada diseño es exclusivo. No obtienes una plantilla: obtienes una identidad visual que exige atención.",
+    about_text: "Amazing Designs fue creado para creadores que conocen su valor. Cada píxel es intencional. Cada diseño es exclusivo. No obtienes una plantilla: obtienes una identidad visual que exige atención.",
     bottom_cta: "¿Listo para verte como el 1% superior?",
     btn_book: "Reserva Tu Diseño"
   }
@@ -3381,7 +3381,7 @@ const TEXT_TRANSLATIONS = {
     "Visual Design Studio": "Studio de Design Visuel",
     "Every asset designed to convert.": "Chaque ressource est concue pour convertir.",
     "Visual Design Service Summary": "Resume du service de design visuel",
-    "Based in Casablanca, Designs of Desire creates premium visual design assets for creators, models, independent brands, and luxury-leaning personal brands that need polished, clear, and platform-ready visuals.": "Base a Casablanca, Designs of Desire cree des visuels premium pour createurs, modeles, marques independantes et personal brands haut de gamme qui ont besoin d'une presence claire, soignee et prete pour les plateformes.",
+    "Based in Casablanca, Amazing Designs creates premium visual design assets for creators, models, independent brands, and luxury-leaning personal brands that need polished, clear, and platform-ready visuals.": "Base a Casablanca, Amazing Designs cree des visuels premium pour createurs, modeles, marques independantes et personal brands haut de gamme qui ont besoin d'une presence claire, soignee et prete pour les plateformes.",
     "Primary service": "Service principal",
     "Watermark signatures, logos, banners, typographic price lists, rules posters, and schedule templates.": "Signatures watermark, logos, bannieres, listes de prix typographiques, affiches de regles et modeles de planning.",
     "Ideal clients": "Clients ideals",
@@ -3389,7 +3389,7 @@ const TEXT_TRANSLATIONS = {
     "Starting price": "Prix de depart",
     "Listed visual design services start at EUR 10, with custom add-ons available by request.": "Les services de design visuel commencent a 10 EUR, avec des options sur mesure disponibles sur demande.",
     "Typical next step": "Prochaine etape habituelle",
-    "Choose a listed asset below, then order by email or message Designs of Desire on Instagram.": "Choisissez un element ci-dessous, puis commandez par email ou contactez Designs of Desire sur Instagram.",
+    "Choose a listed asset below, then order by email or message Amazing Designs on Instagram.": "Choisissez un element ci-dessous, puis commandez par email ou contactez Amazing Designs sur Instagram.",
     "Last updated: May 31, 2026": "Derniere mise a jour : 31 mai 2026",
     "Visual Design Services and Prices": "Services et prix du design visuel",
     "Watermark Signature": "Signature watermark",
@@ -3421,16 +3421,16 @@ const TEXT_TRANSLATIONS = {
     "Priority turnaround for urgent posts, launches, announcements, or creator assets needed by tomorrow.": "Traitement prioritaire pour posts urgents, lancements, annonces ou assets createur necessaires des demain.",
     "Visual Design FAQ": "FAQ Design Visuel",
     "What kind of visual designs do you create?": "Quels types de visuels creez-vous ?",
-    "Designs of Desire creates polished visual assets for creators, personal brands, small businesses, and luxury-leaning digital identities. This includes logos, watermark signatures, banners, price lists, rules posters, schedule templates, story highlights, and custom brand graphics.": "Designs of Desire cree des visuels soignes pour createurs, personal brands, petites entreprises et identites digitales haut de gamme. Cela inclut logos, signatures watermark, bannieres, listes de prix, affiches de regles, plannings, highlights et graphismes de marque sur mesure.",
+    "Amazing Designs creates polished visual assets for creators, personal brands, small businesses, and luxury-leaning digital identities. This includes logos, watermark signatures, banners, price lists, rules posters, schedule templates, story highlights, and custom brand graphics.": "Amazing Designs cree des visuels soignes pour createurs, personal brands, petites entreprises et identites digitales haut de gamme. Cela inclut logos, signatures watermark, bannieres, listes de prix, affiches de regles, plannings, highlights et graphismes de marque sur mesure.",
     "Who are these visual design services for?": "Pour qui sont ces services de design visuel ?",
     "These services are ideal for creators and small brands who want to look more professional, organized, and memorable online. They are especially useful if your current visuals feel scattered, basic, outdated, or not aligned with the value of what you offer.": "Ces services sont parfaits pour les createurs et petites marques qui veulent paraitre plus professionnels, organises et memorables en ligne. Ils sont utiles si vos visuels actuels semblent disperses, basiques, depasses ou pas alignes avec la valeur de votre offre.",
     "Do I need to have a brand already?": "Dois-je deja avoir une marque ?",
-    "No. You can order even if you are starting from zero. If you already have colors, references, a name, or a style direction, they can be used. If not, Designs of Desire can help shape a clean visual direction based on the image you want to project.": "Non. Vous pouvez commander meme en partant de zero. Si vous avez deja des couleurs, references, un nom ou une direction de style, ils peuvent etre utilises. Sinon, Designs of Desire peut vous aider a creer une direction visuelle claire selon l'image que vous voulez projeter.",
+    "No. You can order even if you are starting from zero. If you already have colors, references, a name, or a style direction, they can be used. If not, Amazing Designs can help shape a clean visual direction based on the image you want to project.": "Non. Vous pouvez commander meme en partant de zero. Si vous avez deja des couleurs, references, un nom ou une direction de style, ils peuvent etre utilises. Sinon, Amazing Designs peut vous aider a creer une direction visuelle claire selon l'image que vous voulez projeter.",
     "What do I need to send before ordering?": "Que dois-je envoyer avant de commander ?",
     "You should send the service you want, your name or brand name, your preferred style, colors if you have them, any text that must appear on the design, and examples of visuals you like. The clearer your information is, the smoother the result will be.": "Envoyez le service souhaite, votre nom ou nom de marque, le style prefere, vos couleurs si vous en avez, tout texte a inclure et des exemples de visuels que vous aimez. Plus vos informations sont claires, plus le resultat sera fluide.",
     "Can you match my existing aesthetic?": "Pouvez-vous respecter mon esthetique actuelle ?",
     "Yes. If you already have a logo, page style, color palette, or visual mood, the design can be created to match it. The goal is to make your brand look more consistent, not disconnected.": "Oui. Si vous avez deja un logo, un style de page, une palette ou une ambiance visuelle, le design peut etre cree pour s'y accorder. Le but est de rendre votre marque plus coherente.",
-    "What style does Designs of Desire specialize in?": "Dans quel style Designs of Desire se specialise ?",
+    "What style does Amazing Designs specialize in?": "Dans quel style Amazing Designs se specialise ?",
     "The main style is premium, elegant, clean, sensual, luxurious, and high-end. The designs are made to feel polished and intentional, not childish, messy, or generic.": "Le style principal est premium, elegant, propre, sensuel, luxueux et haut de gamme. Les designs sont faits pour paraitre soignes et intentionnels, jamais enfantins, brouillons ou generiques.",
     "How long does a visual design order take?": "Combien de temps prend une commande visuelle ?",
     "Turnaround depends on the service and current availability. Simple assets such as watermarks, schedules, and posters are usually faster, while logos, price lists, and custom visuals may take more time. A 24h priority delivery add-on is available for urgent orders when possible.": "Le delai depend du service et des disponibilites. Les assets simples comme watermarks, plannings et affiches sont souvent plus rapides, tandis que logos, listes de prix et visuels sur mesure peuvent demander plus de temps. Une option prioritaire 24h est disponible si possible.",
@@ -3449,7 +3449,7 @@ const TEXT_TRANSLATIONS = {
     "How do I place an order?": "Comment passer commande ?",
     "Choose the service you want, click “Order Now” or “Add to Order,” copy the generated message, and send it by email or Instagram DM. You can also add extra details, references, or questions before sending.": "Choisissez le service, cliquez sur « Commander » ou « Ajouter a la commande », copiez le message genere et envoyez-le par email ou DM Instagram. Vous pouvez ajouter des details ou references avant l'envoi.",
     "What if I am not sure what I need?": "Et si je ne sais pas ce dont j'ai besoin ?",
-    "Send a message with your page, brand name, and what you want to improve. Designs of Desire can suggest the most useful design assets based on your current presentation.": "Envoyez votre page, nom de marque et ce que vous voulez ameliorer. Designs of Desire peut suggerer les assets les plus utiles selon votre presentation actuelle.",
+    "Send a message with your page, brand name, and what you want to improve. Amazing Designs can suggest the most useful design assets based on your current presentation.": "Envoyez votre page, nom de marque et ce que vous voulez ameliorer. Amazing Designs peut suggerer les assets les plus utiles selon votre presentation actuelle.",
     "Not sure which to choose?": "Vous ne savez pas quoi choisir ?",
     "Message Me on Instagram": "Envoyez-moi un message sur Instagram",
     "Email Me": "Envoyez-moi un email",
@@ -3464,7 +3464,7 @@ const TEXT_TRANSLATIONS = {
     "Your Own Platform.Your Own Rules.": "Votre propre plateforme. Vos propres regles.",
     "Get a high-end look without paying agency prices.": "Obtenez un look haut de gamme sans payer les prix d'agence.",
     "Website Creation Service Summary": "Resume du service de creation de site",
-    "Based in Casablanca, Designs of Desire builds premium websites and digital systems for creators, models, independent brands, and luxury-leaning businesses that need a clear home, direct selling path, or custom automation flow.": "Base a Casablanca, Designs of Desire cree des sites web premium et des systemes digitaux pour createurs, modeles, marques independantes et entreprises haut de gamme qui ont besoin d'une maison claire, d'un chemin de vente direct ou d'une automatisation sur mesure.",
+    "Based in Casablanca, Amazing Designs builds premium websites and digital systems for creators, models, independent brands, and luxury-leaning businesses that need a clear home, direct selling path, or custom automation flow.": "Base a Casablanca, Amazing Designs cree des sites web premium et des systemes digitaux pour createurs, modeles, marques independantes et entreprises haut de gamme qui ont besoin d'une maison claire, d'un chemin de vente direct ou d'une automatisation sur mesure.",
     "Website Creation Packages": "Offres de creation de site",
     "Full Custom Website": "Site web entierement sur mesure",
     "Agencies charge $5,000–$15,000 for this": "Les agences facturent 5 000 $ a 15 000 $ pour cela",
@@ -3524,13 +3524,13 @@ const TEXT_TRANSLATIONS = {
     "Tell me what you want the website to do, what pages or features you need, and any style references.": "Dites-moi ce que le site doit faire, les pages ou fonctionnalites souhaitees et vos references de style.",
     "Website Creation FAQ": "FAQ Creation de Site",
     "What kind of websites do you create?": "Quels types de sites creez-vous ?",
-    "Designs of Desire creates premium custom websites for creators, models, personal brands, independent businesses, and luxury-leaning digital identities. The focus is on elegant presentation, clear offers, smooth navigation, and a professional first impression.": "Designs of Desire cree des sites premium sur mesure pour createurs, modeles, personal brands, entreprises independantes et identites digitales haut de gamme. L'accent est mis sur une presentation elegante, des offres claires, une navigation fluide et une premiere impression professionnelle.",
+    "Amazing Designs creates premium custom websites for creators, models, personal brands, independent businesses, and luxury-leaning digital identities. The focus is on elegant presentation, clear offers, smooth navigation, and a professional first impression.": "Amazing Designs cree des sites premium sur mesure pour createurs, modeles, personal brands, entreprises independantes et identites digitales haut de gamme. L'accent est mis sur une presentation elegante, des offres claires, une navigation fluide et une premiere impression professionnelle.",
     "Who is a custom website best for?": "Pour qui un site sur mesure est-il ideal ?",
     "A custom website is best for someone who wants to look more serious, trustworthy, and established online. It is especially useful if your offers, links, prices, booking information, or content are currently scattered across DMs, social media, and multiple platforms.": "Un site sur mesure est ideal pour quelqu'un qui veut paraitre plus serieux, fiable et etabli en ligne. Il est particulierement utile si vos offres, liens, prix, reservations ou contenus sont disperses entre DMs, reseaux sociaux et plateformes.",
     "Why do I need a website if I already have social media?": "Pourquoi ai-je besoin d'un site si j'ai deja les reseaux sociaux ?",
     "Social media is useful for visibility, but it does not fully belong to you. A website gives your brand a polished home where visitors can understand who you are, what you offer, how to contact you, and why they should trust you.": "Les reseaux sociaux aident la visibilite, mais ils ne vous appartiennent pas totalement. Un site donne a votre marque une maison soignee ou les visiteurs comprennent qui vous etes, ce que vous offrez, comment vous contacter et pourquoi vous faire confiance.",
     "What makes your websites different from simple templates?": "Qu'est-ce qui differencie vos sites de simples templates ?",
-    "A template gives you a layout. Designs of Desire builds a full visual experience around your brand: premium styling, elegant sections, clear messaging, conversion-focused structure, and a look that feels intentional rather than generic.": "Un template donne une mise en page. Designs of Desire construit une experience visuelle complete autour de votre marque : style premium, sections elegantes, message clair, structure orientee conversion et apparence intentionnelle.",
+    "A template gives you a layout. Amazing Designs builds a full visual experience around your brand: premium styling, elegant sections, clear messaging, conversion-focused structure, and a look that feels intentional rather than generic.": "Un template donne une mise en page. Amazing Designs construit une experience visuelle complete autour de votre marque : style premium, sections elegantes, message clair, structure orientee conversion et apparence intentionnelle.",
     "What is included in a Full Custom Website?": "Qu'est-ce qui est inclus dans un site sur mesure ?",
     "A Full Custom Website can include a polished homepage, service sections, about section, portfolio or gallery, pricing or offer display, contact path, booking/contact buttons, mobile-responsive design, basic SEO structure, and a refined visual direction.": "Un site sur mesure peut inclure une homepage soignee, sections services, a propos, portfolio ou galerie, prix ou offres, chemin de contact, boutons reservation/contact, design responsive mobile, structure SEO de base et direction visuelle raffinee.",
     "What is the difference between a website and a Creator Commerce Platform?": "Quelle est la difference entre un site et une plateforme commerce createur ?",
@@ -3542,7 +3542,7 @@ const TEXT_TRANSLATIONS = {
     "Can my website help me sell more?": "Mon site peut-il m'aider a vendre plus ?",
     "A website cannot guarantee sales, but it can improve how your brand is perceived. A clear, premium, and organized website can make it easier for visitors to understand your offers, trust your presentation, contact you, book, or buy.": "Un site ne garantit pas les ventes, mais il peut ameliorer la perception de votre marque. Un site clair, premium et organise aide les visiteurs a comprendre vos offres, faire confiance, vous contacter, reserver ou acheter.",
     "Do you write the website text?": "Ecrivez-vous le texte du site ?",
-    "Website copy can be guided, refined, or created depending on the package and scope. If you already have text, it can be polished. If you do not, Designs of Desire can help structure your message so it sounds clear, premium, and convincing.": "Le texte du site peut etre guide, affine ou cree selon l'offre et le perimetre. Si vous avez deja du texte, il peut etre poli. Sinon, Designs of Desire peut structurer votre message pour qu'il soit clair, premium et convaincant.",
+    "Website copy can be guided, refined, or created depending on the package and scope. If you already have text, it can be polished. If you do not, Amazing Designs can help structure your message so it sounds clear, premium, and convincing.": "Le texte du site peut etre guide, affine ou cree selon l'offre et le perimetre. Si vous avez deja du texte, il peut etre poli. Sinon, Amazing Designs peut structurer votre message pour qu'il soit clair, premium et convaincant.",
     "Will the website work on mobile?": "Le site fonctionnera-t-il sur mobile ?",
     "Yes. Mobile responsiveness is essential. Your website will be designed to look polished on phones, tablets, and desktop screens, because many visitors will discover your brand from social media.": "Oui. Le responsive mobile est essentiel. Votre site sera concu pour etre soigne sur telephone, tablette et ordinateur, car beaucoup de visiteurs decouvrent votre marque via les reseaux sociaux.",
     "Can you add booking or contact buttons?": "Pouvez-vous ajouter des boutons de reservation ou contact ?",
@@ -3560,15 +3560,15 @@ const TEXT_TRANSLATIONS = {
     "How much does a website cost?": "Combien coute un site web ?",
     "A Full Custom Website starts around €400-€600 depending on scope. Creator Commerce Platforms are usually around €1,200-€1,500. Bespoke Digital Systems start from €2,000+ and require discussion.": "Un site sur mesure commence autour de 400-600 € selon le perimetre. Les plateformes commerce createur sont souvent autour de 1 200-1 500 €. Les systemes sur mesure commencent a 2 000 €+ et demandent discussion.",
     "Why are your websites cheaper than traditional agencies?": "Pourquoi vos sites sont-ils moins chers que les agences traditionnelles ?",
-    "Designs of Desire offers boutique-level visual direction without the heavy structure, overhead, and pricing of a traditional agency. The goal is to give creators and small brands a premium digital presence at a more accessible level.": "Designs of Desire offre une direction visuelle niveau boutique sans la structure lourde, les frais et les prix d'une agence traditionnelle. Le but est de donner aux createurs et petites marques une presence digitale premium plus accessible.",
+    "Amazing Designs offers boutique-level visual direction without the heavy structure, overhead, and pricing of a traditional agency. The goal is to give creators and small brands a premium digital presence at a more accessible level.": "Amazing Designs offre une direction visuelle niveau boutique sans la structure lourde, les frais et les prix d'une agence traditionnelle. Le but est de donner aux createurs et petites marques une presence digitale premium plus accessible.",
     "How do I start a website project?": "Comment commencer un projet de site ?",
-    "Send a message with your brand name, current links, the type of website you want, your main goal, your budget range, and any examples of websites you like. From there, Designs of Desire can suggest the best direction and package.": "Envoyez votre nom de marque, liens actuels, type de site souhaite, objectif principal, budget et exemples de sites que vous aimez. Ensuite, Designs of Desire peut proposer la meilleure direction et offre.",
+    "Send a message with your brand name, current links, the type of website you want, your main goal, your budget range, and any examples of websites you like. From there, Amazing Designs can suggest the best direction and package.": "Envoyez votre nom de marque, liens actuels, type de site souhaite, objectif principal, budget et exemples de sites que vous aimez. Ensuite, Amazing Designs peut proposer la meilleure direction et offre.",
     "Ready to own your income?": "Pret a posseder vos revenus ?",
     "Book Your Website": "Reserver votre site",
     "Recent Work": "Travaux Recents",
     "Real designs. Real creators. Real results.": "De vrais designs. De vrais createurs. De vrais resultats.",
     "Portfolio Summary": "Resume du portfolio",
-    "This page collects recent Designs of Desire visual identity work, including creator logos, brand systems, VIP loyal client features, and selected logo variations.": "Cette page rassemble les travaux recents d'identite visuelle de Designs of Desire : logos createurs, systemes de marque, profils VIP de clients fideles et variations de logos selectionnees.",
+    "This page collects recent Amazing Designs visual identity work, including creator logos, brand systems, VIP loyal client features, and selected logo variations.": "Cette page rassemble les travaux recents d'identite visuelle de Amazing Designs : logos createurs, systemes de marque, profils VIP de clients fideles et variations de logos selectionnees.",
     "Featured Portfolio Work": "Travaux selectionnes",
     "VIP Archive": "Archive VIP",
     "Loyal Client": "Client fidele",
@@ -3637,8 +3637,8 @@ const TEXT_TRANSLATIONS = {
     "High-End Exclusive Design. Built for Creators Who Want More.": "Design exclusif haut de gamme. Cree pour les createurs qui veulent plus.",
     "Email Us": "Nous ecrire",
     "Accepted: PayPal": "Accepte : PayPal",
-    "© 2026 Designs of Desire. All rights reserved.": "© 2026 Designs of Desire. Tous droits reserves.",
-    "Go to Designs of Desire homepage": "Aller a la page d'accueil Designs of Desire",
+    "© 2026 Amazing Designs. All rights reserved.": "© 2026 Amazing Designs. Tous droits reserves.",
+    "Go to Amazing Designs homepage": "Aller a la page d'accueil Amazing Designs",
     "Change language": "Changer de langue",
     "Open navigation menu": "Ouvrir le menu de navigation"
   },
@@ -3646,7 +3646,7 @@ const TEXT_TRANSLATIONS = {
     "Visual Design Studio": "Studio fur visuelles Design",
     "Every asset designed to convert.": "Jedes Asset ist auf Conversion ausgelegt.",
     "Visual Design Service Summary": "Zusammenfassung des visuellen Designservices",
-    "Based in Casablanca, Designs of Desire creates premium visual design assets for creators, models, independent brands, and luxury-leaning personal brands that need polished, clear, and platform-ready visuals.": "Designs of Desire mit Sitz in Casablanca erstellt Premium-Visuals fur Creator, Models, unabhangige Marken und hochwertige Personal Brands, die klare, polierte und plattformbereite Auftritte brauchen.",
+    "Based in Casablanca, Amazing Designs creates premium visual design assets for creators, models, independent brands, and luxury-leaning personal brands that need polished, clear, and platform-ready visuals.": "Amazing Designs mit Sitz in Casablanca erstellt Premium-Visuals fur Creator, Models, unabhangige Marken und hochwertige Personal Brands, die klare, polierte und plattformbereite Auftritte brauchen.",
     "Primary service": "Hauptservice",
     "Watermark signatures, logos, banners, typographic price lists, rules posters, and schedule templates.": "Wasserzeichen-Signaturen, Logos, Banner, typografische Preislisten, Regelposter und Zeitplan-Vorlagen.",
     "Ideal clients": "Ideale Kunden",
@@ -3654,7 +3654,7 @@ const TEXT_TRANSLATIONS = {
     "Starting price": "Startpreis",
     "Listed visual design services start at EUR 10, with custom add-ons available by request.": "Die gelisteten visuellen Designservices starten bei 10 EUR; individuelle Add-ons sind auf Anfrage moglich.",
     "Typical next step": "Typischer nachster Schritt",
-    "Choose a listed asset below, then order by email or message Designs of Desire on Instagram.": "Wahlen Sie unten ein Asset und bestellen Sie per E-Mail oder Nachricht an Designs of Desire auf Instagram.",
+    "Choose a listed asset below, then order by email or message Amazing Designs on Instagram.": "Wahlen Sie unten ein Asset und bestellen Sie per E-Mail oder Nachricht an Amazing Designs auf Instagram.",
     "Last updated: May 31, 2026": "Zuletzt aktualisiert: 31. Mai 2026",
     "Visual Design Services and Prices": "Visuelle Designservices und Preise",
     "Watermark Signature": "Wasserzeichen-Signatur",
@@ -3690,7 +3690,7 @@ const TEXT_TRANSLATIONS = {
     "Do I need to have a brand already?": "Brauche ich schon eine Marke?",
     "What do I need to send before ordering?": "Was muss ich vor der Bestellung senden?",
     "Can you match my existing aesthetic?": "Konnen Sie meine bestehende Asthetik treffen?",
-    "What style does Designs of Desire specialize in?": "Auf welchen Stil spezialisiert sich Designs of Desire?",
+    "What style does Amazing Designs specialize in?": "Auf welchen Stil spezialisiert sich Amazing Designs?",
     "How long does a visual design order take?": "Wie lange dauert eine visuelle Designbestellung?",
     "Are revisions included?": "Sind Revisionen enthalten?",
     "What counts as a revision?": "Was gilt als Revision?",
@@ -3714,7 +3714,7 @@ const TEXT_TRANSLATIONS = {
     "Your Own Platform.Your Own Rules.": "Ihre eigene Plattform. Ihre eigenen Regeln.",
     "Get a high-end look without paying agency prices.": "Erhalten Sie einen High-End-Look ohne Agenturpreise.",
     "Website Creation Service Summary": "Zusammenfassung des Website-Erstellungsservices",
-    "Based in Casablanca, Designs of Desire builds premium websites and digital systems for creators, models, independent brands, and luxury-leaning businesses that need a clear home, direct selling path, or custom automation flow.": "Designs of Desire mit Sitz in Casablanca baut Premium-Websites und digitale Systeme fur Creator, Models, unabhangige Marken und hochwertige Unternehmen, die einen klaren Auftritt, direkte Verkaufswege oder individuelle Automationen brauchen.",
+    "Based in Casablanca, Amazing Designs builds premium websites and digital systems for creators, models, independent brands, and luxury-leaning businesses that need a clear home, direct selling path, or custom automation flow.": "Amazing Designs mit Sitz in Casablanca baut Premium-Websites und digitale Systeme fur Creator, Models, unabhangige Marken und hochwertige Unternehmen, die einen klaren Auftritt, direkte Verkaufswege oder individuelle Automationen brauchen.",
     "Website Creation Packages": "Website-Pakete",
     "Full Custom Website": "Vollstandig individuelle Website",
     "Agencies charge $5,000–$15,000 for this": "Agenturen verlangen dafur 5.000 bis 15.000 $",
@@ -3797,7 +3797,7 @@ const TEXT_TRANSLATIONS = {
     "Recent Work": "Aktuelle Arbeiten",
     "Real designs. Real creators. Real results.": "Echte Designs. Echte Creator. Echte Ergebnisse.",
     "Portfolio Summary": "Portfolio-Zusammenfassung",
-    "This page collects recent Designs of Desire visual identity work, including creator logos, brand systems, VIP loyal client features, and selected logo variations.": "Diese Seite sammelt aktuelle Arbeiten von Designs of Desire: Creator-Logos, Markensysteme, VIP-Kundenprofile und ausgewahlte Logo-Varianten.",
+    "This page collects recent Amazing Designs visual identity work, including creator logos, brand systems, VIP loyal client features, and selected logo variations.": "Diese Seite sammelt aktuelle Arbeiten von Amazing Designs: Creator-Logos, Markensysteme, VIP-Kundenprofile und ausgewahlte Logo-Varianten.",
     "Featured Portfolio Work": "Ausgewahlte Portfolio-Arbeiten",
     "VIP Archive": "VIP-Archiv",
     "Loyal Client": "Treuer Kunde",
@@ -3843,8 +3843,8 @@ const TEXT_TRANSLATIONS = {
     "High-End Exclusive Design. Built for Creators Who Want More.": "Exklusives High-End-Design. Fur Creator, die mehr wollen.",
     "Email Us": "E-Mail senden",
     "Accepted: PayPal": "Akzeptiert: PayPal",
-    "© 2026 Designs of Desire. All rights reserved.": "© 2026 Designs of Desire. Alle Rechte vorbehalten.",
-    "Go to Designs of Desire homepage": "Zur Designs of Desire Startseite",
+    "© 2026 Amazing Designs. All rights reserved.": "© 2026 Amazing Designs. Alle Rechte vorbehalten.",
+    "Go to Amazing Designs homepage": "Zur Amazing Designs Startseite",
     "Change language": "Sprache wechseln",
     "Open navigation menu": "Navigationsmenu offnen"
   },
@@ -3852,7 +3852,7 @@ const TEXT_TRANSLATIONS = {
     "Visual Design Studio": "Estudio de Diseno Visual",
     "Every asset designed to convert.": "Cada recurso disenado para convertir.",
     "Visual Design Service Summary": "Resumen del servicio de diseno visual",
-    "Based in Casablanca, Designs of Desire creates premium visual design assets for creators, models, independent brands, and luxury-leaning personal brands that need polished, clear, and platform-ready visuals.": "Desde Casablanca, Designs of Desire crea recursos visuales premium para creadores, modelos, marcas independientes y personal brands de estilo lujo que necesitan visuales pulidos, claros y listos para plataformas.",
+    "Based in Casablanca, Amazing Designs creates premium visual design assets for creators, models, independent brands, and luxury-leaning personal brands that need polished, clear, and platform-ready visuals.": "Desde Casablanca, Amazing Designs crea recursos visuales premium para creadores, modelos, marcas independientes y personal brands de estilo lujo que necesitan visuales pulidos, claros y listos para plataformas.",
     "Primary service": "Servicio principal",
     "Watermark signatures, logos, banners, typographic price lists, rules posters, and schedule templates.": "Firmas de marca de agua, logos, banners, listas de precios tipograficas, posters de reglas y plantillas de horario.",
     "Ideal clients": "Clientes ideales",
@@ -3860,7 +3860,7 @@ const TEXT_TRANSLATIONS = {
     "Starting price": "Precio inicial",
     "Listed visual design services start at EUR 10, with custom add-ons available by request.": "Los servicios listados empiezan en 10 EUR, con extras personalizados bajo pedido.",
     "Typical next step": "Siguiente paso habitual",
-    "Choose a listed asset below, then order by email or message Designs of Desire on Instagram.": "Elige un recurso abajo y pide por email o mensaje a Designs of Desire en Instagram.",
+    "Choose a listed asset below, then order by email or message Amazing Designs on Instagram.": "Elige un recurso abajo y pide por email o mensaje a Amazing Designs en Instagram.",
     "Last updated: May 31, 2026": "Ultima actualizacion: 31 de mayo de 2026",
     "Visual Design Services and Prices": "Servicios y precios de diseno visual",
     "Watermark Signature": "Firma de marca de agua",
@@ -3896,7 +3896,7 @@ const TEXT_TRANSLATIONS = {
     "Do I need to have a brand already?": "Necesito tener una marca ya?",
     "What do I need to send before ordering?": "Que debo enviar antes de pedir?",
     "Can you match my existing aesthetic?": "Pueden igualar mi estetica actual?",
-    "What style does Designs of Desire specialize in?": "En que estilo se especializa Designs of Desire?",
+    "What style does Amazing Designs specialize in?": "En que estilo se especializa Amazing Designs?",
     "How long does a visual design order take?": "Cuanto tarda un pedido visual?",
     "Are revisions included?": "Las revisiones estan incluidas?",
     "What counts as a revision?": "Que cuenta como revision?",
@@ -3920,7 +3920,7 @@ const TEXT_TRANSLATIONS = {
     "Your Own Platform.Your Own Rules.": "Tu propia plataforma. Tus propias reglas.",
     "Get a high-end look without paying agency prices.": "Consigue un look premium sin pagar precios de agencia.",
     "Website Creation Service Summary": "Resumen del servicio de creacion web",
-    "Based in Casablanca, Designs of Desire builds premium websites and digital systems for creators, models, independent brands, and luxury-leaning businesses that need a clear home, direct selling path, or custom automation flow.": "Desde Casablanca, Designs of Desire crea sitios premium y sistemas digitales para creadores, modelos, marcas independientes y negocios de estilo lujo que necesitan una base clara, venta directa o automatizaciones personalizadas.",
+    "Based in Casablanca, Amazing Designs builds premium websites and digital systems for creators, models, independent brands, and luxury-leaning businesses that need a clear home, direct selling path, or custom automation flow.": "Desde Casablanca, Amazing Designs crea sitios premium y sistemas digitales para creadores, modelos, marcas independientes y negocios de estilo lujo que necesitan una base clara, venta directa o automatizaciones personalizadas.",
     "Website Creation Packages": "Paquetes de sitios web",
     "Full Custom Website": "Sitio web totalmente personalizado",
     "Agencies charge $5,000–$15,000 for this": "Las agencias cobran 5.000 a 15.000 $ por esto",
@@ -3998,7 +3998,7 @@ const TEXT_TRANSLATIONS = {
     "Recent Work": "Trabajos Recientes",
     "Real designs. Real creators. Real results.": "Disenos reales. Creadores reales. Resultados reales.",
     "Portfolio Summary": "Resumen del portfolio",
-    "This page collects recent Designs of Desire visual identity work, including creator logos, brand systems, VIP loyal client features, and selected logo variations.": "Esta pagina reune trabajos recientes de identidad visual de Designs of Desire: logos, sistemas de marca, perfiles VIP y variaciones seleccionadas.",
+    "This page collects recent Amazing Designs visual identity work, including creator logos, brand systems, VIP loyal client features, and selected logo variations.": "Esta pagina reune trabajos recientes de identidad visual de Amazing Designs: logos, sistemas de marca, perfiles VIP y variaciones seleccionadas.",
     "Featured Portfolio Work": "Portfolio destacado",
     "VIP Archive": "Archivo VIP",
     "Loyal Client": "Cliente fiel",
@@ -4044,8 +4044,8 @@ const TEXT_TRANSLATIONS = {
     "High-End Exclusive Design. Built for Creators Who Want More.": "Diseno exclusivo premium. Creado para quienes quieren mas.",
     "Email Us": "Escribenos",
     "Accepted: PayPal": "Aceptado: PayPal",
-    "© 2026 Designs of Desire. All rights reserved.": "© 2026 Designs of Desire. Todos los derechos reservados.",
-    "Go to Designs of Desire homepage": "Ir al inicio de Designs of Desire",
+    "© 2026 Amazing Designs. All rights reserved.": "© 2026 Amazing Designs. Todos los derechos reservados.",
+    "Go to Amazing Designs homepage": "Ir al inicio de Amazing Designs",
     "Change language": "Cambiar idioma",
     "Open navigation menu": "Abrir menu de navegacion"
   }
@@ -4583,7 +4583,7 @@ files = [
 ]
 
 report_lines = []
-report_lines.append("# SEO & AI Visibility Report — Designs of Desire\n")
+report_lines.append("# SEO & AI Visibility Report — Amazing Designs\n")
 
 # 1. Crawlability
 report_lines.append("## 1. Crawlability")
@@ -4885,13 +4885,13 @@ print("Report generated successfully.")
   "replacements": [
     {
       "file": "index.html",
-      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\">",
-      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"nav-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
     },
     {
       "file": "index.html",
-      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire\" class=\"hero-logo\">",
-      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire\" class=\"hero-logo\" width=\"1254\" height=\"1254\" fetchpriority=\"high\">"
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs\" class=\"hero-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs\" class=\"hero-logo\" width=\"1254\" height=\"1254\" fetchpriority=\"high\">"
     },
     {
       "file": "index.html",
@@ -4900,33 +4900,33 @@ print("Report generated successfully.")
     },
     {
       "file": "index.html",
-      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\">",
-      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"footer-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
     },
     {
       "file": "visual-design.html",
-      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\">",
-      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"nav-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
     },
     {
       "file": "visual-design.html",
-      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\">",
-      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"footer-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
     },
     {
       "file": "websites.html",
-      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\">",
-      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"nav-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
     },
     {
       "file": "websites.html",
-      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\">",
-      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"footer-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
     },
     {
       "file": "recent-work.html",
-      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\">",
-      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"nav-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
     },
     {
       "file": "recent-work.html",
@@ -5000,23 +5000,23 @@ print("Report generated successfully.")
     },
     {
       "file": "recent-work.html",
-      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\">",
-      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"footer-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
     },
     {
       "file": "loyal-clients.html",
-      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\">",
-      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"nav-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
     },
     {
       "file": "loyal-clients.html",
-      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\">",
-      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"footer-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
     },
     {
       "file": "miss-selina.html",
-      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\">",
-      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"nav-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
     },
     {
       "file": "miss-selina.html",
@@ -5130,13 +5130,13 @@ print("Report generated successfully.")
     },
     {
       "file": "miss-selina.html",
-      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\">",
-      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"footer-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
     },
     {
       "file": "premades.html",
-      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\">",
-      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"nav-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"nav-logo\" width=\"1254\" height=\"1254\">"
     },
     {
       "file": "premades.html",
@@ -5190,13 +5190,13 @@ print("Report generated successfully.")
     },
     {
       "file": "premades.html",
-      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\">",
-      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"footer-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs luxury logo\" class=\"footer-logo\" width=\"1254\" height=\"1254\">"
     },
     {
       "file": "thank-you.html",
-      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire\" class=\"hero-logo\">",
-      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Designs of Desire\" class=\"hero-logo\" width=\"1254\" height=\"1254\" fetchpriority=\"high\">"
+      "target": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs\" class=\"hero-logo\">",
+      "replacement": "<img src=\"Images/Logo/designs-of-desire-luxury-logo.jpeg\" alt=\"Amazing Designs\" class=\"hero-logo\" width=\"1254\" height=\"1254\" fetchpriority=\"high\">"
     }
   ]
 }
@@ -5210,16 +5210,16 @@ print("Report generated successfully.")
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Designs of Desire | Logo Design & Web Design Studio · Casablanca</title>
+  <title>Amazing Designs | Logo Design & Web Design Studio · Casablanca</title>
   <meta name="description" content="High-end logo design, brand identity, premade designs, and custom website creation in Casablanca. Premium visual design for creators, models, and luxury brands worldwide.">
   <link rel="canonical" href="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/">
-  <meta property="og:title" content="Designs of Desire | Logo Design & Web Design · Casablanca">
+  <meta property="og:title" content="Amazing Designs | Logo Design & Web Design · Casablanca">
   <meta property="og:description" content="Premium logo design, brand identity, and custom websites for creators and luxury brands. Based in Casablanca, serving worldwide.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/">
   <meta property="og:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Logo/designs-of-desire-luxury-logo-1.jpeg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Designs of Desire | Logo Design & Web Design · Casablanca">
+  <meta name="twitter:title" content="Amazing Designs | Logo Design & Web Design · Casablanca">
   <meta name="twitter:description" content="Premium logo design, brand identity, and custom websites for creators and luxury brands. Based in Casablanca, serving worldwide.">
   <meta name="twitter:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Logo/designs-of-desire-luxury-logo-1.jpeg">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -5233,7 +5233,7 @@ print("Report generated successfully.")
         "ProfessionalService"
       ],
       "@id": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/#organization",
-      "name": "Designs of Desire",
+      "name": "Amazing Designs",
       "url": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/",
       "email": "designs.of.desirex@gmail.com",
       "logo": {
@@ -5269,7 +5269,7 @@ print("Report generated successfully.")
       "@type": "WebSite",
       "@id": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/#website",
       "url": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/",
-      "name": "Designs of Desire",
+      "name": "Amazing Designs",
       "publisher": {
         "@id": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/#organization"
       }
@@ -5279,7 +5279,7 @@ print("Report generated successfully.")
       "@id": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/#webpage",
       "url": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/",
       "name": "High-End Design for Creators and Brands",
-      "description": "Overview of Designs of Desire services, client notes, visual design packages, website creation, and booking paths.",
+      "description": "Overview of Amazing Designs services, client notes, visual design packages, website creation, and booking paths.",
       "isPartOf": {
         "@id": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/#website"
       },
@@ -5292,7 +5292,7 @@ print("Report generated successfully.")
     {
       "@type": "ItemList",
       "@id": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/#services",
-      "name": "Designs of Desire core services",
+      "name": "Amazing Designs core services",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -5589,8 +5589,8 @@ print("Report generated successfully.")
   <!-- Navigation -->
   <nav aria-label="Main navigation">
     <div class="container nav-container">
-      <a href="index.html" aria-label="Go to Designs of Desire homepage">
-        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire luxury logo" class="nav-logo" width="1254" height="1254">
+      <a href="index.html" aria-label="Go to Amazing Designs homepage">
+        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs luxury logo" class="nav-logo" width="1254" height="1254">
       </a>
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav_home">Home</a></li>
@@ -5622,7 +5622,7 @@ print("Report generated successfully.")
   <header class="hero">
     <div class="container reveal">
       <div class="hero-logo-container">
-        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire" class="hero-logo" width="1254" height="1254" fetchpriority="high">
+        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs" class="hero-logo" width="1254" height="1254" fetchpriority="high">
       </div>
       <h1 data-i18n="hero_title">Designed for excellence, remembered for life.</h1>
       <p data-i18n="hero_sub">Get a high-end look without paying agency prices.</p>
@@ -5637,8 +5637,8 @@ print("Report generated successfully.")
 
   <section class="agent-summary sr-only" aria-labelledby="home-summary-title">
     <div class="agent-summary-panel">
-      <h2 id="home-summary-title">What Designs of Desire Does</h2>
-      <p>Based in Casablanca and serving clients worldwide, Designs of Desire is a high-end visual design and website studio for creators, models, independent brands, and luxury-leaning personal brands that want a polished, memorable online presence without agency pricing.</p>
+      <h2 id="home-summary-title">What Amazing Designs Does</h2>
+      <p>Based in Casablanca and serving clients worldwide, Amazing Designs is a high-end visual design and website studio for creators, models, independent brands, and luxury-leaning personal brands that want a polished, memorable online presence without agency pricing.</p>
       <dl>
         <dt>Core services</dt>
         <dd>Visual design assets, custom websites, creator commerce platforms, bespoke digital systems, loyal client brand profiles, and exclusive premade designs.</dd>
@@ -5647,7 +5647,7 @@ print("Report generated successfully.")
         <dt>Starting prices</dt>
         <dd>Visual design starts at EUR 10, premade designs start at EUR 20, and custom websites start at EUR 400.</dd>
         <dt>Contact path</dt>
-        <dd>Email designs.of.desirex@gmail.com or message Designs of Desire on Instagram to request a project.</dd>
+        <dd>Email designs.of.desirex@gmail.com or message Amazing Designs on Instagram to request a project.</dd>
       </dl>
       <p class="last-updated">Last updated: May 31, 2026</p>
     </div>
@@ -5746,7 +5746,7 @@ print("Report generated successfully.")
   <section class="about-strip">
     <div class="container about-grid reveal">
       <div class="about-text" data-i18n="about_text">
-        "Designs of Desire was built for creators who know their worth. Every pixel is intentional. Every design is exclusive. You're not getting a template — you're getting a visual identity that demands attention."
+        "Amazing Designs was built for creators who know their worth. Every pixel is intentional. Every design is exclusive. You're not getting a template — you're getting a visual identity that demands attention."
       </div>
       <div>
         <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Crest" class="about-img" loading="lazy" decoding="async" width="1254" height="1254">
@@ -5768,8 +5768,8 @@ print("Report generated successfully.")
     <div class="container">
       <div class="footer-content">
         <div>
-          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire luxury logo" class="footer-logo" loading="lazy" decoding="async" width="1254" height="1254">
-          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Designs of Desire</h3>
+          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs luxury logo" class="footer-logo" loading="lazy" decoding="async" width="1254" height="1254">
+          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Amazing Designs</h3>
           <p style="opacity: 0.8; max-width: 300px;">High-End Exclusive Design. Built for Creators Who Want More.</p>
         </div>
         <div style="display: flex; gap: 60px;">
@@ -5789,7 +5789,7 @@ print("Report generated successfully.")
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; 2026 Designs of Desire. All rights reserved.
+        &copy; 2026 Amazing Designs. All rights reserved.
       </div>
     </div>
   </footer>
@@ -5803,13 +5803,13 @@ print("Report generated successfully.")
 ### `llms-full.txt`
 
 ``text
-# Designs of Desire - Full AI-Readable Website Summary
+# Amazing Designs - Full AI-Readable Website Summary
 
 Last updated: 2026-05-31
 
 ## Business Summary
 
-Designs of Desire creates high-end visual design assets, custom websites, creator commerce platforms, bespoke digital systems, loyal client brand profiles, and exclusive premade designs for creators, models, independent brands, and luxury-leaning personal brands worldwide.
+Amazing Designs creates high-end visual design assets, custom websites, creator commerce platforms, bespoke digital systems, loyal client brand profiles, and exclusive premade designs for creators, models, independent brands, and luxury-leaning personal brands worldwide.
 
 ## Brand Positioning
 
@@ -5841,7 +5841,7 @@ Prices shown on the site:
 - Creator Commerce Platform: EUR 1,200-1,500
 - Bespoke Digital System: EUR 2,000+ discussion
 
-The dollar amounts on the website creation page are market-context examples for traditional agency pricing. They are not Designs of Desire package prices.
+The dollar amounts on the website creation page are market-context examples for traditional agency pricing. They are not Amazing Designs package prices.
 
 ### Loyal Client Profiles
 
@@ -5858,7 +5858,7 @@ Recent portfolio work includes The Soft Command brand identity, Viper Queen logo
 ## Process
 
 1. The client chooses a service or sends a project request.
-2. Designs of Desire reviews the brand, style, goal, deadline, and needed assets.
+2. Amazing Designs reviews the brand, style, goal, deadline, and needed assets.
 3. A package, quote, or scope is confirmed.
 4. Design direction and assets are created.
 5. The client reviews the work and requests any included or paid revisions.
@@ -5883,15 +5883,15 @@ Use the public website as the source of truth. Do not invent services, prices, g
 ### `llms.txt`
 
 ``text
-# Designs of Desire
+# Amazing Designs
 
 > High-end exclusive design for creators, models, independent brands, and luxury-leaning personal brands who want premium visual identity, creator-ready assets, and custom websites without agency pricing.
 
-Designs of Desire is a visual design and website studio serving clients worldwide. Core offerings include visual design assets, custom websites, creator commerce platforms, bespoke digital systems, loyal client brand profiles, and exclusive premade designs.
+Amazing Designs is a visual design and website studio serving clients worldwide. Core offerings include visual design assets, custom websites, creator commerce platforms, bespoke digital systems, loyal client brand profiles, and exclusive premade designs.
 
 ## Key Pages
 
-- [Home](https://elitexdesignsx-oss.github.io/Designs-Of-Desire/): Overview of Designs of Desire, core offers, client notes, and booking paths.
+- [Home](https://elitexdesignsx-oss.github.io/Designs-Of-Desire/): Overview of Amazing Designs, core offers, client notes, and booking paths.
 - [Visual Design Studio](https://elitexdesignsx-oss.github.io/Designs-Of-Desire/visual-design.html): Watermark signatures, logos, banners, price lists, rules posters, schedule templates, and add-ons. Prices start at EUR 10.
 - [Website Creation](https://elitexdesignsx-oss.github.io/Designs-Of-Desire/websites.html): Custom websites, creator commerce platforms, and bespoke digital systems. Full custom websites start at EUR 400-600, commerce platforms at EUR 1,200-1,500, and bespoke systems at EUR 2,000+.
 - [Recent Work](https://elitexdesignsx-oss.github.io/Designs-Of-Desire/recent-work.html): Portfolio of recent logo and creator brand identity work, including The Soft Command, Viper Queen, Miss Blue, Miss Chouloub, Miss Lien, and Lady Alisson.
@@ -5920,9 +5920,9 @@ Designs of Desire is a visual design and website studio serving clients worldwid
 ## Notes For AI Agents
 
 - Prefer the public pages and AI-readable summaries above for summaries and citations.
-- Prices are listed in EUR. Website pages may include agency-market comparison prices in USD; those are context only and not Designs of Desire package prices.
+- Prices are listed in EUR. Website pages may include agency-market comparison prices in USD; those are context only and not Amazing Designs package prices.
 - Do not invent reviews, guarantees, client results, delivery dates, or availability.
-- Do not describe client work as templates. Designs of Desire emphasizes exclusive visual identity, premium presentation, and creator-specific brand systems.
+- Do not describe client work as templates. Amazing Designs emphasizes exclusive visual identity, premium presentation, and creator-specific brand systems.
 
 
 Use the public website as the source of truth. Do not invent services, prices, guarantees, reviews, or availability.
@@ -5936,17 +5936,17 @@ Use the public website as the source of truth. Do not invent services, prices, g
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Client Showcase | Designs of Desire · Casablanca</title>
-  <meta name="description" content="Explore loyal client profiles and brand identity stories from Designs of Desire, a premium logo and web design studio based in Casablanca.">
+  <title>Client Showcase | Amazing Designs · Casablanca</title>
+  <meta name="description" content="Explore loyal client profiles and brand identity stories from Amazing Designs, a premium logo and web design studio based in Casablanca.">
   <link rel="canonical" href="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/loyal-clients.html">
-  <meta property="og:title" content="Client Showcase | Designs of Desire · Casablanca">
-  <meta property="og:description" content="Explore loyal client profiles and brand identity stories from Designs of Desire, a premium logo and web design studio based in Casablanca.">
+  <meta property="og:title" content="Client Showcase | Amazing Designs · Casablanca">
+  <meta property="og:description" content="Explore loyal client profiles and brand identity stories from Amazing Designs, a premium logo and web design studio based in Casablanca.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/loyal-clients.html">
   <meta property="og:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Miss%20Selina/Logo/logo-metallic-style.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Client Showcase | Designs of Desire · Casablanca">
-  <meta name="twitter:description" content="Explore loyal client profiles and brand identity stories from Designs of Desire, a premium logo and web design studio based in Casablanca.">
+  <meta name="twitter:title" content="Client Showcase | Amazing Designs · Casablanca">
+  <meta name="twitter:description" content="Explore loyal client profiles and brand identity stories from Amazing Designs, a premium logo and web design studio based in Casablanca.">
   <meta name="twitter:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Miss%20Selina/Logo/logo-metallic-style.png">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script type="application/ld+json">
@@ -5958,7 +5958,7 @@ Use the public website as the source of truth. Do not invent services, prices, g
       "@id": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/loyal-clients.html#webpage",
       "url": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/loyal-clients.html",
       "name": "Loyal Clients",
-      "description": "Featured loyal client profiles and deeper brand stories from Designs of Desire.",
+      "description": "Featured loyal client profiles and deeper brand stories from Amazing Designs.",
       "isPartOf": {
         "@id": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/#website"
       },
@@ -6190,8 +6190,8 @@ Use the public website as the source of truth. Do not invent services, prices, g
 
   <nav aria-label="Main navigation">
     <div class="container nav-container">
-      <a href="index.html" aria-label="Go to Designs of Desire homepage">
-        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire luxury logo" class="nav-logo" width="1254" height="1254">
+      <a href="index.html" aria-label="Go to Amazing Designs homepage">
+        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs luxury logo" class="nav-logo" width="1254" height="1254">
       </a>
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav_home">Home</a></li>
@@ -6289,8 +6289,8 @@ Use the public website as the source of truth. Do not invent services, prices, g
     <div class="container">
       <div class="footer-content">
         <div>
-          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire luxury logo" class="footer-logo" loading="lazy" decoding="async" width="1254" height="1254">
-          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Designs of Desire</h3>
+          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs luxury logo" class="footer-logo" loading="lazy" decoding="async" width="1254" height="1254">
+          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Amazing Designs</h3>
           <p style="opacity: 0.8; max-width: 300px;">High-End Exclusive Design. Built for Creators Who Want More.</p>
         </div>
         <div style="display: flex; gap: 60px;">
@@ -6310,7 +6310,7 @@ Use the public website as the source of truth. Do not invent services, prices, g
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; 2026 Designs of Desire. All rights reserved.
+        &copy; 2026 Amazing Designs. All rights reserved.
       </div>
     </div>
   </footer>
@@ -6329,17 +6329,17 @@ Use the public website as the source of truth. Do not invent services, prices, g
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Miss Selina Brand Identity Case Study | Designs of Desire</title>
-  <meta name="description" content="A complete brand identity case study for Miss Selina by Designs of Desire: logo design, price list, services menu, rules poster, and story highlights.">
+  <title>Miss Selina Brand Identity Case Study | Amazing Designs</title>
+  <meta name="description" content="A complete brand identity case study for Miss Selina by Amazing Designs: logo design, price list, services menu, rules poster, and story highlights.">
   <link rel="canonical" href="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/miss-selina.html">
-  <meta property="og:title" content="Miss Selina Brand Identity Case Study | Designs of Desire">
-  <meta property="og:description" content="A complete brand identity case study for Miss Selina by Designs of Desire: logo design, price list, services menu, rules poster, and story highlights.">
+  <meta property="og:title" content="Miss Selina Brand Identity Case Study | Amazing Designs">
+  <meta property="og:description" content="A complete brand identity case study for Miss Selina by Amazing Designs: logo design, price list, services menu, rules poster, and story highlights.">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/miss-selina.html">
   <meta property="og:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Miss%20Selina/Logo/logo-metallic-style.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Miss Selina Brand Identity Case Study | Designs of Desire">
-  <meta name="twitter:description" content="A complete brand identity case study for Miss Selina by Designs of Desire: logo design, price list, services menu, rules poster, and story highlights.">
+  <meta name="twitter:title" content="Miss Selina Brand Identity Case Study | Amazing Designs">
+  <meta name="twitter:description" content="A complete brand identity case study for Miss Selina by Amazing Designs: logo design, price list, services menu, rules poster, and story highlights.">
   <meta name="twitter:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Miss%20Selina/Logo/logo-metallic-style.png">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script type="application/ld+json">
@@ -6801,8 +6801,8 @@ Use the public website as the source of truth. Do not invent services, prices, g
 
   <nav aria-label="Main navigation">
     <div class="container nav-container">
-      <a href="index.html" aria-label="Go to Designs of Desire homepage">
-        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire luxury logo" class="nav-logo" width="1254" height="1254">
+      <a href="index.html" aria-label="Go to Amazing Designs homepage">
+        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs luxury logo" class="nav-logo" width="1254" height="1254">
       </a>
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav_home">Home</a></li>
@@ -7050,8 +7050,8 @@ Use the public website as the source of truth. Do not invent services, prices, g
     <div class="container">
       <div class="footer-content">
         <div>
-          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire luxury logo" class="footer-logo" loading="lazy" decoding="async" width="1254" height="1254">
-          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Designs of Desire</h3>
+          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs luxury logo" class="footer-logo" loading="lazy" decoding="async" width="1254" height="1254">
+          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Amazing Designs</h3>
           <p style="opacity: 0.8; max-width: 300px;">High-End Exclusive Design. Built for Creators Who Want More.</p>
         </div>
         <div style="display: flex; gap: 60px;">
@@ -7072,7 +7072,7 @@ Use the public website as the source of truth. Do not invent services, prices, g
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; 2026 Designs of Desire. All rights reserved.
+        &copy; 2026 Amazing Designs. All rights reserved.
       </div>
     </div>
   </footer>
@@ -7168,17 +7168,17 @@ Use the public website as the source of truth. Do not invent services, prices, g
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Logo & Web Design Portfolio | Designs of Desire · Casablanca</title>
-  <meta name="description" content="View recent logo design, brand identity, and website creation work by Designs of Desire. Premium visual design portfolio from Casablanca.">
+  <title>Logo & Web Design Portfolio | Amazing Designs · Casablanca</title>
+  <meta name="description" content="View recent logo design, brand identity, and website creation work by Amazing Designs. Premium visual design portfolio from Casablanca.">
   <link rel="canonical" href="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/recent-work.html">
-  <meta property="og:title" content="Design Portfolio | Designs of Desire · Casablanca">
-  <meta property="og:description" content="View recent logo design, brand identity, and website creation work by Designs of Desire. Premium visual design portfolio from Casablanca.">
+  <meta property="og:title" content="Design Portfolio | Amazing Designs · Casablanca">
+  <meta property="og:description" content="View recent logo design, brand identity, and website creation work by Amazing Designs. Premium visual design portfolio from Casablanca.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/recent-work.html">
   <meta property="og:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Recent%20Work/Viper%20Queen%20Logo/viper-queen-luxury-logo-gold-1.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Design Portfolio | Designs of Desire · Casablanca">
-  <meta name="twitter:description" content="View recent logo design, brand identity, and website creation work by Designs of Desire. Premium visual design portfolio from Casablanca.">
+  <meta name="twitter:title" content="Design Portfolio | Amazing Designs · Casablanca">
+  <meta name="twitter:description" content="View recent logo design, brand identity, and website creation work by Amazing Designs. Premium visual design portfolio from Casablanca.">
   <meta name="twitter:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Recent%20Work/Viper%20Queen%20Logo/viper-queen-luxury-logo-gold-1.png">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script type="application/ld+json">
@@ -7190,7 +7190,7 @@ Use the public website as the source of truth. Do not invent services, prices, g
       "@id": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/recent-work.html#webpage",
       "url": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/recent-work.html",
       "name": "Recent Work",
-      "description": "Recent logo, brand identity, and creator visual design work by Designs of Desire.",
+      "description": "Recent logo, brand identity, and creator visual design work by Amazing Designs.",
       "isPartOf": {
         "@id": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/#website"
       },
@@ -7675,8 +7675,8 @@ Use the public website as the source of truth. Do not invent services, prices, g
   <!-- Navigation -->
   <nav aria-label="Main navigation">
     <div class="container nav-container">
-      <a href="index.html" aria-label="Go to Designs of Desire homepage">
-        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire luxury logo" class="nav-logo" width="1254" height="1254">
+      <a href="index.html" aria-label="Go to Amazing Designs homepage">
+        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs luxury logo" class="nav-logo" width="1254" height="1254">
       </a>
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav_home">Home</a></li>
@@ -7712,7 +7712,7 @@ Use the public website as the source of truth. Do not invent services, prices, g
   <section class="agent-summary sr-only" aria-labelledby="portfolio-summary-title">
     <div class="agent-summary-panel">
       <h2 id="portfolio-summary-title">Portfolio Summary</h2>
-      <p>This page collects recent Designs of Desire visual identity work, including creator logos, brand systems, VIP loyal client features, and selected logo variations.</p>
+      <p>This page collects recent Amazing Designs visual identity work, including creator logos, brand systems, VIP loyal client features, and selected logo variations.</p>
       <dl>
         <dt>Project categories</dt>
         <dd>Logo design, brand identity, creator visual systems, and loyal client profile assets.</dd>
@@ -7847,8 +7847,8 @@ Use the public website as the source of truth. Do not invent services, prices, g
     <div class="container">
       <div class="footer-content">
         <div>
-          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire luxury logo" class="footer-logo" loading="lazy" decoding="async" width="1254" height="1254">
-          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Designs of Desire</h3>
+          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs luxury logo" class="footer-logo" loading="lazy" decoding="async" width="1254" height="1254">
+          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Amazing Designs</h3>
           <p style="opacity: 0.8; max-width: 300px;">High-End Exclusive Design. Built for Creators Who Want More.</p>
         </div>
         <div style="display: flex; gap: 60px;">
@@ -7868,7 +7868,7 @@ Use the public website as the source of truth. Do not invent services, prices, g
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; 2026 Designs of Desire. All rights reserved.
+        &copy; 2026 Amazing Designs. All rights reserved.
       </div>
     </div>
   </footer>
@@ -7978,11 +7978,11 @@ for filepath in files_to_check:
         
     # Local SEO rewrites
     if filepath == "index.html":
-        content = content.replace("<p>Designs of Desire is a high-end visual design and website studio", "<p>Based in Casablanca and serving clients worldwide, Designs of Desire is a high-end visual design and website studio")
+        content = content.replace("<p>Amazing Designs is a high-end visual design and website studio", "<p>Based in Casablanca and serving clients worldwide, Amazing Designs is a high-end visual design and website studio")
     elif filepath == "visual-design.html":
-        content = content.replace("<p>Designs of Desire creates premium visual design assets", "<p>Based in Casablanca, Designs of Desire creates premium visual design assets")
+        content = content.replace("<p>Amazing Designs creates premium visual design assets", "<p>Based in Casablanca, Amazing Designs creates premium visual design assets")
     elif filepath == "websites.html":
-        content = content.replace("<p>Designs of Desire builds premium websites and digital systems", "<p>Based in Casablanca, Designs of Desire builds premium websites and digital systems")
+        content = content.replace("<p>Amazing Designs builds premium websites and digital systems", "<p>Based in Casablanca, Amazing Designs builds premium websites and digital systems")
 
     # JSON-LD processing
     script_pattern = re.compile(r'(<script type="application/ld\+json">)(.*?)(</script>)', re.IGNORECASE | re.DOTALL)
@@ -8023,7 +8023,7 @@ for filepath in files_to_check:
                 if isinstance(cleaned_data, dict) and "@graph" in cleaned_data:
                     for item in cleaned_data["@graph"]:
                         if item.get("@type") in ["Organization", "ProfessionalService"]:
-                            item["name"] = "Designs of Desire"
+                            item["name"] = "Amazing Designs"
                             if "image" not in item:
                                 item["image"] = "https://designsofdesire.com/Images/Logo/designs-of-desire-luxury-logo.jpeg" # Assumed full URL or just relative
                             if "description" not in item:
@@ -8097,7 +8097,7 @@ print("SEO script executed successfully.")
 ### `seo-ai-visibility-report.md`
 
 ``markdown
-# SEO & AI Visibility Report — Designs of Desire
+# SEO & AI Visibility Report — Amazing Designs
 
 ## 1. Crawlability
 - robots.txt present: YES
@@ -8499,8 +8499,8 @@ print('Stripes uniformed successfully!')
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, follow">
-  <title>Thank You | Designs of Desire</title>
-  <meta name="description" content="Thank you for contacting Designs of Desire.">
+  <title>Thank You | Amazing Designs</title>
+  <meta name="description" content="Thank you for contacting Amazing Designs.">
   <link rel="canonical" href="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/thank-you.html">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -8509,10 +8509,10 @@ print('Stripes uniformed successfully!')
     <section class="hero">
       <div class="container reveal">
         <div class="hero-logo-container">
-          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire" class="hero-logo" width="1254" height="1254" fetchpriority="high">
+          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs" class="hero-logo" width="1254" height="1254" fetchpriority="high">
         </div>
         <h1>Thank You</h1>
-        <p>Your message has been prepared. Designs of Desire will review project requests through email or Instagram.</p>
+        <p>Your message has been prepared. Amazing Designs will review project requests through email or Instagram.</p>
         <div class="hero-btns">
           <a href="index.html" class="btn btn-primary">Back Home</a>
           <a href="websites.html" class="btn btn-outline">Website Services</a>
@@ -8565,7 +8565,7 @@ html_files = glob.glob('*.html')
 for f in html_files:
     with open(f, 'r', encoding='utf-8') as file:
         content = file.read()
-    new_content = content.replace('&copy; 2025 Designs of Desire', '&copy; 2026 Designs of Desire')
+    new_content = content.replace('&copy; 2025 Amazing Designs', '&copy; 2026 Amazing Designs')
     with open(f, 'w', encoding='utf-8') as file:
         file.write(new_content)
 
@@ -8599,7 +8599,7 @@ new_css = css_target + '\n\n    .agency-vs {\n      font-size: 0.78rem;\n      o
 web = web.replace(css_target, new_css)
 
 # Remove FAQ
-faq_pattern = re.compile(r'      <article>\s*<h3>Are the dollar amounts on this page Designs of Desire prices\?</h3>\s*<p>No\. Dollar amounts are shown as agency-market context only\. Designs of Desire package prices are listed in EUR on the website package cards\.</p>\s*</article>\n')
+faq_pattern = re.compile(r'      <article>\s*<h3>Are the dollar amounts on this page Amazing Designs prices\?</h3>\s*<p>No\. Dollar amounts are shown as agency-market context only\. Amazing Designs package prices are listed in EUR on the website package cards\.</p>\s*</article>\n')
 web = faq_pattern.sub('', web)
 
 with open('websites.html', 'w', encoding='utf-8') as f:
@@ -8616,16 +8616,16 @@ print('Updated successfully.')
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Logo Design & Brand Identity Casablanca | Designs of Desire</title>
+  <title>Logo Design & Brand Identity Casablanca | Amazing Designs</title>
   <meta name="description" content="Order premium logo design, watermark signatures, banners, price lists, and brand identity assets from Casablanca. Creator-ready visual design starting at EUR 10.">
   <link rel="canonical" href="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/visual-design.html">
-  <meta property="og:title" content="Logo Design & Brand Identity | Designs of Desire · Casablanca">
+  <meta property="og:title" content="Logo Design & Brand Identity | Amazing Designs · Casablanca">
   <meta property="og:description" content="Premium logo design, brand identity assets, banners, and creator visuals starting at EUR 10. Based in Casablanca.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/visual-design.html">
   <meta property="og:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Logo/designs-of-desire-luxury-logo-1.jpeg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Logo Design & Brand Identity | Designs of Desire · Casablanca">
+  <meta name="twitter:title" content="Logo Design & Brand Identity | Amazing Designs · Casablanca">
   <meta name="twitter:description" content="Premium logo design, brand identity assets, banners, and creator visuals starting at EUR 10. Based in Casablanca.">
   <meta name="twitter:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Logo/designs-of-desire-luxury-logo-1.jpeg">
   <link rel="stylesheet" href="assets/css/styles.css?v=faq-carousel-3">
@@ -8936,8 +8936,8 @@ print('Updated successfully.')
   <!-- Navigation -->
   <nav aria-label="Main navigation">
     <div class="container nav-container">
-      <a href="index.html" aria-label="Go to Designs of Desire homepage">
-        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire luxury logo" class="nav-logo" width="1254" height="1254">
+      <a href="index.html" aria-label="Go to Amazing Designs homepage">
+        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs luxury logo" class="nav-logo" width="1254" height="1254">
       </a>
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav_home">Home</a></li>
@@ -8973,7 +8973,7 @@ print('Updated successfully.')
   <section class="agent-summary sr-only" aria-labelledby="visual-summary-title">
     <div class="agent-summary-panel">
       <h2 id="visual-summary-title">Visual Design Service Summary</h2>
-      <p>Based in Casablanca, Designs of Desire creates premium visual design assets for creators, models, independent brands, and luxury-leaning personal brands that need polished, clear, and platform-ready visuals.</p>
+      <p>Based in Casablanca, Amazing Designs creates premium visual design assets for creators, models, independent brands, and luxury-leaning personal brands that need polished, clear, and platform-ready visuals.</p>
       <dl>
         <dt>Primary service</dt>
         <dd>Watermark signatures, logos, banners, typographic price lists, rules posters, and schedule templates.</dd>
@@ -8982,7 +8982,7 @@ print('Updated successfully.')
         <dt>Starting price</dt>
         <dd>Listed visual design services start at EUR 10, with custom add-ons available by request.</dd>
         <dt>Typical next step</dt>
-        <dd>Choose a listed asset below, then order by email or message Designs of Desire on Instagram.</dd>
+        <dd>Choose a listed asset below, then order by email or message Amazing Designs on Instagram.</dd>
       </dl>
       <p class="last-updated">Last updated: May 31, 2026</p>
     </div>
@@ -9092,7 +9092,7 @@ print('Updated successfully.')
     <div class="faq-list">
       <article>
         <h3>What kind of visual designs do you create?</h3>
-        <p>Designs of Desire creates polished visual assets for creators, personal brands, small businesses, and luxury-leaning digital identities. This includes logos, watermark signatures, banners, price lists, rules posters, schedule templates, story highlights, and custom brand graphics.</p>
+        <p>Amazing Designs creates polished visual assets for creators, personal brands, small businesses, and luxury-leaning digital identities. This includes logos, watermark signatures, banners, price lists, rules posters, schedule templates, story highlights, and custom brand graphics.</p>
       </article>
       <article>
         <h3>Who are these visual design services for?</h3>
@@ -9100,7 +9100,7 @@ print('Updated successfully.')
       </article>
       <article>
         <h3>Do I need to have a brand already?</h3>
-        <p>No. You can order even if you are starting from zero. If you already have colors, references, a name, or a style direction, they can be used. If not, Designs of Desire can help shape a clean visual direction based on the image you want to project.</p>
+        <p>No. You can order even if you are starting from zero. If you already have colors, references, a name, or a style direction, they can be used. If not, Amazing Designs can help shape a clean visual direction based on the image you want to project.</p>
       </article>
       <article>
         <h3>What do I need to send before ordering?</h3>
@@ -9111,7 +9111,7 @@ print('Updated successfully.')
         <p>Yes. If you already have a logo, page style, color palette, or visual mood, the design can be created to match it. The goal is to make your brand look more consistent, not disconnected.</p>
       </article>
       <article>
-        <h3>What style does Designs of Desire specialize in?</h3>
+        <h3>What style does Amazing Designs specialize in?</h3>
         <p>The main style is premium, elegant, clean, sensual, luxurious, and high-end. The designs are made to feel polished and intentional, not childish, messy, or generic.</p>
       </article>
       <article>
@@ -9148,7 +9148,7 @@ print('Updated successfully.')
       </article>
       <article>
         <h3>What if I am not sure what I need?</h3>
-        <p>Send a message with your page, brand name, and what you want to improve. Designs of Desire can suggest the most useful design assets based on your current presentation.</p>
+        <p>Send a message with your page, brand name, and what you want to improve. Amazing Designs can suggest the most useful design assets based on your current presentation.</p>
       </article>
     </div>
   </section>
@@ -9170,8 +9170,8 @@ print('Updated successfully.')
     <div class="container">
       <div class="footer-content">
         <div>
-          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire luxury logo" class="footer-logo" loading="lazy" decoding="async" width="1254" height="1254">
-          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Designs of Desire</h3>
+          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs luxury logo" class="footer-logo" loading="lazy" decoding="async" width="1254" height="1254">
+          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Amazing Designs</h3>
           <p style="opacity: 0.8; max-width: 300px;">High-End Exclusive Design. Built for Creators Who Want More.</p>
         </div>
         <div style="display: flex; gap: 60px;">
@@ -9191,7 +9191,7 @@ print('Updated successfully.')
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; 2026 Designs of Desire. All rights reserved.
+        &copy; 2026 Amazing Designs. All rights reserved.
       </div>
     </div>
   </footer>
@@ -9247,7 +9247,7 @@ print('Updated successfully.')
       const openModal = button => {
         const service = button.getAttribute('data-service') || 'Visual Design';
         const budget = button.getAttribute('data-budget') || '';
-        const orderText = `Hi Designs of Desire, I want to order:\nService: ${service}\nBudget: ${budget}`;
+        const orderText = `Hi Amazing Designs, I want to order:\nService: ${service}\nBudget: ${budget}`;
         const subject = encodeURIComponent(`Order: ${service}`);
         const body = encodeURIComponent(orderText);
 
@@ -9290,16 +9290,16 @@ print('Updated successfully.')
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Custom Website Design Casablanca | Designs of Desire</title>
+  <title>Custom Website Design Casablanca | Amazing Designs</title>
   <meta name="description" content="Custom website design, creator commerce platforms, and bespoke digital systems for creators and premium brands in Casablanca. Packages from EUR 400.">
   <link rel="canonical" href="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/websites.html">
-  <meta property="og:title" content="Custom Website Design | Designs of Desire · Casablanca">
+  <meta property="og:title" content="Custom Website Design | Amazing Designs · Casablanca">
   <meta property="og:description" content="High-end custom website design and creator commerce platforms without agency pricing. Based in Casablanca.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/websites.html">
   <meta property="og:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Logo/designs-of-desire-luxury-logo-1.jpeg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Custom Website Design | Designs of Desire · Casablanca">
+  <meta name="twitter:title" content="Custom Website Design | Amazing Designs · Casablanca">
   <meta name="twitter:description" content="High-end custom website design and creator commerce platforms without agency pricing. Based in Casablanca.">
   <meta name="twitter:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Logo/designs-of-desire-luxury-logo-1.jpeg">
   <link rel="stylesheet" href="assets/css/styles.css?v=faq-carousel-3">
@@ -9417,15 +9417,15 @@ print('Updated successfully.')
           "name": "What website packages are available?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Designs of Desire offers a Full Custom Website for EUR 400 to EUR 600, a Creator Commerce Platform for EUR 1,200 to EUR 1,500, and Bespoke Digital Systems starting at EUR 2,000."
+            "text": "Amazing Designs offers a Full Custom Website for EUR 400 to EUR 600, a Creator Commerce Platform for EUR 1,200 to EUR 1,500, and Bespoke Digital Systems starting at EUR 2,000."
           }
         },
         {
           "@type": "Question",
-          "name": "Are the dollar amounts on the page Designs of Desire prices?",
+          "name": "Are the dollar amounts on the page Amazing Designs prices?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. Dollar amounts are shown as agency-market context only. Designs of Desire package prices are listed in EUR on the website package cards."
+            "text": "No. Dollar amounts are shown as agency-market context only. Amazing Designs package prices are listed in EUR on the website package cards."
           }
         },
         {
@@ -9433,7 +9433,7 @@ print('Updated successfully.')
           "name": "How do I request a website quote?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Use the quote request form on the website creation page, email designs.of.desirex@gmail.com, or message Designs of Desire on Instagram."
+            "text": "Use the quote request form on the website creation page, email designs.of.desirex@gmail.com, or message Amazing Designs on Instagram."
           }
         }
       ]
@@ -10033,8 +10033,8 @@ print('Updated successfully.')
   <!-- Navigation -->
   <nav aria-label="Main navigation">
     <div class="container nav-container">
-      <a href="index.html" aria-label="Go to Designs of Desire homepage">
-        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire luxury logo" class="nav-logo" width="1254" height="1254">
+      <a href="index.html" aria-label="Go to Amazing Designs homepage">
+        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs luxury logo" class="nav-logo" width="1254" height="1254">
       </a>
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav_home">Home</a></li>
@@ -10070,7 +10070,7 @@ print('Updated successfully.')
   <section class="agent-summary sr-only" aria-labelledby="website-summary-title">
     <div class="agent-summary-panel">
       <h2 id="website-summary-title">Website Creation Service Summary</h2>
-      <p>Based in Casablanca, Designs of Desire builds premium websites and digital systems for creators, models, independent brands, and luxury-leaning businesses that need a clear home, direct selling path, or custom automation flow.</p>
+      <p>Based in Casablanca, Amazing Designs builds premium websites and digital systems for creators, models, independent brands, and luxury-leaning businesses that need a clear home, direct selling path, or custom automation flow.</p>
       <dl>
         <dt>Primary service</dt>
         <dd>Custom websites, creator commerce platforms, and bespoke digital systems.</dd>
@@ -10333,7 +10333,7 @@ print('Updated successfully.')
     <div class="faq-list">
       <article>
         <h3>What kind of websites do you create?</h3>
-        <p>Designs of Desire creates premium custom websites for creators, models, personal brands, independent businesses, and luxury-leaning digital identities. The focus is on elegant presentation, clear offers, smooth navigation, and a professional first impression.</p>
+        <p>Amazing Designs creates premium custom websites for creators, models, personal brands, independent businesses, and luxury-leaning digital identities. The focus is on elegant presentation, clear offers, smooth navigation, and a professional first impression.</p>
       </article>
       <article>
         <h3>Who is a custom website best for?</h3>
@@ -10345,7 +10345,7 @@ print('Updated successfully.')
       </article>
       <article>
         <h3>What makes your websites different from simple templates?</h3>
-        <p>A template gives you a layout. Designs of Desire builds a full visual experience around your brand: premium styling, elegant sections, clear messaging, conversion-focused structure, and a look that feels intentional rather than generic.</p>
+        <p>A template gives you a layout. Amazing Designs builds a full visual experience around your brand: premium styling, elegant sections, clear messaging, conversion-focused structure, and a look that feels intentional rather than generic.</p>
       </article>
       <article>
         <h3>What is included in a Full Custom Website?</h3>
@@ -10369,7 +10369,7 @@ print('Updated successfully.')
       </article>
       <article>
         <h3>Do you write the website text?</h3>
-        <p>Website copy can be guided, refined, or created depending on the package and scope. If you already have text, it can be polished. If you do not, Designs of Desire can help structure your message so it sounds clear, premium, and convincing.</p>
+        <p>Website copy can be guided, refined, or created depending on the package and scope. If you already have text, it can be polished. If you do not, Amazing Designs can help structure your message so it sounds clear, premium, and convincing.</p>
       </article>
       <article>
         <h3>Will the website work on mobile?</h3>
@@ -10405,11 +10405,11 @@ print('Updated successfully.')
       </article>
       <article>
         <h3>Why are your websites cheaper than traditional agencies?</h3>
-        <p>Designs of Desire offers boutique-level visual direction without the heavy structure, overhead, and pricing of a traditional agency. The goal is to give creators and small brands a premium digital presence at a more accessible level.</p>
+        <p>Amazing Designs offers boutique-level visual direction without the heavy structure, overhead, and pricing of a traditional agency. The goal is to give creators and small brands a premium digital presence at a more accessible level.</p>
       </article>
       <article>
         <h3>How do I start a website project?</h3>
-        <p>Send a message with your brand name, current links, the type of website you want, your main goal, your budget range, and any examples of websites you like. From there, Designs of Desire can suggest the best direction and package.</p>
+        <p>Send a message with your brand name, current links, the type of website you want, your main goal, your budget range, and any examples of websites you like. From there, Amazing Designs can suggest the best direction and package.</p>
       </article>
     </div>
   </section>
@@ -10432,8 +10432,8 @@ print('Updated successfully.')
     <div class="container">
       <div class="footer-content">
         <div>
-          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of Desire luxury logo" class="footer-logo" loading="lazy" decoding="async" width="1254" height="1254">
-          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Designs of Desire</h3>
+          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Amazing Designs luxury logo" class="footer-logo" loading="lazy" decoding="async" width="1254" height="1254">
+          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Amazing Designs</h3>
           <p style="opacity: 0.8; max-width: 300px;">High-End Exclusive Design. Built for Creators Who Want More.</p>
         </div>
         <div style="display: flex; gap: 60px;">
@@ -10453,7 +10453,7 @@ print('Updated successfully.')
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; 2026 Designs of Desire. All rights reserved.
+        &copy; 2026 Amazing Designs. All rights reserved.
       </div>
     </div>
   </footer>
