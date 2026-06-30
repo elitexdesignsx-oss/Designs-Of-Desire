@@ -23,4 +23,4 @@ Allow: /
 User-agent: GPTBot
 Disallow: /
 
-Sitemap: https://elitexdesignsx-oss.github.io/Designs-Of-Desire/sitemap.xml
+Sitemap: https://designsofdesire.netlify.app/sitemap.xml
