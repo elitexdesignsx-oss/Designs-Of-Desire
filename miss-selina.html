@@ -86,12 +86,12 @@
       border-bottom: 1px solid var(--border-color);
       background:
         linear-gradient(90deg, rgba(10, 10, 10, 0.96) 0%, rgba(10, 10, 10, 0.82) 45%, rgba(10, 10, 10, 0.42) 100%),
-        url('Images/Miss%20Selina/variation-1.webp') center right / min(58vw, 720px) no-repeat;
+        url('Images/Miss%20Selina/Miss%20Selina%20variation%205.png') center right / min(58vw, 720px) no-repeat;
     }
     [data-theme="marble"] .selina-hero {
       background:
         linear-gradient(90deg, rgba(253, 253, 253, 0.96) 0%, rgba(253, 253, 253, 0.84) 45%, rgba(253, 253, 253, 0.54) 100%),
-        url('Images/Miss%20Selina/variation-1.webp') center right / min(58vw, 720px) no-repeat;
+        url('Images/Miss%20Selina/Miss%20Selina%20variation%205.png') center right / min(58vw, 720px) no-repeat;
     }
     .hero-inner {
       max-width: 640px;
@@ -219,12 +219,26 @@
       max-width: 470px;
       opacity: 0.76;
     }
+    
     .work-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 22px;
       align-items: start;
+      grid-auto-flow: dense; /* Fill in gaps automatically */
     }
+    
+    .work-item-wide {
+      grid-column: 1 / -1;
+    }
+    
+    .work-item.work-item-wide img {
+      height: auto;
+      max-height: none;
+      object-fit: cover;
+      aspect-ratio: auto;
+    }
+
     .work-item {
       border: 1px solid var(--border-color);
       background: var(--card-bg);
@@ -418,12 +432,12 @@
         padding-top: 390px;
         background:
           linear-gradient(180deg, rgba(10, 10, 10, 0.35) 0%, rgba(10, 10, 10, 0.96) 58%),
-          url('Images/Miss%20Selina/variation-1.webp') center top 82px / min(100vw, 560px) no-repeat;
+          url('Images/Miss%20Selina/Miss%20Selina%20variation%205.png') center top 82px / min(100vw, 560px) no-repeat;
       }
       [data-theme="marble"] .selina-hero {
         background:
           linear-gradient(180deg, rgba(253, 253, 253, 0.35) 0%, rgba(253, 253, 253, 0.96) 58%),
-          url('Images/Miss%20Selina/variation-1.webp') center top 82px / min(100vw, 560px) no-repeat;
+          url('Images/Miss%20Selina/Miss%20Selina%20variation%205.png') center top 82px / min(100vw, 560px) no-repeat;
       }
       .profile-bar,
       .story-grid,
@@ -645,7 +659,7 @@
     <section class="story-section container reveal">
       <div class="story-grid">
         <div class="portrait-panel">
-          <img src="Images/Miss%20Selina/Logo/logo-metallic-style.png" alt="Miss Selina metallic logo artwork">
+          <img src="Images/Miss%20Selina/Miss%20Selina%20variation%204.png" alt="Miss Selina Variation 4">
         </div>
         <div class="story-copy">
           <div class="eyebrow">Who She Is</div>
@@ -708,24 +722,31 @@
         </div>
 
         <div class="work-grid">
-<button class="work-item" data-full="Images/Miss%20Selina/variation-1.webp">
-            <img src="Images/Miss%20Selina/variation-1.webp" alt="Miss Selina Variation 1" loading="lazy" decoding="async" width="1254" height="1254">
-            <div class="work-label"><strong>Primary Identity</strong><span>Logo</span></div>
+
+          <button class="work-item" data-full="Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-variation-1.webp">
+            <img src="Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-variation-1.webp" alt="Miss Selina Brand Mark 1" loading="lazy" decoding="async">
+            <div class="work-label"><strong>Primary Logo</strong><span>Brand Identity</span></div>
           </button>
-          <button class="work-item" data-full="Images/Miss%20Selina/variation-2.webp">
-            <img src="Images/Miss%20Selina/variation-2.webp" alt="Miss Selina Variation 2" loading="lazy" decoding="async" width="1254" height="1254">
-            <div class="work-label"><strong>Signature Mark</strong><span>Logo</span></div>
+          <button class="work-item" data-full="Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-variation-2.webp">
+            <img src="Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-variation-2.webp" alt="Miss Selina Brand Mark 2" loading="lazy" decoding="async">
+            <div class="work-label"><strong>Secondary Logo</strong><span>Brand Identity</span></div>
           </button>
-          <button class="work-item" data-full="Images/Miss%20Selina/variation-3.webp">
-            <img src="Images/Miss%20Selina/variation-3.webp" alt="Miss Selina Variation 3" loading="lazy" decoding="async" width="1254" height="1254">
-            <div class="work-label"><strong>Brand Emblem</strong><span>Logo</span></div>
+          <button class="work-item" data-full="Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-variation-3.webp">
+            <img src="Images/Recent%20Work/The%20Soft%20command%20logo/miss-selina-variation-3.webp" alt="Miss Selina Brand Mark 3" loading="lazy" decoding="async">
+            <div class="work-label"><strong>Brand Emblem</strong><span>Brand Identity</span></div>
           </button>
-          <button class="work-item" data-full="Images/Miss%20Selina/variation-4.webp">
-            <img src="Images/Miss%20Selina/variation-4.webp" alt="Miss Selina Variation 4" loading="lazy" decoding="async" width="1254" height="1254">
+
+
+          <button class="work-item work-item-wide" data-full="Images/Miss%20Selina/Miss%20Selina%20variation%203.png">
+            <img src="Images/Miss%20Selina/Miss%20Selina%20variation%203.png" alt="Miss Selina Website Cover" loading="lazy" decoding="async">
+            <div class="work-label"><strong>Website Cover</strong><span>Banner</span></div>
+          </button>
+          <button class="work-item" data-full="Images/Miss%20Selina/Miss%20Selina%20variation%204.png">
+            <img src="Images/Miss%20Selina/Miss%20Selina%20variation%204.png" alt="Miss Selina Variation 4" loading="lazy" decoding="async" width="1254" height="1254">
             <div class="work-label"><strong>Secondary Lockup</strong><span>Logo</span></div>
           </button>
-          <button class="work-item" data-full="Images/Miss%20Selina/variation-5.webp">
-            <img src="Images/Miss%20Selina/variation-5.webp" alt="Miss Selina Variation 5" loading="lazy" decoding="async" width="1254" height="1254">
+          <button class="work-item" data-full="Images/Miss%20Selina/Miss%20Selina%20variation%205.png">
+            <img src="Images/Miss%20Selina/Miss%20Selina%20variation%205.png" alt="Miss Selina Variation 5" loading="lazy" decoding="async" width="1254" height="1254">
             <div class="work-label"><strong>Monogram Focus</strong><span>Logo</span></div>
           </button>
         </div>
