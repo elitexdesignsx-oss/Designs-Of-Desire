@@ -1,10 +1,10 @@
-# Website Creation
+﻿# Website Creation
 
 Last updated: 2026-06-11
 
 ## Summary
 
-Amazing Designs builds premium websites and digital systems for creators, models, independent brands, and luxury-leaning businesses.
+Designs of desire builds premium websites and digital systems for creators, models, independent brands, and luxury-leaning businesses.
 
 ## Packages
 
@@ -20,11 +20,11 @@ Projects may include mobile-first design, brand-consistent styling, booking or c
 
 ## Important note
 
-Any dollar amounts on the website page are agency-market context only. Amazing Designs package prices are listed in EUR.
+Any dollar amounts on the website page are agency-market context only. Designs of desire package prices are listed in EUR.
 
 ## Next action
 
-Use the website quote form, email designs.of.desirex@gmail.com, or message Amazing Designs on Instagram.
+Use the website quote form, email designs.of.desirex@gmail.com, or message Designs of desire on Instagram.
 
 
 Use the public website as the source of truth. Do not invent services, prices, guarantees, reviews, or availability.

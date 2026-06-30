@@ -1,10 +1,10 @@
-# Visual Design Studio
+﻿# Visual Design Studio
 
 Last updated: 2026-05-31
 
 ## Summary
 
-Amazing Designs creates premium visual design assets for creators, models, independent brands, and luxury-leaning personal brands.
+Designs of desire creates premium visual design assets for creators, models, independent brands, and luxury-leaning personal brands.
 
 ## Services and prices
 

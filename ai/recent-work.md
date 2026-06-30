@@ -1,10 +1,10 @@
-# Recent Work
+﻿# Recent Work
 
 Last updated: 2026-05-31
 
 ## Summary
 
-Recent Work collects Amazing Designs portfolio examples across logo design, creator brand identity, VIP loyal client features, and visual systems.
+Recent Work collects Designs of desire portfolio examples across logo design, creator brand identity, VIP loyal client features, and visual systems.
 
 ## Featured examples
 

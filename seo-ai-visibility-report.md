@@ -1,4 +1,4 @@
-# SEO & AI Visibility Report — Amazing Designs
+﻿# SEO & AI Visibility Report — Designs of desire
 
 ## 1. Crawlability
 - robots.txt present: YES
