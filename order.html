@@ -1,0 +1,300 @@
+<!--
+  ORDER.HTML — setup notes
+  1. Tally form wired in: form ID 2EZvlV (https://tally.so/r/2EZvlV).
+  2. This page isn't wired into translations.js yet, so it's English-only for now. Say the word
+     and I'll add the i18n keys + French/German/Spanish strings to match the rest of the site.
+  3. Once you're happy with it, add an "Order" link to the nav, mobile menu, and footer on the
+     other pages (index, visual-design, websites, premades, etc.) — I can batch that in one pass.
+-->
+<!DOCTYPE html>
+<html lang="en" data-theme="noir">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Your Order | Designs of desire · Casablanca</title>
+  <meta name="description" content="Order a logo, banner, price list, bundle, or custom design from Designs of desire. Fill out one form and I'll reach out on Instagram or Twitter to confirm details.">
+  <link rel="canonical" href="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/order.html">
+  <meta property="og:title" content="Place Your Order | Designs of desire">
+  <meta property="og:description" content="Tell me what you want — logo, banner, bundle, or custom design — and how to reach you. I'll follow up personally.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/order.html">
+  <meta property="og:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Logo/designs-of-desire-luxury-logo-1.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Place Your Order | Designs of desire">
+  <meta name="twitter:description" content="Tell me what you want and how to reach you. I'll follow up personally on Instagram or Twitter.">
+  <meta name="twitter:image" content="https://elitexdesignsx-oss.github.io/Designs-Of-Desire/Images/Logo/designs-of-desire-luxury-logo-1.jpeg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/order.html#webpage",
+      "url": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/order.html",
+      "name": "Place Your Order",
+      "description": "Order intake page for Designs of desire visual design and website services.",
+      "isPartOf": {
+        "@id": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/#website"
+      },
+      "about": {
+        "@id": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/order.html#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/" },
+        { "@type": "ListItem", "position": 2, "name": "Place Your Order", "item": "https://elitexdesignsx-oss.github.io/Designs-Of-Desire/order.html" }
+      ]
+    }
+  ]
+}
+  </script>
+  <style>
+    .page-header {
+      padding: 150px 0 60px;
+      text-align: center;
+      position: relative;
+    }
+    .page-header h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      margin-bottom: 20px;
+    }
+    .page-header p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .order-card {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      background:
+        linear-gradient(135deg, rgba(201, 168, 76, 0.08), transparent 42%),
+        var(--card-bg);
+      padding: clamp(20px, 4vw, 40px);
+      margin-bottom: 60px;
+    }
+    .order-card iframe {
+      display: block;
+      border: 0;
+      width: 100%;
+      min-height: 700px;
+    }
+    .order-fallback {
+      margin-top: 28px;
+      padding-top: 26px;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+    }
+    .order-fallback p {
+      opacity: 0.75;
+      margin-bottom: 16px;
+    }
+    .order-fallback-actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .order-steps {
+      padding: clamp(40px, 6vw, 70px) 0 clamp(60px, 8vw, 100px);
+    }
+    .order-steps h2 {
+      text-align: center;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      margin-bottom: 50px;
+    }
+    .order-steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1px;
+      background: rgba(201, 168, 76, 0.25);
+      border: 1px solid rgba(201, 168, 76, 0.25);
+    }
+    .order-step {
+      background: #090806;
+      padding: 32px 28px;
+    }
+    .order-step .step-number {
+      color: var(--accent-color-1);
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .order-step h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .order-step p {
+      opacity: 0.7;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav aria-label="Main navigation">
+    <div class="container nav-container">
+      <a href="index.html" aria-label="Go to Designs of desire homepage">
+        <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of desire luxury logo" class="nav-logo" width="1254" height="1254">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="visual-design.html" data-i18n="nav_visual">Visual Design</a></li>
+        <li><a href="websites.html" data-i18n="nav_websites">Websites</a></li>
+        <li><a href="recent-work.html" data-i18n="nav_work">Recent Work</a></li>
+        <li><a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a></li>
+        <!-- <li><a href="premades.html" data-i18n="nav_premades">Premades</a></li> -->
+        <li><a href="order.html" aria-current="page" data-i18n="nav_order">Order</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="lang-switch" type="button" aria-label="Change language"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> EN</button>
+        <button class="hamburger" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" data-i18n="nav_home">Home</a>
+    <a href="visual-design.html" data-i18n="nav_visual">Visual Design</a>
+    <a href="websites.html" data-i18n="nav_websites">Websites</a>
+    <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
+    <a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a>
+    <!-- <a href="premades.html" data-i18n="nav_premades">Premades</a> -->
+    <a href="order.html" data-i18n="nav_order">Order</a>
+  </div>
+
+  <main>
+  <header class="page-header container reveal">
+    <h1>Place Your Order</h1>
+    <p>One form. Tell me what you want — logo, banner, bundle, or something custom — and how to reach you. I'll follow up personally.</p>
+  </header>
+
+  <section class="agent-summary sr-only" aria-labelledby="order-summary-title">
+    <div class="agent-summary-panel">
+      <h2 id="order-summary-title">Order Intake Summary</h2>
+      <p>This page collects custom order requests for Designs of desire visual design and website services. Clients describe what they want, select a budget and timeframe, and choose whether to be contacted on Instagram or Twitter/X.</p>
+      <dl>
+        <dt>Typical next step</dt>
+        <dd>Submit the order form. Designs of desire reviews it and reaches out on the chosen platform, usually within 24 hours.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Order Form -->
+  <section class="container reveal" style="padding-top: 20px;">
+    <div class="order-card">
+      <iframe
+        data-tally-src="https://tally.so/embed/2EZvlV?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        loading="lazy"
+        width="100%"
+        height="700"
+        title="Place Your Order — Designs of desire">
+      </iframe>
+
+      <div class="order-fallback">
+        <p>Form not loading? Send your order directly instead.</p>
+        <div class="order-fallback-actions">
+          <a class="btn btn-outline" href="https://www.instagram.com/designs_of_desire_official_x/" target="_blank">DM on Instagram</a>
+          <a class="btn btn-outline" href="mailto:designs.of.desirex@gmail.com">Email Order</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Happens Next -->
+  <section class="order-steps container reveal">
+    <h2>What Happens Next</h2>
+    <div class="order-steps-grid">
+      <div class="order-step">
+        <span class="step-number">01</span>
+        <h3>You submit</h3>
+        <p>Describe what you want, your budget, and how you'd like to be contacted.</p>
+      </div>
+      <div class="order-step">
+        <span class="step-number">02</span>
+        <h3>I review</h3>
+        <p>Every order is read personally — no bots deciding what you get.</p>
+      </div>
+      <div class="order-step">
+        <span class="step-number">03</span>
+        <h3>I reach out</h3>
+        <p>I message you on Instagram or Twitter/X, whichever you chose, within 24h.</p>
+      </div>
+      <div class="order-step">
+        <span class="step-number">04</span>
+        <h3>We confirm</h3>
+        <p>We lock in the details, price, and timeline together before anything starts.</p>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <img src="Images/Logo/designs-of-desire-luxury-logo.jpeg" alt="Designs of desire luxury logo" class="footer-logo" loading="lazy" decoding="async" width="1254" height="1254">
+          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Designs of desire</h3>
+          <p style="opacity: 0.8; max-width: 300px;">High-End Exclusive Design. Built for Creators Who Want More.</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html" data-i18n="nav_home">Home</a>
+            <a href="visual-design.html" data-i18n="nav_visual">Visual Design</a>
+            <a href="websites.html" data-i18n="nav_websites">Websites</a>
+            <a href="recent-work.html" data-i18n="nav_work">Recent Work</a>
+            <a href="loyal-clients.html" data-i18n="nav_clients">Loyal Clients</a>
+            <!-- <a href="premades.html" data-i18n="nav_premades">Premades</a> -->
+            <a href="order.html" data-i18n="nav_order">Order</a>
+          </div>
+          <address class="footer-links">
+            <h4 data-i18n="legal_title" style="margin-bottom: 5px;">Legal</h4>
+            <a href="privacy.html" data-i18n="nav_privacy">Privacy Policy</a>
+            <a href="terms.html" data-i18n="nav_terms">Terms of Service</a>
+            <a href="impressum.html" data-i18n="nav_impressum">Impressum</a>
+            
+            <h4 style="margin-bottom: 5px; margin-top: 15px;">Contact</h4>
+            <a href="https://www.instagram.com/designs_of_desire_official_x/" target="_blank">Instagram</a>
+            <a href="mailto:designs.of.desirex@gmail.com">Email Us</a>
+            <span style="opacity: 0.8; margin-top: 20px;">Accepted: PayPal</span>
+          </address>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Designs of desire. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function (d, t) {
+      var v = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+      v.src = "https://tally.so/widgets/embed.js";
+      v.onload = function () {
+        if (typeof Tally !== "undefined") Tally.loadEmbeds();
+      };
+      v.onerror = function () {
+        document.querySelectorAll("iframe[data-tally-src]").forEach(function (e) {
+          e.src = e.dataset.tallySrc;
+        });
+      };
+      s.parentNode.insertBefore(v, s);
+    })(document, "script");
+  </script>
+</body>
+</html>

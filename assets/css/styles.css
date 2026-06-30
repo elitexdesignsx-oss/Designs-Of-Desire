@@ -1110,7 +1110,7 @@ footer {
 
 .footer-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   gap: 40px;
   margin-bottom: 60px;
 }
@@ -1165,6 +1165,7 @@ footer address {
   transform: translateY(14px);
   transition: opacity 360ms var(--ease-out), transform 420ms var(--ease-out);
 }
+
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
